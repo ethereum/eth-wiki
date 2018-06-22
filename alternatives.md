@@ -1,21 +1,4 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-**Contents**
-
-
-
-- [Randomness](#randomness)
-
-- [Alternative blockchain/consensus protocol projects](#alternative-blockchainconsensus-protocol-projects)
-
-- [Economics](#economics)
-
-
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
+# Alternatives
 
 
 ### Randomness
