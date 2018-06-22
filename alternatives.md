@@ -1,4 +1,7 @@
-# Alternatives
+<!-- TITLE: Alternatives -->
+<!-- SUBTITLE: Subtitle for Alternatives -->
+
+# This is the H1 header, not the title
 
 
 ### Randomness
