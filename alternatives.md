@@ -1,4 +1,4 @@
-<!-- TITLE: Alternatives -->
+<!-- TITLE: Title for Alternatives -->
 <!-- SUBTITLE: Subtitle for Alternatives -->
 
 # This is the H1 header, not the title
