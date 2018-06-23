@@ -1,15 +1,16 @@
 <!-- TITLE: Adaptive Message IDs -->
 
 
-# Goal
+
+### Goal
 
 Dynamic numeric identities for the sub protocol message types rather than the current fixed id system. This way we don't have to reserve parts of the message ID space up front and have a central entity to police this space to prevent clashes.
 
-## Overview
+### Overview
 
 All sub-protocol message IDs begin at 0x10 and count only those messages in the shared protocols, in alphabetical order. Sub-protocol versioning is provided in the base protocol to allow guarantees that there is consensus over the number and order of messages for each sub-protocol between peers.
 
-## Needed Changes
+### Needed Changes
 
 Wire protocol Hello package changed to (*note protocol version has changed to 1*):
 
@@ -24,7 +25,7 @@ Wire protocol Hello package changed to (*note protocol version has changed to 1*
 
 All `eth` sub-protocol message ids are lowered by `0x10` and have a `+` prepended to them to denote that the given ID is offset by some dynamic amount.
 
-## Conversation overview
+### Conversation overview
 
 ```
 [23:11:29] gavofyork: for each shared sub protocol, in alphabetic order, you deploy the subprotocol's messages
