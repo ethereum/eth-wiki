@@ -1,4 +1,4 @@
-### Goal
+# Goal
 
 
 
@@ -6,7 +6,7 @@ Dynamic numeric identities for the sub protocol message types rather than the cu
 
 
 
-### Overview
+## Overview
 
 
 
@@ -14,7 +14,7 @@ All sub-protocol message IDs begin at 0x10 and count only those messages in the 
 
 
 
-### Needed Changes
+## Needed Changes
 
 
 
