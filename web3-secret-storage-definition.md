@@ -21,7 +21,7 @@ web3 contains the eth object - web3.eth (for specifically Ethereum blockchain in
 
 This documents version 3 of the Web3 Secret Storage Definition. 
 
-## Definition
+# Definition
 
 The actual encoding and decoding of the file remains largely unchanged from version 1, except that the crypto algorithm is no longer fixed to AES-128-CBC (AES-128-CTR is now the minimal requirement). Most of the meanings/algorithm are similar to version 1, except `mac`, which is given as the SHA3 (keccak-256) of the concatenation of the last 16 bytes of the derived key together with the full `ciphertext`.
 
@@ -66,7 +66,7 @@ The creation/encryption of a secret key should be essentially the reverse of the
 
 In addition to the `version` field, which should act as a "hard" identifier of version, implementations may also use `minorversion` to track smaller, non-breaking changes to the format.
 
-## Test Vectors
+# Test Vectors
 
 Details:
 
@@ -76,7 +76,7 @@ Details:
 - Password: `testpassword`
 - Secret: `7a28b5ba57c53603b0b07b56bba752f7784bf506fa95edc395f5cf6c7514fe9d`
 
-### PBKDF2-SHA-256
+## PBKDF2-SHA-256
 
 Test vector using AES-128-CTR and PBKDF2-SHA-256:
 
@@ -110,7 +110,7 @@ Intermediates:
 - MAC `517ead924a9d0dc3124507e3393d175ce3ff7c1e96529c6c555ce9e51205e9b2`
 - Cipher key: `f06d69cdc7da0faffb1008270bca38f5`
 
-### Scrypt
+## Scrypt
 
 Test vector using AES-128-CTR and Scrypt:
 
@@ -144,7 +144,7 @@ Intermediates:
 - MAC: `2103ac29920d71da29f15d75b4a16dbe95cfd7ff8faea1056c33131d846e3097`
 - Cipher key: `fac192ceb5fd772906bea3e118a69e8b`
 
-## Alterations from Version 1
+# Alterations from Version 1
 
 This version fixes several inconsistencies with the version 1 published [here](https://github.com/ethereum/go-ethereum/wiki/Passphrase-protected-key-store-spec). In brief these are:
 
@@ -183,6 +183,6 @@ Changes have been made to the format to give the following file, functionally eq
 }
 ```
 
-## Alterations from Version 2
+# Alterations from Version 2
 
 Version 2 was an early C++ implementation with a number of bugs. All essentials remain unchanged from it.
