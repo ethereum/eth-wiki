@@ -12,7 +12,7 @@ Specifically there are three modes they could be in:
 
 Clients that implemented this protocol displayed a message to the user to make any non-zero status clear. For a status of 2, the user would be notified than an immediate upgrade was required, regardless of whether mining was enabled.
 
-#### Addresses
+## Addresses
 
 - For Olympic: `0x6879392ee114f8a4e133f0ff3dc4bc1717fe9344`
 - For Frontier: Multiple people
