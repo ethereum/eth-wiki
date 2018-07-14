@@ -1,4 +1,4 @@
-<!-- TITLE: [Japanese] Cryptocurrency Current Problems -->
+<!-- TITLE: Cryptocurrency Current Problems -->
 
 
 
