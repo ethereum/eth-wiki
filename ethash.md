@@ -17,7 +17,7 @@ The large dataset is updated once every 30000 blocks, so the vast majority of a 
 
 See [https://github.com/ethereum/wiki/wiki/Ethash-Design-Rationale](http://wikijs.ethereum.wiki/Ethash-Design-Rationale) for design rationale considerations for this algorithm.
 
-### Definitions
+# Definitions
 
 We employ the following definitions:
 
@@ -45,7 +45,7 @@ to as "Keccak-256" and "Keccak-512" in other contexts. See discussion, e.g. [her
 
 Please keep that in mind as "sha3" hashes are referred to in the description of the algorithm below.
 
-### Parameters
+## Parameters
 
 The parameters for Ethash's cache and dataset depend on the block number. The cache size and dataset size both grow linearly; however, we always take the highest prime below the linearly growing threshold in order to reduce the risk of accidental regularities leading to cyclic behavior.
 
@@ -67,7 +67,7 @@ def get_full_size(block_number):
 
 Tables of dataset and cache size values are provided in the appendix.
 
-### Cache Generation
+## Cache Generation
 
 Now, we specify the function for producing a cache:
 
@@ -93,7 +93,7 @@ def mkcache(cache_size, seed):
 
 The cache production process involves first sequentially filling up 32 MB of memory, then performing two passes of Sergio Demian Lerner's *RandMemoHash* algorithm from [*Strict Memory Hard Hashing Functions* (2014)](http://www.hashcash.org/papers/memohash.pdf). The output is a set of 524288 64-byte values.
 
-### Data aggregation function
+## Data aggregation function
 
 We use an algorithm inspired by the [FNV hash](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) in some cases as a non-associative substitute for XOR. Note that we multiply the prime with the full 32-bit input, in contrast with the FNV-1 spec which multiplies the prime with one byte (octet) in turn.
 
@@ -106,7 +106,7 @@ def fnv(v1, v2):
 
 Please note, even the yellow paper specifies fnv as v1*(FNV_PRIME ^ v2), all current implementations consistently use the above definition.
 
-### Full dataset calculation
+## Full dataset calculation
 
 Each 64-byte item in the full 1 GB dataset is computed as follows:
 
@@ -132,7 +132,7 @@ def calc_dataset(full_size, cache):
     return [calc_dataset_item(cache, i) for i in range(full_size // HASH_BYTES)]
 ```
 
-### Main Loop
+## Main Loop
 
 Now, we specify the main "hashimoto"-like loop, where we aggregate data from the full dataset in order to produce our final value for a particular header and nonce. In the code below, `header` represents the SHA3-256 _hash_ of the [RLP](http://wikijs.ethereum.wiki/RLP) representation of a _truncated_ block header, that is, of a header excluding the fields **mixHash** and **nonce**. `nonce` is the eight bytes of a 64 bit unsigned integer in big-endian order. So `nonce[::-1]` is the eight-byte little-endian representation of that value:
 
@@ -174,7 +174,7 @@ Essentially, we maintain a "mix" 128 bytes wide, and repeatedly sequentially fet
 
 If the output of this algorithm is below the desired target, then the nonce is valid. Note that the extra application of `sha3_256` at the end ensures that there exists an intermediate nonce which can be provided to prove that at least a small amount of work was done; this quick outer PoW verification can be used for anti-DDoS purposes.  It also serves to provide statistical assurance that the result is an unbiased, 256 bit number.
 
-### Mining
+## Mining
 
 The mining algorithm is defined as follows:
 
@@ -189,7 +189,7 @@ def mine(full_size, dataset, header, difficulty):
     return nonce
 ```
 
-### Defining the Seed Hash
+## Defining the Seed Hash
 
 In order to compute the seed hash that would be used to mine on top of a given block, we use the following algorithm:
 
@@ -203,7 +203,7 @@ In order to compute the seed hash that would be used to mine on top of a given b
 
 Note that for smooth mining and verifying, we recommend pre-computing future seedhashes and datasets in a separate thread.
 
-### Appendix
+# Appendix
 
 The following code should be prepended if you are interested in running the above python spec as code.
 
