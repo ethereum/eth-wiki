@@ -1,6 +1,6 @@
 <!-- TITLE: Home -->
 
-# Welcome to the Ethereum Wiki HOHOHOHOHOHHO
+# Welcome to the Ethereum Wiki ~~~~~~~~
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
@@ -57,7 +57,7 @@ See [here](http://wikijs.ethereum.wiki/Clients).
 
 See [here](http://wikijs.ethereum.wiki/Releases).
 
-## Don't get lost
+## Don't get lost, If so look for the lost and found
 
 If you have any question, check the [FAQS](http://wikijs.ethereum.wiki/FAQS) and [Glossary](https://github.com/ethereum/wiki/wiki/Glossary).
 
