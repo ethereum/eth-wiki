@@ -58,6 +58,12 @@ For getting started guides, see here
 
 See [here](Clients).
 
+## Other Wikis
+
+* http://ethdocs.org/en/latest/. The Homestead Guide (a historical reference, parts may be outdated).
+* http://tokenengineering.net/
+* https://wiki.giveth.io/
+
 ## Status / Releases / Development timeline / Roadmap
 
 See [here](Releases).
