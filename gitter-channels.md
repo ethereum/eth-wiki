@@ -1,6 +1,6 @@
 <!-- TITLE: Gitter Channels -->
 
-Main Channel: https://gitter.im/ethereum
+**Main Channel: https://gitter.im/ethereum**
 
 ### Geth (Go client)
 * https://gitter.im/ethereum/go-ethereum
