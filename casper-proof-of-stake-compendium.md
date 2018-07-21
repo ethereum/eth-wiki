@@ -7,7 +7,7 @@
 [![Casper](https://img.shields.io/badge/gitter-casper%20scaling%20and%20protocol%20economics-4AB495.svg)](https://gitter.im/ethereum/casper-scaling-and-protocol-economics)
 
 See:
-- [FAQs](http://wikijs.ethereum.wiki/Proof-of-Stake-FAQs)
+- [FAQs](Proof-of-Stake-FAQs)
 
 ## Casper FFG
 

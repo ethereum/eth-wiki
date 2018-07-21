@@ -3,7 +3,7 @@
 
 # What is Ethereum?
 
-Ethereum, like any advanced system, will mean different things to different people. As you read this section, some bits may not resonate with you or even make sense. That is fine, just skip to the next paragraph and hopefully that one will be more enlightening. If you reach the end of this section and still feel confused, then jump on a forum and start asking questions. You can also read [this introduction](http://wikijs.ethereum.wiki/Ethereum-introduction).
+Ethereum, like any advanced system, will mean different things to different people. As you read this section, some bits may not resonate with you or even make sense. That is fine, just skip to the next paragraph and hopefully that one will be more enlightening. If you reach the end of this section and still feel confused, then jump on a forum and start asking questions. You can also read [this introduction](Ethereum-introduction).
 
 
 

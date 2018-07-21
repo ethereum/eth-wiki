@@ -2,7 +2,7 @@
 
 
 
-Draft of steps that should be taken when finding a security issue in Ethereum. Security issue is defined as a problem in scope of [Security-Categorization](http://wikijs.ethereum.wiki/Security-Categorization).
+Draft of steps that should be taken when finding a security issue in Ethereum. Security issue is defined as a problem in scope of [Security-Categorization](Security-Categorization).
 
 Partly inspired by [OWASP Risk Rating](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology)
 

@@ -26,7 +26,7 @@ These implementations differ in:
 
 For enterprise use cases, performance is likely to be highly important. There have been some efforts at benchmarking Ethereum clients, see:
 
-[https://github.com/ethereum/wiki/wiki/Benchmarks](http://wikijs.ethereum.wiki/Benchmarks)
+[https://github.com/ethereum/wiki/wiki/Benchmarks](Benchmarks)
 
 However, a comprehensive set of benchmarks on all clients likely to be performant (C++, Go, Haskell, Java, Parity) would be a very useful task. Regarding licensing, Go is LGPL licensed, C++ is GPL licensed but there is an effort (with outcome still uncertain) to relicense it to Apache, Java is MIT, and Parity is GPL.
 
@@ -34,7 +34,7 @@ However, a comprehensive set of benchmarks on all clients likely to be performan
 
 There is an informal standard for a configuration file that Ethereum nodes must support, which describes the network parameters. The goal is to allow nodes to easily connect to test networks, private networks, and in the long term specify alternative networks with different properties, including consensus algorithms, P2P networking protocols, initial state, and protocol rules. The standard is described here:
 
-[https://github.com/ethereum/wiki/wiki/Ethereum-Chain-Spec-Format](http://wikijs.ethereum.wiki/Ethereum-Chain-Spec-Format)
+[https://github.com/ethereum/wiki/wiki/Ethereum-Chain-Spec-Format](Ethereum-Chain-Spec-Format)
 
 An enterprise ethereum version should respect a superset of the standard, so that a node started with the right config settings would act as an Ethereum public chain node (but with more APIs and other features useful for enterprise purposes), but a node started with different settings would participate in a given consortium-chain network using PBFT, or a test network that uses a different virtual machine, or a network that incorporates new scalability features sooner than the public chain, etc.
 
@@ -61,7 +61,7 @@ In a private chain context, there are several consensus algorithms that make the
 * **Proof of authority** - essentially, one client with one particular private key makes all of the blocks
 * **PBFT** (or some other traditional byzantine-fault-tolerant consensus algorithm)
 * **DPOS** (or some other chain-based limited-validator consensus algorithm)
-* **Casper** (Ethereum's [proof of stake](http://wikijs.ethereum.wiki/Proof-of-Stake-FAQ) candidate) with a fixed validator set
+* **Casper** (Ethereum's [proof of stake](Proof-of-Stake-FAQ) candidate) with a fixed validator set
 
 PBFT and DPOS (taken purely as a consensus algorithm, not including the ability of some class of token holders to vote on delegates) each have their own advantages and disadvantages. Specifically:
 
@@ -99,7 +99,7 @@ EES may want to implement some of these abstraction features ahead of schedule.
 
 Ethereum's current P2P network is a Kademlia architecture, and details are described here:
 
-* [https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol](http://wikijs.ethereum.wiki/%C3%90%CE%9EVp2p-Wire-Protocol)
+* [https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol](%C3%90%CE%9EVp2p-Wire-Protocol)
 * [https://github.com/ethereum/go-ethereum/wiki/Peer-to-Peer](https://github.com/ethereum/go-ethereum/wiki/Peer-to-Peer)
 
 A private chain may want to either use the same networking code (but with a different network ID set in the config file), or use an alternative type of network; the most likely alternative is a design where every node connects directly to every other node (quite feasible and likely optimal in networks with under ~20 nodes). Additionally there is the choice of customizing the connection that is made at the network or even lower level (eg. should all nodes be in the same subnet? If they are physically close to each other would fiber optic connections be optimal?); many of the details of this are largely outside the scope of the EES codebase, but the codebase should make sure that it works well under many common expected configurations.
@@ -194,7 +194,7 @@ The other approach is to implement measures to ensure that the total size of the
 
 ### The Merkle Tree
 
-The Merkle tree (also sometimes called "Merkle Patricia tree", "Patricia trie", "Merkle Patricia trie" or "trie") is an important part of the Ethereum protocol and provides a large amount of value particularly in the public chain. The function of the tree (see [here](http://wikijs.ethereum.wiki/Patricia-Tree) for details, and [here](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/) and [here](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/) for more detailed explanations) is to provide a cryptographically authenticated data structure that stores the entire state (ie. account balances, contract storage, nonces, etc); every 32-byte root hash maps uniquely (assuming cryptographic security of SHA3) to a particular state which may be gigabytes in size.
+The Merkle tree (also sometimes called "Merkle Patricia tree", "Patricia trie", "Merkle Patricia trie" or "trie") is an important part of the Ethereum protocol and provides a large amount of value particularly in the public chain. The function of the tree (see [here](Patricia-Tree) for details, and [here](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/) and [here](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/) for more detailed explanations) is to provide a cryptographically authenticated data structure that stores the entire state (ie. account balances, contract storage, nonces, etc); every 32-byte root hash maps uniquely (assuming cryptographic security of SHA3) to a particular state which may be gigabytes in size.
 
 This allows for the following benefits:
 
@@ -207,7 +207,7 @@ Although no one has yet come up with such a product at the time of this writing,
 However, the Merkle tree also comes with its efficiency cost; hence, in those applications that do not require it, an optimal solution may be to simply get rid of the Merkle tree, and instead store the state in the database directly, so three state changes would correspond to three database operations. That said, it is important not to jump to this conclusion too quickly, as there are several ways to optimize the Merkle tree without removing it entirely. This includes:
 
 * Allowing the storage of unlimited-size values in the state, instead of just 32-byte values (see [EIP 97](https://github.com/ethereum/EIPs/issues/97)). In cases where a contract very often needs to store many values at the same time (eg. a blockchain-based order book storing buy currency, sell currency, price, quantity, seller), this may improve efficiency by as much as 2x.
-* Removing the storage of intermediate root hashes after every transaction, instead doing it after every block. This (1) allows for the cache to be used more, so if many transactions in a block modify a single account only a single Merkle tree update needs to be done for that account for the entire block, (2) allows the Merkle tree to be updated using a more efficient algorithm (eg. see in [the benchmarks](http://wikijs.ethereum.wiki/Benchmarks) the Go client, which has this optimization, needs 28.5 milliseconds instead of 45.7 to update when the number of intermediate root hash calculations is reduced by 40%), (3) allows the Merkle tree to be updated using a more parallelizable algorithm, and (4) potentially opens the door to some heuristic parallel transaction execution optimizations.
+* Removing the storage of intermediate root hashes after every transaction, instead doing it after every block. This (1) allows for the cache to be used more, so if many transactions in a block modify a single account only a single Merkle tree update needs to be done for that account for the entire block, (2) allows the Merkle tree to be updated using a more efficient algorithm (eg. see in [the benchmarks](Benchmarks) the Go client, which has this optimization, needs 28.5 milliseconds instead of 45.7 to update when the number of intermediate root hash calculations is reduced by 40%), (3) allows the Merkle tree to be updated using a more parallelizable algorithm, and (4) potentially opens the door to some heuristic parallel transaction execution optimizations.
 * Changing the serialization algorithm or the trie algorithm (eg. making it a binary trie instead of hexary as it is now)
 * Software-level improvements
 
@@ -248,7 +248,7 @@ An older paper from security researcher Andrew Miller can be found here:
   
 The Ethereum wiki doc on safe contract programming techniques can be found here:    
   
-[https://github.com/ethereum/wiki/wiki/Safety](http://wikijs.ethereum.wiki/Safety)    
+[https://github.com/ethereum/wiki/wiki/Safety](Safety)    
   
 The first link also includes possible incremental improvements that can be taken to the EVM as well as Ethereum development environments in order to minimize the risk of such attacks. Additionally, since the DAO incident in June 2016 there has been a number of proposed EIPs in order to facilitate safer contract development: [EIP 114](https://github.com/ethereum/EIPs/issues/114), [116](https://github.com/ethereum/EIPs/issues/116), [117](https://github.com/ethereum/EIPs/issues/117), [118](https://github.com/ethereum/EIPs/issues/118) and [119](https://github.com/ethereum/EIPs/issues/119). It is likely not wise for the consortium chain development community to implement safety-focused EIPs ahead of the public chain ecosystem, as we do not want to confuse developers by having one set of safe contract programming practices for the consortium chain ecosystem and one for the public chain ecosystem (except where absolutely unavoidable, eg. on the public chain, game-theoretic issues are much more inescapable).
 

@@ -15,7 +15,7 @@ The general route that the algorithm takes is as follows:
 
 The large dataset is updated once every 30000 blocks, so the vast majority of a miner's effort will be reading the dataset, not making changes to it.
 
-See [https://github.com/ethereum/wiki/wiki/Ethash-Design-Rationale](http://wikijs.ethereum.wiki/Ethash-Design-Rationale) for design rationale considerations for this algorithm.
+See [https://github.com/ethereum/wiki/wiki/Ethash-Design-Rationale](Ethash-Design-Rationale) for design rationale considerations for this algorithm.
 
 # Definitions
 
@@ -134,7 +134,7 @@ def calc_dataset(full_size, cache):
 
 ## Main Loop
 
-Now, we specify the main "hashimoto"-like loop, where we aggregate data from the full dataset in order to produce our final value for a particular header and nonce. In the code below, `header` represents the SHA3-256 _hash_ of the [RLP](http://wikijs.ethereum.wiki/RLP) representation of a _truncated_ block header, that is, of a header excluding the fields **mixHash** and **nonce**. `nonce` is the eight bytes of a 64 bit unsigned integer in big-endian order. So `nonce[::-1]` is the eight-byte little-endian representation of that value:
+Now, we specify the main "hashimoto"-like loop, where we aggregate data from the full dataset in order to produce our final value for a particular header and nonce. In the code below, `header` represents the SHA3-256 _hash_ of the [RLP](RLP) representation of a _truncated_ block header, that is, of a header excluding the fields **mixHash** and **nonce**. `nonce` is the eight bytes of a 64 bit unsigned integer in big-endian order. So `nonce[::-1]` is the eight-byte little-endian representation of that value:
 
 ```python
 def hashimoto(header, nonce, full_size, dataset_lookup):

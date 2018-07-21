@@ -9,7 +9,7 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 
 > Ethereum wiki covering all things related to Ethereum
 
-This is the community maintained wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](http://wikijs.ethereum.wiki/Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
+This is the community maintained wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 
 
@@ -38,9 +38,9 @@ Wikipedia has [five pillars](https://en.wikipedia.org/wiki/Wikipedia:Five_pillar
 lating
 
 
-### License and [contributor license agreement](http://wikijs.ethereum.wiki/CC0-license#list-of-contributors)
+### License and [contributor license agreement](CC0-license#list-of-contributors)
 
-Please permit your contributions to be under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](http://wikijs.ethereum.wiki/CC0-license#list-of-contributors). Otherwise, without adding yourself to the list, your contributions will be all rights reserved. Some previous contributions may have all rights reserved (by contributors that have not agreed to a CC0 license [at pull request 528](https://github.com/ethereum/wiki/pull/528)), since no copyright permission was stated explicitly. Until all previous contributors agree to a CC0 license, and to provide clarity of licensing, you may also wish to add a HTML comment to the top of pages or sections that you contribute to, like so: `<!--*Name Surname*, Github username, **email@domain** and/or other contact methods-->`. 
+Please permit your contributions to be under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](CC0-license#list-of-contributors). Otherwise, without adding yourself to the list, your contributions will be all rights reserved. Some previous contributions may have all rights reserved (by contributors that have not agreed to a CC0 license [at pull request 528](https://github.com/ethereum/wiki/pull/528)), since no copyright permission was stated explicitly. Until all previous contributors agree to a CC0 license, and to provide clarity of licensing, you may also wish to add a HTML comment to the top of pages or sections that you contribute to, like so: `<!--*Name Surname*, Github username, **email@domain** and/or other contact methods-->`. 
 
 ## Getting started
 
@@ -54,15 +54,15 @@ For getting started guides, see here
 
 ## Downloads
 
-See [here](http://wikijs.ethereum.wiki/Clients).
+See [here](Clients).
 
 ## Status / Releases / Development timeline / Roadmap
 
-See [here](http://wikijs.ethereum.wiki/Releases).
+See [here](Releases).
 
 ## Don't get lost, If so look for the lost and found
 
-If you have any question, check the [FAQS](http://wikijs.ethereum.wiki/FAQS) and [Glossary](https://github.com/ethereum/wiki/wiki/Glossary).
+If you have any question, check the [FAQS](FAQS) and [Glossary](https://github.com/ethereum/wiki/wiki/Glossary).
 
 There are separate wikis for some implementations, as follows:
 

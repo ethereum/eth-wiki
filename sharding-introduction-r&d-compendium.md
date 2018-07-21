@@ -15,7 +15,7 @@ Each one of the shards (likely 100 live in phase 1) will have as high a capacity
 
 For information on sharding, refer to (sorted roughly from the most recent/important information to less recent):
 - sharding [roadmap](Sharding-roadmap) <!--leave this at the top of this list and maintain it-->
-- [Sharding FAQs](http://wikijs.ethereum.wiki/Sharding-FAQs)
+- [Sharding FAQs](Sharding-FAQs)
 - a summary [here](https://twitter.com/sinahab/status/992755776765792256);
 - [ethresear.ch sharding category](https://ethresear.ch/c/sharding) (watch new posts);
 - [sharding protocol research tracker](https://github.com/Drops-of-Diamond/diamond_drops/issues/13)
@@ -25,7 +25,7 @@ For information on sharding, refer to (sorted roughly from the most recent/impor
 - [Sharding workshop notes](https://hackmd.io/s/HJ_BbgCFz#%E2%9F%A0-General-Introduction)
 - [Ethereum sharding workshop blog post](https://medium.com/@icebearhww/ethereum-sharding-workshop-in-taipei-a44c0db8b8d9)
 - [HackMD note: Ethereum Research Sharding Compendium](http://notes.ethereum.org/s/BJc_eGVFM)
-- [Wiki: ethresear.ch Sharding Compendium](http://wikijs.ethereum.wiki/Wiki:-ethresear.ch-Sharding-Compendium)
+- [Wiki: ethresear.ch Sharding Compendium](Wiki:-ethresear.ch-Sharding-Compendium)
 
 ## Implementations
 Implementations under development include:

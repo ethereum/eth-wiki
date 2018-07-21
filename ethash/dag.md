@@ -2,7 +2,7 @@
 
 
 
-Ethash is the PoW system. It requires a ~1GB dataset known as the DAG (see [Dagger Hashimoto](http://wikijs.ethereum.wiki/Dagger-Hashimoto)). This typically takes hours to generate so we tend to memorise it. Clients wishing to store the DAG in a cache should conform to this spec in order to share the cache with other clients:
+Ethash is the PoW system. It requires a ~1GB dataset known as the DAG (see [Dagger Hashimoto](Dagger-Hashimoto)). This typically takes hours to generate so we tend to memorise it. Clients wishing to store the DAG in a cache should conform to this spec in order to share the cache with other clients:
 
 #### Location
 

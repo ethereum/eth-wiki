@@ -5,7 +5,7 @@
 A broad introduction to and overview of Ethereum research is available at [Ethereum 2 and alternative PoS implementations](https://ethresear.ch/t/ethereum-2-and-alternative-pos-implementations/190/7), however this is now somewhat outdated.
 
 ### Sharding
-Sharding introductory information is available [here](http://wikijs.ethereum.wiki/Sharding-introduction-R&D-compendium).
+Sharding introductory information is available [here](Sharding-introduction-R&D-compendium).
 
 ### Ethereum research communication channels
 * [Ethereum research Discourse forum](https://ethresear.ch/). An introduction to the site is [here](https://ethresear.ch/t/read-this-before-posting/8), which includes onboarding packets for potential collaborators with generic research and programming language theory;

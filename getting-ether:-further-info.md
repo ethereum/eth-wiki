@@ -2,7 +2,7 @@
 
 
 
-Note that there may be some repetition in the following info compared to [here](http://wikijs.ethereum.wiki/Getting-Ether).
+Note that there may be some repetition in the following info compared to [here](Getting-Ether).
 
 Summary: compare deals with buying and sell through different exchanges such as P2P ones with an arbitrator like [**LocalEthereum**](https://localethereum.com), or with centralized exchanges (which vary with your local jurisdiction, e.g. in Australia there is [BTCmarkets](https://btcmarkets.net/fees) and in the US plus worldwide there is [Coinbase](https://www.coinbase.com), which also allows you to spend cryptocurrencies e.g. with a debit card. For more see the table below, [here](https://github.com/jamesray1/Ethereum-introduction/wiki/Ethereum-introduction#table-of-exchanges)).
 
@@ -132,7 +132,7 @@ https://www.bithumb.com/
 
 ## More details about what James Ray tried (not very necessary to know)
 
-You could skip to the [next section](http://wikijs.ethereum.wiki/Ethereum-introduction.md#development)
+You could skip to the [next section](Ethereum-introduction.md#development)
 
 I bought BTC in a different way. Step 2 worked for me. I will try step 1 next time I buy more BTC.
 

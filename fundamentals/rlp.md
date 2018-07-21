@@ -2,11 +2,11 @@
 
 
 
-Note: it is planned for RLP to be **replaced** by a more preferable form of serialization, as outlined [here](https://ethresear.ch/t/blob-serialisation/1705), and implemented by [sharding clients](http://wikijs.ethereum.wiki/Sharding-introduction-R&D-compendium#implementations).
+Note: it is planned for RLP to be **replaced** by a more preferable form of serialization, as outlined [here](https://ethresear.ch/t/blob-serialisation/1705), and implemented by [sharding clients](Sharding-introduction-R&D-compendium#implementations).
 
 The purpose of RLP (Recursive Length Prefix) is to encode arbitrarily nested arrays of binary data, and RLP is the main encoding method used to serialize objects in Ethereum. The only purpose of RLP is to encode structure; encoding specific  data types (eg. strings, floats) is left up to higher-order protocols; but positive RLP integers must be represented in big endian binary form with no leading zeroes (thus making the integer value zero be equivalent to the empty byte array). Deserialised positive integers with leading zeroes must be treated as invalid. The integer representation of string length must also be encoded this way, as well as integers in the payload. Additional information can be found in the Ethereum yellow paper Appendix B.
 
-If one wishes to use RLP to encode a dictionary, the two suggested canonical forms are to either use `[[k1,v1],[k2,v2]...]` with keys in lexicographic order or to use the higher-level [Patricia Tree](http://wikijs.ethereum.wiki/Patricia-Tree) encoding as Ethereum does.
+If one wishes to use RLP to encode a dictionary, the two suggested canonical forms are to either use `[[k1,v1],[k2,v2]...]` with keys in lexicographic order or to use the higher-level [Patricia Tree](Patricia-Tree) encoding as Ethereum does.
 
 ### Definition 
 

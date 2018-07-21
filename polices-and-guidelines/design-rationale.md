@@ -106,7 +106,7 @@ Where:
 * `logs` is a list of items of the form `[address, [topic1, topic2...], data]` that are produced by the `LOG0` ... `LOG4` opcodes during the execution of the transaction (including by the main call and sub-calls). `address` is the address of the contract that produced the log, the topics are up to 4 32-byte values, and the data is an arbitrarily sized byte array.
 * `logbloom` is a bloom filter made up of the addresses and topics of all logs in the transaction.
 
-There is also a bloom in the block header, which is the OR of all of the blooms for the transactions in the block. The purpose of this construction is to make the Ethereum protocol light-client friendly in as many ways as possible. For more details on Ethereum light clients and their use cases, see the [light client page (principles section)](http://wikijs.ethereum.wiki/Light-client-protocol#principles).
+There is also a bloom in the block header, which is the OR of all of the blooms for the transactions in the block. The purpose of this construction is to make the Ethereum protocol light-client friendly in as many ways as possible. For more details on Ethereum light clients and their use cases, see the [light client page (principles section)](Light-client-protocol#principles).
 
 # Uncle incentivization
 

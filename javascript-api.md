@@ -6,11 +6,11 @@
 
 **NOTE: These docs are for web3.js version 0.2x.x. If you’re using web3.js 1.0 please refer to [this documentation](http://web3js.readthedocs.io/en/1.0/index.html).**
 
-To make your app work on Ethereum, you can use the `web3` object provided by the [web3.js library](https://github.com/ethereum/web3.js). Under the hood it communicates to a local node through [RPC calls](http://wikijs.ethereum.wiki/JSON-RPC). web3.js works with any Ethereum node, which exposes an RPC layer.
+To make your app work on Ethereum, you can use the `web3` object provided by the [web3.js library](https://github.com/ethereum/web3.js). Under the hood it communicates to a local node through [RPC calls](JSON-RPC). web3.js works with any Ethereum node, which exposes an RPC layer.
 
 `web3` contains the `eth` object - `web3.eth` (for specifically Ethereum blockchain interactions) and the `shh` object - `web3.shh` (for Whisper interaction). Over time we'll introduce other objects for each of the other web3 protocols. Working  [examples can be found here](https://github.com/ethereum/web3.js/tree/master/example).
 
-If you want to look at some more sophisticated examples using web3.js check out these [useful app patterns](http://wikijs.ethereum.wiki/Useful-Ðapp-Patterns).
+If you want to look at some more sophisticated examples using web3.js check out these [useful app patterns](Useful-Ðapp-Patterns).
 
 ## Getting Started
 
@@ -1449,7 +1449,7 @@ Sends a transaction to the network.
   - `value`: `Number|String|BigNumber` - (optional) The value transferred for the transaction in Wei, also the endowment if it's a contract-creation transaction.
   - `gas`: `Number|String|BigNumber` - (optional, default: To-Be-Determined) The amount of gas to use for the transaction (unused gas is refunded).
   - `gasPrice`: `Number|String|BigNumber` - (optional, default: To-Be-Determined) The price of gas for this transaction in wei, defaults to the mean network gas price.
-  - `data`: `String` - (optional) Either a [byte string](http://wikijs.ethereum.wiki/Solidity,-Docs-and-ABI) containing the associated data of the message, or in the case of a contract-creation transaction, the initialisation code.
+  - `data`: `String` - (optional) Either a [byte string](Solidity,-Docs-and-ABI) containing the associated data of the message, or in the case of a contract-creation transaction, the initialisation code.
   - `nonce`: `Number`  - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
 2. `Function` - (optional) If you pass a callback the HTTP request is made asynchronous. See [this note](#using-callbacks) for details.
 
@@ -1692,7 +1692,7 @@ filter.stopWatching();
     web3.eth.contract(abiArray)
 
 Creates a contract object for a solidity contract, which can be used to initiate contracts on an address.
-You can read more about events [here](http://wikijs.ethereum.wiki/Ethereum-Contract-ABI#example-javascript-usage).
+You can read more about events [here](Ethereum-Contract-ABI#example-javascript-usage).
 
 ##### Parameters
 
@@ -2247,7 +2247,7 @@ console.log(value); // "0x4f554b443"
 
 ### web3.shh
 
-[Whisper  Overview](http://wikijs.ethereum.wiki/Whisper-Overview)
+[Whisper  Overview](Whisper-Overview)
 
 ##### Example
 
