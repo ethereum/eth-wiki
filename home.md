@@ -4,6 +4,8 @@
 
 Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.ethereum.wiki).
 
+All of these pages can be edited via the web-interface.  You can also submit Pull Requests at https://github.com/ethresearch/en-ethereum-wiki.
+
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
