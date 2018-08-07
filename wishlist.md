@@ -102,7 +102,7 @@ The Ethereum virtual machine has a number of suboptimalities at present, and so 
 
 See:
 
-* EVM 1.5: https://github.com/ethereum/cpp-ethereum/issues/3404
+* EVM 1.5: https://github.com/ethereum/EIPs/issues/615, https://github.com/ethereum/EIPs/issues/616
 * E-WASM: https://github.com/ewasm
 
 ### Sending funds
