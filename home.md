@@ -1,17 +1,11 @@
 <!-- TITLE: Home -->
 
 # Welcome to the Ethereum Wiki 
+This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.ethereum.wiki).
 
-All of these pages can be edited via the web-interface.  You can also submit Pull Requests at https://github.com/ethresearch/en-ethereum-wiki.  The github and the site are synced every five minutes.
-
-
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
-
-> Ethereum wiki covering all things related to Ethereum
-
-This is the community maintained wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 ----
 
@@ -50,11 +44,14 @@ This is the community maintained wiki covering all sorts of information on the n
 </div>
 
 -----
+
 ## Issues and pull requests
 
 If you have a technical issue with a specific client, application or tool, e.g. those listed [here](Clients,-tools,-dapp-browsers,-wallets-and-other-projects), please ask in the Gitter room of that project, and if your issue is still not resolved, post an issue in the repo for that project. Please only create an issue if you can't fix it by editing yourself, it doesn't get resolved via the [Gitter documentation room](https://gitter.im/ethereum/documentation) (including pinging someone who knows how to handle the issue, or asking/finding out who knows then pinging them) and only if it is related to the wiki. 
 
 If you had an issue that has been closed, and feel that it could be reopened after following the above steps, feel free to request to reopen it. Do not make a pull request; chances are that all PRs will be ignored, since any content in the codebase can be in this wiki instead. About 180 issues and 30 PRs were closed on May 29 2018, due to deleting the codebase and referring people to this wiki, in order to reduce the burden on maintenance by following the above steps. This fits well with Ethereum's ethos of decentralization, which includes minimising bureaucracies, and gives contributors more time to build Ethereum and satisfy the long-term interests of current and future users. If you had an issue or PR that was closed without explanation, I apologize, but it is time-consuming to reply to every one; I'm hoping that people will see the updated readme and this section.
+
+All pages can be edited via the web-interface.  For more controversial changes, please submit Pull Requests at https://github.com/ethresearch/en-ethereum-wiki.  The github and the site are synced every five minutes.
 
 ## Contribution guidelines
 
