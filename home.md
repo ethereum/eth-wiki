@@ -16,43 +16,20 @@ This is the community maintained wiki covering all sorts of information on the n
 
 -----
 
-| Basics  	|   R&D	|   	|   	|   	|
+| Basics  	|   R&D	| Infrastructure  	|   	|   	|
 |---	|---	|---	|---	|---	|
 | [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	|   	|   	|   	|
 |  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs). 	|   	|   	|   	|
 | [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	|   	|   	|   	|
 | [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | | |
-| [Getting Ether](Getting-Ether) |
-| [Releases](Releases) |
-| [FAQs](FAQs) |
-| [Design Rationale](Design-Rationale) | 
+| [Getting Ether](Getting-Ether) | [Governance](Governance-compendium)
+| [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** |
+| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** |
+| [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** |
 | EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf), [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction) |
 | [Glossary](Glossary) |
 
-## Basics
-- [Home](/)
-- [Ethereum Whitepaper](White-Paper)
-- [Ethereum Introduction](Ethereum-introduction)
-- [Uses: DAOs and dapps](Decentralized-apps-(dapps))
-- [Getting Ether](Getting-Ether)
-- [Releases](Releases)
-- [FAQs](FAQs)
-- [Design Rationale](Design-Rationale)
-- EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf), [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm).
-- [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction)
-- [Glossary](Glossary)
-
-## R&D
-
-- [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)
-- [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs).
-- [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)
-- [Hard Problems of Cryptocurrency](Problems)
-- [Governance](Governance-compendium)
-- **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)**
-- **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)**
-- **[ÐApp Development](%C3%90App-Development)**
 
 ## Infrastructure
 - [Chain Spec Format](Ethereum-Chain-Spec-Format)
