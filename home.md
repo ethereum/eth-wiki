@@ -18,30 +18,19 @@ This is the community maintained wiki covering all sorts of information on the n
 
 | Basics  	|   R&D	| Infrastructure  	|   	|   	|
 |---	|---	|---	|---	|---	|
-| [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	|   	|   	|   	|
-|  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs). 	|   	|   	|   	|
-| [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	|   	|   	|   	|
-| [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | | |
-| [Getting Ether](Getting-Ether) | [Governance](Governance-compendium)
-| [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** |
-| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** |
-| [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** |
-| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |
+| [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	| [Chain Spec Format](Ethereum-Chain-Spec-Format)  	|   	|   	|
+|  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs) 	| [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)  	| [URL Hint Protocol](URL-Hint-Protocol)  	|   	|
+| [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|   	|   	|
+| [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | [Network Status](Network-Status) | |
+| [Getting Ether](Getting-Ether) | [Governance](Governance-compendium) | [Raspberry Pi](Raspberry-Pi-instructions)
+| [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** | [Exchange Integration](Exchange-Integration) |
+| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Mining](Mining) |
+| [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** | [Licensing](Licensing) |
+| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) | [Consortium Chain Development](Consortium-Chain-Development) |
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) |
 | [Glossary](Glossary) |
 
 
-## Infrastructure
-- [Chain Spec Format](Ethereum-Chain-Spec-Format)
-- [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)
-- [URL Hint Protocol](URL-Hint-Protocol)
-- [NatSpec Determination](NatSpec-Determination)
-- [Network Status](Network-Status)
-- [Raspberry Pi](Raspberry-Pi-instructions)
-- [Exchange Integration](Exchange-Integration)
-- [Mining](Mining)
-- [Licensing](Licensing)
-- [Consortium Chain Development](Consortium-Chain-Development)
 
 
 ## ÐΞV Technologies
