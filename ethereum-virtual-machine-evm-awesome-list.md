@@ -1,4 +1,4 @@
-<!-- TITLE: Ethereum Virtual Machine EVM Awesome List -->
+<!-- TITLE: Ethereum Virtual Machine (EVM) Awesome List -->
 <!-- SUBTITLE:A list about the Ethereum Virtual Machine using the Awesome format. -->
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
