@@ -26,7 +26,7 @@ This is the community maintained wiki covering all sorts of information on the n
 | [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** |
 | [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** |
 | [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** |
-| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf), [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |
+| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction) |
 | [Glossary](Glossary) |
 
