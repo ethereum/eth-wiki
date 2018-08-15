@@ -1,5 +1,5 @@
 <!-- TITLE: Ethereum Introduction -->
-<!-- A decentralized, self-contained economy for transactional computation and related data. -->
+<!-- SUBTITLE: A decentralized, self-contained economy for transactional computation and related data. -->
 
 ![Ethereum Homestead gold ingots](https://sustergy.files.wordpress.com/2017/05/ethereum-homestead-background-17.jpg?w=1000)
 
