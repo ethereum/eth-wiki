@@ -17,7 +17,7 @@ This is the community maintained wiki covering all sorts of information on the n
 -----
 
 
-### Basics
+## Basics
 - [Home](/)
 - [Ethereum Whitepaper](White-Paper)
 - [Ethereum Introduction](Ethereum-introduction)
@@ -30,7 +30,7 @@ This is the community maintained wiki covering all sorts of information on the n
 - [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction)
 - [Glossary](Glossary)
 
-### R&D
+## R&D
 
 - [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)
 - [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs).
@@ -41,7 +41,7 @@ This is the community maintained wiki covering all sorts of information on the n
 - **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)**
 - **[ÐApp Development](%C3%90App-Development)**
 
-### Infrastructure
+## Infrastructure
 - [Chain Spec Format](Ethereum-Chain-Spec-Format)
 - [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)
 - [URL Hint Protocol](URL-Hint-Protocol)
@@ -54,7 +54,7 @@ This is the community maintained wiki covering all sorts of information on the n
 - [Consortium Chain Development](Consortium-Chain-Development)
 
 
-**[ÐΞV Technologies](%C3%90%CE%9EV-Technologies)**
+## ÐΞV Technologies
 - [RLP Encoding](RLP)
 - [Node Discovery Protocol](Node-discovery-protocol)
 - [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol)
@@ -62,7 +62,7 @@ This is the community maintained wiki covering all sorts of information on the n
 - [Web3 Secret Storage](Web3-Secret-Storage-Definition)
 - [libp2p](https://libp2p.io/)
 
-**Ethereum Technologies**
+## Ethereum Technologies
 - [Patricia Tree](Patricia-Tree)
 - [Wire protocol](Ethereum-Wire-Protocol)
 - [Light client protocol](Light-client-protocol)
@@ -73,13 +73,13 @@ This is the community maintained wiki covering all sorts of information on the n
 - [Bad Block Reporting](Bad-Block-Reporting)
 - [Bad Chain Canary](Bad-Chain-Canary)
 
-**Ethash/Dashimoto**
+## Ethash/Dashimoto
 - [Ethash](Ethash)
 - [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J)
 - [Ethash C API](Ethash-C-API)
 - [Ethash DAG](Ethash-DAG)
 
-**[Whisper](Whisper-pages)**
+# Whisper
 - [Whisper Proposal](Whisper)
 - [Whisper Overview](Whisper-Overview)
 - [PoC-1 Wire protocol](Whisper-Wire-Protocol)
