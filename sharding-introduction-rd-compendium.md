@@ -1,4 +1,4 @@
-<!-- TITLE: Sharding Introduction Rd Compendium -->
+<!-- TITLE: Sharding Introduction R&D Compendium -->
 <!-- SUBTITLE: Sharding is the planned scaling approach for Ethereum; work is in progress on R&D. -->
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
