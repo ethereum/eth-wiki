@@ -13,7 +13,7 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 
 | Basics  	|   R&D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
-| [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R%26D-compendium),<br/>[FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	| [Chain Spec Format](Ethereum-Chain-Spec-Format)  	|   	|   	|
+| [Home](/)  	| [Sharding introduction & R&D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	| [Chain Spec Format](Ethereum-Chain-Spec-Format)  	|   	|   	|
 |  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs) 	| [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)  		|
 | [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|
 | [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | [Network Status](Network-Status) |
