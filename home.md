@@ -22,7 +22,7 @@ This is the community maintained wiki covering all sorts of information on the n
 |---	|---	|---	|---	|---	|
 | [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	| [Chain Spec Format](Ethereum-Chain-Spec-Format)  	|   	|   	|
 |  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs) 	| [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)  		|
-| [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|
+| [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, <br/> economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|
 | [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | [Network Status](Network-Status) |
 | [Getting Ether](Getting-Ether) | [Governance](Governance-compendium) | [Raspberry Pi](Raspberry-Pi-instructions) |
 | [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** | [Exchange Integration](Exchange-Integration) |
