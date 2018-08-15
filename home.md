@@ -21,7 +21,14 @@ This is the community maintained wiki covering all sorts of information on the n
 | [Home](/)  	| [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	|   	|   	|   	|
 |  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs). 	|   	|   	|   	|
 | [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	|   	|   	|   	|
-| | [Hard Problems of Cryptocurrency](Problems) | | |
+| [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | | |
+| [Getting Ether](Getting-Ether) |
+| [Releases](Releases) |
+| [FAQs](FAQs) |
+| [Design Rationale](Design-Rationale) | 
+| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf), [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |
+| [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction) |
+| [Glossary](Glossary) |
 
 ## Basics
 - [Home](/)
