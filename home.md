@@ -43,38 +43,6 @@ This is the community maintained wiki covering all sorts of information on the n
 | |  [Bad Chain Canary](Bad-Chain-Canary) |
 
 
-## ÐΞV Technologies
-- [RLP Encoding](RLP)
-- [Node Discovery Protocol](Node-discovery-protocol)
-- [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol)
-- [ÐΞVp2p Whitepaper](libp2p-Whitepaper) (WiP)
-- [Web3 Secret Storage](Web3-Secret-Storage-Definition)
-- [libp2p](https://libp2p.io/)
-
-## Ethereum Technologies
-- [Patricia Tree](Patricia-Tree)
-- [Wire protocol](Ethereum-Wire-Protocol)
-- [Light client protocol](Light-client-protocol)
-- [Subtleties](Subtleties)
-- [Solidity Documentation](https://solidity.readthedocs.io/en/latest/)
-- [NatSpec Format](Ethereum-Natural-Specification-Format)
-- [Contract ABI](Ethereum-Contract-ABI)
-- [Bad Block Reporting](Bad-Block-Reporting)
-- [Bad Chain Canary](Bad-Chain-Canary)
-
-## Ethash/Dashimoto
-- [Ethash](Ethash)
-- [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J)
-- [Ethash C API](Ethash-C-API)
-- [Ethash DAG](Ethash-DAG)
-
-# Whisper
-- [Whisper Proposal](Whisper)
-- [Whisper Overview](Whisper-Overview)
-- [PoC-1 Wire protocol](Whisper-Wire-Protocol)
-- [PoC-2 Wire protocol](Whisper-PoC-2-Wire-Protocol)
-- [PoC-2 Whitepaper](Whisper-PoC-2-Protocol-Spec)
-
 -----
 ## Issues and pull requests
 
