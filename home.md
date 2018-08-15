@@ -30,6 +30,8 @@ This is the community maintained wiki covering all sorts of information on the n
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) |
 | [Glossary](Glossary) |
 
+
+<div align="center">
 | ÐΞV Technologies  	|   Ethereum Technologies	| Ethash/Dashimoto |  Whisper |
 |---	|---	|---	|---	|---	|--- |
 | [RLP Encoding](RLP) | [Patricia Tree](Patricia-Tree) | [Ethash](Ethash) | [Whisper Proposal](Whisper) |
@@ -41,7 +43,7 @@ This is the community maintained wiki covering all sorts of information on the n
 | | [Contract ABI](Ethereum-Contract-ABI) | 
 | | [Bad Block Reporting](Bad-Block-Reporting) | 
 | |  [Bad Chain Canary](Bad-Chain-Canary) |
-
+</div>
 
 -----
 ## Issues and pull requests
