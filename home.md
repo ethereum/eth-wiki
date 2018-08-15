@@ -13,8 +13,10 @@ All of these pages can be edited via the web-interface.  You can also submit Pul
 
 This is the community maintained wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
+----
 
------
+<div align="center">
+
 
 | Basics  	|   R&D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
@@ -30,8 +32,8 @@ This is the community maintained wiki covering all sorts of information on the n
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) |
 | [Glossary](Glossary) |
 
+<br/>
 
-<div align="center">
 
 | ÐΞV Technologies  	|   Ethereum Technologies	| Ethash/Dashimoto |  Whisper |
 |---	|---	|---	|---	|---	|--- |
