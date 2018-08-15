@@ -85,21 +85,12 @@ See [here](Clients).
 * http://ethdocs.org/en/latest/. The Homestead Guide (a historical reference, parts may be outdated).
 * http://tokenengineering.net/
 * https://wiki.giveth.io/
-
-## Status / Releases / Development timeline / Roadmap
-
-See [here](Releases).
-
-## Don't get lost, If so look for the lost and found
-
-If you have any question, check the [FAQS](FAQS) and [Glossary](https://github.com/ethereum/wiki/wiki/Glossary).
-
-There are separate wikis for some implementations, as follows:
-
 * [go-ethereum](https://github.com/ethereum/go-ethereum/wiki)
-* [Parity](https://paritytech.github.io/wiki/)
 * [cpp-ethereum](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/index.html)
 * [pyethereum](https://github.com/ethereum/pyethereum/wiki)
+* [Parity](https://paritytech.github.io/wiki/)
 
 
+## If you get lost
 
+Check the [FAQ](FAQ) and [Glossary](Glossary).
