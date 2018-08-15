@@ -1,4 +1,4 @@
-<!-- TITLE: Decentralized Apps Dapps -->
+<!-- TITLE: Decentralized Apps (Dapps) -->
 <!-- SUBTITLE: Introduces and lists Ethereum dapps. -->
 
 <!--To get to the end of the active dapp list, CTRL+F EOADL.-->
