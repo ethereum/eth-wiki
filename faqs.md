@@ -1,4 +1,4 @@
-<!-- TITLE: FAQs -->
+<!-- TITLE: FAQ -->
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
