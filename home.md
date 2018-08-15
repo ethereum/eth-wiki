@@ -7,10 +7,8 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
-----
 
 <div align="center">
-
 
 | Basics  	|   R&D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
@@ -26,7 +24,6 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) |
 | [Glossary](Glossary) |
 
-<br/>
 
 
 | ÐΞV Technologies  	|   Ethereum Technologies	| Ethash/Dashimoto |  Whisper |
@@ -43,7 +40,7 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 
 </div>
 
------
+
 
 ## Issues and pull requests
 
