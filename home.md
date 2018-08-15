@@ -17,7 +17,7 @@ This is the community maintained wiki covering all sorts of information on the n
 -----
 
 
-**Basics**
+### Basics
 - [Home](/)
 - [Ethereum Whitepaper](White-Paper)
 - [Ethereum Introduction](Ethereum-introduction)
@@ -30,21 +30,18 @@ This is the community maintained wiki covering all sorts of information on the n
 - [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) (still a good introduction)
 - [Glossary](Glossary)
 
-**[R&D](R&D)**
+### R&D
 
 - [Sharding introduction & R&D Compendium](Sharding-introduction-R&D-compendium), [FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)
 - [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs).
 - [Alternative blockchains, randomness, economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)
 - [Hard Problems of Cryptocurrency](Problems)
 - [Governance](Governance-compendium)
+- **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)**
+- **[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)**
+- **[ÐApp Development](%C3%90App-Development)**
 
-**[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)**
-
-**[Ethereum clients, tools, wallets, dapp browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)**
-
-**[ÐApp Development](%C3%90App-Development)**
-
-**Infrastructure**
+### Infrastructure
 - [Chain Spec Format](Ethereum-Chain-Spec-Format)
 - [Inter-exchange Client Address Protocol](ICAP:-Inter-exchange-Client-Address-Protocol)
 - [URL Hint Protocol](URL-Hint-Protocol)
