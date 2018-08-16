@@ -18,10 +18,10 @@ Other versions: [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.et
 | [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|
 | [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | [Network Status](Network-Status) |
 | [Getting Ether](Getting-Ether) | [Governance](Governance-compendium) | [Raspberry Pi](Raspberry-Pi-instructions) |
-| [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** | [Exchange Integration](Exchange-Integration) |
-| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Mining](Mining) |
-| [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** | [Licensing](Licensing) |
-| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) | [Consortium Chain Development](Consortium-Chain-Development) | [URL Hint Protocol](URL-Hint-Protocol)  |
+| [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** | [Mining](Mining) |
+| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](Licensing) |
+| [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** | [URL Hint Protocol](URL-Hint-Protocol) |
+| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) | [Consortium Chain Development](Consortium-Chain-Development) | 
 | [Wiki for (old) website](https://github.com/ethereum/ethereum.org/wiki) |
 | [Glossary](Glossary) |
 
