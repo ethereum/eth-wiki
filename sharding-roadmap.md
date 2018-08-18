@@ -15,8 +15,6 @@ Sourced originally from the now [retired spec for phase 1 sharding](https://ethr
    * For more details, see [implementations](Sharding-introduction-R&D-compendium#implementations), e.g. [Drops of Diamond's phase 1 project](https://github.com/Drops-of-Diamond/diamond_drops/projects/1).
 
 ### <strong>Phase 2</strong>: EVM state transition function
-   * Full nodes only
-   * Asynchronous cross-contract calls only
    * [Account abstraction](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-101.md)
    * [eWASM](https://github.com/ewasm/design)
    * Archive accumulators: https://ethresear.ch/t/history-state-and-asynchronous-accumulators-in-the-stateless-model/287 and https://ethresear.ch/t/batching-and-cyclic-partitioning-of-logs/536 and https://ethresear.ch/t/double-batched-merkle-log-accumulator/571
