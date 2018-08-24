@@ -1,4 +1,3 @@
-.. _mining:
 
 ********************************************************************************
 Mining
@@ -380,39 +379,17 @@ Mining pools are cooperatives that aim to smooth out expected revenue by pooling
 Mining pools
 --------------------------------------------------------------------
 
-* `coinotron`_
-* `nanopool`_
-* `ethpool`_ - Predictable solo mining, unconventional payout scheme, affiliated with `etherchain\.org`_.
-* `supernova`_
-* `coinmine.pl`_
-* `eth.pp.ua`_
-* `talkether`_ - Unconventional payout scheme, partially decentralized
-* `weipool`_
-* `ethereumpool`_
-* `pooleum`_
-* `alphapool`_
-* `cryptopool`_
-* `unitedminers`_
-* `2miners`_
-* `dwarfpool`_ - Try to avoid this (currently over 50% of the network)
-* `laintimes <http://pool.laintimes.com/>`_ - Discontinued
 
 .. _Ethpool: https://github.com/etherchain-org/ethpool-core
 .. _Ethpool source: https://github.com/etherchain-org/ethpool-core
 .. _ethereumpool: https://ethereumpool.co/
 .. _nanopool: http://eth.nanopool.org/
-.. _pooleum: http://www.pooleum.com
-.. _alphapool: http://www.alphapool.xyz/
 .. _dwarfpool: http://dwarfpool.com/eth
-.. _talkether: http://talkether.org/
 .. _weipool: http://weipool.org/
 .. _supernova: https://eth.suprnova.cc/
 .. _coinmine.pl: https://www2.coinmine.pl/eth/
-.. _eth.pp.ua:  https://eth.pp.ua/
 .. _coinotron: https://www.coinotron.com/
 .. _etherchain.org: https://etherchain.org/
-.. _unitedminers: http://eth.unitedminers.cloud/
-.. _cryptopool: http://ethereum.cryptopool.online/
 .. _2miners: https://2miners.com/
 
 
