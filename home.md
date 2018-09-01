@@ -31,9 +31,9 @@ This is the community wiki covering all sorts of information on the next-generat
 |---	|---	|---	|---	|---	|--- |
 | [RLP Encoding](RLP) | [Patricia Tree](Patricia-Tree) | [Ethash](Ethash) | [Whisper Proposal](Whisper) |
 | [Node Discovery Protocol](Node-discovery-protocol) |  [Wire protocol](Ethereum-Wire-Protocol) | [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) | [Whisper Overview](Whisper-Overview) |
-| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol) | [Light client protocol](Light-client-protocol) |  | [PoC-1 Wire protocol](Whisper-Wire-Protocol) |
+| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol) | [Light client protocol](Light-client-protocol) | [PoC-2 Whitepaper](Whisper-PoC-2-Protocol-Spec) | [PoC-1 Wire protocol](Whisper-Wire-Protocol) |
 | [ÐΞVp2p Whitepaper](libp2p-Whitepaper) (WiP)  | [Subtleties](Subtleties) | | [PoC-2 Wire protocol](Whisper-PoC-2-Wire-Protocol) |
-| [Web3 Secret Storage](Web3-Secret-Storage-Definition) | [Solidity Documentation](https://solidity.readthedocs.io/en/latest/) | [PoC-2 Whitepaper](Whisper-PoC-2-Protocol-Spec) |
+| [Web3 Secret Storage](Web3-Secret-Storage-Definition) | [Solidity Documentation](https://solidity.readthedocs.io/en/latest/) |  |
 | [libp2p](https://libp2p.io/) | [NatSpec Format](Ethereum-Natural-Specification-Format) |
 | | [Contract ABI](Ethereum-Contract-ABI) | 
 | | [Bad Block Reporting](Bad-Block-Reporting) | 
