@@ -4,7 +4,7 @@
 Prior information is available on the [releases](/releases) page.
 
 # Constantinople
-Constantinople is planned for Q1 of 2019, although no date has been set.
+Constantinople is planned for Q1 of 2019. Planned date is January 16th, 2019, 12:00pm UTC.
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
