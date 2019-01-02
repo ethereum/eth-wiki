@@ -20,6 +20,10 @@ _Note: listed Github threads for items that are still listed as Draft_
 ## Useful Reading
 * [September 2018 Coindesk article](https://www.coindesk.com/constantinople-ahead-what-you-need-to-know-about-ethereums-big-upgrade)
 
+# Istanbul
+Istanbul is planned for Q4 of 2019. Planned date is October 16th, 2019, 12:00pm UTC.
+
+_Note: proposals are not discussed yet._
 # ETH 1.x
 There are a variety of proposals for what is now known as ETH 1.x -- a series of upgrades to add features in support of the full ETH2 specs. These are all at the proposal / discussion stage, without any of them having been turned into EIPs.
 
