@@ -4,7 +4,7 @@
 |Client Name|Organization|Programming Language|License|
 |---|---|---|---|
 |[Geth](https://github.com/ethereum/go-ethereum)|Ethereum Foundation|Go|GPLv3|
-|[Parity Ethereum](https://github.com/paritytech/parity-ethereum)|Parity|Rust|GPLv3[^paritylicense]|
+|[Parity Ethereum](https://github.com/paritytech/parity-ethereum)|Parity|Rust|GPLv3|
 |[Aleth](https://github.com/ethereum/aleth)|Ethereum Foundation|C++|GPLv3|
 |[EthereumJ + Harmony](https://github.com/ethereum/ethereumj)|Ethereum Foundation / EtherCamp|Java|L/GPLv3|
 |[Trinity](https://trinity.ethereum.org/)|Ethereum Foundation|Python|MIT|
@@ -18,6 +18,3 @@ Sourced from the [Constantinople Progress Tracker](https://github.com/ethereum/p
 See also:
 * [older list of client tools, dapp browsers, wallets, and other projects](/clients-tools-dapp-browsers-wallets-and-other-projects)
 * [ETH2 Clients](/eth2/clients) - Beacon Chain implementations to date
-
-
-[^paritylicense]: Parity can offer alternately licensed versions of the codebase.
