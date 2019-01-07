@@ -10,3 +10,6 @@ Afri proposed the [following schedule on the Jan 4th All Core Devs call](https:/
 * 2019-08-14 (Wed) projected date for testnet-hardfork (Ropsten, Görli, or ad-hoc testnet)
 * 2019-10-16 (Wed) projected date for mainnet-hardfork (“Istanbul”)
 
+# Proposals
+_None, currently. Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
+
