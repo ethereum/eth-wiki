@@ -3,6 +3,8 @@
 
 Prior information is available on the [releases](/releases) page.
 
+The formal process of hardforks is documented in [EIP 233](https://eips.ethereum.org/EIPS/eip-233), along with some recent discussion on [EthMagicians](https://ethereum-magicians.org/t/eep-5-ethereum-hardfork-process-request-for-collaboration/2305).
+
 # Constantinople
 Constantinople is planned for Q1 of 2019. Planned date is January 16th, 2019, 12:00pm UTC.
 
