@@ -8,7 +8,7 @@
 | JSON-RPC API | [ethereum/wiki](https://github.com/ethereum/wiki/wiki/JSON-RPC) | [bitpshr](https://github.com/bitpshr) (proposed) | See footnote [^jsonrpc] |
 | Contract ABIs | [ethereum/wiki](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) | | |
 | Interfaces Repo | [ethereum/interfaces](https://github.com/ethereum/interfaces) | | |
-| Light Ethereum Subprotocol (LES) | [ethereum/wiki](https://github.com/ethereum/wiki/wiki/Light-client-protocol) | | |
+| Light Ethereum Subprotocol (LES) | [Light-client-protocol](Light-client-protocol) | | |
 | Whisper | [go-ethereum/wiki](https://github.com/ethereum/go-ethereum/wiki/Whisper-Overview )
 | Swarm | [go-ethereum/2959](https://github.com/ethereum/go-ethereum/pull/2959) - | | |
 
