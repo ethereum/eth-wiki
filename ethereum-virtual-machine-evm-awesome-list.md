@@ -39,6 +39,8 @@ Here is [how to contribute](./contributing.md).
 
 * [Yellow Paper](https://github.com/ethereum/yellowpaper)
     - A terse specification of EVM and Ethereum blocks
+* [JelloPaper](https://jellopaper.org/)
+   - Human Readable Semantics of EVM in K
 * [Trail of Bits EVM Opcodes and Instruction Reference](https://github.com/trailofbits/evm-opcodes)
 * [EtherVM](https://ethervm.io)
    - Low level reference for the EVM and opcode reference
