@@ -13,8 +13,11 @@
 |[Nethermind](https://github.com/tkstanczak/nethermind)|Nethermind|C# / .NET Core|MIT|
 |[Pantheon](https://github.com/PegaSysEng/pantheon/)|PegaSys|Java|Apache 2.0|
 
-Sourced from the [Constantinople Progress Tracker](https://github.com/ethereum/pm/wiki/Constantinople-Progress-Tracker)
+Sourced from the [Constantinople Progress Tracker](https://github.com/ethereum/pm/wiki/Constantinople-Progress-Tracker).
 
-See also an [older list of client tools, dapp browsers, wallets, and other projects](/clients-tools-dapp-browsers-wallets-and-other-projects).
+See also:
+* [older list of client tools, dapp browsers, wallets, and other projects](/clients-tools-dapp-browsers-wallets-and-other-projects)
+* [ETH2 Clients](/eth2/clients) - Beacon Chain implementations to date
+
 
 [^paritylicense]: Parity can offer alternately licensed versions of the codebase.
