@@ -1,5 +1,5 @@
 <!-- TITLE: Istanbul -->
-<!-- SUBTITLE: October 2019 Planned Ethereum Hardfork -->
+<!-- SUBTITLE: October 2019 Planned Ethereum Network Upgrade -->
 
 # Timelines
 Afri proposed the [following schedule on the Jan 4th All Core Devs call](https://github.com/ethereum/pm/issues/66#issuecomment-450840440) where it was provisionally accepted. That same thread has a lot of push for [ProgPoW](https://github.com/ifdefelse/ProgPOW), an ASIC resistant mining algorithm change. There is ongoing discussion about a pre-Istanbul hardfork to include this.
