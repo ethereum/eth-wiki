@@ -10,11 +10,8 @@ Constantinople is planned for Q1 of 2019. Planned date is January 16th, 2019, 12
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
-	* [Github thread](https://github.com/ethereum/EIPs/pull/1226)
-	* [EthMagicians](https://ethereum-magicians.org/t/eip-1052-extcodehash-opcode/262)
 * [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps
 * [EIP 1014](https://eips.ethereum.org/EIPS/eip-1014) Skinny CREATE2
-	* [Github thread](https://github.com/ethereum/EIPs/pull/1014)
 * [EIP 1234](https://eips.ethereum.org/EIPS/eip-1234) Constantinople Difficulty Bomb Delay and Block Reward Adjustment
 
 _Note: listed Github threads for items that are still listed as Draft_
