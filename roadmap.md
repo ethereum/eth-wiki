@@ -22,6 +22,7 @@ _Note: listed Github threads for items that are still listed as Draft_
 ## Useful Reading
 * [Sep 2018 Coindesk article](https://www.coindesk.com/constantinople-ahead-what-you-need-to-know-about-ethereums-big-upgrade)
 * [Jan 2019 /u/cartercarlson summary from /r/ethereum](https://www.reddit.com/r/ethereum/comments/abv70c/heres_a_summary_of_the_constantinople_update/)
+* [Jan 2019 Ethereum Foundation Blog](https://blog.ethereum.org/2019/01/11/ethereum-constantinople-upgrade-announcement/)
 
 # Istanbul
 Istanbul is planned for Q4 of 2019. Planned date is October 16th, 2019, 12:00pm UTC.
