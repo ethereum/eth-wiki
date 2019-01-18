@@ -13,5 +13,6 @@
 |[Lighthouse](https://github.com/sigp/lighthouse)|Sigma Prime|Rust|GPLv2|
 |[Nimbus](https://github.com/status-im/nimbus)|Status|Nim|Apache 2.0 / MIT|
 |[Trinity](https://github.com/ethereum/beacon_chain)|Ethereum Foundation|Python|MIT|
+|[Yeeth](https://github.com/yeeth/BeaconChain.swift)|ZK Labs|Swift|GPLv3|
 
 Learn more about the [ETH2 organizations on EthHub](https://github.com/ethhub-io/ethhub/tree/master/ethereum-roadmap/serenity-phases/eth2-teams).
