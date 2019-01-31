@@ -15,4 +15,7 @@
 |[Trinity](https://github.com/ethereum/beacon_chain)|Ethereum Foundation|Python|MIT|
 |[Yeeth](https://github.com/yeeth/BeaconChain.swift)|ZK Labs|Swift|GPLv3|
 
-Learn more about the [ETH2 organizations on EthHub](https://github.com/ethhub-io/ethhub/tree/master/ethereum-roadmap/serenity-phases/eth2-teams).
+See also:
+
+* Learn more about the [ETH2 organizations on EthHub](https://github.com/ethhub-io/ethhub/tree/master/ethereum-roadmap/serenity-phases/eth2-teams)
+* A [list of ETH1 clients](/eth1/clients) is also maintained on this wiki
