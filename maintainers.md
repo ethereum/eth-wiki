@@ -5,7 +5,7 @@ The [wiki home page](/) has links to some of these items. The purpose of this pa
 
 | Component | Specification	| Maintainers | Notes |
 |---|---|---|---|
-| Ethereum Virtual Machine (EVM) - specification for processing smart contract code at the core of Ethereum | [Yellow Paper ethereum/yellowpaper](https://github.com/ethereum/yellowpaper) & JelloPaper[^jellopaper] | [nicksavers](https://github.com/nicksavers)[^yellowpapermaintainer] | See local wiki page [EVM Awesome List](ethereum-virtual-machine-evm-awesome-list) for additional resources |
+| Ethereum Virtual Machine (EVM) - specification for processing smart contract code at the core of Ethereum | [Yellow Paper ethereum/yellowpaper](https://github.com/ethereum/yellowpaper) & [JelloPaper](https://jellopaper.org)[^jellopaper] | [nicksavers](https://github.com/nicksavers)[^yellowpapermaintainer] | See local wiki page [EVM Awesome List](ethereum-virtual-machine-evm-awesome-list) for additional resources |
 | DevP2P - peer-to-peer networking protocols used by Ethereum | [ethereum/devp2p](https://github.com/ethereum/devp2p/) | [subtly](https://github.com/subtly), [Felix Lange](https://github.com/fjl) |
 | JSON-RPC API - middleware interface used to talk to Ethereum nodes | [ethereum/wiki](https://github.com/ethereum/wiki/wiki/JSON-RPC) | [bitpshr](https://github.com/bitpshr) (proposed) | See footnote [^jsonrpc] |
 | Contract ABIs | [solidity docs](https://solidity.readthedocs.io/en/develop/abi-spec.html)| UNKNOWN | See local wiki page [Ethereum-Contract-ABI](Ethereum-Contract-ABI) |
