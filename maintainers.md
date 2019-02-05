@@ -5,7 +5,7 @@ The [wiki home page](/) has links to some of these items. The purpose of this pa
 
 | Component | Specification	| Maintainers | Notes |
 |---|---|---|---|
-| Ethereum Virtual Machine (EVM) - specification for processing smart contract code at the core of Ethereum | [Yellow Paper ethereum/yellowpaper](https://github.com/ethereum/yellowpaper) | UNKNOWN[^yellowpapermaintainer] | See local wiki page [EVM Awesome List](ethereum-virtual-machine-evm-awesome-list) for additional resources |
+| Ethereum Virtual Machine (EVM) - specification for processing smart contract code at the core of Ethereum | [Yellow Paper ethereum/yellowpaper](https://github.com/ethereum/yellowpaper) & JelloPaper[^jellopaper] | [nicksavers](https://github.com/nicksavers)[^yellowpapermaintainer] | See local wiki page [EVM Awesome List](ethereum-virtual-machine-evm-awesome-list) for additional resources |
 | DevP2P - peer-to-peer networking protocols used by Ethereum | [ethereum/devp2p](https://github.com/ethereum/devp2p/) | [subtly](https://github.com/subtly), [Felix Lange](https://github.com/fjl) |
 | JSON-RPC API - middleware interface used to talk to Ethereum nodes | [ethereum/wiki](https://github.com/ethereum/wiki/wiki/JSON-RPC) | [bitpshr](https://github.com/bitpshr) (proposed) | See footnote [^jsonrpc] |
 | Contract ABIs | [solidity docs](https://solidity.readthedocs.io/en/develop/abi-spec.html)| UNKNOWN | See local wiki page [Ethereum-Contract-ABI](Ethereum-Contract-ABI) |
@@ -16,5 +16,7 @@ The [wiki home page](/) has links to some of these items. The purpose of this pa
 
 [^jsonrpc]: The JSON-RPC spec is stale / unmaintained. There is an [EIP 1474 to have a canonical specification](https://github.com/ethereum/EIPs/pull/1474), and some work to have a separate spec repo here [ethereum-json-rpc-spec](https://github.com/spadebuilders/ethereum-json-rpc-spec). [bitpshr](https://github.com/bitpshr) has volunteered to be a maintainer.
 
-[^yellowpapermaintainer]: See [EthMagicians discussion](https://ethereum-magicians.org/t/yellow-paper-maintainership/819) and [issue #725 in the ethereum/yellowpaper repo](https://github.com/ethereum/yellowpaper/issues/725)
+[^yellowpapermaintainer]: See [issue #725 in the ethereum/yellowpaper repo](https://github.com/ethereum/yellowpaper/issues/725)
+
+[^jellopaper]: The [Jello Paper](https://jellopaper.org) is "is an attempt at defining the EVM semantics using the [KEVM project](https://github.com/kframework/evm-semantics)". There is an [EthMagicians discussions about making the Jello Paper the canonical version](https://ethereum-magicians.org/t/jello-paper-as-canonical-evm-spec/2389).
 
