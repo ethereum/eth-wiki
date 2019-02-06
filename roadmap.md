@@ -32,6 +32,9 @@ There are a variety of proposals for what is now known as ETH 1.x -- a series of
 
 The [EthMagicians ETH 1.x Ring](https://ethereum-magicians.org/c/working-groups/ethereum-1-x-ring) has more discussions.
 
+## Meetings
+* 2019-02-06 ETH1x Roadmap AMA [notes & video on EthMagicians](https://ethereum-magicians.org/t/eth-roadmap-ama-webinar-feb-6th-8am-pst-1700-utc-1/2518)
+
 ## Storage Rent / Pruning
 
 Problem: on chain storage can't be stored forever. Introduce rent, archiving, pruning, or a variety of other methods to minimize live state storage.
