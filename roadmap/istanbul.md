@@ -16,3 +16,6 @@ Afri proposed the [following schedule on the Jan 4th All Core Devs call](https:/
 
 _None, currently. Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
+# Discussion
+* [Timing for in person meeting before May 17th hard deadline for proposals. April?](https://ethereum-magicians.org/t/eth1x-istanbul-prep-meeting/2396)
+
