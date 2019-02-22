@@ -6,15 +6,13 @@ Prior information is available on the [releases](/releases) page.
 The formal process of hardforks is documented in [EIP 233](https://eips.ethereum.org/EIPS/eip-233), along with some recent discussion on [EthMagicians](https://ethereum-magicians.org/t/eep-5-ethereum-hardfork-process-request-for-collaboration/2305).
 
 # Constantinople
-Constantinople is planned for Q1 of 2019. Planned date is January 16th, 2019, 12:00pm UTC.
+Constantinople is planned for Q1 of 2019. Planned date was originally January 16th, 2019, 12:00pm UTC. Now will activate February 25th, 2019, at the same time as [Petersburgh](/roadmap/petersburgh), which de-activates EIP-1283.
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
-* [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps
+* ~~[EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps~~
 * [EIP 1014](https://eips.ethereum.org/EIPS/eip-1014) Skinny CREATE2
 * [EIP 1234](https://eips.ethereum.org/EIPS/eip-1234) Constantinople Difficulty Bomb Delay and Block Reward Adjustment
-
-_Note: listed Github threads for items that are still listed as Draft_
 
 ## Useful Reading
 * [Sep 2018 Coindesk article](https://www.coindesk.com/constantinople-ahead-what-you-need-to-know-about-ethereums-big-upgrade)
