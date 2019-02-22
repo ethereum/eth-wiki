@@ -9,3 +9,4 @@ There is a lot of discussion around what it enables, and how it compares to the 
 
 * [ConsenSys Diligence CREATE2 FAQ](https://medium.com/consensys-diligence/smart-contract-security-newsletter-16-create2-faq-b641405044bf)
 * [EthMagicians Discussion](https://ethereum-magicians.org/t/potential-security-implications-of-create2-eip-1014/2614)
+* [Solidity CREATE2 example by Miguel Mota](https://github.com/miguelmota/solidity-create2-example)
