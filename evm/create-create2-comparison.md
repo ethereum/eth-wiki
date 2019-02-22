@@ -4,6 +4,8 @@ The CREATE2 is scheduled to be part of the [Constantinople](https://en.ethereum.
 
 There is a lot of discussion around what it enables, and how it compares to the CREATE opcode it improves on. This page will bring together the documentation in one place.
 
-## See Also
 
+## Useful Reading
+
+* [ConsenSys Diligence CREATE2 FAQ](https://medium.com/consensys-diligence/smart-contract-security-newsletter-16-create2-faq-b641405044bf)
 * [EthMagicians Discussion](https://ethereum-magicians.org/t/potential-security-implications-of-create2-eip-1014/2614)
