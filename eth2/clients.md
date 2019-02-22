@@ -17,5 +17,5 @@
 
 See also:
 
-* Learn more about the [ETH2 organizations on EthHub](https://github.com/ethhub-io/ethhub/tree/master/ethereum-roadmap/serenity-phases/eth2-teams)
+* Learn more about the [ETH2 organizations on EthHub](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth2.0-teams/teams-building-eth2.0)
 * A [list of ETH1 clients](/eth1/clients) is also maintained on this wiki
