@@ -27,3 +27,6 @@ Some of these are full clients to connect to alternate and/or private Ethereum-b
 |[Hyperledger Burrow](https://github.com/hyperledger/burrow)|Hyperledger|Go|Apache 2.0||
 |[Enclave ready EVM - eEVM](https://github.com/microsoft/eevm)|Microsoft|C++|MIT|Designed to be used with Trusted Computing eg. SGX enclaves; no gas counting implemented|
 
+### Discussions
+
+* @bmann is researching how EVM implementations track compatibility -- do they have their own specs? Do they point at the EIPs repo? Refer to Yellow Paper? [Please join the discussion on EthMagicians](https://ethereum-magicians.org)
