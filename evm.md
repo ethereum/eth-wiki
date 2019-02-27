@@ -1,7 +1,11 @@
-<!-- TITLE: Ethereum Virtual Machine (EVM) Awesome List -->
-<!-- SUBTITLE:A list about the Ethereum Virtual Machine using the Awesome format. -->
+<!-- TITLE: Ethereum Virtual Machine (EVM) -->
+<!-- SUBTITLE: Landing page for everything EVM related -->
 
-[![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
+You can browse [all EVM pages](/evm/all), and here are selected top picks:
+
+* [List of EVM implementations](/evm/implementations)
+
+## EVM Awesome List
 
 > A list about the Ethereum Virtual Machine using the Awesome format.
 
