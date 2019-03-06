@@ -14,7 +14,9 @@ Afri proposed the [following schedule on the Jan 4th All Core Devs call](https:/
 # Proposals
 [EIP 1679](https://eips.ethereum.org/EIPS/eip-1679) is the Istanbul Hardfork tracking Meta EIP.
 
-_None, currently. Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
+* [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations.
+
+_Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
 # Discussion
 
