@@ -16,6 +16,7 @@ Afri proposed the [following schedule on the Jan 4th All Core Devs call](https:/
 
 * [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations.
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
+* [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
