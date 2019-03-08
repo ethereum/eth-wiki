@@ -4,6 +4,10 @@
 # EIPs Repo + Website
 The Ethereum Improvement Proposal -- aka EIPs -- repo is at https://github.com/ethereum/EIPs. It contains the source code for a Jekyll website which is generated whenever files are committed. The generated website is at https://eips.ethereum.org
 
+* Get help in the Gitter channel https://gitter.im/ethereum/EIPs
+
+---
+
 - Who owns / runs the Travis CI account?
 - Is the website hosted on Github Pages?
 
