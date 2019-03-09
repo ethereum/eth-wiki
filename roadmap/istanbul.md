@@ -2,7 +2,7 @@
 <!-- SUBTITLE: October 2019 Planned Ethereum Network Upgrade -->
 
 # Timelines
-Afri proposed the [following schedule on the Jan 4th All Core Devs call](https://github.com/ethereum/pm/issues/66#issuecomment-450840440) where it was provisionally accepted. That same thread has a lot of push for [ProgPoW](https://github.com/ifdefelse/ProgPOW), an ASIC resistant mining algorithm change. There is ongoing discussion about a pre-Istanbul hardfork to include this.
+Afri proposed the [following schedule on the Jan 4th All Core Devs call](https://github.com/ethereum/pm/issues/66#issuecomment-450840440) where it was provisionally accepted.
 
 * 2019-01-16 (Wed) projected date for mainnet network upgrade ([“Constantinople”](/roadmap#constantinople))
 	* Note: updated dates / links re: Constantinople re-schedule to 2019-02-27 need to be included (aka ["Petersburg"](/roadmap/petersburg))
