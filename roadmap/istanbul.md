@@ -23,11 +23,9 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 # Discussion
 
-## Proposed: In Person ETH1x April Meeting
+## Confirmed: In Person ETH1x Meeting, April 17th & 18th, Berlin
 
-Being organized for April 17th & 18th. Links to invites and other details TBD.
-
-Original thread: [Timing for in person meeting before May 17th hard deadline for proposals. April?](https://ethereum-magicians.org/t/eth1x-istanbul-prep-meeting/2396)
+All details on the [EthMagicians forum](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899).
 
 ## Proposed: Security Review Period
 Should we add a security review period? Let's say 4 weeks needed minimum once people responsible for review have the EIPs available, so maybe 2019-06-21 for first security review / reports? [Discuss on EthMagicians](https://ethereum-magicians.org/t/security-review-period-for-hardfork-roadmap/2721)
