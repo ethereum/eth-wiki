@@ -11,7 +11,7 @@ Frequently Asked Questions about ETH2. Feel free to create a sub-page if your an
 
 ## One-way vs Two-way ETH Bridge for Staking
 
-This info is taken commentary from Danny Ryan regarding the question of why there is only a one way bridge from ETH 1.0 to ETH 2.0. (quoted verbatim)
+This info is commentary from Danny Ryan  of why there is only a one way bridge from ETH 1.0 to ETH 2.0. (quoted verbatim)
 
 "The more we encumber the 1.0 consensus with 2.0, the more we tie the development and fork processes which would likely slow down the shipping/iterating on 2.0. It is not technically infeasible. It would require 2.0 light clients to be run by all 1.0 clients and some changes to the 1.0 consensus rules allowing for a similar burn/receipt method in the opposite direction. If we were to create fungibility, the path would be (1) release 2.0 beacon chain, (2) once stable beacon chain and light clients exist then require 1.0 clients to be light clients of 2.0 and finalize 1.0 with 2.0 and expose beacon chain state root to 1.0 (3) add additional consensus rules to 1.0 and 2.0 to handle the reminting on 1.0 with proof of burn on 2.0.
 
