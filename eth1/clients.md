@@ -22,4 +22,4 @@ See also:
 
 ---
 
-[^nimbuseth1]: Recently confirmed to be [targeting ETH1](https://github.com/status-im/nimbus/pull/263)
+[^nimbuseth1]: Nimbus recently confirmed to be [targeting ETH1](https://github.com/status-im/nimbus/pull/263)
