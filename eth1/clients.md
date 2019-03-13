@@ -2,7 +2,7 @@
 <!-- SUBTITLE: Software clients that run the Ethereum network -->
 
 |Client Name|Organization|Programming Language|License|Notes|
-|---|---|---|---|
+|---|---|---|---|---|
 |[Geth](https://github.com/ethereum/go-ethereum)|Ethereum Foundation|Go|GPLv3||
 |[Parity Ethereum](https://github.com/paritytech/parity-ethereum)|Parity|Rust|GPLv3||
 |[Aleth](https://github.com/ethereum/aleth)|Ethereum Foundation|C++|GPLv3||
