@@ -20,6 +20,13 @@ Afri proposed the [following schedule on the Jan 4th All Core Devs call](https:/
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
+# Updates
+_Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
+
+* Discussed on [Core Devs call 57](https://github.com/ethereum/pm/issues/83), no one disagreed with current timelines
+* There is a WIP [Client Tracker](/roadmap/istanbul/tracker)
+* EthCatHerders organizing, see [PM repo](https://github.com/ethereum-cat-herders/PM/tree/master/Hard%20Fork%20Planning%20and%20Coordination), Joseph DeLong point of contact for Istanbul 
+
 # Discussion
 
 ## Confirmed: In Person ETH1x Meeting, April 17th & 18th, Berlin
