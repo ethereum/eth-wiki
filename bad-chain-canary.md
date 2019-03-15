@@ -1,7 +1,5 @@
 <!-- TITLE: Bad Chain Canary -->
 
-asdasdasd
-
 There were canary contracts to notify that a given chain was bad. They were very easy to use; check storage location 0 of contract at the given address (see below). If non-zero, client would not mine (at least without a non-default option being given to ignore the canary and mine on a known-bad chain).
 
 Specifically there are three modes they could be in:
