@@ -7,7 +7,7 @@
 
 For each EIP, ideally link to a Github issue or label or milestone that the client implementation team uses to track progress.
 
-|Client + Point of Contact|EIP1|EIP2|EIP3|Notes|
+|Client + Point of Contact|[EIP 615](https://eips.ethereum.org/EIPS/eip-615)|[EIP 1057](https://eips.ethereum.org/EIPS/eip-1057)|[EIP 1829](https://eips.ethereum.org/EIPS/eip-1829)|Notes|
 |---|---|---|---|---|
 |[Geth](https://github.com/ethereum/go-ethereum)|x|x|x||
 |[Parity Ethereum](https://github.com/paritytech/parity-ethereum)|x|x|x||
