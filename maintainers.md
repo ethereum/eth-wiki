@@ -14,7 +14,7 @@ The [wiki home page](/) has links to some of these items. The purpose of this pa
 | Whisper - a communication protocol for DApps to communicate with each other | [go-ethereum/wiki Whisper v6 RPC API](https://github.com/ethereum/go-ethereum/wiki/Whisper-v6-RPC-API)  | UNKNOWN | Local wiki pages [Whisper](Whisper) & [Whisper Overview](Whisper-Overview) are from go-ethereum/wiki |
 | Swarm | [go-ethereum/2959](https://github.com/ethereum/go-ethereum/pull/2959) | UNKNOWN | See local wiki page [Swarm Hash](/glossary/swarm-hash) & [original 2015 info on go-ethereum/wiki](https://github.com/ethereum/go-ethereum/wiki/Swarm---distributed-preimage-archive) & maybe [ethereum/wiki/Distributed-Preimage-Archive](https://github.com/ethereum/wiki/wiki/Distributed-Preimage-Archive) |
 
-[^jsonrpc]: The JSON-RPC spec is stale / unmaintained. There is an [EIP 1474 to have a canonical specification](https://github.com/ethereum/EIPs/pull/1474), and some work to have a separate spec repo here [ethereum-json-rpc-spec](https://github.com/spadebuilders/ethereum-json-rpc-spec). [bitpshr](https://github.com/bitpshr) has volunteered to be a maintainer.
+[^jsonrpc]: The JSON-RPC spec is stale / unmaintained. [EIP-1474 has been merged as draft](http://eips.ethereum.org/EIPS/eip-1474), and some work to have a separate spec repo here [ethereum-json-rpc-spec](https://github.com/spadebuilders/ethereum-json-rpc-spec). [bitpshr](https://github.com/bitpshr) has volunteered to be a maintainer.
 
 [^yellowpapermaintainer]: See [issue #725 in the ethereum/yellowpaper repo](https://github.com/ethereum/yellowpaper/issues/725)
 
