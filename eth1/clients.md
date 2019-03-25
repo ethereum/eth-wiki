@@ -13,6 +13,7 @@
 |[Nethermind](https://github.com/tkstanczak/nethermind)|Nethermind|C# / .NET Core|MIT|
 |[Pantheon](https://github.com/PegaSysEng/pantheon/)|PegaSys|Java|Apache 2.0|
 |[Nimbus](https://github.com/status-im/nimbus) [^nimbuseth1]|Status|Nim|Apache 2.0 / MIT|
+|[Ciri](https://github.com/ciri-ethereum/ciri) [^cirieth1]||Ruby|MIT|
 
 Sourced in part from the [Constantinople Progress Tracker](https://github.com/ethereum/pm/wiki/Constantinople-Progress-Tracker).
 
@@ -23,3 +24,5 @@ See also:
 ---
 
 [^nimbuseth1]: Nimbus recently confirmed to be [targeting ETH1](https://github.com/status-im/nimbus/pull/263)
+
+[^cirieth1]: Ciri is a Ruby client that has built out partial support for ETH1 and is also tracking ETH2
