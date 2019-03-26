@@ -9,7 +9,8 @@
 * 2019-10-16 (Wed) projected date for mainnet upgrade (“Istanbul”)
 
 # Proposals
-* [EIP 1679](https://eips.ethereum.org/EIPS/eip-1679) is the Istanbul Hardfork tracking Meta EIP.
+* [EIP 1679](https://eips.ethereum.org/EIPS/eip-1679) is the Istanbul Hardfork tracking Meta EIP. See [improvements to Hardfork Meta EIP233](https://github.com/ethereum/EIPs/pull/1852)
+
 * [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations.
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
 * [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
