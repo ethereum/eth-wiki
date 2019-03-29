@@ -16,7 +16,12 @@
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
 * [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
 * [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding precompiles for Ed25519.  (This would be incredibly helpful to Ethereum Name Service.)
-* [EIP Reprice Opcodes](https://github.com/holiman/EIPs/blob/reprice/EIPS/eip-draft_reprice_opcodes.md) Reprice Opcodes + optional new opcode
+
+## Draft in Progress
+These items are not yet merged as Drafts. See EIP-1 for template and markdown format and submit PRs.
+
+* [EIP Reprice Opcodes](https://github.com/holiman/EIPs/blob/reprice/EIPS/eip-draft_reprice_opcodes.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
+* [EIP 1599](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783)
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
