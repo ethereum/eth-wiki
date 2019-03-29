@@ -20,7 +20,7 @@
 ## Draft in Progress
 These items are not yet merged as Drafts. See EIP-1 for template and markdown format and submit PRs.
 
-* [EIP Reprice Opcodes](https://github.com/holiman/EIPs/blob/reprice/EIPS/eip-draft_reprice_opcodes.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
+* [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
 * [EIP 1599](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783)
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
