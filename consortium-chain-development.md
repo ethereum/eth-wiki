@@ -3,12 +3,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
-- [Choosing a codebase](#choosing-a-codebase)
-- [The config file](#the-config-file)
+- [Choosing a codebase](#choosing-a-codeba
 - [Consensus](#consensus)
 - [Abstraction](#abstraction)
 - [P2P networking](#p2p-networking)
-- [Privacy-preserving protocols](#privacy-preserving-protocols)
+- [Privacy-preserving protocols](#privacy-preserving-protocols#privacy-preserving-protocols55
 - [APIs](#apis)
 - [User interfaces](#user-interfaces)
 - [Efficiency improvements](#efficiency-improvements)
