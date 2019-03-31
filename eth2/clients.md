@@ -14,7 +14,7 @@
 |[Nimbus](https://github.com/status-im/nimbus)|Status|Nim|Apache 2.0 / MIT|
 |[Trinity](https://github.com/ethereum/beacon_chain)|Ethereum Foundation|Python|MIT|
 |[Yeeth](https://github.com/yeeth/BeaconChain.swift)|ZK Labs|Swift|GPLv3|
-|[Firefly](https://github.com/ethereum/firefly)[^firefly]|Ethereum Foundation|Swift|BSD-3-Clause|
+|[Firefly](https://github.com/ethereum/firefly)[^firefly]|Ethereum Foundation|Go|BSD-3-Clause|
 
 [^firefly]: This is essentially Geth for ETH2, and is an empty repo for now.
 
