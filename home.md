@@ -73,6 +73,7 @@ For an introduction targeted see [Ethereum introduction](/fundamentals/ethereum-
 
 For getting started guides, see here
 
+* [Simple solidity Editor to write and preview your code](https://play.ethereum.org/play-editor/) 
 * [Step-by-Step Guide: Getting Started with Ethereum Mist Wallet](https://medium.com/@attores/step-by-step-guide-getting-started-with-ethereum-mist-wallet-772a3cc99af4)
 * [Create a Hello World Contract in ethereum](https://www.ethereum.org/greeter)
 * [How to create a private Ethereum network Comments Feed](https://omarmetwally.wordpress.com/2017/07/25/how-to-create-a-private-ethereum-network/)
