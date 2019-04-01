@@ -96,7 +96,7 @@ Examples of<strong> local electricity trading</strong> include: <a href="https:/
 * Telecommunications, e.g. [OpenCT](https://www.openct.io/);
 * Charity funding, e.g. [I Gave](https://igave.io/); and
 * Governance projects, e.g. [Aragon Labs](https://github.com/aragon/labs/issues). 
-* [Dapp Insight](https://dappinsight.com)
+* [Dapp Insight](https://dappinsight.com) - page not responding
 * <a href="https://cointelegraph.com/news/blockchain-startup-can-help-consumers-profit-from-their-personal-data">markets</a> <a href="https://cointelegraph.com/news/marketplace-aims-to-resell-personal-data-and-create-passive-income-stream-for-users">for</a> <a href="https://datum.org/">personal</a> <a href="https://blog.enigma.co/the-enigma-data-marketplace-is-live-84a269ec17fb">data</a>
 * [Radical markets ideas](https://vitalik.ca/general/2018/04/20/radical_markets.html)
 * [Origin Protocol](https://www.originprotocol.com/en): sharing economy
