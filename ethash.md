@@ -1,7 +1,5 @@
 <!-- TITLE: Ethash -->
 
-
-
 **This spec is REVISION 23. Whenever you substantively (ie. not clarifications) update the algorithm, please update the revision number in this sentence. Also, in all implementations please include a spec revision number**
 
 Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. See [https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md](https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md) for the original version.
@@ -1007,3 +1005,6 @@ cache_sizes = [
 284163136, 284294848, 284426176, 284556992, 284687296, 284819264, 
 284950208, 285081536]
 ```
+
+
+This is my edit to update the timestamp.
