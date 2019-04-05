@@ -30,6 +30,9 @@ Hudson Jamieson facilitates the calls. A Zoom link is dropped in the All Core De
 Tim Beiko has been live tweeting highlights.
 
 EthCatHerders have started posting summary notes. 
+
+# forum.ethereum.org 
+* who is in charge with that forum? It looks abandoned and also there is questionable ads of miners chasis right in the forum header. 
 # ethereum.org DNS
 The `ethereum.org` domain is owned by the Ethereum Foundation.
 
