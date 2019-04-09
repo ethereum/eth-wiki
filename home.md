@@ -1,6 +1,6 @@
 <!-- TITLE: Home -->
 
-# Welcome to the Ethereum Wiki TEST
+# Welcome to the Ethereum Wiki
 This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 **Other versions:**  [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.ethereum.wiki).
