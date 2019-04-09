@@ -41,7 +41,11 @@ There are [52 people publicly listed](https://github.com/orgs/ethereum/people).
 * which are the "critical" repos, and who has admin rights over them for adding maintainers?
 
 # Ethstats
-http
+https://ethstats.net
+
+Run by the EF
+
+- who is the point of contact?
 
 # blog.ethereum.org
 * where is it hosted?
