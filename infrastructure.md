@@ -40,6 +40,9 @@ There are [52 people publicly listed](https://github.com/orgs/ethereum/people).
 * who has admin rights on the organization?
 * which are the "critical" repos, and who has admin rights over them for adding maintainers?
 
+# Ethstats
+http
+
 # blog.ethereum.org
 * where is it hosted?
 * who has permission to post here / who to talk to if you want something highlighted here?
