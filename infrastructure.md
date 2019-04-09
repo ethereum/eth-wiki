@@ -45,7 +45,7 @@ https://ethstats.net
 
 Run by the EF
 
-- who is the point of contact?
+- who is the point of contact? for now Anton Evangelatov. New version will be built / maintained in this Github repo https://github.com/ethereum/eth-netstats
 
 # blog.ethereum.org
 * where is it hosted?
