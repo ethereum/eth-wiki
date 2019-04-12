@@ -26,7 +26,8 @@ These items are not yet merged as Drafts. See EIP-1 for template and markdown fo
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
-# Updates
+
+currently new updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
 
 * Discussed on [Core Devs call 57](https://github.com/ethereum/pm/issues/83), no one disagreed with current timelines
