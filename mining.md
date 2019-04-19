@@ -397,11 +397,7 @@ Mining resources
 
 * `Top miners of last 24h on etherchain <https://etherchain.org/statistics/miners>`_
 * `pool hashrate distribution for august 2015 <http://cryptomining-blog.com/5607-the-current-state-of-ethereum-mining-pools/>`_
-* `Unmaintained list of pools on Forum <https://forum.ethereum.org/discussion/3659/list-of-pools>`_
-* `Mining profitability calculator on cryptocompare <https://www.cryptocompare.com/mining/calculator/eth>`_
-* `Mining profitability calculator on cryptowizzard <http://cryptowizzard.github.io/eth-mining-calculator/>`_
-* `Mining profitability calculator on etherscan <http://etherscan.io/ether-mining-calculator/>`_
-* `Mining profitability calculator on In The Ether <http://ethereum-mining-calculator.com/>`_
+* `Mining profitability calculator on Whattomine <https://whattomine.com/coins/151-eth-ethash>`_
 * `Mining difficulty chart on etherscan <https://etherscan.io/chart/difficulty>`_
 
 
