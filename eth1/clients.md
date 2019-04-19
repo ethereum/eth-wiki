@@ -6,7 +6,7 @@
 |[Geth](https://github.com/ethereum/go-ethereum)|Ethereum Foundation|Go|GPLv3|
 |[Parity Ethereum](https://github.com/paritytech/parity-ethereum)|Parity|Rust|GPLv3|
 |[Aleth](https://github.com/ethereum/aleth)|Ethereum Foundation|C++|GPLv3|
-|[EthereumJ + Harmony](https://github.com/ethereum/ethereumj)|Ethereum Foundation / EtherCamp|Java|L/GPLv3|
+|[EthereumJ + Harmony](https://github.com/ethereum/ethereumj)|Ethereum Foundation|Java|L/GPLv3|
 |[Trinity](https://trinity.ethereum.org/)|Ethereum Foundation|Python|MIT|
 |[EthereumJS](https://ethereumjs.github.io/)|EthereumJS|JavaScript|MPL 2.0|
 |[Mana](https://github.com/mana-ethereum/mana)|POA Network|Elixir|Apache 2.0 / MIT|
