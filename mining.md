@@ -378,10 +378,11 @@ Mining pools are cooperatives that aim to smooth out expected revenue by pooling
 Mining pools
 --------------------------------------------------------------------
 
-Ethereum mining pools list: https://miningpoolstats.stream/ethereum
+.. _Ethereum mining pools list: https://miningpoolstats.stream/ethereum
 .. _Ethpool: https://github.com/etherchain-org/ethpool-core
 .. _Ethpool source: https://github.com/etherchain-org/ethpool-core
-.. _ethereumpool: https://ethereumpool.co/
+.. _2miners: https://2miners.com/
+.. _f2pool: https://www.f2pool.com/
 .. _nanopool: http://eth.nanopool.org/
 .. _dwarfpool: http://dwarfpool.com/eth
 .. _weipool: http://weipool.org/
@@ -389,16 +390,16 @@ Ethereum mining pools list: https://miningpoolstats.stream/ethereum
 .. _coinmine.pl: https://www2.coinmine.pl/eth/
 .. _coinotron: https://www.coinotron.com/
 .. _etherchain.org: https://etherchain.org/
-.. _2miners: https://2miners.com/
 
 
 Mining resources
 =======================================================
 
-* `Top miners of last 24h on etherchain <https://etherchain.org/statistics/miners>`_
-* `pool hashrate distribution for august 2015 <http://cryptomining-blog.com/5607-the-current-state-of-ethereum-mining-pools/>`_
-* `Mining profitability calculator on Whattomine <https://whattomine.com/coins/151-eth-ethash>`_
-* `Mining difficulty chart on etherscan <https://etherscan.io/chart/difficulty>`_
+* Top miners of last 24h on etherscan https://etherscan.io/stat/miner?range=7&blocktype=blocks
+* Mining profitability calculator on Whattomine https://whattomine.com/coins/151-eth-ethash
+* Mining difficulty chart on etherscan https://etherscan.io/chart/difficulty
+* Historical mining difficulty https://2miners.com/eth-network-difficulty
+* Historical network hashrate https://2miners.com/eth-network-hashrate 
 
 
 .. _POS vs POW:
