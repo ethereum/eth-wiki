@@ -1,4 +1,3 @@
-
 ********************************************************************************
 Mining
 ********************************************************************************
@@ -379,7 +378,7 @@ Mining pools are cooperatives that aim to smooth out expected revenue by pooling
 Mining pools
 --------------------------------------------------------------------
 
-
+Ethereum mining pools list: https://miningpoolstats.stream/ethereum
 .. _Ethpool: https://github.com/etherchain-org/ethpool-core
 .. _Ethpool source: https://github.com/etherchain-org/ethpool-core
 .. _ethereumpool: https://ethereumpool.co/
