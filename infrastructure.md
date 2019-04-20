@@ -55,6 +55,9 @@ Run by the EF
 * who is in charge with that forum? It looks abandoned and also there is questionable ads of miners chasis right in the forum header. 
 
 [ECH Issue #33](https://github.com/ethereum-cat-herders/PM/issues/33)
+
+# solc-bin.ethereum.org
+- expired cert happened recently [ECH #58](https://github.com/ethereum-cat-herders/PM/issues/58)
 # ethereum.org DNS
 The `ethereum.org` domain is owned by the Ethereum Foundation.
 
