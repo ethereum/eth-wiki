@@ -23,6 +23,10 @@ Ongoing focus areas for coordinating work & support on the core network.
 # Meetings
 ## Core Devs Berlin April 2019
 
+### Slides
+
 [State Rent - Proposal 4](https://drive.google.com/file/d/1u7d-jLMdGkPYl0zf49b1CFKtqlln4ICO/view?usp=sharing)
 
 [EVM Evolution + 615](https://drive.google.com/open?id=1_taRpfsEF-ofF0UpwKyGOH-ogPqxmpUD)
+
+[Immutability Invariants - EIP 1712](https://drive.google.com/open?id=14gO58ewq2JHkf2TwhOztPxnSJWYyiLqn)
