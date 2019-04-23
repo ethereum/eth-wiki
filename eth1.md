@@ -32,17 +32,17 @@ Ongoing focus areas for coordinating work & support on the core network.
 
 [Immutability Invariants - EIP 1712](https://drive.google.com/open?id=14gO58ewq2JHkf2TwhOztPxnSJWYyiLqn)
 
-[Testing - Dimitry](xx)
+[RETESTETH](https://drive.google.com/open?id=1kQ6C6tQmqKmGwJOJ4OXEZ_gEOq0JLPTO)
 
 [Security in the EIP process](https://drive.google.com/open?id=1EiIw2LIw2e98nLaR0VU94PJrpBj-ABo_)
 
-[EIP-1344: Add chain id opcode](xx)
+[EIP-1344: Add chain id opcode](https://drive.google.com/open?id=17WyCFc3p9vuHwgk-TUKVGjeRPnGQgxdU)
 
 [State Tests](https://drive.google.com/open?id=1lrfJ-Z4lscnLHbUae11uPn8QaUpQjdH2)
 
 [ETH V64 Enhancements](https://drive.google.com/open?id=1-TuInhKVAbLs0s5L-Bk1e0x3aXlCYW2R)
 
-[Red Quees Sync](xx)
+[Red Quees Sync](https://drive.google.com/open?id=1ZmtuI1IedPd9amx614fSuNCMFpz2doNz)
 
 ### Slides - Day 2 (April 18th)
 
