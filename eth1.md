@@ -20,6 +20,12 @@ Improvements to the current EVM, including pre-compiles. Preparing for eWASM wit
 ## Finality Gadget
 Using the ETH2 beacon chain to finalize ETH1 blocks.
 
+* Leads: ?
+* Alexey's [presentation slides](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT) and [video](https://youtu.be/HaT-BIzWSew?t=24502)
+* EthMagicians Thread https://ethereum-magicians.org/t/finality-gadget-for-ethereum1x-working-group/3177
+
+Alexey is interested in seeing this happen, but doesn't have the bandwidth to lead this Working Group. Please comment in the EthMagicians thread if you want to get involved.
+
 ## eWASM
 Building a spec for Ethereum-flavoured WASM and determining what might go into ETH1x vs. preparing for ETH2.
 
