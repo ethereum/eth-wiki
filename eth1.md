@@ -22,3 +22,5 @@ Ongoing focus areas for coordinating work & support on the core network.
 
 # Meetings
 ## Core Devs Berlin April 2019
+
+[State Rent - Proposal 4](https://drive.google.com/file/d/1u7d-jLMdGkPYl0zf49b1CFKtqlln4ICO/view?usp=sharing)
