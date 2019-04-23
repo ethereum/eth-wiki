@@ -1,5 +1,5 @@
 <!-- TITLE: Eth 1 -->
 <!-- SUBTITLE: A quick summary of Eth 1 -->
 
-# Header
+# Working Groups
 State Rent
