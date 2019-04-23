@@ -38,5 +38,6 @@ Ongoing infrastructure focus areas for coordinating work & support on the core n
 * Leads: Zak, Dmitry, wtf
 
 # Meetings
-* January 2019 [Core Devs Stanford](/eth1/coredevsstanford)
+* July 2019?
 * April 17-18th, 2019 [Core Devs Berlin](/eth1/coredevsberlin)
+* January 2019 [Core Devs Stanford](/eth1/coredevsstanford)
