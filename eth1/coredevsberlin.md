@@ -1,5 +1,14 @@
 <!-- TITLE: Core Devs Berlin Meeting -->
-<!-- SUBTITLE: April 17 & 18th, 2019 at Full Node -->
+<!-- SUBTITLE: Istanbul & ETH1x Roadmap Planning, April 17 & 18th, 2019 -->
+
+Two days of meetings were held at Full Node in Berlin to discuss the [Istanbul hardfork](/roadmap/istanbul) and more broadly the [ETH1x roadmap](/roadmap) and processes and collaboration.
+
+Original [ETHMagicians thread](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899).
+
+Thanks to:
+* Gnosis for sponsoring Full Node venue
+* Ethereum Foundation Berlin for sponsoring livestream
+* Volunteer organizers Boris, MP, Trenton, James
 
 ## Slides - Day 1 (April 17th)
 
@@ -25,8 +34,10 @@
 
 [ETH V64 Enhancements](https://drive.google.com/open?id=1-TuInhKVAbLs0s5L-Bk1e0x3aXlCYW2R)
 
-[Red Quees Sync](https://drive.google.com/open?id=1ZmtuI1IedPd9amx614fSuNCMFpz2doNz)
-
+### Red Queen's Sync
+* Andrew
+* [Red Queens Sync](https://drive.google.com/open?id=1ZmtuI1IedPd9amx614fSuNCMFpz2doNz)
+* EthMagicians Thread https://ethereum-magicians.org/t/red-queens-new-sync-proposal/3175
 ## Slides - Day 2 (April 18th)
 
 [ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
@@ -40,3 +51,9 @@
 [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
 [Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
+
+### Hardfork Planning / What do we need to succeed?
+
+* Group discussion
+* Boris slides TBD
+* Danno hardfork cadence -- 6 month. Follow up [EthMagicians thread](https://ethereum-magicians.org/t/more-frequent-smaller-hardforks-vs-less-frequent-larger-ones/2929/28)
