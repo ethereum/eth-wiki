@@ -46,12 +46,14 @@ Ongoing focus areas for coordinating work & support on the core network.
 
 ### Slides - Day 2 (April 18th)
 
-[Testing - Dimitry](xx)
+[ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
 
-[Testing - Dimitry](xx)
+[Ewasm - Updates](https://drive.google.com/open?id=1GzPI3Y6_DJ3WM5D1MrpPcJxNFe45ZDDK)
 
-[Testing - Dimitry](xx)
+[EIP 1559 - Gas market fee change](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD)
 
-[Testing - Dimitry](xx)
+[Killing the final boss](xx)
 
-[Testing - Dimitry](xx)
+[OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
+
+[Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
