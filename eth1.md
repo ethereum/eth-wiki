@@ -19,3 +19,6 @@ Ongoing focus areas for coordinating work & support on the core network.
 ## Testing
 
 ## Hardfork Cadence
+
+# Meetings
+## Core Devs Berlin April 2019
