@@ -18,7 +18,7 @@ Thanks to:
 * Brooklyn Zelenka
 * [EVM Evolution + 615](https://drive.google.com/open?id=1_taRpfsEF-ofF0UpwKyGOH-ogPqxmpUD)
 
-### Immitability Invariants
+### Immutability Invariants
 
 [Immutability Invariants - EIP 1712](https://drive.google.com/open?id=14gO58ewq2JHkf2TwhOztPxnSJWYyiLqn)
 
