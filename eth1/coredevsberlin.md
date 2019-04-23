@@ -28,29 +28,38 @@ Thanks to:
 * Dmitry
 * [RETESTETH](https://drive.google.com/open?id=1kQ6C6tQmqKmGwJOJ4OXEZ_gEOq0JLPTO)
 
-[Security in the EIP process](https://drive.google.com/open?id=1EiIw2LIw2e98nLaR0VU94PJrpBj-ABo_)
+* Martin Ortner
+* [Security in the EIP process](https://drive.google.com/open?id=1EiIw2LIw2e98nLaR0VU94PJrpBj-ABo_)
 
-[EIP-1344: Add chain id opcode](https://drive.google.com/open?id=17WyCFc3p9vuHwgk-TUKVGjeRPnGQgxdU)
+* Richard Meissner
+* [EIP-1344: Add chain id opcode](https://drive.google.com/open?id=17WyCFc3p9vuHwgk-TUKVGjeRPnGQgxdU)
 
-[State Tests](https://drive.google.com/open?id=1lrfJ-Z4lscnLHbUae11uPn8QaUpQjdH2)
+* Zak Cole
+* [State Tests](https://drive.google.com/open?id=1lrfJ-Z4lscnLHbUae11uPn8QaUpQjdH2)
 
-[ETH V64 Enhancements](https://drive.google.com/open?id=1-TuInhKVAbLs0s5L-Bk1e0x3aXlCYW2R)
+* Matt Halpern
+* [ETH V64 Enhancements](https://drive.google.com/open?id=1-TuInhKVAbLs0s5L-Bk1e0x3aXlCYW2R)
 
 ### Red Queen's Sync
-* Andrew
+* Andrew Ashikhmin
 * [Red Queens Sync](https://drive.google.com/open?id=1ZmtuI1IedPd9amx614fSuNCMFpz2doNz)
 * EthMagicians Thread https://ethereum-magicians.org/t/red-queens-new-sync-proposal/3175
 ## Slides - Day 2 (April 18th)
+* Danno Ferrin
+* [ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
 
-[ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
 
-[Ewasm - Updates](https://drive.google.com/open?id=1GzPI3Y6_DJ3WM5D1MrpPcJxNFe45ZDDK)
+* Casey Detrio, Pawel Bylica, Alex Beregszaszi, Lane Rettig
+* [Ewasm - Updates](https://drive.google.com/open?id=1GzPI3Y6_DJ3WM5D1MrpPcJxNFe45ZDDK)
 
-[EIP 1559 - Gas market fee change](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD)
+* Vitalik Buterin
+* [EIP 1559 - Gas market fee change](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD)
 
-[Killing the final boss](https://drive.google.com/open?id=1mcBmlkli0APR2RN4rU8zAHuIpTD3dsh3)
+* Casey Detrio
+* [Killing the final boss](https://drive.google.com/open?id=1mcBmlkli0APR2RN4rU8zAHuIpTD3dsh3)
 
-[OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
+* Jory Burson
+* [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
 ### Finality Gadget
 * Alexey Akhunov
