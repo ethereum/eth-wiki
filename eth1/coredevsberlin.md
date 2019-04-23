@@ -21,7 +21,8 @@ Thanks to:
 
 ### Immutability Invariants
 
-[Immutability Invariants - EIP 1712](https://drive.google.com/open?id=14gO58ewq2JHkf2TwhOztPxnSJWYyiLqn)
+* Wei Tang
+* [Immutability Invariants - EIP 1712](https://drive.google.com/open?id=14gO58ewq2JHkf2TwhOztPxnSJWYyiLqn)
 
 ### Consensus Testing with Retesteth
 * Dmitry
@@ -51,10 +52,7 @@ Thanks to:
 
 [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
-### Finality Gadget
-* Alexey Akhunov
-* [Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
-* EthMagicians Thread for Working Group Kickoff https://ethereum-magicians.org/t/finality-gadget-for-ethereum1x-working-group/3177
+[Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
 
 ### Hardfork Planning / What do we need to succeed?
 
