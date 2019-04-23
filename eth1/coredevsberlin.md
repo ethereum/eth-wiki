@@ -51,7 +51,10 @@ Thanks to:
 
 [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
-[Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
+### Finality Gadget
+* Alexey Akhunov
+* [Finality Gadget](https://drive.google.com/open?id=16KLZKAutK79NxMh8L7B6hpNKuoOaAPZT)
+* EthMagicians Thread for Working Group Kickoff https://ethereum-magicians.org/t/finality-gadget-for-ethereum1x-working-group/3177
 
 ### Hardfork Planning / What do we need to succeed?
 
