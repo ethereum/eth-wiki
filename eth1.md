@@ -52,7 +52,7 @@ Ongoing focus areas for coordinating work & support on the core network.
 
 [EIP 1559 - Gas market fee change](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD)
 
-[Killing the final boss](xx)
+[Killing the final boss](https://drive.google.com/open?id=1mcBmlkli0APR2RN4rU8zAHuIpTD3dsh3)
 
 [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
