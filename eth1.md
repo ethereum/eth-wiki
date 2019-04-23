@@ -2,10 +2,10 @@
 <!-- SUBTITLE: A quick summary of Eth 1 -->
 
 # Working Groups
-**State Rent
+**State Rent**
 
-**VM
+**VM**
 
-**Finality Gadget
+**Finality Gadget**
 
-**Testing
+**Testing**
