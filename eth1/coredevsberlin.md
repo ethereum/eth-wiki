@@ -10,6 +10,12 @@ Thanks to:
 * Ethereum Foundation Berlin for sponsoring livestream
 * Volunteer organizers Boris, MP, Trenton, James
 
+## Video
+* Day 1 https://www.youtube.com/watch?v=Au1Qll-86v0
+* Day 2 https://www.youtube.com/watch?v=HaT-BIzWSew
+
+Time stamped links will be updated below.
+
 ## Slides - Day 1 (April 17th)
 ### State Rent
 * Alexey Akhunov
@@ -28,15 +34,21 @@ Thanks to:
 * Dmitry
 * [RETESTETH](https://drive.google.com/open?id=1kQ6C6tQmqKmGwJOJ4OXEZ_gEOq0JLPTO)
 
+
+### Security in the EIP Process
 * Martin Ortner
 * [Security in the EIP process](https://drive.google.com/open?id=1EiIw2LIw2e98nLaR0VU94PJrpBj-ABo_)
+
+### EIP1344 Add chain ID opcode
 
 * Richard Meissner
 * [EIP-1344: Add chain id opcode](https://drive.google.com/open?id=17WyCFc3p9vuHwgk-TUKVGjeRPnGQgxdU)
 
+### State Tests
 * Zak Cole
 * [State Tests](https://drive.google.com/open?id=1lrfJ-Z4lscnLHbUae11uPn8QaUpQjdH2)
 
+### ETH v64 Enhancements
 * Matt Halpern
 * [ETH V64 Enhancements](https://drive.google.com/open?id=1-TuInhKVAbLs0s5L-Bk1e0x3aXlCYW2R)
 
@@ -44,20 +56,27 @@ Thanks to:
 * Andrew Ashikhmin
 * [Red Queens Sync](https://drive.google.com/open?id=1ZmtuI1IedPd9amx614fSuNCMFpz2doNz)
 * EthMagicians Thread https://ethereum-magicians.org/t/red-queens-new-sync-proposal/3175
+* 
 ## Slides - Day 2 (April 18th)
+
+### ProgPow - Technical Implementation Details
+
 * Danno Ferrin
 * [ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
 
-
+### eWASM Update
 * Casey Detrio, Pawel Bylica, Alex Beregszaszi, Lane Rettig
 * [Ewasm - Updates](https://drive.google.com/open?id=1GzPI3Y6_DJ3WM5D1MrpPcJxNFe45ZDDK)
 
+### EIP1559 Gas Market Fee Change
 * Vitalik Buterin
 * [EIP 1559 - Gas market fee change](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD)
 
+### Killing the ETH1x Final Boss
 * Casey Detrio
 * [Killing the final boss](https://drive.google.com/open?id=1mcBmlkli0APR2RN4rU8zAHuIpTD3dsh3)
 
+### OASIS Open Projects for EIP, Standards Management
 * Jory Burson
 * [OASIS](https://drive.google.com/open?id=1mX2fF-ChVn84m4buHNJjN6-MqAWVP4Gr)
 
