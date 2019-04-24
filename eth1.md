@@ -45,6 +45,10 @@ Ongoing infrastructure focus areas for coordinating work & support on the core n
 ## Testing
 * Leads: Zak, Dmitry, wtf
 
+### Consensus Testing
+
+* Leads: Dmitry
+
 # Meetings
 * July 2019?
 * April 17-18th, 2019 [Core Devs Berlin](/eth1/coredevsberlin)
