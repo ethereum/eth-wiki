@@ -20,7 +20,7 @@ Using the ETH2 beacon chain to finalize ETH1 blocks.
 
 Alexey is interested in seeing this happen, but doesn't have the bandwidth to lead this Working Group. Please comment in the EthMagicians thread if you want to get involved.
 
-## VM & Precompiles
+## VM 
 Top level working group coordinating across EVM, eWASM, & precompiles.
 
 ### Precompiles
