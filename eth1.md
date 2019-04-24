@@ -11,12 +11,6 @@ Implementing state rent to address
 
 * Leads: Alexey Akhunov
 
-## VM & Precompiles
-
-Improvements to the current EVM, including pre-compiles. Preparing for eWASM with forward compatibility of features. Assist eWASM with plans for migration of ETH1x to ETH2.
-
-* Leads: Brooke Zelenka, Greg Colvin
-
 ## Finality Gadget
 Using the ETH2 beacon chain to finalize ETH1 blocks.
 
@@ -26,9 +20,17 @@ Using the ETH2 beacon chain to finalize ETH1 blocks.
 
 Alexey is interested in seeing this happen, but doesn't have the bandwidth to lead this Working Group. Please comment in the EthMagicians thread if you want to get involved.
 
-## eWASM
+## VM & Precompiles
+
+### eWASM
 Building a spec for Ethereum-flavoured WASM and determining what might go into ETH1x vs. preparing for ETH2.
 
+
+### EVM Evolution
+
+Improvements to the current EVM, including pre-compiles. Preparing for eWASM with forward compatibility of features. Assist eWASM with plans for migration of ETH1x to ETH2.
+
+* Leads: Brooke Zelenka, Greg Colvin
 # Initiatives
 Smaller initiatives around core systems and processes, calls for collaboration.
 
