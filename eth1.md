@@ -21,9 +21,10 @@ Using the ETH2 beacon chain to finalize ETH1 blocks.
 Alexey is interested in seeing this happen, but doesn't have the bandwidth to lead this Working Group. Please comment in the EthMagicians thread if you want to get involved.
 
 ## VM & Precompiles
+Top level working group coordinating across EVM, eWASM, & precompiles.
 
 ### Precompiles
-There is no working group focused specifically on precompiles, but there are discussion groups for at least one proposal (e.g. [elliptic curve linear combinations](https://ethereum-magicians.org/t/precompile-for-general-elliptic-curve-linear-combinations/2581)).
+Discussion groups for at least one proposal (e.g. [elliptic curve linear combinations](https://ethereum-magicians.org/t/precompile-for-general-elliptic-curve-linear-combinations/2581)).
 
 ### Ewasm
 Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what might go into ETH1x vs. preparing for ETH2.
