@@ -22,13 +22,15 @@ Alexey is interested in seeing this happen, but doesn't have the bandwidth to le
 
 ## VM & Precompiles
 
-### eWASM
-Building a spec for Ethereum-flavoured WASM and determining what might go into ETH1x vs. preparing for ETH2.
+### Precompiles
+There is no working group focused specifically on precompiles, but there are discussion groups for at least one proposal (e.g. [elliptic curve linear combinations](https://ethereum-magicians.org/t/precompile-for-general-elliptic-curve-linear-combinations/2581)).
 
+### Ewasm
+Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what might go into ETH1x vs. preparing for ETH2.
 
 ### EVM Evolution
 
-Improvements to the current EVM, including pre-compiles. Preparing for eWASM with forward compatibility of features. Assist eWASM with plans for migration of ETH1x to ETH2.
+Improvements to the current EVM around speed, safety, and interoperability. Safety improvements will increase the capabilities of static analysis and formal verification tools operating on EVM. Interoperability improvements include making EVM a better code generation target for higher-level languages like Solidity and Vyper, as well as lower-level bytecode formats such as WebAssembly/Ewasm and LLVM IR. Also helping form long-term plans for EVM across the ETH1x and ETH2 roadmaps.
 
 * Leads: Brooke Zelenka, Greg Colvin
 # Initiatives
