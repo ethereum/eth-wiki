@@ -16,6 +16,7 @@
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
 * [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
 * [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding precompiles for Ed25519.  (This would be incredibly helpful to Ethereum Name Service.)
+* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode
 
 ## Draft in Progress
 These items are not yet merged as Drafts. See EIP-1 for template and markdown format and submit PRs.
