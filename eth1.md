@@ -20,20 +20,22 @@ Using the ETH2 beacon chain to finalize ETH1 blocks.
 
 Alexey is interested in seeing this happen, but doesn't have the bandwidth to lead this Working Group. Please comment in the EthMagicians thread if you want to get involved.
 
-## VM 
-Top level working group coordinating across EVM, eWASM, & precompiles.
-
-### Precompiles
+## Precompiles
 Discussion groups for at least one proposal (e.g. [elliptic curve linear combinations](https://ethereum-magicians.org/t/precompile-for-general-elliptic-curve-linear-combinations/2581)).
 
-### Ewasm
+## Ewasm
 Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what might go into ETH1x vs. preparing for ETH2.
 
-### EVM Evolution
+## EVM Evolution
 
 Improvements to the current EVM around speed, safety, and interoperability. Safety improvements will increase the capabilities of static analysis and formal verification tools operating on EVM. Interoperability improvements include making EVM a better code generation target for higher-level languages like Solidity and Vyper, as well as lower-level bytecode formats such as WebAssembly/Ewasm and LLVM IR. Also helping form long-term plans for EVM across the ETH1x and ETH2 roadmaps.
 
 * Leads: Brooke Zelenka, Greg Colvin
+
+### EIPs
+
+* EIP 615
+* VM Versioning by @sorpaas is needed for both 615 and eWASM
 # Initiatives
 Smaller initiatives around core systems and processes, calls for collaboration.
 
