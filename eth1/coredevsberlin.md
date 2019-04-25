@@ -71,7 +71,7 @@ Time stamped links will be updated below.
 
 * Danno Ferrin
 * [ProgPow - Flipping the Switch](https://drive.google.com/open?id=1BnOqJdupgJu5oJIEW0SuXi9YNRH25nYi)
-* [Video of presentation](https://www.youtube.com/watch?v=HaT-BIzWSew&t=0s)
+* [Video of presentation](https://www.youtube.com/watch?v=HaT-BIzWSew&t=1s)
 
 ### eWASM Update
 * Casey Detrio, Pawel Bylica, Alex Beregszaszi, Lane Rettig
