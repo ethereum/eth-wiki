@@ -20,6 +20,7 @@ Time stamped links will be updated below.
 ### State Rent
 * Alexey Akhunov
 * [State Rent - Proposal 4](https://drive.google.com/file/d/1u7d-jLMdGkPYl0zf49b1CFKtqlln4ICO/view?usp=sharing)
+* [Video of presentation](https://www.youtube.com/watch?v=Au1Qll-86v0&t=1584s)
 
 ### EVM Evolution, EIP615
 * Brooklyn Zelenka
