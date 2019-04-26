@@ -32,6 +32,11 @@ Improvements to the current EVM around speed, safety, and interoperability. Safe
 
 * Leads: Brooke Zelenka, Greg Colvin
 
+### EIPs
+
+* EIP 615
+* VM Versioning by @sorpaas is needed for both 615 and eWASM
+
 ## Fee Market change
 Also known as EIP-1559, splitting gas fees that transactions are paying into two parts. One part gets burnt (destroyed), another - paid to the miners. In theory, this should make total transaction fees more stable and predictable.
 * Leads: Rick Dudley
@@ -39,10 +44,6 @@ Also known as EIP-1559, splitting gas fees that transactions are paying into two
 * EthMagicians Threads: [prior discussion](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) [group formation](https://ethereum-magicians.org/t/fee-market-change-working-group-formation-and-my-proposed-amendment/3195)
 * EthResearch Threads: [group formation](https://ethresear.ch/t/fee-market-change-working-group-formation-and-my-proposed-amendment/5365)
 
-### EIPs
-
-* EIP 615
-* VM Versioning by @sorpaas is needed for both 615 and eWASM
 # Initiatives
 Smaller initiatives around core systems and processes, calls for collaboration.
 
