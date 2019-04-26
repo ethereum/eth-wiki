@@ -7,7 +7,7 @@ You may also want to review the [roadmap](/roadmap), or view [all Eth1 pages](/e
 A list of current working groups focused on core research, upgrades, and challenges.
 
 ## State Rent
-Implementing state rent to address
+Implementing state rent to address large and growing state. State rent is only one solution, so other facets are explored too - advanced snapshot sync algorithms, stateless clients, etc.
 
 * Leads: Alexey Akhunov
 
@@ -31,6 +31,13 @@ Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what m
 Improvements to the current EVM around speed, safety, and interoperability. Safety improvements will increase the capabilities of static analysis and formal verification tools operating on EVM. Interoperability improvements include making EVM a better code generation target for higher-level languages like Solidity and Vyper, as well as lower-level bytecode formats such as WebAssembly/Ewasm and LLVM IR. Also helping form long-term plans for EVM across the ETH1x and ETH2 roadmaps.
 
 * Leads: Brooke Zelenka, Greg Colvin
+
+## Fee Market change
+Also known as EIP-1559, splitting gas fees that transactions are paying into two parts. One part gets burnt (destroyed), another - paid to the miners. In theory, this should make total transaction fees more stable and predictable.
+* Leads: Rick Dudley
+* Vitalik's [presentation slides]() and [video]()
+* EthMagicians Threads: [prior discussion](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) [group formation](https://ethereum-magicians.org/t/fee-market-change-working-group-formation-and-my-proposed-amendment/3195)
+* EthResearch Threads: [group formation](https://ethresear.ch/t/fee-market-change-working-group-formation-and-my-proposed-amendment/5365)
 
 ### EIPs
 
