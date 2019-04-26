@@ -40,7 +40,7 @@ Improvements to the current EVM around speed, safety, and interoperability. Safe
 ## Fee Market change
 Also known as EIP-1559, splitting gas fees that transactions are paying into two parts. One part gets burnt (destroyed), another - paid to the miners. In theory, this should make total transaction fees more stable and predictable.
 * Leads: Rick Dudley
-* Vitalik's [presentation slides]() and [video]()
+* Vitalik's [presentation slides](https://drive.google.com/open?id=12bCGHxv9uldSvh-dcDS5qc53XqZDOOHD) and [video](https://www.youtube.com/watch?v=HaT-BIzWSew&t=4706s)
 * EthMagicians Threads: [prior discussion](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) [group formation](https://ethereum-magicians.org/t/fee-market-change-working-group-formation-and-my-proposed-amendment/3195)
 * EthResearch Threads: [group formation](https://ethresear.ch/t/fee-market-change-working-group-formation-and-my-proposed-amendment/5365)
 
