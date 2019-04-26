@@ -23,6 +23,8 @@ Alexey is interested in seeing this happen, but doesn't have the bandwidth to le
 ## Generalised precompile for Elliptic Curve arithmetics and pairings
 Discussion groups for at least one proposal (e.g. [elliptic curve linear combinations](https://ethereum-magicians.org/t/precompile-for-general-elliptic-curve-linear-combinations/2581)).
 * Leads: Alexander Vlasov
+* EthMagicians Thead https://ethereum-magicians.org/t/generalised-precompile-for-elliptic-curve-arithmetics-and-pairings-working-group/3208
+* EthResearch Thread https://ethresear.ch/t/generalised-precompile-for-elliptic-curve-arithmetics-and-pairings-working-group/5370
 
 ## Ewasm
 Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what might go into ETH1x vs. preparing for ETH2.
