@@ -18,6 +18,7 @@
 * [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode
 * [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
 * [EIP-689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt
+* [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
 
 
 Virgil mentioned that [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding precompiles for Ed25519 is not needed, because 1829 is a superset and supports the needs.
@@ -25,7 +26,6 @@ Virgil mentioned that [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding p
 ## Draft in Progress
 These items are not yet merged as Drafts. See EIP-1 for template and markdown format and submit PRs.
 
-* [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
 * [EIP 1559](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) - Proposed by Vitalik / Eric
 * [EIP 152](https://github.com/ethereum/EIPs/issues/152) BLAKE2b `F` Compression Function Precompile - [Discuss](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899/21) - Being worked on by Virgil
 * [EIP 1803](https://github.com/ethereum/EIPs/pull/1803) Rename opcodes for clarity
