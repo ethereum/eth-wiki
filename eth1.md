@@ -68,4 +68,5 @@ Ongoing infrastructure focus areas for coordinating work & support on the core n
 # Meetings
 * July 2019?
 * April 17-18th, 2019 [Core Devs Berlin](/eth1/coredevsberlin) - feedback and poll on July meeting https://ethereum-magicians.org/t/coredevs-eth1x-istanbul-meeting-july-poll-feedback/3197
+* February 2020 ETH1x Roadmap AMA [notes & video on EthMagicians](https://ethereum-magicians.org/t/eth-roadmap-ama-webinar-feb-6th-8am-pst-1700-utc-1/2518)
 * January 2019 [Core Devs Stanford](/eth1/coredevsstanford)
