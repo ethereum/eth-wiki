@@ -5,6 +5,8 @@ Prior information is available on the [releases](/releases) page.
 
 The formal process of hardforks is documented in [EIP 233](https://eips.ethereum.org/EIPS/eip-233), along with some recent discussion on [EthMagicians](https://ethereum-magicians.org/t/eep-5-ethereum-hardfork-process-request-for-collaboration/2305).
 
+The [ETH1](/eth1) page lists Working Groups and areas of focus.
+
 # Constantinople
 Constantinople is planned for Q1 of 2019. Planned date was originally January 16th, 2019, 12:00pm UTC. Now will activate February 25th, 2019, at the same time as [Petersburgh](/roadmap/petersburgh), which de-activates EIP-1283.
 
@@ -25,44 +27,21 @@ Istanbul is planned for Q4 of 2019. Planned date is October 16th, 2019, 12:00pm 
 More details on the [road to Istanbul](/roadmap/istanbul).
 
 # Next Timelines
-For discussion post-Istanbul will be 6- or 9-month cycles.
 
-## 6 Month Timelines
+## Cheesy Hardfork 6 Month Schedule
+Current discussion is on moving towards a 6-month cycle. [Danno is leading discussion on a Cheesy Hardfork Schedule](https://ethereum-magicians.org/t/more-frequent-smaller-hardforks-vs-less-frequent-larger-ones/2929/28)
 
-* April 2020
-* October 2020
+* "Asiago" April 2020
+* "Brie" October 2020
 
-## 9 Month Timelines
-
-* July 2020
-* April 2021
+_Note: We are **not** using cheese names, they are annoying on purpose to force us to choose new names as part of the hardfork meta creation process!_
 # ETH 1.x
 There are a variety of proposals for what is now known as ETH 1.x -- a series of upgrades to add features in support of the full ETH2 specs. These are all at the proposal / discussion stage, without any of them having been turned into EIPs.
 
 The [EthMagicians ETH 1.x Ring](https://ethereum-magicians.org/c/working-groups/ethereum-1-x-ring) has more discussions.
 
 ## Meetings
-* 2019-02-06 ETH1x Roadmap AMA [notes & video on EthMagicians](https://ethereum-magicians.org/t/eth-roadmap-ama-webinar-feb-6th-8am-pst-1700-utc-1/2518)
 
-## Storage Rent / Pruning
-
-Problem: on chain storage can't be stored forever. Introduce rent, archiving, pruning, or a variety of other methods to minimize live state storage.
-
-Rent:
-https://ethereum-magicians.org/t/ethereum-state-rent-for-eth-1-x-pre-eip-document/2018
-
-Pruning:
-https://ethereum-magicians.org/t/ethereum-chain-pruning-for-long-term-1-0-scalability-and-viability/2074
-
-## eWASM
-Problem: desire to move to eWASM as the VM.
-
-https://ethereum-magicians.org/t/ewasm-working-group-proposal-for-eth-1-x/2033
-
-## Simulation
-Problem: Simulate various parameters of proposed features
-
-https://ethereum-magicians.org/t/simulation-working-group-proposal-for-eth-1-x/2068/2
 # Serenity / ETH2
 See the [ETH2 Specs Github Repo](https://github.com/ethereum/eth2.0-specs).
 
