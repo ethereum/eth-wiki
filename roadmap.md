@@ -1,5 +1,5 @@
 <!-- TITLE: Roadmap -->
-<!-- SUBTITLE: Ethereum Roadmap, including links to ETH 1.x and ETH2 / Serenity. Test -->
+<!-- SUBTITLE: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity -->
 
 Prior information is available on the [releases](/releases) page.
 
@@ -35,12 +35,6 @@ Current discussion is on moving towards a 6-month cycle. [Danno is leading discu
 * "Brie" October 2020
 
 _Note: We are **not** using cheese names, they are annoying on purpose to force us to choose new names as part of the hardfork meta creation process!_
-# ETH 1.x
-There are a variety of proposals for what is now known as ETH 1.x -- a series of upgrades to add features in support of the full ETH2 specs. These are all at the proposal / discussion stage, without any of them having been turned into EIPs.
-
-The [EthMagicians ETH 1.x Ring](https://ethereum-magicians.org/c/working-groups/ethereum-1-x-ring) has more discussions.
-
-## Meetings
 
 # Serenity / ETH2
 See the [ETH2 Specs Github Repo](https://github.com/ethereum/eth2.0-specs).
