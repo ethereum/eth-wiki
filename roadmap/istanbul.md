@@ -6,23 +6,31 @@ The [ETH1](/eth1) page is a good starting point for an overview of Working Group
 * 2019-04-17 (Wed-Thurs) CoreDev planning meeting in Berlin, [details on EthMagicians](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899)
 * 2019-05-17 (Fri) hard deadline to accept proposals for “Istanbul”
 * 2019-07-19 (Fri) soft deadline for major client implementations
+* 2019-07 CoreDev planning meeting proposed
 * 2019-08-14 (Wed) projected date for testnet network upgrade (Ropsten, Görli, or ad-hoc testnet)
 * 2019-10-16 (Wed) projected date for mainnet upgrade (“Istanbul”)
 
 # Proposals
-* [EIP 1679](https://eips.ethereum.org/EIPS/eip-1679) is the Istanbul Hardfork tracking Meta EIP. See [improvements to Hardfork Meta EIP233](https://github.com/ethereum/EIPs/pull/1852)
-
 Discussion thread for Hardfork Meta: https://ethereum-magicians.org/t/hardfork-meta-istanbul-discussion/3207
 
 **Going forward, the list of [EIPs in 1679](https://eips.ethereum.org/EIPS/eip-1679) are the canonical status of EIPs**
 
 This will be maintained as an overview page, can also view the [Istanbul GitHub Project in the ECH repo](https://github.com/orgs/ethereum-cat-herders/projects/2) to track progress.
 
+## Proposed
+* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode - @fubuloubu
+* [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
+* [EIP-1702](https://eips.ethereum.org/EIPS/eip-1702): Generalized account versioning scheme - @sorpaas
+
+## Intention to Propose
+
+If your EIP is on this list, please make a [PR against 1679 to add a link to your EIP in the Proposed section](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1679.md).
+
+---
+
 * [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations.
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
 * [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
-* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode
-* [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
 * [EIP-689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt
 * [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
 * [EIP 1559](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) - Proposed by Vitalik / Eric
@@ -34,8 +42,7 @@ Virgil mentioned that [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding p
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
-
-currently new updates
+# Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
 
 * Reviewed on [Core Devs call 60](https://github.com/ethereum/pm/issues/95), including call for PRs to 1679
