@@ -30,7 +30,7 @@ If your EIP is on this list, please make a [PR against 1679 to add a link to you
 
 * [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations.
 * [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
-* [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work
+* [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results)
 * [EIP-689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt
 * [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
 * [EIP 1559](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) - Proposed by Vitalik / Eric
