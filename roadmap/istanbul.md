@@ -18,9 +18,13 @@ Discussion thread for Hardfork Meta: https://ethereum-magicians.org/t/hardfork-m
 This will be maintained as an overview page, can also view the [Istanbul GitHub Project in the ECH repo](https://github.com/orgs/ethereum-cat-herders/projects/2) to track progress.
 
 ## Proposed
+* [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work - @IfDefElse
 * [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode - @fubuloubu
 * [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
+* [EIP 1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self - @axic @jacqueswww
 * [EIP-1702](https://eips.ethereum.org/EIPS/eip-1702): Generalized account versioning scheme - @sorpaas
+* [EIP 1803](https://eips.ethereum.org/EIPS/eip-1803): Rename opcodes for clarity - @axic
+* [EIP 1884](https://eips.ethereum.org/EIPS/eip-1884): Repricing for trie-size-dependent opcodes - @holiman
 
 ## Intention to Propose
 
