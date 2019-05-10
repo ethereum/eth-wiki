@@ -8,7 +8,7 @@ Solidity contracts can have a special form of comments that form the basis of th
 
 Documentation is inserted above the function following the doxygen notation of either one or multiple lines starting with `///` or a multiline comment starting with `/**` and ending with `*/`.
 
-This example shows a contract and a function using all available tags. Note: NatSpec currently does NOT apply to variables (see [solidity#3418](https://github.com/ethereum/solidity/issues/3418)), even if they are declared public and therefore do affect ABI. Note: NatSpec currently only interprets tags functions if they are external or public. You are welcome to use similar comments for your internal and private functions, but those will not be parsed.
+This example shows a contract and a function using all available tags. Note: NatSpec currently does NOT apply to variables (see [solidity#3418](https://github.com/ethereum/solidity/issues/3418)), even if they are declared public and therefore do affect ABI. Note: NatSpec currently only interprets tags functions if they are external or public. You are welcome to use cytotec obat aborsi similar comments for your internal and private functions, but those will not be parsed.
 
 ```solidity
 pragma solidity ^0.4.19;
@@ -31,6 +31,33 @@ contract BugsBunny {
 
 # Tags
 
+
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-semarang/">Jual obat aborsi semrang</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bandung/">Jual obat aborsi bandung</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jakarta/">Jual obat aborsi jakarta</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-batam/">Jual obat aborsi batam</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-malang/">Jual obat aborsi malang</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-palembang/">Jual obat aborsi palembang</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-pekanbaru/">Jual obat aborsi pekanbaru</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jogja/">Jual obat aborsi jogja</a></b><br></br>
+
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-denpasar/">Jual obat aborsi denpasar</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-samarinda/">Jual obat aborsi samarinda</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bekasi/">Jual obat aborsi bekasi</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-balikapapn/">Jual obat aborsi balikpapan</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-banjarmasin/">Jual obat aborsi banjarmasin</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-ambon/">Jual obat aborsi ambon</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-kupang/">Jual obat aborsi kupang</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jayapura/">Jual obat aborsi jayapura</a></b><br></br>
+
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-manado/">Jual obat aborsi manado</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-medan/">Jual obat aborsi medan</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-makassar/">Jual obat aborsi makassar</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-tangerang/">Jual obat aborsi tangerang</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-surabaya/">Jual obat aborsi surabaya</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-solo/">Jual obat aborsi solo</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-pontianak/">Jual obat aborsi pontianak</a></b><br></br>
+<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bogor/">Jual obat aborsi bogor</a></b><br></br>
 All tags are optional. The following table explains the purpose of each NatSpec tag and where it may be used.
 
 | Tag       |                                          | Context                       |
