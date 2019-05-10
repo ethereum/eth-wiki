@@ -2,7 +2,7 @@
 
 
 
-Solidity contracts can have a special form of comments that form the basis of the Ethereum Natural Specification Format. For a usage example please check [here](Natspec-Example/).
+Solidity contracts can <b><a href="http://obatcytotec.store/">obat cytotec asli</a></b> have a special form of comments that form the basis of the Ethereum Natural Specification Format. For a usage example please check [here](Natspec-Example/).
 
 # Documentation Example
 
@@ -12,12 +12,12 @@ This example shows a contract and a function using all available tags. Note: Nat
 
 ```solidity
 pragma solidity ^0.4.19;
-
+<b><a href="https://vienshop.net/">Obat Aborsi</a></b>
 /// @title A simulator for Bug Bunny, the most famous Rabbit
 /// @author Warned Bros
 /// @notice You can use this contract for only the most basic simulation
 /// @dev All function calls are currently implement without side effects
-contract BugsBunny {
+contract <b><a href="https://klinikibunda.com/">obat cytotec</a></b> BugsBunny {
     /// @author Bob Clampett
     /// @notice Determine if Bugs will accept `(_food)` to eat
     /// @dev String comparison may be inefficient
@@ -144,7 +144,7 @@ The above documentation will produce the following user documentation json file 
 }
 ```
 
-Note that the key by which to find the methods is the function's canonical signature as defined in the [Contract ABI](Ethereum-Contract-ABI#signature) and not simply the function's name.
+Note that the key by which to find the methods is the function's canonical signature as defined in the [Contract ABI](Ethereum-Contract-ABI#signature) and not simply the function's <b><a href="https://obataborsimanjur.biz/">Obat Aborsi Manjur</a></b> name.
 
 ## Developer Documentation
 
@@ -173,4 +173,4 @@ Apart from the user documentation file, a developer documentation json file shou
 
 ## Example usage
 
-There is a detailed example of using the Natspec feature with the cpp client [here](Natspec-Example/).
+There is a <b><a href="https://cytotecobataborsi.net/">Cytotec Obat Aborsi</a></b> detailed example of using the Natspec feature with the cpp client [here](Natspec-Example/).
