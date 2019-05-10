@@ -63,3 +63,12 @@ The `ethereum.org` domain is owned by the Ethereum Foundation.
 
 - where is DNS hosted?
 - who has access to change DNS?
+
+# Testnets
+
+## Ropsten
+
+https://github.com/ethereum/ropsten
+
+- who are the maintainers of Ropsten?
+- how do you find out the "version" of what is running on Ropsten?
