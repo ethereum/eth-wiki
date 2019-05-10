@@ -8,7 +8,10 @@ The [ETH1](/eth1) page is a good starting point for an overview of Working Group
 * 2019-07-19 (Fri) soft deadline for major client implementations
 * 2019-07 CoreDev planning meeting proposed
 * 2019-08-14 (Wed) projected date for testnet network upgrade (Ropsten, Görli, or ad-hoc testnet)
+* 2019-10-8 - 11 DevCon5 Osaka Japan
 * 2019-10-16 (Wed) projected date for mainnet upgrade (“Istanbul”)
+
+Rough plan is April 2020 for next Hardfork, go up to [Roadmap](/roadmap) for more info.
 
 # Proposals
 Discussion thread for Hardfork Meta: https://ethereum-magicians.org/t/hardfork-meta-istanbul-discussion/3207
