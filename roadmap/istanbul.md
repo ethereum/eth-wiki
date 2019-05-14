@@ -22,6 +22,7 @@ This will be maintained as an overview page, can also view the [Istanbul GitHub 
 
 ## Proposed
 * [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
+* [EIP-1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs - @zac-williamson
 * [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode - @fubuloubu
 * [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
 * [EIP 1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self - @axic @jacqueswww
