@@ -21,15 +21,17 @@ Discussion thread for Hardfork Meta: https://ethereum-magicians.org/t/hardfork-m
 This will be maintained as an overview page, can also view the [Istanbul GitHub Project in the ECH repo](https://github.com/orgs/ethereum-cat-herders/projects/2) to track progress.
 
 ## Proposed
-* [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
-* [EIP-1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs - @zac-williamson
-* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344) Add ChainID opcode - @fubuloubu
-* [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts
-* [EIP 1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self - @axic @jacqueswww
+* [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057): ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
+* [EIP-1108](https://eips.ethereum.org/EIPS/eip-1108): Reduce alt_bn128 precompile gas costs - @zac-williamson
+* [EIP-1283](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md): Net gas metering for SSTORE without dirty maps @sorpass
+* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344): Add ChainID opcode - @fubuloubu
+* [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352): Specify restricted address range for precompiles/system contracts
+* [EIP 1380](https://eips.ethereum.org/EIPS/eip-1380): Reduced gas cost for call to self - @axic @jacqueswww
 * [EIP-1702](https://eips.ethereum.org/EIPS/eip-1702): Generalized account versioning scheme - @sorpaas
+* [EIP-1706](https://eips.ethereum.org/EIPS/eip-1706): Disable SSTORE with gasleft lower than call stipend
 * [EIP 1803](https://eips.ethereum.org/EIPS/eip-1803): Rename opcodes for clarity - @axic
-* [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md) Reprice Opcodes + optional new opcode, @holiman - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
-* [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations, @remco
+* [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md): Reprice Opcodes + optional new opcode, @holiman - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
+* [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829): Precompile for Elliptic Curve Linear Combinations, @remco
 
 ## Intention to Propose
 
