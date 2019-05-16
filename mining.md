@@ -397,6 +397,7 @@ Mining resources
 
 * Top miners of last 24h on etherscan https://etherscan.io/stat/miner?range=7&blocktype=blocks
 * Mining profitability calculator on Whattomine https://whattomine.com/coins/151-eth-ethash
+* Mining profitability calculator on 2CryptoCalc https://2cryptocalc.com/calculator/ETH
 * Mining difficulty chart on etherscan https://etherscan.io/chart/difficulty
 * Historical mining difficulty https://2miners.com/eth-network-difficulty
 * Historical network hashrate https://2miners.com/eth-network-hashrate 
