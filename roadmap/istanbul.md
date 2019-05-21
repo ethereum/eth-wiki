@@ -46,10 +46,8 @@ If your EIP is on this list, please make a [PR against 1679 to add a link to you
 ---
 
 * [EIP 152](https://github.com/ethereum/EIPs/issues/152) BLAKE2b `F` Compression Function Precompile - [Champion wanted! - Discuss](https://github.com/ethereum-cat-herders/PM/issues/64) - Being worked on by Virgil
-* [EIP 615](https://eips.ethereum.org/EIPS/eip-615) Static Jumps and Subroutines
 * [EIP 663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions
 * [EIP-689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt - [Champion wanted! - Discuss](https://github.com/ethereum-cat-herders/PM/issues/66)
-* [EIP 1559](https://github.com/ethereum/EIPs/issues/1559) Fee market change - [Discuss](https://ethereum-magicians.org/t/eip-1559-fee-market-change-for-eth-1-0-chain/2783) - Proposed by Vitalik / Eric, Rick Dudley working group
 
 
 Virgil mentioned that [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding precompiles for Ed25519 is not needed, because 1829 is a superset and supports the needs.
