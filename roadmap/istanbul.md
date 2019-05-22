@@ -16,11 +16,17 @@ Rough plan is April 2020 for next Hardfork, go up to [Roadmap](/roadmap) for mor
 # Proposals
 Discussion thread for Hardfork Meta: https://ethereum-magicians.org/t/hardfork-meta-istanbul-discussion/3207
 
-**Going forward, the list of [EIPs in 1679](https://eips.ethereum.org/EIPS/eip-1679) are the canonical status of EIPs**
+**The list of [EIPs in 1679](https://eips.ethereum.org/EIPS/eip-1679) are the canonical status of EIPs**
 
 This will be maintained as an overview page, can also view the [Istanbul GitHub Project in the ECH repo](https://github.com/orgs/ethereum-cat-herders/projects/2) to track progress.
 
+James Hancock has created an [automated Google Sheet that covers additional milestones](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0)
+
+
 ## Proposed
+
+The deadline for EIP proposals for Istanbul was May 17th. All of these EIPs intend to prepare for inclusion in Istanbul, but Core Dev acceptance, implementation, testing, audits, and other work needs to be done to prepare them. Each EIP has a "discussion-to" link where you can find more information, usually on the [EthMagicians Core EIPs forum](https://ethereum-magicians.org/c/eips/core-eips).
+
 * [EIP-615](https://eips.ethereum.org/EIPS/eip-615): Subroutines and Static Jumps for the EVM
 * [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057): ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
 * [EIP-1108](https://eips.ethereum.org/EIPS/eip-1108): Reduce alt_bn128 precompile gas costs - @zac-williamson
@@ -38,19 +44,6 @@ This will be maintained as an overview page, can also view the [Istanbul GitHub 
 * [EIP 1930](https://eips.ethereum.org/EIPS/eip-1930): CALLs with strict gas semantic. Revert if not enough gas available
 * [EIP 2028](https://eips.ethereum.org/EIPS/eip-2028): Calldata gas cost reduction
 
-
-## Intention to Propose
-
-If your EIP is on this list, please make a [PR against 1679 to add a link to your EIP in the Proposed section](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1679.md).
-
----
-
-* [EIP 152](https://github.com/ethereum/EIPs/issues/152) BLAKE2b `F` Compression Function Precompile - [Champion wanted! - Discuss](https://github.com/ethereum-cat-herders/PM/issues/64) - Being worked on by Virgil
-* [EIP 663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions
-* [EIP-689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt - [Champion wanted! - Discuss](https://github.com/ethereum-cat-herders/PM/issues/66)
-
-
-Virgil mentioned that [EIP 665](https://eips.ethereum.org/EIPS/eip-665) Adding precompiles for Ed25519 is not needed, because 1829 is a superset and supports the needs.
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
