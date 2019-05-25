@@ -56,6 +56,15 @@ Run by the EF
 
 [ECH Issue #33](https://github.com/ethereum-cat-herders/PM/issues/33)
 
+https://twitter.com/BobSummerwill/status/1132340204822380544
+
+> @bmann @AFDudley0 @jemenger @sawinyh There is a whole backstory to the forum.
+We tried to shut it down in 2016 and there was an uproar.  @GeorgeAHallam and @TaylorGerring were in the middle of that.
+
+https://twitter.com/TaylorGerring/status/1132341315755286528
+
+> @BobSummerwill @bmann @AFDudley0 @jemenger @sawinyh @GeorgeAHallam Mining community pushed back against the forum shutdown. Handed management over to them/whomever wanted to moderate
+
 # solc-bin.ethereum.org
 - expired cert happened recently [ECH #58](https://github.com/ethereum-cat-herders/PM/issues/58)
 # ethereum.org DNS
