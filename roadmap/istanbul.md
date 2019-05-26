@@ -49,11 +49,14 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 ----
 
-**Roadblock Unblocker**
+***EIP AMAs on All Core Devs Gitter***
+
+To reduce the load on discussing each EIP in the dev calls, some EIPs will be allocated a day in which concerns, comments suggestions and plans may be discussed in the [AllCoreDevs gitter](https://gitter.im/ethereum/AllCoreDevs). The date of any such AMAs can be recorded in the table below for planning and for archival reference.
+
+***Roadblock Spotter***
 
 Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed various channels, including dev calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP.
 
-**EIP AMAs on All Core Devs Gitter**: To reduce the load on discussing each EIP in the dev calls, some EIPs will be allocated a day in which concerns, comments suggestions and plans may be discussed in the [AllCoreDevs gitter](https://gitter.im/ethereum/AllCoreDevs). The date of any such AMAs can be recorded here for planning and for archival reference.
 
 <div align="center">
 
