@@ -96,7 +96,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
 | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
 | [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| No issues 	| -	| Continue preparations 	|
-| [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| See 1109 (solves same issue) 	| C-	| hoose 1109 vs 2046 	|
+| [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| See 1109 (solves same issue) 	| -	| Choose 1109 vs 2046 	|
 
 
 </div>
