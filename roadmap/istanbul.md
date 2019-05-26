@@ -64,7 +64,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| WT to submit new EIP 	|
 | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| [Opcode vulnerable to replay attack](https://eips.ethereum.org/EIPS/eip-1965) 	| See 1965 	|
 | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No HF required 	| Non-istanbul 	|
-| [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	|  	|  	|
+| [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
 | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| PS: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) RN: May not be completed in time 	| RN to work toward Istanbul and make patch for network propagation 	|
 | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| No issues 	| Continue preparations 	|
 | [1706](https://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102)  	|
