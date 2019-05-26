@@ -49,18 +49,18 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 ----
 
-###EIP AMAs on All Core Devs Gitter
+### EIP AMAs on All Core Devs Gitter
 
 To reduce the load on discussing each EIP in the dev calls, some EIPs will be allocated a day in which concerns, comments suggestions and plans may be discussed in the [AllCoreDevs gitter](https://gitter.im/ethereum/AllCoreDevs). The date of any such AMAs can be recorded in the table below for planning and for archival reference.
 
-###Roadblock Spotter
+### Roadblock Spotter
 
 Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed various channels, including dev calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP.
 
 
 <div align="center">
 
-| EIP 	| Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA date	| Step required 	|
+| EIP 	| Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA date 	| Step required 	|
 |---	|---	|---	|---	|---	|
 | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| -	|Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
 | [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [AB: solves same stack-access problem as EIP615](https://youtu.be/lF_XxqxgVuA?t=1934) 	| -	| AB discuss with EIP615 authors if option A/B/C could be a precursor to EIP615 	|
