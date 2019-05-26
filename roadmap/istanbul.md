@@ -55,7 +55,7 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 
 ### Roadblock Spotter
 
-Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed various channels, including dev calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP.
+Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed various channels, including dev calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP. 'Checkpoint issues', such as and EIP not yet having a major client implementation or not having yet submitted test cases are considered 'standard preparations', which are [tracked](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) for each EIP and are not included below.
 
 
 <div align="center">
