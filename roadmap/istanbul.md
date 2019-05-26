@@ -27,17 +27,17 @@ James Hancock has created an [automated Google Sheet that covers additional mile
 
 The deadline for EIP proposals for Istanbul was May 17th. All of these EIPs intend to prepare for inclusion in Istanbul, but Core Dev acceptance, implementation, testing, audits, and other work needs to be done to prepare them. Each EIP has a "discussion-to" link where you can find more information, usually on the [EthMagicians Core EIPs forum](https://ethereum-magicians.org/c/eips/core-eips).
 
-* [EIP-615](https://eips.ethereum.org/EIPS/eip-615): Subroutines and Static Jumps for the EVM
-* [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057): ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
-* [EIP-1108](https://eips.ethereum.org/EIPS/eip-1108): Reduce alt_bn128 precompile gas costs - @zac-williamson
-* [EIP-1283](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md): Net gas metering for SSTORE without dirty maps @sorpass
-* [EIP-1344](https://eips.ethereum.org/EIPS/eip-1344): Add ChainID opcode - @fubuloubu
-* [EIP-1352](https://eips.ethereum.org/EIPS/eip-1352): Specify restricted address range for precompiles/system contracts
+* [EIP 615](https://eips.ethereum.org/EIPS/eip-615): Subroutines and Static Jumps for the EVM
+* [EIP 1057](https://eips.ethereum.org/EIPS/eip-1057): ProgPoW, a Programmatic Proof-of-Work (contingent on positive audit results) - @IfDefElse
+* [EIP 1108](https://eips.ethereum.org/EIPS/eip-1108): Reduce alt_bn128 precompile gas costs - @zac-williamson
+* [EIP 1283](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md): Net gas metering for SSTORE without dirty maps @sorpass
+* [EIP 1344](https://eips.ethereum.org/EIPS/eip-1344): Add ChainID opcode - @fubuloubu
+* [EIP 1352](https://eips.ethereum.org/EIPS/eip-1352): Specify restricted address range for precompiles/system contracts
 * [EIP 1380](https://eips.ethereum.org/EIPS/eip-1380): Reduced gas cost for call to self - @axic @jacqueswww
 * [EIP 1559](https://eips.ethereum.org/EIPS/eip-1559): Fee market change for ETH 1.0 chain
-* [EIP-1965](https://eips.ethereum.org/EIPS/eip-1965): Method to check if a chainID is valid at a specific block Number
-* [EIP-1702](https://eips.ethereum.org/EIPS/eip-1702): Generalized account versioning scheme - @sorpaas
-* [EIP-1706](https://eips.ethereum.org/EIPS/eip-1706): Disable SSTORE with gasleft lower than call stipend
+* [EIP 1965](https://eips.ethereum.org/EIPS/eip-1965): Method to check if a chainID is valid at a specific block Number
+* [EIP 1702](https://eips.ethereum.org/EIPS/eip-1702): Generalized account versioning scheme - @sorpaas
+* [EIP 1706](https://eips.ethereum.org/EIPS/eip-1706): Disable SSTORE with gasleft lower than call stipend
 * [EIP 1803](https://eips.ethereum.org/EIPS/eip-1803): Rename opcodes for clarity - @axic
 * [EIP 1829](https://eips.ethereum.org/EIPS/eip-1829): Precompile for Elliptic Curve Linear Combinations @remco
 * [EIP 1884](https://github.com/ethereum/EIPs/blob/dcc573e74adc0e6dd25821ddaabf862e8f85e107/EIPS/eip-1884.md): Reprice Opcodes + optional new opcode, @holiman - [Discuss](https://ethereum-magicians.org/t/opcode-repricing/3024)
@@ -49,48 +49,51 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 ----
 
+Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed various channels, including dev calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP.
+
 <div align="center">
 
 | EIP 	| Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Step required 	|
 |---	|---	|---	|---	|---	|
-| [615](https://eips.ethereum.org/EIPS/eip-615) 	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
-| [663](https://eips.ethereum.org/EIPS/eip-663) 	| [AB: solves same stack-access problem as EIP615](https://youtu.be/lF_XxqxgVuA?t=1934) 	| AB discuss with EIP615 authors if option A/B/C could be a precursor to EIP615 	|
-| [689](https://eips.ethereum.org/EIPS/eip-689) 	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| Non-istanbul 	|
-| [1057](https://eips.ethereum.org/EIPS/eip-1057) 	| Audit may find hardward/software issues. DF: [A small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| DF to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April HF. 	|
-| [1108](https://eips.ethereum.org/EIPS/eip-1108) 	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| ZW to re-run benchmarks 	|
-| [1109](https://eips.ethereum.org/EIPS/eip-1109) 	| AB: [Solves same issue as EIP 2046](https://youtu.be/lF_XxqxgVuA?t=3163) 	| Decide if refining OPCODE (1109) or new opcode (2046) is preferred|
-| [1283](https://eips.ethereum.org/EIPS/eip-1283) 	| Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| WT to submit new EIP 	|
-| [1344](https://eips.ethereum.org/EIPS/eip-1344) 	| [Opcode vulnerable to replay attack](https://eips.ethereum.org/EIPS/eip-1965) 	| See 1965 	|
-| [1352](https://eips.ethereum.org/EIPS/eip-1352) 	| No HF required 	| Non-istanbul 	|
-| [1380](https://eips.ethereum.org/EIPS/eip-1380) 	|  	|  	|
-| [1559](https://eips.ethereum.org/EIPS/eip-1559) 	| PS: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) RN: May not be completed in time 	| RN to work toward Istanbul and make patch for network propagation 	|
-| [1702](https://eips.ethereum.org/EIPS/eip-1702) 	| No issues 	| Continue preparations 	|
-| [1706](https://eips.ethereum.org/EIPS/eip-1706) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102)  	|
-| [1707 PR](https://github.com/ethereum/EIPs/pull/1707) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1712 PR](https://github.com/ethereum/EIPs/pull/1712) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1803](https://eips.ethereum.org/EIPS/eip-1803) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1829](https://eips.ethereum.org/EIPS/eip-1829) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1848 PR](https://github.com/ethereum/EIPs/pull/1848) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
+| [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [AB: solves same stack-access problem as EIP615](https://youtu.be/lF_XxqxgVuA?t=1934) 	| AB discuss with EIP615 authors if option A/B/C could be a precursor to EIP615 	|
+| [689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| Non-istanbul 	|
+| [1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work	| Audit may find hardward/software issues. DF: [A small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| DF to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April HF. 	|
+| [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| ZW to re-run benchmarks 	|
+| [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| AB: [Solves same issue as EIP 2046](https://youtu.be/lF_XxqxgVuA?t=3163) 	| Decide if refining OPCODE (1109) or new opcode (2046) is preferred|
+| [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| WT to submit new EIP 	|
+| [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| [Opcode vulnerable to replay attack](https://eips.ethereum.org/EIPS/eip-1965) 	| See 1965 	|
+| [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No HF required 	| Non-istanbul 	|
+| [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	|  	|  	|
+| [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| PS: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) RN: May not be completed in time 	| RN to work toward Istanbul and make patch for network propagation 	|
+| [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| No issues 	| Continue preparations 	|
+| [1706](https://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102)  	|
+| [1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [1803](https://eips.ethereum.org/EIPS/eip-1803) Rename opcodes for clarity	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [1848 PR](https://github.com/ethereum/EIPs/pull/1848) Fork Names Standard	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
 | [1884](https://eips.ethereum.org/EIPS/eip-1884) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
 | [1891 PR](https://github.com/ethereum/EIPs/pull/1891) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1930](https://eips.ethereum.org/EIPS/eip-1930) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [1959](https://eips.ethereum.org/EIPS/eip-1959) 	| [Reduced fork freedom. Likely superceded by 1965](https://eips.ethereum.org/EIPS/eip-1965) 	| See 1959 	|
-| [1965](https://eips.ethereum.org/EIPS/eip-1965) 	| DF: [1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| RS/RM/BE to clarify that 1965 supercedes 1959 and 1344 	|
-| [1985](https://eips.ethereum.org/EIPS/eip-1985) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [2014](https://eips.ethereum.org/EIPS/eip-2014) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [2024 PR](https://github.com/ethereum/EIPs/pull/2024) 	| CD: [ZW / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) 	| JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) 	|
-| [2025 PR](https://github.com/ethereum/EIPs/pull/2025) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [2026](https://eips.ethereum.org/EIPS/eip-2026) 	| Not yet discussed on dev call 	| POC Implementation WIP 	|
-| [2027](https://eips.ethereum.org/EIPS/eip-2027) 	| Not yet discussed on dev call 	| POC Implementation WIP 	|
-| [2028](https://eips.ethereum.org/EIPS/eip-2028) 	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
-| [2029](https://eips.ethereum.org/EIPS/eip-2029) 	| Not yet discussed on dev call 	| POC Implementation WIP 	|
-| [2031](https://eips.ethereum.org/EIPS/eip-2031) 	| Not yet discussed on dev call 	| POC Implementation WIP 	|
-| [2035](https://eips.ethereum.org/EIPS/eip-2035) 	| Not yet discussed on dev call 	| POC Implementation WIP 	|
-| [2045](https://github.com/ethereum/EIPs/pull/2045) 	| No issues 	| Continue preparations 	|
-| [2046](https://eips.ethereum.org/EIPS/eip-2046) 	| See 1109 (solves same issue) 	| Choose 1109 vs 2046 	|
+| [1930](https://eips.ethereum.org/EIPS/eip-1930) Repricing for trie-size-dependent opcodes	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs	| [Reduced fork freedom. Likely superceded by 1965](https://eips.ethereum.org/EIPS/eip-1965) 	| See 1959 	|
+| [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| DF: [1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| RS/RM/BE to clarify that 1965 supercedes 1959 and 1344 	|
+| [1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b	| CD: [ZW / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) 	| JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) 	|
+| [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed on dev call 	| POC Implementation WIP 	|
+| [2027](https://eips.ethereum.org/EIPS/eip-2027) State Rent C - Net contract size accounting	| Not yet discussed on dev call 	| POC Implementation WIP 	|
+| [2028](https://eips.ethereum.org/EIPS/eip-2028) Calldata gas cost reduction	| Not yet discussed on dev call 	| EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) 	|
+| [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed on dev call 	| POC Implementation WIP 	|
+| [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed on dev call 	| POC Implementation WIP 	|
+| [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| Not yet discussed on dev call 	| POC Implementation WIP 	|
+| [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| No issues 	| Continue preparations 	|
+| [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| See 1109 (solves same issue) 	| Choose 1109 vs 2046 	|
 
 
 </div>
+
 
 # Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
