@@ -47,52 +47,7 @@ The deadline for EIP proposals for Istanbul was May 17th. All of these EIPs inte
 
 _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum/EIPs)._
 
-----
 
-<div align="center">
-
-
-| EIP | Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? | Step required |
-|---	|---	|---	|---	|---	|
-
-| [615](https://eips.ethereum.org/EIPS/eip-615) | [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented |
-| [663](https://eips.ethereum.org/EIPS/eip-663) | [AB: solves same stack-access problem as EIP615](https://youtu.be/lF_XxqxgVuA?t=1934) | AB discuss with EIP615 authors if option A/B/C could be a precursor to EIP615 |
-| [689](https://eips.ethereum.org/EIPS/eip-689) | [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) | Non-istanbul |
-| [1057](https://eips.ethereum.org/EIPS/eip-1057) | Audit may find hardward/software issues. DF: [A small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) | DF to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April HF. |
-| [1108](https://eips.ethereum.org/EIPS/eip-1108) | Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) | ZW to re-run benchmarks |
-| [1109](https://eips.ethereum.org/EIPS/eip-1109) | AB: [Solves same issue as EIP 2046](https://youtu.be/lF_XxqxgVuA?t=3163) | Decide if refining OPCODE (1109) or new opcode (2046) is preferred|
-| [1283](https://eips.ethereum.org/EIPS/eip-1283) | Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) | WT to submit new EIP |
-| [1344](https://eips.ethereum.org/EIPS/eip-1344) | [Opcode vulnerable to replay attack](https://eips.ethereum.org/EIPS/eip-1965) | See 1965 |
-| [1352](https://eips.ethereum.org/EIPS/eip-1352) | No HF required | Non-istanbul |
-| [1380](https://eips.ethereum.org/EIPS/eip-1380) |  |  |
-| [1559](https://eips.ethereum.org/EIPS/eip-1559) | PS: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) RN: May not be completed in time | RN to work toward Istanbul and make patch for network propagation |
-| [1702](https://eips.ethereum.org/EIPS/eip-1702) | No issues | Continue preparations |
-| [1706](https://eips.ethereum.org/EIPS/eip-1706) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102)  |
-| [1707 PR](https://github.com/ethereum/EIPs/pull/1707) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1712 PR](https://github.com/ethereum/EIPs/pull/1712) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1803](https://eips.ethereum.org/EIPS/eip-1803) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1829](https://eips.ethereum.org/EIPS/eip-1829) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1848 PR](https://github.com/ethereum/EIPs/pull/1848) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1884](https://eips.ethereum.org/EIPS/eip-1884) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1891 PR](https://github.com/ethereum/EIPs/pull/1891) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1930](https://eips.ethereum.org/EIPS/eip-1930) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [1959](https://eips.ethereum.org/EIPS/eip-1959) | [Reduced fork freedom. Likely superceded by 1965](https://eips.ethereum.org/EIPS/eip-1965) | See 1959 |
-| [1965](https://eips.ethereum.org/EIPS/eip-1965) | DF: [1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). | RS/RM/BE to clarify that 1965 supercedes 1959 and 1344 |
-| [1985](https://eips.ethereum.org/EIPS/eip-1985) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [2014](https://eips.ethereum.org/EIPS/eip-2014) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [2024 PR](https://github.com/ethereum/EIPs/pull/2024) | CD: [ZW / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) | JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) |
-| [2025 PR](https://github.com/ethereum/EIPs/pull/2025) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [2026](https://eips.ethereum.org/EIPS/eip-2026) | Not yet discussed on dev call | POC Implementation WIP |
-| [2027](https://eips.ethereum.org/EIPS/eip-2027) | Not yet discussed on dev call | POC Implementation WIP |
-| [2028](https://eips.ethereum.org/EIPS/eip-2028) | Not yet discussed on dev call | EIP champion or a volunteer to present [7 June call](https://github.com/ethereum/pm/issues/102) |
-| [2029](https://eips.ethereum.org/EIPS/eip-2029) | Not yet discussed on dev call | POC Implementation WIP |
-| [2031](https://eips.ethereum.org/EIPS/eip-2031) | Not yet discussed on dev call | POC Implementation WIP |
-| [2035](https://eips.ethereum.org/EIPS/eip-2035) | Not yet discussed on dev call | POC Implementation WIP |
-| [2045](https://github.com/ethereum/EIPs/pull/2045) | No issues | Continue preparations |
-| [2046](https://eips.ethereum.org/EIPS/eip-2046) | See 1109 (solves same issue) | Choose 1109 vs 2046 |
-
-
-</div>
 # Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
 
