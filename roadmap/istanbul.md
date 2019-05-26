@@ -91,6 +91,7 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 
 </div>
+
 # Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
 
