@@ -165,7 +165,6 @@ This could be achieved one of three ways:
 
 #### **State rent cluster**
 State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. 
-2029 (part A), 2031 (part B), 2027 (part C) and 2026 (part H)
 
 Planned prototyping and implementation, in order of decreasing priority:
 - Change C: Net contract size accounting, [2027](https://eips.ethereum.org/EIPS/eip-2027). Also useful for snapshot sync and better pricing for SLOADs
