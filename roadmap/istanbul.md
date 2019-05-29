@@ -124,11 +124,11 @@ Edits are welcome.
 1352 Specifies a restricted address range for precompies and is required for 2046.
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
-#### Contract storage writing
+#### **Contract storage writing**
 1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
 1706 is a required for compatibility with many existing contracts.
 
-#### Account versioning cluster: 
+#### **Account versioning cluster **
 To enable eWASM to be introduced, smart contracts need to reference a VM version.
 This could be achieved one of three ways:
 - 1702 (which is also needed for 615). Version for contract families as new RLP item.
@@ -137,18 +137,18 @@ This could be achieved one of three ways:
 615 Requires any one of the versioning systems and allows for improved EVM performance and allows dynamic jumps to be avoided by using static jumps and subroutines. This allows improved control-flow, data-flow, static and formal analyses. 
 663 increases stack depth and relates to 615 which also affects the stack.
 
-#### Storage gas cost cluster
+#### **Storage gas cost cluster**
 1884 Increases SLOAD and BALANCE gas costs, to properly reflect real relative CPU-time cost. 
 2035 Part of the state rent roadmap, also increases SLOAD in order to allow better block proof transmission. 
 2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
 
-#### Chain metadata cluster
+#### **Chain metadata cluster**
 1965 Adds a precompile to get the ChainID at a specific block number. This likely supercedes both proposals 
 - 1959 Which introduces ChainID as a new opcode, but likely has reduced fork freedom.
 - 1344 Which introduces ChainID via a smart contract, which likely has a replay vulnerability.
 2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
 
-#### State rent cluster
+#### **State rent cluster**
 State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. 
 2029 (part A), 2031 (part B), 2027 (part C) and 2026 (part H)
 
