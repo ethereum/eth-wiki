@@ -128,7 +128,7 @@ Edits are welcome.
 1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
 1706 is a required for compatibility with many existing contracts.
 
-#### **Account versioning cluster **
+#### **Account versioning cluster**
 To enable eWASM to be introduced, smart contracts need to reference a VM version.
 This could be achieved one of three ways:
 - 1702 (which is also needed for 615). Version for contract families as new RLP item.
