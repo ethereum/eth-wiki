@@ -124,7 +124,7 @@ Edits are welcome.
 1352 Specifies a restricted address range for precompies and is required for 2046.
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
-#### **Contract storage writing**
+#### **Contract storage writing cluster**
 1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
 1706 is a required for compatibility with many existing contracts.
 
