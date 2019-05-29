@@ -101,6 +101,58 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 
 </div>
 
+### EIPs grouped by scope and effect
+Some EIPs are complementary and some are mutually exclusive improvements that deprecate other proprosals. Below is a rough clustering to highlight these relationships. 
+
+Edits are welcome.
+
+#### Proposals that are independent
+1057 ProgPOW
+1380 Reduced gas cost for call to self
+1559 Fee market change
+1803 Rename opcodes for clarity
+1848 Fork Names Standard
+1985 Formal declaration of implicit EVM parameters
+2025 New developer funding through model
+2028 18 months of [block-reward-based](https://github.com/MadeofTin/EIPs/blob/ETH1.X/EIPS/eip-2025.md) funding to improve present-day ethereum (1.x)
+
+#### Elliptic curve cluster: 
+1829 Allows a class of eliptic curves to be supported through linear combinations.
+1108 Supplements 1829 by reducing the cost of addition, multiplication and and pairing checks (specifically to make alt_bn128 cheaper for immediate use)
+2024 Introduces a specific precompile for Blake2b for immediate use.
+2046 and 1109 both seek to reduce the cost of calling a precompile, making 1108 and 2024 cheaper. Decision needs to be made which one is better. Considerations: CALL vs STATICCALL, new opcode vs modifying existing and attack vecctors from disk loading. [Discussion on FEM](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447)
+1352 Specifies a restricted address range for precompies and is required for 2046.
+1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
+
+#### Contract storage writing
+1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
+1706 is a required for compatibility with many existing contracts.
+
+#### Account versioning cluster: 
+To enable eWASM to be introduced, smart contracts need to reference a VM version.
+This could be achieved one of three ways:
+- 1702 (which is also needed for 615). Version for contract families as new RLP item.
+- 1707 + 1712. Version as RLP item based on code header prefix. Possibly backward incompatible.
+- 1891 Version goes in separate contract. Worse performance, but improves on the above by: allowing account state format to stay the same, allowing precompile invokation to stay the same and by preventing forging of version bytes.
+615 Requires any one of the versioning systems and allows for improved EVM performance and allows dynamic jumps to be avoided by using static jumps and subroutines. This allows improved control-flow, data-flow, static and formal analyses. 
+663 increases stack depth and relates to 615 which also affects the stack.
+
+#### Storage gas cost cluster
+1884 Increases SLOAD and BALANCE gas costs, to properly reflect real relative CPU-time cost. 
+2035 Part of the state rent roadmap, also increases SLOAD in order to allow better block proof transmission. 
+2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
+
+#### Chain metadata cluster
+1965 Adds a precompile to get the ChainID at a specific block number. This likely supercedes both proposals 
+- 1959 Which introduces ChainID as a new opcode, but likely has reduced fork freedom.
+- 1344 Which introduces ChainID via a smart contract, which likely has a replay vulnerability.
+2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
+
+#### State rent cluster
+State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. 
+2029 (part A), 2031 (part B), 2027 (part C) and 2026 (part H)
+
+
 
 # Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
