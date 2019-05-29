@@ -60,7 +60,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 
 <div align="center">
 
-| EIP 	| Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA date 	| Step required 	|
+| EIP 	| Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA or ACD call date 	| Step required 	|
 |---	|---	|---	|---	|---	|
 | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| -	|Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
 | [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [AB: solves same stack-access problem as EIP615](https://youtu.be/lF_XxqxgVuA?t=1934) 	| -	| AB discuss with EIP615 authors if option A/B/C could be a precursor to EIP615 	|
@@ -84,6 +84,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | [1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or arrange for EIP champion (or a volunteer) to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
 | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or arrange for EIP champion (or a volunteer) to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
 | [1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs	| [Reduced fork freedom. Likely superceded by 1965](https://eips.ethereum.org/EIPS/eip-1965) 	| -	| See 1959 	|
+| [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 7 June Dev Call | Alexander Vlasov (@shamatar) will attend [7 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See **Elliptic curve cluster** for related EIPs |
 | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| DF: [1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| RS/RM/BE to clarify that 1965 supercedes 1959 and 1344 	|
 | [1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or arrange for EIP champion (or a volunteer) to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
 | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or arrange for EIP champion (or a volunteer) to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
@@ -117,10 +118,22 @@ Edits are welcome.
 2028 18 months of [block-reward-based](https://github.com/MadeofTin/EIPs/blob/ETH1.X/EIPS/eip-2025.md) funding to improve present-day ethereum (1.x)
 
 #### **Elliptic curve cluster**
+New curves allow a variety or privacy and scaling solutions.
 1829 Allows a class of eliptic curves to be supported through linear combinations.
+1962 Precompile that extends and formalises 1829 allowing for new curves to be added later without waiting for forks. Desireable to have 1109 also for cost reduction, which is predominantly STATICCAL-based. Three main differences from 1829:
+- Operation on arbitrary-length modulus (up to some upper-limit) for a base field and scalar field of the curve
+- Pairing operations are introduced
+- Different ABI due to variable parameter length
+
+
 1108 Supplements 1829 by reducing the cost of addition, multiplication and and pairing checks (specifically to make alt_bn128 cheaper for immediate use)
 2024 Introduces a specific precompile for Blake2b for immediate use.
-2046 and 1109 both seek to reduce the cost of calling a precompile, making 1108 and 2024 cheaper. Decision needs to be made which one is better. Considerations: CALL vs STATICCALL, new opcode vs modifying existing and attack vecctors from disk loading. [Discussion on FEM](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447)
+
+2046 (change price of STATICCALL for precomiles) and 1109 (New low cost PRECOMPILEDCALL) both seek to reduce the cost of calling a precompile, making 1108, 2024 and 1962 cheaper. Decision needs to be made which one is better. Considerations: 
+- CALL vs STATICCALL in this context
+- New opcode vs modifying existing 
+- Attack vectors from disk loading. [Discussion on FEM](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447)
+
 1352 Specifies a restricted address range for precompies and is required for 2046.
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
@@ -154,6 +167,12 @@ This could be achieved one of three ways:
 State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. 
 2029 (part A), 2031 (part B), 2027 (part C) and 2026 (part H)
 
+Planned prototyping and implementation, in order of decreasing priority:
+- Change C: Net contract size accounting, [2027](https://eips.ethereum.org/EIPS/eip-2027). Also useful for snapshot sync and better pricing for SLOADs
+- Changes A & B: State counters contract [2029](https://eips.ethereum.org/EIPS/eip-2029) & net transaction counter [2031](https://eips.ethereum.org/EIPS/eip-2031)
+- Change H: Fixed rent prepayments [2026](https://eips.ethereum.org/EIPS/eip-2026)
+- Stateless clients: Repricing SLOAD and SSTORE to pay for block proofs [2035](https://eips.ethereum.org/EIPS/eip-2035) (See also storage gas cost cluster above)
+
 
 
 # Updates
@@ -164,5 +183,7 @@ _Newest at the top, likely EthCatHerders repo / Github project will be source of
 * There is a WIP [Client Tracker](/roadmap/istanbul/tracker)
 * EthCatHerders organizing, see [PM repo](https://github.com/ethereum-cat-herders/PM/tree/master/Hard%20Fork%20Planning%20and%20Coordination), Joseph DeLong point of contact for Istanbul 
 * Afri proposed the [schedule on the Jan 4th All Core Devs call](https://github.com/ethereum/pm/issues/66#issuecomment-450840440) where it was provisionally accepted
+
+
 
 
