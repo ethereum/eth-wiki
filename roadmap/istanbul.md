@@ -120,7 +120,7 @@ Edits are welcome.
 #### **Elliptic curve cluster**
 New curves allow a variety or privacy and scaling solutions.
 1829 Allows a class of eliptic curves to be supported through linear combinations.
-1962 Precompile that extends and formalises 1829 allowing for new curves to be added later without waiting for forks. Desireable to have 1109 also for cost reduction, which is predominantly STATICCAL-based. Three main differences from 1829:
+1962 Precompile that extends and formalises 1829 allowing for new curves to be added later without waiting for forks. Desireable to have 1109 also for cost reduction, which is predominantly STATICCALL-based. Three main differences from 1829:
 - Operation on arbitrary-length modulus (up to some upper-limit) for a base field and scalar field of the curve
 - Pairing operations are introduced
 - Different ABI due to variable parameter length
