@@ -106,7 +106,7 @@ Some EIPs are complementary and some are mutually exclusive improvements that de
 
 Edits are welcome.
 
-#### **_Proposals that are independent_**
+#### **Proposals that are independent**
 1057 ProgPOW
 1380 Reduced gas cost for call to self
 1559 Fee market change
@@ -116,7 +116,7 @@ Edits are welcome.
 2025 New developer funding through model
 2028 18 months of [block-reward-based](https://github.com/MadeofTin/EIPs/blob/ETH1.X/EIPS/eip-2025.md) funding to improve present-day ethereum (1.x)
 
-#### Elliptic curve cluster: 
+#### **Elliptic curve cluster**
 1829 Allows a class of eliptic curves to be supported through linear combinations.
 1108 Supplements 1829 by reducing the cost of addition, multiplication and and pairing checks (specifically to make alt_bn128 cheaper for immediate use)
 2024 Introduces a specific precompile for Blake2b for immediate use.
