@@ -106,7 +106,7 @@ Some EIPs are complementary and some are mutually exclusive improvements that de
 
 Edits are welcome.
 
-#### Proposals that are independent
+#### **_Proposals that are independent_**
 1057 ProgPOW
 1380 Reduced gas cost for call to self
 1559 Fee market change
