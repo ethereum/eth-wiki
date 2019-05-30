@@ -62,42 +62,42 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 
 | Cluster | EIP  | Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA or ACD call date 	| Step required 	|
 |---	|--- |---	|---	|---	|---	|
-| Account versioning | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| -	|Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
-| Account versioning | [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [Alexey noted it solves same stack-access problem as 615](https://youtu.be/lF_XxqxgVuA?t=1934). Three technical options are presented. 	| -	| Alexey Akhunov, Alex Beregszaszi (663), 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and resolve, including selecting preferred option A/B/C in proposal	|
+| **Account versioning** | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| [MS: 1) Overhead > benefits of formal analysis and ease of mapping in WASM and 2) Complex to co-implement EVM versioning](https://youtu.be/lF_XxqxgVuA?t=883) [ZW: performance benefits significant](https://youtu.be/lF_XxqxgVuA?t=1308)| -	|Benchmark data for benefits, decide if should be in next fork after [versioning](https://eips.ethereum.org/EIPS/eip-1702) has been implemented 	|
+| **Account versioning** | [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [Alexey noted it solves same stack-access problem as 615](https://youtu.be/lF_XxqxgVuA?t=1934). Three technical options are presented. 	| -	| Alexey Akhunov, Alex Beregszaszi (663), 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and resolve, including selecting preferred option A/B/C in proposal	|
 | - | [689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| -	| Non-istanbul client implementations	|
 | - | [1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work	| Audit may find hardward/software issues. DF: [A small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| -	| Danno Ferrin to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April hard fork. 	|
-| Elliptic curve | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| -	| Zachary Williamson to re-run benchmarks 	|
-| Elliptic curve | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| -	| Alex Beregszaszi (2046), Jordi Baylina (1109) and elliptic curve stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
-| Storage writing | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| -	| Wei Tang to submit new EIP 	|
-| Chain metadata | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and chain metadata stakeholders to elect preferred method	|
+| **Elliptic curve** | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| -	| Zachary Williamson to re-run benchmarks 	|
+| **Elliptic curve** | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| -	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
+| **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| -	| Wei Tang to submit new EIP 	|
+| **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No hard fork required, but needed for 2046 	| -	| Non-istanbul client implementations	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| -	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
-| Account versioning | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and account versioning stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
-| Storage writing | [1706](https://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) tothe agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102)  	|
-| Account versioning | [1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning | Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and account versioning stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
-| Account versioning | [1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and account versioning stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
+| **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
+| **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) to the agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102)  	|
+| **Account versioning** | [1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning | Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
+| **Account versioning** | [1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
 | - | [1803](https://eips.ethereum.org/EIPS/eip-1803) Rename opcodes for clarity	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| Elliptic curve | [1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) tothe agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| Storage gas cost | [1848 PR](https://github.com/ethereum/EIPs/pull/1848) Fork Names Standard	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
+| **Elliptic curve** | [1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) to the agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
+| **Storage gas cost** | [1848 PR](https://github.com/ethereum/EIPs/pull/1848) Fork Names Standard	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
 | - | [1884](https://eips.ethereum.org/EIPS/eip-1884) Repricing for trie-size-dependent opcodes 	| SLOAD is affected by 1884, 2035 and possibly 2045 	| -	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
-| Account versioning | [1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and account versioning stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
-| Elliptic curve | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) tothe agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| Chain metadata | [1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and chain metadata stakeholders to elect preferred method	|
-| Elliptic curve | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 7 June Dev Call | Alexander Vlasov (@shamatar) will attend [7 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See **Elliptic curve cluster** for related EIPs |
-| Chain metadata | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and chain metadata stakeholders to elect preferred method	|
+| **Account versioning** | [1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| -	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and elect preferred method	|
+| **Elliptic curve** | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) to the agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
+| **Chain metadata** | [1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
+| **Elliptic curve** | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 7 June Dev Call | Alexander Vlasov (@shamatar) will attend [7 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See ****Elliptic curve** cluster** for related EIPs |
+| **Chain metadata** | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| -	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
 | - | [1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| Chain metadata | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| Elliptic curve | [2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b	| CD: [ZW / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) 	| -	| JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) 	|
-| - | [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) tothe agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| State rent | [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
-| State rent | [2027](https://eips.ethereum.org/EIPS/eip-2027) State Rent C - Net contract size accounting	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
+| **Chain metadata** | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
+| **Elliptic curve** | [2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b	| CD: [ZW / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) 	| -	| JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) 	|
+| - | [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or ddean  EIP champion (or a volunteer) to the agenda to  present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
+| **State rent** | [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
+| **State rent** | [2027](https://eips.ethereum.org/EIPS/eip-2027) State Rent C - Net contract size accounting	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
 | - | [2028](https://eips.ethereum.org/EIPS/eip-2028) Calldata gas cost reduction	| Not yet discussed in gitter AMA or dev call 	| -	| Either allocate gitter AMA date (preferred) or add an EIP champion (or a volunteer) to the agenda to present at [7 June dev call](https://github.com/ethereum/pm/issues/102) 	|
-| State rent | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
-| State rent | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
-| Storage gas cost | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| -	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
-| Storage gas cost | [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| -	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
-| Elliptic curve | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| -	| Alex Beregszaszi (2046), Jordi Baylina (1109) and elliptic curve stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
+| **State rent** | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
+| **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
+| **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| -	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
+| **Storage gas cost** | [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| -	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
+| **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| -	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
 
 
 </div>
@@ -119,9 +119,9 @@ EIPs with minimal interactions with other proposals
 - [2028 Calldata gas cost reduction](https://eips.ethereum.org/EIPS/eip-2028) (Alexey Akhunov, Eli Ben Sasson, Tom Brand, Avihu Levy)
 
 
-#### **Elliptic curve cluster**
+#### ****Elliptic curve** cluster**
 Relevant:
-- [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
+- [1829 Precompile for **Elliptic Curve** Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
 - [1109 PRECOMPILEDCALL opcode](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
 - [1108 Reduce alt_bn128 precompile gas costs](https://eips.ethereum.org/EIPS/eip-1108) (Antonio Salazar Cardozo, Zachary Williamson)
@@ -148,7 +148,7 @@ New curves allow a variety or privacy and scaling solutions.
 1352 Specifies a restricted address range for precompies and is required for 2046.
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
-#### **Contract storage writing cluster**
+#### **Storage writing cluster**
 Relevant:
 - [1283 Net gas metering for SSTORE without dirty maps](https://eips.ethereum.org/EIPS/eip-1283) (Wei Tang)
 - [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss)
@@ -156,10 +156,10 @@ Relevant:
 1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
 1706 is a required for compatibility with many existing contracts.
 
-#### **Account versioning cluster**
+#### ****Account versioning** cluster**
 Relevant:
-- [1702 Generalized Account Versioning Scheme](https://eips.ethereum.org/EIPS/eip-1702) (Wei Tang)
-- [1707 Use Version Byte Prefix for Contract Account Versioning](https://github.com/ethereum/EIPs/pull/1707) (Wei Tang)
+- [1702 Generalized **Account Versioning** Scheme](https://eips.ethereum.org/EIPS/eip-1702) (Wei Tang)
+- [1707 Use Version Byte Prefix for Contract **Account Versioning**](https://github.com/ethereum/EIPs/pull/1707) (Wei Tang)
 - [1712 Disallow Deployment of Unused Opcodes](https://github.com/ethereum/EIPs/pull/1712) (Wei Tang)
 - [1891 Contract-based Account Versioning](https://github.com/ethereum/EIPs/pull/1891) (Wei Tang)
 - [615 Subroutines and Static Jumps for the EVM](https://eips.ethereum.org/EIPS/eip-615) (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner)
@@ -174,17 +174,17 @@ This could be achieved one of three ways:
 615 Requires any one of the versioning systems and allows for improved EVM performance and allows dynamic jumps to be avoided by using static jumps and subroutines. This allows improved control-flow, data-flow, static and formal analyses. 
 663 increases stack depth and relates to 615 which also affects the stack.
 
-#### **Storage gas cost cluster**
+#### ****Storage gas cost** cluster**
 Relevant:
 - [1884 Repricing for trie-size-dependent opcodes](https://eips.ethereum.org/EIPS/eip-1884) (Martin Holst Swende)
 - [2035 Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs](https://eips.ethereum.org/EIPS/eip-2035) (Alexey Akhunov)
 - [2045 add EIP for fractional gas costs](https://github.com/ethereum/EIPs/pull/2045) (Casey Detrio)
 
 1884 Increases SLOAD and BALANCE gas costs, to properly reflect real relative CPU-time cost. 
-2035 Part of the state rent roadmap, also increases SLOAD in order to allow better block proof transmission. 
+2035 Part of the **state rent** roadmap, also increases SLOAD in order to allow better block proof transmission. 
 2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
 
-#### **Chain metadata cluster**
+#### ****Chain metadata** cluster**
 Relevant:
 - [1965 Method to check if a chainID is valid at a specific block number](https://eips.ethereum.org/EIPS/eip-1965) (Ronan Sandford)
 - [1959 New Opcode to check if a chainID is part of the history of chainIDs](https://eips.ethereum.org/EIPS/eip-1959) (Ronan Sandford)
@@ -197,14 +197,14 @@ Relevant:
 
 2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
 
-#### **State rent cluster**
-State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. Proposals by Alexey Akhunov.
+#### ****State rent** cluster**
+**State rent** proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. Proposals by Alexey Akhunov.
 
 Planned prototyping and implementation, in order of decreasing priority:
 - Change C: Net contract size accounting, [2027](https://eips.ethereum.org/EIPS/eip-2027). Also useful for snapshot sync and better pricing for SLOADs
 - Changes A & B: State counters contract [2029](https://eips.ethereum.org/EIPS/eip-2029) & net transaction counter [2031](https://eips.ethereum.org/EIPS/eip-2031)
 - Change H: Fixed rent prepayments [2026](https://eips.ethereum.org/EIPS/eip-2026)
-- Stateless clients: Repricing SLOAD and SSTORE to pay for block proofs [2035](https://eips.ethereum.org/EIPS/eip-2035) (See also storage gas cost cluster above)
+- Stateless clients: Repricing SLOAD and SSTORE to pay for block proofs [2035](https://eips.ethereum.org/EIPS/eip-2035) (See also **storage gas cost** cluster above)
 
 
 
