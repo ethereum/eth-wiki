@@ -119,7 +119,7 @@ EIPs with minimal interactions with other proposals
 - [2028 Calldata gas cost reduction](https://eips.ethereum.org/EIPS/eip-2028) (Alexey Akhunov, Eli Ben Sasson, Tom Brand, Avihu Levy)
 
 
-#### ****Elliptic curve** cluster**
+#### **Elliptic curve cluster**
 Relevant:
 - [1829 Precompile for **Elliptic Curve** Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
@@ -156,10 +156,10 @@ Relevant:
 1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. 
 1706 is a required for compatibility with many existing contracts.
 
-#### ****Account versioning** cluster**
+#### **Account versioning cluster**
 Relevant:
-- [1702 Generalized **Account Versioning** Scheme](https://eips.ethereum.org/EIPS/eip-1702) (Wei Tang)
-- [1707 Use Version Byte Prefix for Contract **Account Versioning**](https://github.com/ethereum/EIPs/pull/1707) (Wei Tang)
+- [1702 Generalized Account Versioning Scheme](https://eips.ethereum.org/EIPS/eip-1702) (Wei Tang)
+- [1707 Use Version Byte Prefix for Contract Account Versioning](https://github.com/ethereum/EIPs/pull/1707) (Wei Tang)
 - [1712 Disallow Deployment of Unused Opcodes](https://github.com/ethereum/EIPs/pull/1712) (Wei Tang)
 - [1891 Contract-based Account Versioning](https://github.com/ethereum/EIPs/pull/1891) (Wei Tang)
 - [615 Subroutines and Static Jumps for the EVM](https://eips.ethereum.org/EIPS/eip-615) (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner)
@@ -174,7 +174,7 @@ This could be achieved one of three ways:
 615 Requires any one of the versioning systems and allows for improved EVM performance and allows dynamic jumps to be avoided by using static jumps and subroutines. This allows improved control-flow, data-flow, static and formal analyses. 
 663 increases stack depth and relates to 615 which also affects the stack.
 
-#### ****Storage gas cost** cluster**
+#### **Storage gas cost cluster**
 Relevant:
 - [1884 Repricing for trie-size-dependent opcodes](https://eips.ethereum.org/EIPS/eip-1884) (Martin Holst Swende)
 - [2035 Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs](https://eips.ethereum.org/EIPS/eip-2035) (Alexey Akhunov)
@@ -184,7 +184,7 @@ Relevant:
 2035 Part of the **state rent** roadmap, also increases SLOAD in order to allow better block proof transmission. 
 2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
 
-#### ****Chain metadata** cluster**
+#### **Chain metadata cluster**
 Relevant:
 - [1965 Method to check if a chainID is valid at a specific block number](https://eips.ethereum.org/EIPS/eip-1965) (Ronan Sandford)
 - [1959 New Opcode to check if a chainID is part of the history of chainIDs](https://eips.ethereum.org/EIPS/eip-1959) (Ronan Sandford)
@@ -197,7 +197,7 @@ Relevant:
 
 2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
 
-#### ****State rent** cluster**
+#### **State rent cluster**
 **State rent** proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. Proposals by Alexey Akhunov.
 
 Planned prototyping and implementation, in order of decreasing priority:
