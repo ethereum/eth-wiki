@@ -121,7 +121,7 @@ EIPs with minimal interactions with other proposals
 
 #### **Elliptic curve cluster**
 Relevant:
-- [1829 Precompile for **Elliptic Curve** Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
+- [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
 - [1109 PRECOMPILEDCALL opcode](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
 - [1108 Reduce alt_bn128 precompile gas costs](https://eips.ethereum.org/EIPS/eip-1108) (Antonio Salazar Cardozo, Zachary Williamson)
