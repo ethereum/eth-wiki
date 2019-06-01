@@ -149,12 +149,35 @@ New curves allow a variety or privacy and scaling solutions.
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
 ### **Storage writing cluster**
+
+
+Key benefits:
+- Multiple write operation within a single call frame, allowing re-entry locks and multi-sends.
+
 Relevant:
-- [1283 Net gas metering for SSTORE without dirty maps](https://eips.ethereum.org/EIPS/eip-1283) (Wei Tang)
+- [1283 Net gas metering for SSTORE without dirty maps](https://eips.ethereum.org/EIPS/eip-1283) (Wei Tang). Clients already have implementations
 - [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss)
 
-1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. Previously had a re-entrancy bug [caused by contracts assuming long term stability of gas costs](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440) which is now addressed with **account versioning**.
-1706 is a required for compatibility with many existing contracts.
+Key decisions:
+- Whether to implement net gas metering directly on EVM or implement it once Alexey's state rend has been implemented
+- Are account versioning EIPs (likely 1702) happening?
+
+Key actions:
+- If gas metering on EVM, and account versioning, 1706 not required
+- If gas metering on EVM and no account versioning, have people review [1706 implementation](paritytech/parity-ethereum#10191)
+- If gas metering once Alexey's state rent goes ahead, plan for metering in appropriate fork.
+
+(The rest part of EIP-1283 spec should have been reviewed by many people, and we have already discussed in depth about choices of different net gas metering options (EIP-1087, EIP-1153, EIP-1283).)
+
+
+1283 Enables multiple write operation within a single call frame, allowing re-entry locks and multi-sends. Previously had a re-entrancy bug [caused by contracts assuming long term stability of gas costs](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440) which is now addressed with **account versioning** or with 1706.
+1706 is a required for compatibility with many existing contracts if no account versioning implemented.
+
+
+Probable path forward
+- Prepare for Istanbul: 1283 (if metering happening directly on EVM)
+- Prepare for April 2020 Hard Fork:
+- Shelve indefinitely: 1706 (if account versioning goes ahead)
 
 ### **Account versioning cluster**
 
