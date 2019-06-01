@@ -3,7 +3,7 @@
 
 The [ETH1](/eth1) page is a good starting point for an overview of Working Groups and areas of focus.
 # Timelines
-* 2019-04-17 (Wed-Thurs) CoreDev planning meeting in Berlin, [details on EthMagicians](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899)
+* 2019-04-17 (Wed-Thurs) CoreDev  planning meeting in Berlin, [details on EthMagicians](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899)
 * 2019-05-17 (Fri) hard deadline to accept proposals for “Istanbul”
 * 2019-07-19 (Fri) soft deadline for major client implementations
 * 2019-07 CoreDev planning meeting proposed
