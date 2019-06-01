@@ -199,7 +199,6 @@ Three account versioning proposals, only one must be selected
 - What specifically is required of the [solidity team and testing team](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) as a next step for 615?
 - Is there are need to prove with testing that static jumps from 615 are faster that dynamic jumps, given there are [significant benefits in contract security analysis (as per Neville Grech)](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58) which arguably are the main benefit to be had?
 - Are there serious technical concerns that require 615 to be split into separate EIPs (First subroutines then static jumps)? 
-- Nick johnson [had a question for 615 about using PUSHes prior to taking arguments from the stack](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/31) Does he feel strongly this is requried?
 - While 615 introduces ten new opcodes, which [Bryant Eisenbach](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/39) and [Nick Johnson](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/31) though was a large number. The [opcodes are mapped to similar functional elements in eWASM](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/44) which will help with the EVM->eWASM transition. Are Bryan and Nick happy with this?
 
 #### Probable path forward
