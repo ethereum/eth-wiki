@@ -298,14 +298,33 @@ Three account versioning proposals, only one must be selected
 - Shelve indefinitely: 663, two of the account versioning proposals (most likely 1891 and 1707+1712)
 
 ### **Storage gas cost cluster**
-Relevant:
+
+#### Key benefits:
+Some opcodes are mispriced, and by repricing them more transations could fit into blocks.
+A separate new counter that counts gas with more granularity prepares clients for how eWASM contracts meter gas.
+
+#### Relevant EIPs:
 - [1884 Repricing for trie-size-dependent opcodes](https://eips.ethereum.org/EIPS/eip-1884) (Martin Holst Swende)
 - [2035 Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs](https://eips.ethereum.org/EIPS/eip-2035) (Alexey Akhunov)
 - [2045 add EIP for fractional gas costs](https://github.com/ethereum/EIPs/pull/2045) (Casey Detrio)
 
-1884 Increases SLOAD and BALANCE gas costs, to properly reflect real relative CPU-time cost. 
-2035 Part of the **state rent** roadmap, also increases SLOAD in order to allow better block proof transmission. 
+#### Key concepts
+Current gas costs do not reflect the true CPU cost of operations. In particular, SLOAD and BALANCE are overpriced. 1884 Increases SLOAD and BALANCE gas costs, to properly reflect real relative CPU-time cost. A new opcode SELFBALANCE is also introduced.
+
 2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
+
+#### EIP interactions
+Other EIPs that affect storage gas costs might be:
+- 2035 Part of the **state rent** roadmap, also increases SLOAD in order to allow better block proof transmission. 
+
+#### Key questions
+- Should the SLOAD parameter used in 1884 and 2035 be compared and a single parameter selected for both?
+- Does 2045 affect either 1884 or 2035?
+
+#### Probable path forward
+- Prepare for Istanbul: 1884, 2045, probably 2035 (see **state rent** cluster)
+- Prepare for April 2020 Hard Fork: None
+- Shelve indefinitely: None
 
 ### **Chain metadata cluster**
 
@@ -331,6 +350,11 @@ Relevant:
 - Shelve indefinitely: 1959, 1344
 
 ### **State rent cluster**
+#### Key benefits
+Maintainpresent-day ethereum by making optimisations that keep state size small
+
+#### Key concepts:
+
 State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. Proposals by Alexey Akhunov.
 
 Planned prototyping and implementation, in order of decreasing priority:
