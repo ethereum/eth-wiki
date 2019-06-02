@@ -70,6 +70,7 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vS7t5kwTrxL3zja2hLIPcNchPtBoXBeSxWNG8-tm5vlGPV4XycY7PMQDWKQGRXd_vwEPLO8dIbPR7EH/pub?w=2762&amp;h=1430">
 
+[Link to Google Drawing](https://docs.google.com/drawings/d/14vSgSGLkr9iPLTpOuZrtSoGyspHYDPh9ue6Ki4hrj54/)
 
 ### Roadblock Spotter
 
