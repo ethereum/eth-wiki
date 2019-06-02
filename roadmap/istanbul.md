@@ -217,7 +217,7 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 - Decide if 1962 or 1829 are preferred
 - Decide if 2046 (modify STATICCALL for precomiles) or 1109 (new PRECOMPILED call) preferred.
 
-Probable path forward
+#### Probable path forward
 - Prepare for Istanbul: 1108, 2024, 1962, (either 2046 or 1109)
 - Prepare for April 2020 Hard Fork:
 - Shelve indefinitely: 1829
