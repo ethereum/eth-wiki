@@ -136,6 +136,29 @@ EIPs with minimal interactions with other proposals
 
 
 ### **Elliptic curve cluster**
+
+Key benefits: Scaling, privacy, bridges to other chains, DNS certificate validation in ENS, forward compatibility with IPFS.
+
+Curves enabled and possible uses:
+- The alt_bn128 curve (cheaper with 1108).
+- Edwards curves (Weierstrass form) in general (cheaper with 1829). This covers curves of the naming convention 'Ed-'.
+- Ed25519 is specifically enabled by 665.
+- [LibSNARK](https://github.com/scipr-lab/libsnark/tree/f7c87b88744ecfd008126d415494d9b34c4c1b20) which uses edwards 'ed-', bn128 or alt_bn128 curves]. Edwards curves are made cheaper with 1829. The alt_bn128 curve is are made cheaper with 1108).
+- Aztec (made cheaper with 1108) which uses [alt_bn128](https://github.com/AztecProtocol/AZTEC)
+- Private ERC20/721 transactions on ethereum mainnet with Nightfall (public domain code made by EY) (made cheaper with 1108) using [alt_bn128](https://github.com/EYBlockchain/nightfall/issues/14)
+- [Matter labs](https://github.com/matter-labs/matter-network) scaling solution uses Alt_bn128
+- [Roll up](https://github.com/barryWhiteHat/roll_up) (made cheaper with 1829), a layer 2 scaling solution which uses the baby jubjub library with the [EdDSA curve](https://github.com/barryWhiteHat/baby_jubjub)
+- ZK mixer [miximus](https://github.com/barryWhiteHat/miximus) which uses LibSNARK.
+- [Zether](https://crypto.stanford.edu/~buenz/papers/zether.pdf) privacy solution, currently using alt_bn128. See section 7.3 of the paper for how 1108 and 1109 EIPs could bring zether transfers down to 1.7 million gas.
+- DNSSEC and TLS integration with ENS is enabled by using Ed25519, which is enabled with 665. There is a list of projects [also using this curve](https://ianix.com/pub/ed25519-deployment.html), including OpenSSH, GNUPG/OpenPGP and OpenBSD.
+- Verifying BLS12-381 signatures on ethereum Beacon Chain, enabled by 1962.
+- Forward compatibility validation of signatures in IPFS, which are upgrading to use Blake2b (covered by 2024).
+- Validating ZCash Blake2b signatures, possibly allowing a bridge to wrap ZEC (WZEC) on ethereum (covered by 2024).
+
+Curves in the ecosystem not related to the Istanbul EIPs
+- Secp256k1 was mentioned as an enhancement for [Zether](https://crypto.stanford.edu/~buenz/papers/zether.pdf). This [can be achieved](https://github.com/ethereum/EIPs/issues/603#issuecomment-440095368) already by using ECADD and ECMUL and a dedicated precompile is not planned.
+- secp384r1 for Estonia e-residency. Unclear if enabled by ECADD/ECMUL precompiles from 1829
+
 Relevant:
 - [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
