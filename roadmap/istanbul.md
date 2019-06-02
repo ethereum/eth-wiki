@@ -171,6 +171,7 @@ Curves in the ecosystem not related to the Istanbul EIPs
 - [1930 CALLs with strict gas semantic. Revert if not enough gas available](https://eips.ethereum.org/EIPS/eip-1930) (Ronan Sandford)
 
 #### Key concepts and EIP interactions
+
 **1829 vs 1962:**
 
 Both 1829 and 1962 allow for new curves to be added later without waiting for specific precomiples to be included in hard forks. 
@@ -223,26 +224,26 @@ Probable path forward
 
 ### **Storage writing cluster**
 
-Key benefits:
+#### Key benefits:
 - 1283 allows multiple write operation within a single call frame, allowing re-entry locks and multi-sends.
 
-Relevant:
+#### Relevant EIPs:
 - [1283 Net gas metering for SSTORE without dirty maps](https://eips.ethereum.org/EIPS/eip-1283) (Wei Tang). Clients already have implementations. The spec has been reviewed by many people. Previously had a re-entrancy bug [caused by contracts assuming long term stability of gas costs](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440) which is now addressed with either **account versioning** or with 1706. There have been in-depth about choices of different net gas metering options (EIP-1087, EIP-1153, EIP-1283).
 - [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss). 
 1706 is a required for 1832 to be compatible with many existing contracts if no account versioning is implemented.
 
-Key decisions:
+#### Key decisions:
 - Whether to implement net gas metering directly on EVM or implement it once Alexey's state rend has been implemented
 - Are account versioning EIPs (likely 1702) happening, (most likely yes) see **account versioning** cluster?
 - In AllCoreDevs #61, there was a request for a 1283 to be replaced by new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283). Is this still required?
 
-Key actions:
+#### Key actions:
 - (possible) If gas metering on EVM (1283) desired, and account versioning happens then 1706 is not required
 - (unlikely) If gas metering on EVM (1283) desired and no account versioning happening in Istanbul, have people review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
 - (possible) If gas metering to happen once Alexey's state rent goes ahead, plan for metering to happen in synchony with rate rent roadmap in an appropriate fork. (Neither 1283 nor 1087 go into Istanbul).
 
 
-Probable path forward
+#### Probable path forward
 - Prepare for Istanbul: 1283 (if metering happening directly on EVM)
 - Prepare for April 2020 Hard Fork:
 - Shelve indefinitely: 1706 (if account versioning goes ahead)
