@@ -59,7 +59,7 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 
 **Chain metadata cluster**: Wed 5th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
 
-**Storage writing cluster** and any of the more independent EIPs that people want to discuss: Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)
+**Storage writing cluster** and any of the more **independent EIPs** that people want to discuss: Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)
 
 **Storage gas cost cluster** Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
 
