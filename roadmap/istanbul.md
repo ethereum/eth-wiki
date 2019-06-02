@@ -238,9 +238,9 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 - In AllCoreDevs #61, there was a request for a 1283 to be replaced by new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283). Is this still required?
 
 #### Key actions:
-- (possible) If gas metering on EVM (1283) desired, and account versioning happens then 1706 is not required
-- (unlikely) If gas metering on EVM (1283) desired and no account versioning happening in Istanbul, have people review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
-- (possible) If gas metering to happen once Alexey's state rent goes ahead, plan for metering to happen in synchony with rate rent roadmap in an appropriate fork. (Neither 1283 nor 1087 go into Istanbul).
+- If gas metering on EVM (1283) desired, and account versioning happens then 1706 is not required
+- If gas metering on EVM (1283) desired and no account versioning happening in Istanbul, have people review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
+- If gas metering to happen once Alexey's state rent goes ahead, plan for metering to happen in synchony with rate rent roadmap in an appropriate fork. (Neither 1283 nor 1087 go into Istanbul).
 
 
 #### Probable path forward
