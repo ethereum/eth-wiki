@@ -308,17 +308,27 @@ Relevant:
 2045 Introduces a new gas counter `particles` to be used in eWASM and changes gas costs of storage.
 
 ### **Chain metadata cluster**
-Relevant:
+
+#### Relevant EIPs:
 - [1965 Method to check if a chainID is valid at a specific block number](https://eips.ethereum.org/EIPS/eip-1965) (Ronan Sandford)
 - [1959 New Opcode to check if a chainID is part of the history of chainIDs](https://eips.ethereum.org/EIPS/eip-1959) (Ronan Sandford)
 - [1344 ChainID opcode](https://eips.ethereum.org/EIPS/eip-1344) (Richard Meissner, Bryant Eisenbach)
 - [2014 Extended State Oracle](https://eips.ethereum.org/EIPS/eip-2014) (Alex Beregszaszi)
 
+#### Key concepts:
 1965 Adds a precompile to get the ChainID at a specific block number. This likely supercedes both proposals:
 - 1959 Which introduces ChainID as a new opcode, but likely has reduced fork freedom.
 - 1344 Which introduces ChainID via a smart contract, which likely has a replay vulnerability.
 
 2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
+
+#### Key Questions
+- Is it true that 1965 supercedes 1959 and 1344?
+
+#### Probable path forward
+- Prepare for Istanbul: 1965, 2014
+- Prepare for April 2020 Hard Fork: None
+- Shelve indefinitely: 1959, 1344
 
 ### **State rent cluster**
 State rent proposal is planned as a [gradual upgrade](https://medium.com/@akhounov/state-rent-changes-for-the-next-ethereum-hard-fork-f68a826558c5) over multiple hard forks. Proposals by Alexey Akhunov.
@@ -329,8 +339,13 @@ Planned prototyping and implementation, in order of decreasing priority:
 - Change H: Fixed rent prepayments [2026](https://eips.ethereum.org/EIPS/eip-2026)
 - Stateless clients: Repricing SLOAD and SSTORE to pay for block proofs [2035](https://eips.ethereum.org/EIPS/eip-2035) (See also **storage gas cost** cluster above)
 
+#### Key Questions:
+- Is net gas metering best paired with the state rent proposal here or directly via 1283 as discussed in the **storage writing cluster**?
 
-
+#### Probable path forward
+- Prepare for Istanbul: (In decreasing priority) 2027, 2029, 2031, 2026, 2035
+- Prepare for April 2020 Hard Fork: Those that aren't ready for Istanbul
+- Shelve indefinitely: None
 # Updates
 _Newest at the top, likely EthCatHerders repo / Github project will be source of updates going forward_
 
