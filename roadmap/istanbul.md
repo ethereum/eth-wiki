@@ -137,6 +137,7 @@ EIPs with minimal interactions with other proposals
 
 ### **Elliptic curve cluster**
 
+
 #### Key benefits: 
 Scaling, privacy, bridges to other chains, DNS certificate validation in ENS, forward compatibility with IPFS.
 
@@ -163,33 +164,64 @@ Curves in the ecosystem not related to the Istanbul EIPs
 #### Relevant EIPs:
 - [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
-- [1109 PRECOMPILEDCALL opcode](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
+- [1109 PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
 - [1108 Reduce alt_bn128 precompile gas costs](https://eips.ethereum.org/EIPS/eip-1108) (Antonio Salazar Cardozo, Zachary Williamson)
 - [2024 Proposal for supporting Blake2b](https://github.com/ethereum/EIPs/pull/2024) (James Hancock)
 - [2046 Reduced gas cost for static calls made to precompiles](https://eips.ethereum.org/EIPS/eip-2046) (Alex Beregszaszi)
 - [1930 CALLs with strict gas semantic. Revert if not enough gas available](https://eips.ethereum.org/EIPS/eip-1930) (Ronan Sandford)
 
 #### Key concepts and EIP interactions
-1829 Allows a class of eliptic curves to be supported through linear combinations.
-1962 Precompile that extends and formalises 1829 allowing for new curves to be added later without waiting for forks. Desireable to have 1109 also for cost reduction, which is predominantly STATICCALL-based. Three main differences from 1829:
+**1829 vs 1962:**
+
+Both 1829 and 1962 allow for new curves to be added later without waiting for specific precomiples to be included in hard forks. 
+
+1829 Allows a class of eliptic curves (Edward curves) to be supported through a precompile for linear combinations. 1962 is a precompile that extends and formalises 1829.  
+
+1962 features (as compared to 1829) three main differences:
 - Operation on arbitrary-length modulus (up to some upper-limit) for a base field and scalar field of the curve
 - Pairing operations are introduced
 - Different ABI due to variable parameter length
 
+1962 requires either 1109 or 2046 to make calls economically viable (see below).
 
-1108 Supplements 1829 by reducing the cost of addition, multiplication and and pairing checks (specifically to make alt_bn128 cheaper for immediate use)
-2024 Introduces a specific precompile for Blake2b for immediate use.
+**2046 vs 1109:**
 
-2046 (change price of STATICCALL for precomiles) and 1109 (New low cost PRECOMPILEDCALL) both seek to reduce the cost of calling a precompile, making 1108, 2024 and 1962 cheaper. Decision needs to be made which one is better. Considerations: 
-- CALL vs STATICCALL in this context
-- New opcode vs modifying existing 
-- Attack vectors from disk loading. [Discussion on FEM](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447)
+Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. 
 
-1352 Specifies a restricted address range for precompies and is required for 2046.
+Because 1962 uses STATICCALL, which is expensive, the cost must be lowered to enable practicle use of curves. It seems that there are two mechanisms to achieve this:
+- 1109 makes costs reasonable by introducing a dedicated opcode PRECOMPILEDCALL with a low gas cost so that precompiles can be called efficiently.
+- 2046 reduces the cost of calling STATICCALL, but only for precompiles at specific addresses (specified by EIP 1352, which likely does not require a hard fork)
+
+There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/8) about DOS attacks from calls that result in disk loading being too cheap. It seems that as long as the opcode being made cheaper only applies to precompiles, then [there is no risk](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9) 
+
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
 
-### **Storage writing cluster**
+**Specific curve optimisations:**
 
+There is a lot of interest in enabling immediate use of specific curves.
+
+Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks.
+
+Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use.
+
+#### Key questions to ask moving forward:
+- Is it true that 1962 is preferred over 1829, and that 1829 is therefore not needed?
+- Is 2046/1352 or 1109 preferred as the mechanism to lower calls to precompiles?
+- Is it true that DOS attacks are minimised when the opcode being made cheaper only affects calls to precompiles?
+- Is it true that 1352 does not required a hard fork?
+- How does 1930 affect the other EIPs, particuarly 2046, given introduces new variants of STATICCALL.
+- Is it true that the specific curve optimisations 1108 and 2024 can coexist with the generic elliptic curve building block precompiles (1962).
+
+#### Key actions:
+- Decide if 1962 or 1829 are preferred
+- Decide if 2046 (modify STATICCALL for precomiles) or 1109 (new PRECOMPILED call) preferred.
+
+Probable path forward
+- Prepare for Istanbul: 1108, 2024, 1962, (either 2046 or 1109)
+- Prepare for April 2020 Hard Fork:
+- Shelve indefinitely: 1829
+
+### **Storage writing cluster**
 
 Key benefits:
 - 1283 allows multiple write operation within a single call frame, allowing re-entry locks and multi-sends.
