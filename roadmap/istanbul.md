@@ -68,7 +68,7 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 - Call attendees can then read up on the EIP beforehand so that decisions can be made effectively during the call.
 - Attending the call to present your EIP goes a long way to getting the change included in Istanbul.
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vS7t5kwTrxL3zja2hLIPcNchPtBoXBeSxWNG8-tm5vlGPV4XycY7PMQDWKQGRXd_vwEPLO8dIbPR7EH/pub?w=1841&amp;h=953">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vS7t5kwTrxL3zja2hLIPcNchPtBoXBeSxWNG8-tm5vlGPV4XycY7PMQDWKQGRXd_vwEPLO8dIbPR7EH/pub">
 
 
 ### Roadblock Spotter
