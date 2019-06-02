@@ -137,7 +137,8 @@ EIPs with minimal interactions with other proposals
 
 ### **Elliptic curve cluster**
 
-Key benefits: Scaling, privacy, bridges to other chains, DNS certificate validation in ENS, forward compatibility with IPFS.
+#### Key benefits: 
+Scaling, privacy, bridges to other chains, DNS certificate validation in ENS, forward compatibility with IPFS.
 
 Curves enabled and possible uses:
 - The alt_bn128 curve (cheaper with 1108).
@@ -159,7 +160,7 @@ Curves in the ecosystem not related to the Istanbul EIPs
 - Secp256k1 was mentioned as an enhancement for [Zether](https://crypto.stanford.edu/~buenz/papers/zether.pdf). This [can be achieved](https://github.com/ethereum/EIPs/issues/603#issuecomment-440095368) already by using ECADD and ECMUL and a dedicated precompile is not planned.
 - secp384r1 for Estonia e-residency. Unclear if enabled by ECADD/ECMUL precompiles from 1829
 
-Relevant:
+#### Relevant EIPs:
 - [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
 - [1109 PRECOMPILEDCALL opcode](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
@@ -168,7 +169,7 @@ Relevant:
 - [2046 Reduced gas cost for static calls made to precompiles](https://eips.ethereum.org/EIPS/eip-2046) (Alex Beregszaszi)
 - [1930 CALLs with strict gas semantic. Revert if not enough gas available](https://eips.ethereum.org/EIPS/eip-1930) (Ronan Sandford)
 
-New curves allow a variety or privacy and scaling solutions.
+#### Key concepts and EIP interactions
 1829 Allows a class of eliptic curves to be supported through linear combinations.
 1962 Precompile that extends and formalises 1829 allowing for new curves to be added later without waiting for forks. Desireable to have 1109 also for cost reduction, which is predominantly STATICCALL-based. Three main differences from 1829:
 - Operation on arbitrary-length modulus (up to some upper-limit) for a base field and scalar field of the curve
@@ -207,9 +208,6 @@ Key actions:
 - (possible) If gas metering on EVM (1283) desired, and account versioning happens then 1706 is not required
 - (unlikely) If gas metering on EVM (1283) desired and no account versioning happening in Istanbul, have people review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
 - (possible) If gas metering to happen once Alexey's state rent goes ahead, plan for metering to happen in synchony with rate rent roadmap in an appropriate fork. (Neither 1283 nor 1087 go into Istanbul).
-
-
-
 
 
 Probable path forward
