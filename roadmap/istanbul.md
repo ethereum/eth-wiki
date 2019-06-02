@@ -53,6 +53,22 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 To reduce the load on discussing each EIP in the dev calls, some EIPs will be allocated a day in which concerns, comments suggestions and plans may be discussed in the [AllCoreDevs gitter](https://gitter.im/ethereum/AllCoreDevs). The date of any such AMAs can be recorded in the table below for planning and for archival reference.
 
+**Elliptic curve cluster**: Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
+
+**Account versioning cluster**: Tues 4th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
+
+**Chain metadata cluster**: Wed 5th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
+
+**Storage writing cluster** and any of the more independent EIPs that people want to discuss: Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)
+
+**Storage gas cost cluster** Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
+
+**Live All Core Devs Call**: 
+- For EIPs people feel are maturing enough to be considered for acceptance into Istanbul should add a comment to [7 June All Core Devs Call Agenda](https://github.com/ethereum/pm/issues/102) with a note about intention (e.g. I intend to briefly present EIP xyz for consideration for acceptance into Istanbul). 
+- Call attendees can then read up on the EIP beforehand so that decisions can be made effectively during the call.
+- Attending the call to present your EIP goes a long way to getting the change included in Istanbul.
+
+
 ### Roadblock Spotter
 
 Below is a one-glance table to summarise the current roadblock for each EIP. The table serves to remind what has been most recently discussed in various channels, including All Core Dev Calls. If a roadblock has been addressed, feel free to remove it from the table. If there are concerns about the suitability of an EIP or its fitness for consideration, please add a note here, but take discussions to the the forum listed in the individual EIP. 'Checkpoint issues', such as and EIP not yet having a major client implementation or not having yet submitted test cases are considered 'standard preparations', which are [tracked](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) for each EIP and are not included below.
