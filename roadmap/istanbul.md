@@ -221,8 +221,8 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 
 #### Key actions:
 - Decide if 1962 or 1829 are preferred
-- Decide if 2046 (modify STATICCALL for precompiles, also requiring 1352) or 1109 (new PRECOMPILED call) preferred.
-- Decide if 1352 will go ahead
+- Decide if 2046 (modify STATICCALL for precompiles) or 1109 (new PRECOMPILED call) preferred.
+- Decide if 1352 can be used
 
 #### Probable path forward
 - Prepare for Istanbul: 1108, 2024, 1962, (1109 vs 2046)
