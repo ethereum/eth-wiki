@@ -136,7 +136,7 @@ EIPs with minimal interactions with other proposals
 - [1848 Fork Names Standard](https://github.com/ethereum/EIPs/pull/1848) (Christoph Jentzsch)
 - [1985 Sane limits for certain EVM parameters](https://eips.ethereum.org/EIPS/eip-1985) (Alex Beregszaszi, Paweł Bylica)
 - [2025 Funding ETH1.X through a Developer Block Reward for 18 Months](https://github.com/ethereum/EIPs/pull/2025) to improve [present-day ethereum](https://github.com/MadeofTin/EIPs/blob/ETH1.X/EIPS/eip-2025.md) (James Hancock)
-- [2028 Calldata gas cost reduction](https://eips.ethereum.org/EIPS/eip-2028) (Alexey Akhunov, Eli Ben Sasson, Tom Brand, Avihu Levy)
+- [2028 Calldata gas cost reduction](https://eips.ethereum.org/EIPS/eip-2028) (Alexey Akhunov, Eli Ben Sasson, Tom Brand, Avihu Levy). There's a lot of excitement about how this EIP will enable/enhance [STARK-based L2 engines](https://twitter.com/PhABCD/status/1129084899225481216), [proof verifications, plasma and state channels](https://twitter.com/PhABCD/status/1135550170643542016).
 
 
 ### **Elliptic curve cluster**
