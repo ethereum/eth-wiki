@@ -195,7 +195,9 @@ Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calli
 
 Because 1962 uses STATICCALL, which is expensive, the cost must be lowered to enable practicle use of curves. It seems that there are two mechanisms to achieve this:
 - 1109 makes costs reasonable by introducing a dedicated opcode PRECOMPILEDCALL with a low gas cost so that precompiles can be called efficiently.
-- 2046 reduces the cost of calling STATICCALL, but only for precompiles at specific addresses (specified by EIP 1352, which likely does not require a hard fork)
+- 2046 reduces the cost of calling STATICCALL, but only for precompiles at specific addresses 
+
+Both 1109 and 2046 can function without 1352. 1352 aims to simplify how precompiles are addressed, however there may be [some risks if it is used](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26).
 
 There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/8) about DOS attacks from calls that result in disk loading being too cheap. It seems that as long as the opcode being made cheaper only applies to precompiles, then [there is no risk](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9) 
 
@@ -211,8 +213,8 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 
 #### Key questions to ask moving forward:
 - Is it true that 1962 is preferred over 1829, and that 1829 is therefore not needed?
-- Is it true that 1352 does not required a hard fork? There appear to be [some risks](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26)
-- Is 1109 preferred over 2046/1352 as the mechanism to lower calls to precompiles given the [risks of 1352](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26)
+- Is 1109 preferred over 2046 as the mechanism to lower calls to precompiles?
+- Is it true that 1352 does not required a hard fork? There appear to be [some risks](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26). Are there mitigations that can be made or will (1109 or 2046) be implemented without 1352?
 - Is it true that DOS attacks are minimised when the opcode being made cheaper only affects calls to precompiles?
 - How does 1930 affect the other EIPs, particuarly 2046, given introduces new variants of STATICCALL.
 - Is it true that the specific curve optimisations 1108 and 2024 can coexist with the generic elliptic curve building block precompiles (1962). [Yes, there are no issues](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
@@ -220,9 +222,10 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 #### Key actions:
 - Decide if 1962 or 1829 are preferred
 - Decide if 2046 (modify STATICCALL for precompiles, also requiring 1352) or 1109 (new PRECOMPILED call) preferred.
+- Decide if 1352 will go ahead
 
 #### Probable path forward
-- Prepare for Istanbul: 1108, 2024, 1962, (probably 1109 rather than 2046)
+- Prepare for Istanbul: 1108, 2024, 1962, (1109 vs 2046)
 - Prepare for April 2020 Hard Fork:
 - Shelve indefinitely: 1829
 
