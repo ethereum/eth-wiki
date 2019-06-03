@@ -59,9 +59,9 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 
 **Chain metadata cluster**: Wed 5th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
 
-**Storage writing cluster** and any of the more **independent EIPs** that people want to discuss: Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)
+**Storage gas cost cluster** and any of the more **independent EIPs** that people want to discuss: Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)
 
-**Storage gas cost cluster** Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
+**Storage writing cluster** Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs): 
 
 **Live All Core Devs Call**: 
 - For EIPs people feel are maturing enough to be considered for acceptance into Istanbul should add a comment to [7 June All Core Devs Call Agenda](https://github.com/ethereum/pm/issues/102) with a note about intention (e.g. I intend to briefly present EIP xyz for consideration for acceptance into Istanbul). 
