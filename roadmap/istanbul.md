@@ -211,18 +211,18 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 
 #### Key questions to ask moving forward:
 - Is it true that 1962 is preferred over 1829, and that 1829 is therefore not needed?
-- Is 2046/1352 or 1109 preferred as the mechanism to lower calls to precompiles?
+- Is it true that 1352 does not required a hard fork? There appear to be [some risks](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26)
+- Is 1109 preferred over 2046/1352 as the mechanism to lower calls to precompiles given the [risks of 1352](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26)
 - Is it true that DOS attacks are minimised when the opcode being made cheaper only affects calls to precompiles?
-- Is it true that 1352 does not required a hard fork?
 - How does 1930 affect the other EIPs, particuarly 2046, given introduces new variants of STATICCALL.
-- Is it true that the specific curve optimisations 1108 and 2024 can coexist with the generic elliptic curve building block precompiles (1962).
+- Is it true that the specific curve optimisations 1108 and 2024 can coexist with the generic elliptic curve building block precompiles (1962). [Yes, there are no issues](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
 
 #### Key actions:
 - Decide if 1962 or 1829 are preferred
-- Decide if 2046 (modify STATICCALL for precomiles) or 1109 (new PRECOMPILED call) preferred.
+- Decide if 2046 (modify STATICCALL for precompiles, also requiring 1352) or 1109 (new PRECOMPILED call) preferred.
 
 #### Probable path forward
-- Prepare for Istanbul: 1108, 2024, 1962, (either 2046 or 1109)
+- Prepare for Istanbul: 1108, 2024, 1962, (probably 1109 rather than 2046)
 - Prepare for April 2020 Hard Fork:
 - Shelve indefinitely: 1829
 
