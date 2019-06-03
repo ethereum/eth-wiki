@@ -67,7 +67,7 @@ To reduce the load on discussing each EIP in the dev calls, some EIPs will be al
 - For EIPs people feel are maturing enough to be considered for acceptance into Istanbul should add a comment to [7 June All Core Devs Call Agenda](https://github.com/ethereum/pm/issues/102) with a note about intention (e.g. I intend to briefly present EIP xyz for consideration for acceptance into Istanbul). 
 - Call attendees can then read up on the EIP beforehand so that decisions can be made effectively during the call.
 - Attending the call to present your EIP goes a long way to getting the change included in Istanbul.
-- Next steps for EIPs are to communicate plans for a reference client implementation and plans for testing. If additional resources are needed to achieve those, make that known either in the EIP or in the discussions-to forum.
+- Next steps for EIPs are to communicate plans for a reference client implementation and plans for testing. If additional resources are needed to achieve those, make that known either in the EIP, in the discussions-to forum, or here in the table under **step required** so that interested parties can get involved.
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vS7t5kwTrxL3zja2hLIPcNchPtBoXBeSxWNG8-tm5vlGPV4XycY7PMQDWKQGRXd_vwEPLO8dIbPR7EH/pub?w=2762&amp;h=1430">
 
