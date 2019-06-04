@@ -304,13 +304,15 @@ Three account versioning proposals, only one must be selected
 - Precompile invocation is a topic modified by EIPs in the **Elliptic Curve cluster**. Is it true that 1702 will affect the precompile-based EIPs in the **Elliptic curve cluster** which will need some attention?
 - 615 [has an implementation](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) for ethereum client devs to model their implementations on. Can we signal to the client teams that yes 615 will go ahead, so that they can work on their implementations?
 - What specifically is required of the [solidity team and testing team](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) as a next step for 615?
-- Is there are need to prove with testing that static jumps from 615 are faster that dynamic jumps, given there are [significant benefits in contract security analysis (as per Neville Grech)](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58) which arguably are the main benefit to be had?
+- Is there are need to prove with testing that static jumps from 615 are faster that dynamic jumps, given there are [significant benefits in contract security analysis (as per Neville Grech)](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58) to be had?
+- Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and [interested in helping](](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) ) to get it into Istanbul
 - Are there serious technical concerns that require 615 to be split into separate EIPs (First subroutines then static jumps)? 
 - While 615 introduces ten new opcodes, which [Bryant Eisenbach](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/39) and [Nick Johnson](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/31) though was a large number. The [opcodes are mapped to similar functional elements in eWASM](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/44) which will help with the EVM->eWASM transition. Are people happy that this is a good fair rationale for the number of opcodes?
   - Can someone explain how does this help eWASM? Perhaps that the opcodes have functional analogues in eWASM will make it easier for people to transition from composing for EVM to composing for eWASM.
 
+
 #### Probable path forward
-- Prepare for Istanbul: 615 and 1702 - See under [Specification](https://eips.ethereum.org/EIPS/eip-1702) -> Contract Deployment -> Alternative Design
+- Prepare for Istanbul: 615, 1702
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 663, 1891 and (1707+1712)
 
