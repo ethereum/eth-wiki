@@ -257,6 +257,7 @@ Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b fo
 
 ### **Account versioning cluster**
 
+Link to previous Core Dev gathering presentation on account versioning: https://git.that.world/talks/20190417-account-versioning.git/plain/presentation.pdf
 
 #### Key benefits: 
 Versioning enables eWASM to coexist with EVM in one block and makes future EVM upgrades safer.  Static jumps enable strong formal analysis of contracts
