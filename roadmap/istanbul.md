@@ -262,6 +262,11 @@ Link to previous Core Dev gathering presentation on account versioning: https://
 #### Key benefits: 
 Versioning enables eWASM to coexist with EVM in one block and makes future EVM upgrades safer.  Static jumps enable strong formal analysis of contracts
 
+#### Relation to Previous Hardfork postmortem
+For Istanbul, we have some EIPs that propose to decrease operation costs. As part of the last hard fork postmortem, one of the main reason the re-entry bug happened is because EIP-1283 was the first to-be-on-mainnet EIP that includes gas cost decrement. Later in the discussion, it's generally agreed that if we ever want to do another gas/operation cost decrement, we'd either need extra assessment, or it needs to be combined with account versioning.
+
+As a result, account versioning EIPs affect a larger portion of Istanbul EIPs than what's listed above.
+
 #### Relevant EIPs:
 - [1702 Generalized Account Versioning Scheme](https://eips.ethereum.org/EIPS/eip-1702) (Wei Tang)
 - [1707 Use Version Byte Prefix for Contract Account Versioning](https://github.com/ethereum/EIPs/pull/1707) (Wei Tang)
