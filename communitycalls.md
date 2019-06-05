@@ -4,7 +4,7 @@
 # All Core Devs
 Every 2 weeks on a Friday. [More info](https://github.com/ethereum/pm)
 
-# ETH2 Implementors
+# ETH2 Implementers
 Every 2 weeks on a Thursday. [More info](https://github.com/ethereum/eth2.0-pm)
 
 # 0xProject
