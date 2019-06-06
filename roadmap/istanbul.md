@@ -339,6 +339,7 @@ Other EIPs that affect storage gas costs might be:
 #### Key questions
 - Should the SLOAD parameter used in 1884 and 2035 be compared and a single parameter selected for both?
 - Does 2045 affect either 1884 or 2035?
+  - "I think 2045 is not storage related, but arithmetics related."
 
 #### Probable path forward
 - Prepare for Istanbul: 1884, 2045, probably 2035 (see **state rent** cluster)
