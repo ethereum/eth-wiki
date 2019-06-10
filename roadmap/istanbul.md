@@ -176,53 +176,38 @@ Curves in the ecosystem not related to the Istanbul EIPs
 
 #### Key concepts and EIP interactions
 
-**1829 vs 1962:**
+**Introduce new curves using elliptic curve arithmetic with either 1962 (preferred) or 1829**
 
-Both 1829 and 1962 allow for new curves to be added later without waiting for specific precomiples to be included in hard forks. 
-
-1829 Allows a class of eliptic curves (Edward curves) to be supported through a precompile for linear combinations. 1962 is a precompile that extends and formalises 1829.  
-
-1962 features (as compared to 1829) three main differences:
+Both 1829 and 1962 allow for new curves to be added later without waiting for specific precomiples to be included in hard forks. 1829 Allows a class of eliptic curves (Edward curves) to be supported through a precompile for linear combinations. 1962 is a precompile that extends and formalises 1829. 1962 features (as compared to 1829) three main differences:
 - Operation on arbitrary-length modulus (up to some upper-limit) for a base field and scalar field of the curve
 - Pairing operations are introduced
 - Different ABI due to variable parameter length
 
-1962 requires either 1109 or 2046 to make calls economically viable (see below).
+There were [no supporting arguments in a recent discussion](https://gitter.im/ethereum/AllCoreDevs?at=5cf52f58ff3f016baa9a64c7) for 1829, and 1962 is progressing well. 1962 requires either 1109 or 2046 to make calls economically viable (see below).
 
-**2046 vs 1109:**
+**How to define a precompile? (address range with 1352 vs client-based lists of known precompiles)**
 
-Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. 
+1352 is still a **maybe** and the decision of "how do we define what a preompile is" is up for discussion. While it creates a nice range for defining what precompiles are, which [may help](https://gitter.im/ethereum/AllCoreDevs?at=5cf543c5702b7e5e7621ed0f) with static analysis, there are some serious [concerns on FEM](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26) about safety. It was clarified that 1352 is not required explicitly by either 1109 or 2046, so either of those can be chosen, but they may need to be modified to be clear about how the define a precompile. **Action required**: Decide if precompiles should be defined by range (push forward with 1352) or client based [lists](https://gitter.im/ethereum/AllCoreDevs?at=5cf53cd06f530d3b612d9c96) (shelve 1352).
 
-Because 1962 uses STATICCALL, which is expensive, the cost must be lowered to enable practicle use of curves. It seems that there are two mechanisms to achieve this:
-- 1109 makes costs reasonable by introducing a dedicated opcode PRECOMPILEDCALL with a low gas cost so that precompiles can be called efficiently.
-- 2046 reduces the cost of calling STATICCALL, but only for precompiles at specific addresses 
+**Make precompile call costs cheaper, either by modifying an existing opcode (2046) or introducing a new opcode**
 
-Both 1109 and 2046 can function without 1352. 1352 aims to simplify how precompiles are addressed, however there may be [some risks if it is used](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26).
+The goal is to make precompiles cheaper. Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. The decision of 1109 vs 2046 is still **undecided**. The [options](https://gitter.im/ethereum/AllCoreDevs?at=5cf53d0bfaac6439343331a3) for calling precompiles are either to create a new opcode (choose 1109) or to modify the semantics of STATICCALL if the destination is a precomile. **Action required**: Decide if we prefer a new opcode or to modify an old opcode.
 
-There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/8) about DOS attacks from calls that result in disk loading being too cheap. It seems that as long as the opcode being made cheaper only applies to precompiles, then [there is no risk](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9) 
+**DOS attack mitigation**
 
-1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This may affect 2046 which also affects CALL/STATICCALL.
+There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/8) about DOS attacks from calls that result in disk loading being too cheap. It seems that as long as the opcode being made cheaper only applies to precompiles, then [there is no risk](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9). 
+
+1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This [may benefit EIPs](https://gitter.im/ethereum/AllCoreDevs?at=5cf576215de053468b08b9b8) that modify CALL/STATICCALL behaviour. The winner out of 1109 vs 2046 will need to be checked against 1930 to ensure behaviour is as expected.  
 
 **Specific curve optimisations:**
 
-There is a lot of interest in enabling immediate use of specific curves.
-
-Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks.
-
-Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use.
+There is a lot of interest in enabling immediate use of specific curves. Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks. Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use. Both 1108 and 2024 can coexist with 1962 [without issue](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
 
 #### Key questions to ask moving forward:
-- Is it true that 1962 is preferred over 1829, and that 1829 is therefore not needed?
-- Is 1109 preferred over 2046 as the mechanism to lower calls to precompiles?
-- Is it true that 1352 does not required a hard fork? There appear to be [some risks](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26). Are there mitigations that can be made or will (1109 or 2046) be implemented without 1352?
-- Is it true that DOS attacks are minimised when the opcode being made cheaper only affects calls to precompiles?
-- How does 1930 affect the other EIPs, particuarly 2046, given introduces new variants of STATICCALL.
-- Is it true that the specific curve optimisations 1108 and 2024 can coexist with the generic elliptic curve building block precompiles (1962). [Yes, there are no issues](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
+- Do people want to define precompiles as address ranges (as in 1352) or do they prefer client based lists (status quo). If 1352 is preferred, the concerns in the discussion-to forum need addressing.
+- Do people want the new PRECOMILEDCALL opcode in 1109 to call precompiles with or is 2046 preferred, which changes the STATTICALL behaviour when the destination is a precompile?
+- Are there any concerns about DOS attacks that only make calls to precompiles cheaper? None have been voiced, and any concerns should be raised [here]((https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9)
 
-#### Key actions:
-- Decide if 1962 or 1829 are preferred
-- Decide if 2046 (modify STATICCALL for precompiles) or 1109 (new PRECOMPILED call) preferred.
-- Visit the discussion thread for 1352 on EthMagicians and help decide 1) Are there serious risks? 2) Can they be mitigated? and 3) Should this go ahead.
 
 #### Probable path forward
 - Prepare for Istanbul: 1108, 2024, 1962, (1109 vs 2046)
