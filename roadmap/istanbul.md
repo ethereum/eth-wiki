@@ -206,7 +206,7 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 #### Key questions to ask moving forward:
 - Do people want to define precompiles as address ranges (as in 1352) or do they prefer client based lists (status quo). If 1352 is preferred, the concerns in the discussion-to forum need addressing.
 - Do people want the new PRECOMILEDCALL opcode in 1109 to call precompiles with or is 2046 preferred, which changes the STATTICALL behaviour when the destination is a precompile?
-- Are there any concerns about DOS attacks that only make calls to precompiles cheaper? None have been voiced, and any concerns should be raised [here]((https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9)
+- Are there any concerns about DOS attacks that only make calls to precompiles cheaper? None have been voiced, and any concerns should be raised [here](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9)
 
 
 #### Probable path forward
