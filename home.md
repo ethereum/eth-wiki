@@ -2,14 +2,13 @@
 title: Home
 description: 
 published: true
-date: 2019-06-13T16:52:18.320Z
+date: 2019-06-13T16:54:06.605Z
 tags: 
 ---
 
 # Welcome to the Ethereum Wiki
 This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
-**Other versions:**  [Chinese](https://zh.ethereum.wiki) and [Japanese](https://ja.ethereum.wiki).
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
