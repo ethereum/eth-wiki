@@ -1,4 +1,10 @@
-<!-- TITLE: Home -->
+---
+title: Home
+description: 
+published: true
+date: 2019-06-13T13:19:45.446Z
+tags: 
+---
 
 # Welcome to the Ethereum Wiki
 This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
@@ -17,7 +23,7 @@ This is the community wiki covering all sorts of information on the next-generat
 |  [Ethereum Whitepaper](White-Paper) 	|  [Casper Proof-of-Stake compendium](Casper-Proof-of-Stake-compendium) and [FAQs](Proof-of-Stake-FAQs) 	| [Inter-exchange Client Address Protocol](inter-exchange-client-address-protocol-icap)  		|
 | [Ethereum Introduction](Ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](NatSpec-Determination)  	|
 | [Uses: DAOs and dapps](Decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](Problems) | [Network Status](Network-Status) |
-| [Getting Ether](Getting-Ether) | [Governance](Governance-compendium) | [Raspberry Pi](Raspberry-Pi-instructions) |
+| [Getting Ether](Getting-Ether) | [Governance](Governance-compendium) | [Raspberry Pi](en/raspberry-pi-instructions) |
 | [Releases](Releases) | **[Ethereum Virtual Machine (EVM)](Ethereum-Virtual-Machine-(EVM)-Awesome-List)** | [Mining](Mining) |
 | [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](Licensing) |
 | [Design Rationale](Design-Rationale) | **[ÐApp Development](%C3%90App-Development)** | [URL Hint Protocol](URL-Hint-Protocol) |
