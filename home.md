@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2019-06-16T13:33:46.004Z
+date: 2019-06-16T16:04:09.145Z
 tags: 
 ---
 
@@ -11,7 +11,6 @@ This is the community wiki covering all sorts of information on the next-generat
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
-[Github backend](https://github.com/ethresearch/eth-wiki/)
 
 ----
 
