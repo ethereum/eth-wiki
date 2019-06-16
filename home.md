@@ -2,7 +2,7 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-06-16T18:10:34.518Z
+date: 2019-06-16T18:16:09.722Z
 tags: 
 ---
 
@@ -18,13 +18,13 @@ This is the community wiki covering all sorts of information on the next-generat
 
 | Basics  	|   R&amp;D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
-| [Home](/)  	| [Sharding introduction &amp; R&amp;D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](Sharding-FAQs) &amp; [roadmap](Sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
+| [Home](/)  	| [Sharding introduction &amp; R&amp;D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](sharding-faqs) &amp; [roadmap](sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
 |  [Ethereum Whitepaper](white-Paper) 	|  [Casper Proof-of-Stake compendium](casper-proof-of-stake-compendium) and [FAQs](proof-of-stake-faqs) 	| [Inter-exchange Client Address Protocol](inter-exchange-client-address-protocol-icap)  		|
-| [Ethereum Introduction](ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](natspec-determination)  	|
-| [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](Network-Status) |
+| [Ethereum Introduction](ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](natspec-determination)  	|
+| [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](network-status) |
 | [Getting Ether](getting-ether) | [Governance](governance-compendium) | [Raspberry Pi](en/raspberry-pi-instructions) |
 | [Releases](releases) | **[Ethereum Virtual Machine (EVM)](ethereum-virtual-machine-(evm)-awesome-list)** | [Mining](mining) |
-| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](Licensing) |
+| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](licensing) |
 | [Design Rationale](design-rationale) | **[ÐApp Development](dapp-development)** | [URL Hint Protocol](url-hint-Protocol) |
 | EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |  | 
 | [Old github wiki](https://github.com/ethereum/ethereum.org/wiki) |
@@ -35,9 +35,9 @@ This is the community wiki covering all sorts of information on the next-generat
 | ÐΞV Technologies  	|   Ethereum Technologies	| Ethash/Dashimoto |  Whisper |
 |---	|---	|---	|---	|---	|--- |
 | [RLP Encoding](rlp) | [Patricia Tree](patricia-tree) | [Ethash](ethash) | [Whisper Proposal](whisper) |
-| [Node Discovery Protocol](node-discovery-protocol) |  [Wire protocol](ethereum-wire-protocol) | [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) | [Whisper Overview](Whisper-Overview) |
-| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-wire-protocol) | [Light client protocol](light-client-protocol) | [PoC-2 Whitepaper](whisper-poc-2-protocol-spec) | [PoC-1 Wire protocol](Whisper-Wire-Protocol) |
-| [ÐΞVp2p Whitepaper](libp2p-whitepaper) (WiP)  | [Subtleties](Subtleties) | | [PoC-2 Wire protocol](whisper-poc-2-wire-protocol) |
+| [Node Discovery Protocol](node-discovery-protocol) |  [Wire protocol](ethereum-wire-protocol) | [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) | [Whisper Overview](whisper-overview) |
+| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-wire-protocol) | [Light client protocol](light-client-protocol) | [PoC-2 Whitepaper](whisper-poc-2-protocol-spec) | [PoC-1 Wire protocol](whisper-wire-protocol) |
+| [ÐΞVp2p Whitepaper](libp2p-whitepaper) (WiP)  | [Subtleties](subtleties) | | [PoC-2 Wire protocol](whisper-poc-2-wire-protocol) |
 | [Web3 Secret Storage](web3-secret-storage-definition) | [Solidity Documentation](https://solidity.readthedocs.io/en/latest/) |  |
 | [libp2p](https://libp2p.io/) | [NatSpec Format](ethereum-natural-specification-format) |
 | | [Contract ABI](ethereum-contract-abi) | 
