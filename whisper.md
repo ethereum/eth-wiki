@@ -1,11 +1,14 @@
-<!-- TITLE: Whisper -->
+---
+title: Whisper
+description: 
+published: true
+date: 2019-06-16T17:50:27.048Z
+tags: 
+---
 
+Whisper is a communication protocol for DApps to communicate with each other. 
 
-
-In a nutshell whisper is a communication protocol for DApps to communicate with each other. 
-
-### Use case
-
+## Use case
 * DApps that need to publish small amounts of information to each other and have the publication last some substantial amount of time. For example, a currency exchange DApp may use it to record an offer to sell some currency at a particular rate on an exchange. In this case, it may last anything between tens of minutes and days. The offer wouldn't be binding, merely a hint to get a potential deal started.
 
 * DApps that need to signal to each other in order to ultimately collaborate on a transaction. For example, a currency exchange DApp may use it to coordinate an offer prior to creating one (or two, depending on how the exchange is structured) transactions on the exchange.
@@ -38,12 +41,12 @@ Messages less than 64K bytes, typically around 256 bytes.
 
 ### Basic Design
 
-Uses the `"shh"` protocol string of ÐΞVP2P.
+Uses the `"shh"` protocol string of DEVp2p.
 
 Rest coming soon, once I've finished prototyping. Gav.
 
 ### Considerations for Defeating Traffic Analysis
-(from lokiverloren) All existing protocols for location obscured instant messaging have complicated problems to do with routing. 
+All existing protocols for location obscured instant messaging have complicated problems to do with routing. 
 
 The Bitmessage protocol propagates messages blindly across the network, and the proper recipient knows how to decrypt it and receives it (just like everyone else) but then stores it and lets its' user know it's got a new message. The problem with this of course is that it greatly increases the exposure of the whole network to a body of encrypted material that ideally should not be easily accessed at all.
 
