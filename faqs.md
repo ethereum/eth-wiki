@@ -1,4 +1,10 @@
-<!-- TITLE: FAQs -->
+---
+title: Frequently Asked Questions
+description: 
+published: true
+date: 2019-06-16T17:40:40.401Z
+tags: 
+---
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
