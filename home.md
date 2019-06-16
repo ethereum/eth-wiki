@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2019-06-13T17:36:43.068Z
+date: 2019-06-16T12:35:03.909Z
 tags: 
 ---
 
@@ -10,6 +10,7 @@ tags:
 This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as sister protocols like **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_, and **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
+[Github backend](https://github.com/ethresearch/eth-wiki/)
 
 ----
 
