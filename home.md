@@ -2,7 +2,7 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-06-16T17:35:40.449Z
+date: 2019-06-16T18:10:34.518Z
 tags: 
 ---
 
@@ -68,7 +68,7 @@ Eth.wiki adopts Wikipedia's [five pillars](https://en.wikipedia.org/wiki/Wikiped
 All contributions are accepted under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](CC0-license#list-of-contributors).
 
 ## Other Ethereum Wikis
-
+* [EthHub docs](https://docs.ethhub.io/)
 * [go-ethereum](https://github.com/ethereum/go-ethereum/wiki)
 * [Token Engineering](http://tokenengineering.net/)
 * [Giveth](https://wiki.giveth.io/)
