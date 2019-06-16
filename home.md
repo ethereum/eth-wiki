@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2019-06-16T13:25:41.176Z
+date: 2019-06-16T13:33:46.004Z
 tags: 
 ---
 
@@ -17,9 +17,9 @@ This is the community wiki covering all sorts of information on the next-generat
 
 <div align="center">
 
-| Basics  	|   R&D	| Infrastructure  	|
+| Basics  	|   R&amp;D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
-| [Home](/)  	| [Sharding introduction & R&D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](Sharding-FAQs) & [roadmap](Sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
+| [Home](/)  	| [Sharding introduction &amp; R&amp;D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](Sharding-FAQs) &amp; [roadmap](Sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
 |  [Ethereum Whitepaper](white-Paper) 	|  [Casper Proof-of-Stake compendium](casper-proof-of-stake-compendium) and [FAQs](proof-of-stake-faqs) 	| [Inter-exchange Client Address Protocol](inter-exchange-client-address-protocol-icap)  		|
 | [Ethereum Introduction](ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](Alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](natspec-determination)  	|
 | [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](Network-Status) |
@@ -35,15 +35,15 @@ This is the community wiki covering all sorts of information on the next-generat
 
 | ÐΞV Technologies  	|   Ethereum Technologies	| Ethash/Dashimoto |  Whisper |
 |---	|---	|---	|---	|---	|--- |
-| [RLP Encoding](RLP) | [Patricia Tree](Patricia-Tree) | [Ethash](Ethash) | [Whisper Proposal](Whisper) |
-| [Node Discovery Protocol](Node-discovery-protocol) |  [Wire protocol](Ethereum-Wire-Protocol) | [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) | [Whisper Overview](Whisper-Overview) |
-| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol) | [Light client protocol](Light-client-protocol) | [PoC-2 Whitepaper](Whisper-PoC-2-Protocol-Spec) | [PoC-1 Wire protocol](Whisper-Wire-Protocol) |
-| [ÐΞVp2p Whitepaper](libp2p-Whitepaper) (WiP)  | [Subtleties](Subtleties) | | [PoC-2 Wire protocol](Whisper-PoC-2-Wire-Protocol) |
-| [Web3 Secret Storage](Web3-Secret-Storage-Definition) | [Solidity Documentation](https://solidity.readthedocs.io/en/latest/) |  |
-| [libp2p](https://libp2p.io/) | [NatSpec Format](Ethereum-Natural-Specification-Format) |
-| | [Contract ABI](Ethereum-Contract-ABI) | 
-| | [Bad Block Reporting](Bad-Block-Reporting) | 
-| |  [Bad Chain Canary](Bad-Chain-Canary) |
+| [RLP Encoding](rlp) | [Patricia Tree](patricia-tree) | [Ethash](ethash) | [Whisper Proposal](whisper) |
+| [Node Discovery Protocol](node-discovery-protocol) |  [Wire protocol](ethereum-wire-protocol) | [Ethash Yellow Paper appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) | [Whisper Overview](Whisper-Overview) |
+| [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-wire-protocol) | [Light client protocol](light-client-protocol) | [PoC-2 Whitepaper](whisper-poc-2-protocol-spec) | [PoC-1 Wire protocol](Whisper-Wire-Protocol) |
+| [ÐΞVp2p Whitepaper](libp2p-whitepaper) (WiP)  | [Subtleties](Subtleties) | | [PoC-2 Wire protocol](whisper-poc-2-wire-protocol) |
+| [Web3 Secret Storage](web3-secret-storage-definition) | [Solidity Documentation](https://solidity.readthedocs.io/en/latest/) |  |
+| [libp2p](https://libp2p.io/) | [NatSpec Format](ethereum-natural-specification-format) |
+| | [Contract ABI](ethereum-contract-abi) | 
+| | [Bad Block Reporting](bad-block-reporting) | 
+| |  [Bad Chain Canary](bad-chain-canary) |
 
 </div>
 
@@ -68,9 +68,9 @@ All pages can be edited via the web-interface.  For more controversial changes, 
 Wikipedia has [five pillars](https://en.wikipedia.org/wiki/Wikipedia:Five_pillars) which provide a good standard for contributing that we can adapt for our needs. If you have experience with editing on Wikipedia, then that will help with knowing how to edit this wiki, although the contribution rules are less strict. Referencing facts is a key writing and proofreading task, as well as checking that information is up-to-date (and updating it if otherwise), correcting grammar, typos, and spelling; and making the wiki comprehensive and easy to understand. Other rules, such as a neutral point of view and no original research are desirable, but may be hard to maintain. Notability is less relevant, this wiki is about all things Ethereum.
 
 
-### License and [contributor license agreement](CC0-license#list-of-contributors)
+### License and contributor license agreement
 
-Please permit your contributions to be under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](CC0-license#list-of-contributors). Otherwise, without adding yourself to the list, your contributions will be all rights reserved. Some previous contributions may have all rights reserved (by contributors that have not agreed to a CC0 license [at pull request 528](https://github.com/ethereum/wiki/pull/528)), since no copyright permission was stated explicitly. Until all previous contributors agree to a CC0 license, and to provide clarity of licensing, you may also wish to add a HTML comment to the top of pages or sections that you contribute to, like so: `<!--*Name Surname*, Github username, **email@domain** and/or other contact methods-->`. 
+All contributions are accepted under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](CC0-license#list-of-contributors).
 
 ## Getting started
 
@@ -85,17 +85,10 @@ For getting started guides, see here
 * [Create a Hello World Contract in ethereum](https://www.ethereum.org/greeter)
 * [How to create a private Ethereum network Comments Feed](https://omarmetwally.wordpress.com/2017/07/25/how-to-create-a-private-ethereum-network/)
 
-## Downloads
+## Other Ethereum Wikis
 
-See [here](clients).
-
-## Other Wikis
-
-* http://ethdocs.org/en/latest/. The Homestead Guide (a historical reference, parts may be outdated).
-* http://tokenengineering.net/
-* https://wiki.giveth.io/
 * [go-ethereum](https://github.com/ethereum/go-ethereum/wiki)
-* [cpp-ethereum](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/index.html)
-* [pyethereum](https://github.com/ethereum/pyethereum/wiki)
-* [Parity](https://paritytech.github.io/wiki/)
+* [Token Engineering](http://tokenengineering.net/)
+* [Giveth](https://wiki.giveth.io/)
+* [The Homestead Guide](http://ethdocs.org/en/latest/) (a historical reference, some parts may be outdated).
 
