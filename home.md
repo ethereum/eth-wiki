@@ -2,7 +2,7 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-06-16T18:16:09.722Z
+date: 2019-06-16T18:18:48.253Z
 tags: 
 ---
 
@@ -27,8 +27,8 @@ This is the community wiki covering all sorts of information on the next-generat
 | [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](licensing) |
 | [Design Rationale](design-rationale) | **[ÐApp Development](dapp-development)** | [URL Hint Protocol](url-hint-Protocol) |
 | EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |  | 
-| [Old github wiki](https://github.com/ethereum/ethereum.org/wiki) |
-| [Glossary](Glossary) |
+| [Old github wiki](https://github.com/ethereum/wiki/wiki) |
+| [Glossary](glossary) |
 
 <br/>
 
@@ -73,4 +73,4 @@ All contributions are accepted under the [CC0 license](https://creativecommons.o
 * [Token Engineering](http://tokenengineering.net/)
 * [Giveth](https://wiki.giveth.io/)
 * [The Homestead Guide](http://ethdocs.org/en/latest/) (a historical reference, some parts may be outdated).
-
+* [Old github wiki](https://github.com/ethereum/wiki/wiki)
