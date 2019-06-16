@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2019-06-16T12:35:09.897Z
+date: 2019-06-16T13:25:41.176Z
 tags: 
 ---
 
@@ -55,7 +55,7 @@ If you have a technical issue with a specific client, application or tool, e.g. 
 
 If you had an issue that has been closed, and feel that it could be reopened after following the above steps, feel free to request to reopen it. Do not make a pull request; chances are that all PRs will be ignored, since any content in the codebase can be in this wiki instead. About 180 issues and 30 PRs were closed on May 29 2018, due to deleting the codebase and referring people to this wiki, in order to reduce the burden on maintenance by following the above steps. This fits well with Ethereum's ethos of decentralization, which includes minimising bureaucracies, and gives contributors more time to build Ethereum and satisfy the long-term interests of current and future users. If you had an issue or PR that was closed without explanation, I apologize, but it is time-consuming to reply to every one; I'm hoping that people will see the updated readme and this section.
 
-All pages can be edited via the web-interface.  For more controversial changes, please submit Pull Requests at https://github.com/ethresearch/en-ethereum-wiki.  The github and the site are synced every five minutes.
+All pages can be edited via the web-interface.  For more controversial changes, please submit Pull Requests at https://github.com/ethresearch/eth-wiki.  The github and the site are synced every five minutes.
 
 ## Contribution guidelines
 
@@ -74,7 +74,9 @@ Please permit your contributions to be under the [CC0 license](https://creativec
 
 ## Getting started
 
-For an introduction targeted see [Ethereum introduction](/fundamentals/ethereum-introduction). If you want to get a deeper understanding, start by reading the [whitepaper](https://github.com/ethereum/wiki/wiki/White-Paper) and the [design rationale](https://github.com/ethereum/wiki/wiki/Design-Rationale). For a more formal review, read the [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf). If you are interested in being a core developer, find a project that interests you, and start contributing to that (maybe pro-bono initially, until maintainers like you and decide to hire you). For Ethereum research and protocol architecture, visit [https://ethresear.ch](https://ethresear.ch/) as well as https://github.com/ethereum/wiki/wiki/R&D. If you are interested in developing smart contracts you can see [here](https://en.wikipedia.org/wiki/Ethereum#Programming_languages), as well as under [ÐApp Development](https://github.com/ethereum/wiki/wiki/%C3%90App-Development) (which is also in the sidebar).
+For an introduction targeted see [Ethereum introduction](/fundamentals/ethereum-introduction). If you want to get a deeper understanding, start by reading the [whitepaper](https://github.com/ethereum/wiki/wiki/White-Paper) and the [design rationale](https://github.com/ethereum/wiki/wiki/Design-Rationale). For a more formal review, read the [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf). If you are interested in being a core developer, find a project that interests you, and start contributing to that (maybe pro-bono initially, until maintainers like you and decide to hire you). 
+
+If you are interested in developing smart contracts you can see [here](https://en.wikipedia.org/wiki/Ethereum#Programming_languages), as well as under [ÐApp Development](https://github.com/ethereum/wiki/wiki/%C3%90App-Development) (which is also in the sidebar).
 
 For getting started guides, see here
 
@@ -85,7 +87,7 @@ For getting started guides, see here
 
 ## Downloads
 
-See [here](Clients).
+See [here](clients).
 
 ## Other Wikis
 
@@ -97,7 +99,3 @@ See [here](Clients).
 * [pyethereum](https://github.com/ethereum/pyethereum/wiki)
 * [Parity](https://paritytech.github.io/wiki/)
 
-
-## If you get lost
-
-Check the [FAQ](FAQ) and [Glossary](Glossary).
