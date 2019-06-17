@@ -2,11 +2,11 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-06-16T18:18:48.253Z
+date: 2019-06-17T21:02:23.344Z
 tags: 
 ---
 
-This is the community wiki covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as related protocols like:
+This is the community [https://en.wikipedia.org/wiki/Wiki wiki] covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum Foundation, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as related protocols like:
 * **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_
 * **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 * **[IPFS](https://ipfs.io)**, a distributed storage platform.
