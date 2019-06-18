@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:41:05.769Z
+date: 2019-06-18T06:47:01.346Z
 tags: 
 ---
 
@@ -100,7 +100,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| None 	| None planned	| -	|
 | **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| Can co-exist with 1965, which provides similar but complementary function | None planned	| Any final concerns that this should not co-exist with 1965 should be directed to the [forum](https://ethereum-magicians.org/t/eip-1344-add-chain-id-opcode/1131/93)	|
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No consensus on whether precompiles should be addressed via a range (1352) or by client-based-lists | None planned	| Anyone interested in seeing this go ahead should make their case [here](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151)	|
-| - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
+| - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call. EIP title needs to be [clearer](https://github.com/ethereum/EIPs/pull/1803/#issuecomment-488119162) 	| None planned	| Update EIP title 	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| None planned	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
 | **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Rough consensus has formed around Design-2 (with code prefix). No issues unless there is strong preference for Design-1 (no prefix) 	| None planned	| Those strongly opposed to this EIP or Design-2 (with prefix) should raise issues in the main discussions-to thread |
 | **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| May not be needed for 1283 (because account versioning progressing well), but may still be benificial for future changes	| None planned	| Interested parties to review the parity [implementation](paritytech/parity-ethereum#10191)	|
