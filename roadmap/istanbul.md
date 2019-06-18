@@ -1,5 +1,10 @@
-<!-- TITLE: Istanbul -->
-<!-- SUBTITLE: October 2019 Planned Ethereum Network Upgrade -->
+---
+title: Istanbul
+description: October 2019 Planned Ethereum Network Upgrade
+published: true
+date: 2019-06-18T02:46:51.731Z
+tags: 
+---
 
 The [ETH1](/eth1) page is a good starting point for an overview of Working Groups and areas of focus.
 # Timelines
@@ -241,7 +246,7 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 
 #### Probable path forward
 - Prepare for Istanbul: 1283 (if metering happening directly on EVM)
-- Prepare for April 2020 Hard Fork:
+- Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 1706 (if account versioning goes ahead)
 
 ### **Account versioning cluster**
