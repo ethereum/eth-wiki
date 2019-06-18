@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T02:46:51.731Z
+date: 2019-06-18T02:50:09.818Z
 tags: 
 ---
 
@@ -220,7 +220,7 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 
 #### Probable path forward
 - Prepare for Istanbul: 1108, 2024, 1962, (1109 vs 2046)
-- Prepare for April 2020 Hard Fork:
+- Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 1829
 
 ### **Storage writing cluster**
