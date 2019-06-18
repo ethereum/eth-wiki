@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T04:21:49.563Z
+date: 2019-06-18T04:23:32.675Z
 tags: 
 ---
 
@@ -89,11 +89,11 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 
 <div align="center">
 
-| Cluster | EIP  | Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Gitter AMA or ACD call date 	| Step required 	|
+| Cluster | EIP (strike == not for istanbul)  | Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Planned AMA or ACD call date 	| Step required	|
 |---	|--- |---	|---	|---	|---	|
 | **Account versioning** | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| Authoring team (mainly Greg Colvin) may need volunteers to help generate tests or implementations. | None planned	| Volunteers interested in seeing this EIP succeed (e.g. Feist from Trail of Bits?) could reach out to Greg to offer a hand  |
 | **Account versioning** | ~~[663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions~~	| [Solves the same](https://youtu.be/lF_XxqxgVuA?t=1934) stack-access problem as 615, which is likely going ahead. Additionally, three technical options are presented and would need to be refined. 	| None planned	| If 615 is cancelled, 663 may be desired. If so, select one of the three options.	|
-| - | [689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)| Non-istanbul client implementations	|
+| - | ~~[689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt~~	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)| Non-istanbul client implementations	|
 | - | [1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work	| Audit may find hardward/software issues. Danno notes that [a small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Danno Ferrin to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April hard fork. 	|
 | **Elliptic curve** | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Zachary Williamson to re-run benchmarks. Mariano Conti [is offering help if needed](https://twitter.com/nanexcool/status/1134583012748869634) 	|
 | **Elliptic curve** | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs). Jordi Baylina will attend [21 June All Core Devs Call](https://github.com/ethereum/pm/issues/102) to support 1109	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
