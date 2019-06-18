@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T04:07:21.891Z
+date: 2019-06-18T04:09:14.223Z
 tags: 
 ---
 
@@ -110,7 +110,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Elliptic curve** | [1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations	| Not yet discussed in gitter AMA or dev call 	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| |
 | - | [1848 PR](https://github.com/ethereum/EIPs/pull/1848) Fork Names Standard	| Not yet discussed in gitter AMA or dev call 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	|  	|
 | **Storage gas cost** | [1884](https://eips.ethereum.org/EIPS/eip-1884) Repricing for trie-size-dependent opcodes 	| SLOAD is affected by 1884, 2035 and possibly 2045 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
-| **Account versioning** | [1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| Tues 4th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to confirm that 1702 is the preferred method	|
+| **Account versioning** | ~~[1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning~~	| Given 1702 progressing, 1891 is redundant. | None planned	| -	|
 | **Elliptic curve** | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| |
 | **Chain metadata** | [1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| Wed 5th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
 | **Elliptic curve** | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 21 June Dev Call, may also come up beforehand on Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs) | Alexander Vlasov (@shamatar) will attend [21 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See ****Elliptic curve** cluster** for related EIPs |
