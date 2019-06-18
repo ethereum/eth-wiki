@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T07:04:28.254Z
+date: 2019-06-18T07:09:57.047Z
 tags: 
 ---
 
@@ -121,7 +121,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Minimal voices for or against have been heard 	| None planned	| Would you like to see funding for improving core ethereum? Gather support on any forum you see fit and bring your evidence to the [EIP notes](https://github.com/MadeofTin/EIPs/issues/9)! |
 | **State rent** | [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed in gitter AMA or dev call 	| None planned | POC Implementation WIP 	|
 | **State rent** | [2027](https://eips.ethereum.org/EIPS/eip-2027) State Rent C - Net contract size accounting	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
-| - | [2028](https://eips.ethereum.org/EIPS/eip-2028) Calldata gas cost reduction	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
+| - | [2028](https://eips.ethereum.org/EIPS/eip-2028) Calldata gas cost reduction	| No specific cost has been proposed 	| None planned	| Authors to propose a [specific cost](https://ethereum-magicians.org/t/eip-2028-calldata-gas-cost-reduction/3280/5)	|
 | **State rent** | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884 and 2035 	| None planned	| Martin Holst Swende (1884) and Alexey Akhunov (2035) to coordinate preferred SLOAD modification	|
