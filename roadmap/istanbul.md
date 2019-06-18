@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T05:00:14.941Z
+date: 2019-06-18T05:04:22.411Z
 tags: 
 ---
 
@@ -287,7 +287,7 @@ EVM upgrade to enable static jumps:
 
 #### EIP interactions
 - 615 requires one of the account versioning proposals to go ahead (1702, 1707/1217 or 1891)
-- 663 increases stack depth, which, if 615 goes ahead [will most likely be unecessary (as per Greg Colvin)](https://github.com/ethereum/EIPs/pull/663#issuecomment-318838695) through the use of [PUTLOCAL and GETLOCAL](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/33).
+- 663 is [made redundant](https://github.com/ethereum/EIPs/pull/663#issuecomment-318838695) by 615 through the use of [PUTLOCAL and GETLOCAL](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/33). It would also [break safety guarantees](https://gitter.im/ethereum/AllCoreDevs?at=5cf7f34bf31ba302588e445a) if co-implemented with 615.
 
 
 Three account versioning proposals, only one must be selected
@@ -304,7 +304,6 @@ Three account versioning proposals, only one must be selected
 #### Key questions to ask moving forward:
 - Is there any strong opposition to 1702-design-2 (account versioning with code prefix)? If no, then 1707, 1712 and 1891 can be shelved.
 - Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and was [interested in helping](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) to get it into Istanbul. Maybe some help could be offered to the solidity team and testing team for the next-steps as mentioned by Greg [here](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254).
-- Are there any voices that would like 663 to go ahead, given that 615 is likely progressing for Istanbul and would render 663 redundant?
 
 #### Probable path forward
 - Prepare for Istanbul: 615, 1702 ("design 2 / alternate version / account version with-code-prefix").
