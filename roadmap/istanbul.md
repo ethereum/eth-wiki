@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:06:46.522Z
+date: 2019-06-18T06:07:14.289Z
 tags: 
 ---
 
@@ -124,7 +124,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [2028](https://eips.ethereum.org/EIPS/eip-2028) Calldata gas cost reduction	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
 | **State rent** | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
-| **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| None planned	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
+| **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884 and 2035 	| None planned	| Martin Holst Swende (1884) and Alexey Akhunov (2035) to coordinate preferred SLOAD modification	|
 | **Storage gas cost** | [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| None 	| None planned	| -	|
 | **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| Any volunteer to discuss with Jordi (1109) on the next ACD call?	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
 
