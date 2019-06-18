@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T05:49:13.107Z
+date: 2019-06-18T05:53:14.085Z
 tags: 
 ---
 
@@ -349,19 +349,20 @@ Other EIPs that affect storage gas costs might be:
 - [2014 Extended State Oracle](https://eips.ethereum.org/EIPS/eip-2014) (Alex Beregszaszi)
 
 #### Key concepts:
-1965 Adds a precompile to get the ChainID at a specific block number. This likely supercedes both proposals:
-- 1959 Which introduces ChainID as a new opcode, but likely has reduced fork freedom.
-- 1344 Which introduces ChainID via a smart contract, which likely has a replay vulnerability.
+1965 Adds a precompile to get the ChainID at a specific block number. This supercedes 1959, which introduces ChainID as a new opcode, but likely has reduced fork freedom.
 
-2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block.
+1344 introduces ChainID via a smart contract, which could theoretically co-exist with 1965, but provides same function and likely has a replay vulnerability (as noted in the 1965 EIP rationale). There may be some utility in using both 1344 and 1965 at the time of a hard fork to allow transactions to traverse the fork more cleanly, as discussed in the [forum](https://ethereum-magicians.org/t/eip-1344-add-chain-id-opcode/1131/92)
+
+2014 Introduces an extensible contract system to bring more data to smart contracts, including block hashes and chain identifiers, using the contract ABI encoding. Might be used with 1965 or 1959 to check the validity of the chain identifier for a block. There are concerns in the EIP discussion [thred](https://ethereum-magicians.org/t/eip-2014-extended-state-oracle/3301/5) that including a method for chain ID in this EIP is complex and not wise.
 
 #### Key Questions
-- Is it true that 1965 supercedes 1959 and 1344?
+- Should 2014 be modified to exclude the method for ChainID?
+- Is there anyone who thinks that 1344 is not needed, given that 1965 is going ahead? 
 
 #### Probable path forward
-- Prepare for Istanbul: 1965, 2014
+- Prepare for Istanbul: 1344, 1965, 2014
 - Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 1959, 1344
+- Shelve indefinitely: 1959
 
 ### **State rent cluster**
 #### Key benefits
