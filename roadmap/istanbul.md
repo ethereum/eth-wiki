@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:03:44.971Z
+date: 2019-06-18T06:06:17.873Z
 tags: 
 ---
 
@@ -109,7 +109,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [1803](https://eips.ethereum.org/EIPS/eip-1803) Rename opcodes for clarity	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
 | **Elliptic curve** | ~~[1829](https://eips.ethereum.org/EIPS/eip-1829) Precompile for Elliptic Curve Linear Combinations~~	| Not needed, given 1962 progressing. 	| None planned	| - |
 | - | [1848 PR](https://github.com/ethereum/EIPs/pull/1848) Fork Names Standard	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
-| **Storage gas cost** | [1884](https://eips.ethereum.org/EIPS/eip-1884) Repricing for trie-size-dependent opcodes 	| SLOAD is affected by 1884, 2035 and possibly 2045 	| None planned	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
+| **Storage gas cost** | [1884](https://eips.ethereum.org/EIPS/eip-1884) Repricing for trie-size-dependent opcodes 	| SLOAD is affected by both 1884 and 2035	| None planned	| Martin Holst Swende (1884) and Alexey Akhunov (2035) to coordinate preferred SLOAD modification	|
 | **Account versioning** | ~~[1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning~~	| Given 1702 progressing, 1891 is redundant. | None planned	| -	|
 | **Elliptic curve** | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| None planned	| |
 | **Chain metadata** | ~~[1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs~~	| Not needed, given superceded by 1965 which is progressing. 	| None planned	| -	|
