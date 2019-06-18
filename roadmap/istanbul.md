@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T07:09:57.047Z
+date: 2019-06-18T07:12:48.123Z
 tags: 
 ---
 
@@ -54,11 +54,11 @@ _Follow along All Core Dev calls and the [EIPs repo](https://github.com/ethereum
 
 ----
 
-### EIP AMAs on All Core Devs Gitter
+### Focused Co-ordination Discussions
 
 To reduce the load on discussing each EIP in the dev calls, some EIP coordination can happen in the [AllCoreDevs gitter](https://gitter.im/ethereum/AllCoreDevs). 
 
-Future planned AMA dates: None
+Future planned AMA dates: None. Propose a topic and a date in the channel if you have something you feels need better coordination.
 
 Previous AMA dates for reference:
 
