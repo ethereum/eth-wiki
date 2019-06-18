@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:01:34.994Z
+date: 2019-06-18T06:03:44.971Z
 tags: 
 ---
 
@@ -331,9 +331,7 @@ Other EIPs that affect storage gas costs might be:
 - 2035 Part of the **state rent** roadmap, also increases SLOAD in order to allow better block proof transmission. 
 
 #### Key questions
-- Should the SLOAD parameter used in 1884 and 2035 be compared and a single parameter selected for both?
-- Does 2045 affect either 1884 or 2035?
-  - "I think 2045 is not storage related, but arithmetics related."
+- Are there any concerns with the planned path below?
 
 #### Probable path forward
 - Prepare for Istanbul: 1884, 2045, probably 2035 (see **state rent** cluster)
