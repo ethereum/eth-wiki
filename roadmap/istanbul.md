@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T04:29:18.623Z
+date: 2019-06-18T04:39:07.321Z
 tags: 
 ---
 
@@ -99,7 +99,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Elliptic curve** | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs). Jordi Baylina will attend [21 June All Core Devs Call](https://github.com/ethereum/pm/issues/102) to support 1109	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
 | **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Need to decide if metering goes on EVM or alongside sate rent pathway. As per dev call #61 Possibly needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Decide if metering on EVM or with state rent. Does Wei Tang submit new EIP comparing to 1087? 	|
 | **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| Wed 5th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
-| - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No hard fork required, but needed for 2046 	| -	| Non-istanbul client implementations	|
+| - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No consensus on whether precompiles should be addressed via a range (1352) or by client-based-lists | None planned	| Anyone interested in seeing this go ahead should make their case [here](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151)	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	|  	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
 | **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Rough consensus has formed around Design-2 (with code prefix). No issues unless there is strong preference for Design-1 (no prefix) 	| None planned	| Those strongly opposed to this EIP or Design-2 (with prefix) should raise issues in the main discussions-to thread |
@@ -126,7 +126,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| -	| POC Implementation WIP 	|
 | **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
 | **Storage gas cost** | [2045](https://github.com/ethereum/EIPs/pull/2045) add EIP for fractional gas costs	| SLOAD is affected by 1884, 2035 and possibly 2045 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Martin Holst Swende (1884), Alexey Akhunov (2035) and Casey Detrio (2045) to coordinate preferred SLOAD modification	|
-| **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| Mon 3rd June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
+| **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| Any volunteer to discuss with Jordi (1109) on the next ACD call?	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
 
 
 </div>
@@ -198,7 +198,7 @@ There were [no supporting arguments in a recent discussion](https://gitter.im/et
 
 1352 is still a **maybe** and the decision of "how do we define what a preompile is" is up for discussion. While it creates a nice range for defining what precompiles are, which [may help](https://gitter.im/ethereum/AllCoreDevs?at=5cf543c5702b7e5e7621ed0f) with static analysis, there are some serious [concerns on FEM](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151/26) about safety. It was clarified that 1352 is not required explicitly by either 1109 or 2046, so either of those can be chosen, but they may need to be modified to be clear about how the define a precompile. **Action required**: Decide if precompiles should be defined by range (push forward with 1352) or client based [lists](https://gitter.im/ethereum/AllCoreDevs?at=5cf53cd06f530d3b612d9c96) (shelve 1352).
 
-**Make precompile call costs cheaper, either by modifying an existing opcode (2046) or introducing a new opcode**
+**Make precompile call costs cheaper, either by modifying an existing opcode (2046) or introducing a new opcode (1109)**
 
 The goal is to make precompiles cheaper. Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. The decision of 1109 vs 2046 is still **undecided**. The [options](https://gitter.im/ethereum/AllCoreDevs?at=5cf53d0bfaac6439343331a3) for calling precompiles are either to create a new opcode (choose 1109) or to modify the semantics of STATICCALL if the destination is a precomile. **Action required**: Decide if we prefer a new opcode or to modify an old opcode.
 
