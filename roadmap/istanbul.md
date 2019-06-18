@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T05:04:51.493Z
+date: 2019-06-18T05:20:24.742Z
 tags: 
 ---
 
@@ -116,7 +116,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Elliptic curve** | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 21 June Dev Call | Alexander Vlasov (@shamatar) will attend [21 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See ****Elliptic curve** cluster** for related EIPs |
 | **Chain metadata** | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| [Danno noted that 1965, 1959 and 1344 do the same thing](https://youtu.be/lF_XxqxgVuA?t=3696). 	| None planned	| Danno Ferrin, Ronan Sandford (1965, 1959), 1344 authors (Richard Meissner and Bryant Eisenbach) and **chain metadata** stakeholders to elect preferred method	|
 | - | [1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
-| **Chain metadata** | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
+| **Chain metadata** | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| There are concerns that ChainID should be removed from the EIP 	| None planned	|  	Parties interested in moving the EIP ahead should discuss in the [forum](https://ethereum-magicians.org/t/eip-2014-extended-state-oracle/3301/5) |
 | **Elliptic curve** | [2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b and Blake2s	| Casey: [Zachary Williamson's code / EVM1 opcode repricing/optimisation might be a precompile-free alternative](https://youtu.be/lF_XxqxgVuA?t=5054) Existing Golang implementation for [blake2b](https://github.com/golang/crypto/tree/master/blake2b) and [blake2s](https://github.com/golang/crypto/tree/master/blake2s)| None planned	| JP discuss with BM/CD/ZW whether optimisations will happen [soon enough](https://youtu.be/lF_XxqxgVuA?t=5347), especially as the dedicated Blake2b/2s implementation is [trivial](https://youtu.be/lF_XxqxgVuA?t=5477) and will be valuable 	|
 | - | [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Not yet discussed in gitter AMA or dev call 	| None planned	| |
 | **State rent** | [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed in gitter AMA or dev call 	| None planned | POC Implementation WIP 	|
