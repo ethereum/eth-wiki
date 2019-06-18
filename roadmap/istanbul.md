@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T04:12:33.941Z
+date: 2019-06-18T04:16:49.824Z
 tags: 
 ---
 
@@ -102,7 +102,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No hard fork required, but needed for 2046 	| -	| Non-istanbul client implementations	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	|  	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| Thurs 6th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
-| **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Conflict between different methods proposed 1702, 1707/1712 and 1891. 	| Tues 4th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Wei Tang (1702, 1707, 1712 & 1891) and **account versioning** stakeholders including 615 authors (Greg Colvin, Brooklyn Zelenka, Paweł Bylica, Christian Reitwiessner) need to discuss and confirm that 1702 is the preferred method	|
+| **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Rough consensus has formed around Design-2 (with code prefix). No issues unless there is strong preference for Design-1 (no prefix) 	| None planned	| Those strongly opposed to this EIP or Design-2 (with prefix) should raise issues in the main discussions-to thread |
 | **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Depends on whether 1283 goes ahead. Not needed if account versioning goes ahead.	| Fri 7th June UTC [on Gitter](https://gitter.im/ethereum/AllCoreDevs)	| Make decision about 1283 and versioning (likely 1702)  	|
 | **Account versioning** | ~~[1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning~~ | Not needed, given 1702 progressing. 	| None planned	| -	|
 | **Account versioning** | ~~[1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes~~	| Not needed, given 1702 progressing. 	| None planned	|  -	|
