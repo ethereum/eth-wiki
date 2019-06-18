@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:08:49.379Z
+date: 2019-06-18T06:41:05.769Z
 tags: 
 ---
 
@@ -97,13 +97,13 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work	| Audit may find hardward/software issues. Danno notes that [a small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| None planned	| Danno Ferrin to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April hard fork. 	|
 | **Elliptic curve** | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| None planned	| Zachary Williamson to re-run benchmarks. Mariano Conti [is offering help if needed](https://twitter.com/nanexcool/status/1134583012748869634) 	|
 | **Elliptic curve** | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| Jordi Baylina will attend [21 June All Core Devs Call](https://github.com/ethereum/pm/issues/102) to support 1109	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
-| **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Need to decide if metering goes on EVM or alongside sate rent pathway. As per dev call #61 Possibly needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| None planned	| Decide if metering on EVM or with state rent. Does Wei Tang submit new EIP comparing to 1087? 	|
+| **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| None 	| None planned	| -	|
 | **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| Can co-exist with 1965, which provides similar but complementary function | None planned	| Any final concerns that this should not co-exist with 1965 should be directed to the [forum](https://ethereum-magicians.org/t/eip-1344-add-chain-id-opcode/1131/93)	|
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No consensus on whether precompiles should be addressed via a range (1352) or by client-based-lists | None planned	| Anyone interested in seeing this go ahead should make their case [here](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151)	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| None planned	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
 | **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Rough consensus has formed around Design-2 (with code prefix). No issues unless there is strong preference for Design-1 (no prefix) 	| None planned	| Those strongly opposed to this EIP or Design-2 (with prefix) should raise issues in the main discussions-to thread |
-| **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| Depends on whether 1283 goes ahead. Not needed if account versioning goes ahead.	| None planned	| Make decision about 1283 and versioning (likely 1702)  	|
+| **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| May not be needed for 1283 (because account versioning progressing well), but may still be benificial for future changes	| None planned	| Interested parties to review the parity [implementation](paritytech/parity-ethereum#10191)	|
 | **Account versioning** | ~~[1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning~~ | Not needed, given 1702 progressing. 	| None planned	| -	|
 | **Account versioning** | ~~[1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes~~	| Not needed, given 1702 progressing. 	| None planned	|  -	|
 | - | [1803](https://eips.ethereum.org/EIPS/eip-1803) Rename opcodes for clarity	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
@@ -136,7 +136,7 @@ Some EIPs are complementary and some are mutually exclusive improvements that de
 Edits are welcome.
 
 
-### **Proposals that are independent**
+### **Proposals that are independent / not clustered below**
 EIPs with minimal interactions with other proposals
 - [1057 ProgPoW, a Programmatic Proof-of-Work](https://eips.ethereum.org/EIPS/eip-1057) (Kristy-Leigh Minehan)
 - [1380 Reduced gas cost for call to self](https://eips.ethereum.org/EIPS/eip-1380) (Alex Beregszaszi, Jacques Wagener)
@@ -223,31 +223,33 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 1829
 
+
+
 ### **Storage writing cluster**
 
+
 #### Key benefits:
-- 1283 allows multiple write operation within a single call frame, allowing re-entry locks and multi-sends.
+- 1283 allows multiple write operation within a single call frame, allowing re-entry locks and multi-sends which are important for synchronus cross-dapp interactions..
 
 #### Relevant EIPs:
 - [1283 Net gas metering for SSTORE without dirty maps](https://eips.ethereum.org/EIPS/eip-1283) (Wei Tang). Clients already have implementations. The spec has been reviewed by many people. Previously had a re-entrancy bug [caused by contracts assuming long term stability of gas costs](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440) which is now addressed with either **account versioning** or with 1706. There have been in-depth about choices of different net gas metering options (EIP-1087, EIP-1153, EIP-1283).
-- [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss). 
-1706 is a required for 1832 to be compatible with many existing contracts if no account versioning is implemented.
+- [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss). 1706 is a required for 1832 to be compatible with many existing contracts if no account versioning is implemented.
+
+#### Key concepts:
+- Net gas metering is a [desired](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) feature. This can be provided with 1283 in a timely fashion without depending on the State Rent EIPs, through the use of account versioning.
+- Net gas metering significantly reduces the gas cost for mutex and multi-step token transfers, which are necessary for synchronous cross dapp interactions. Benefits include improving [uniswap](https://gitter.im/ethereum/AllCoreDevs?at=5cfa77c8481ef4167be72d39).
+- Even if account versioning goes ahead and 1706 is not explicitly required, it is simple to implement and would avoid future issues with repricing as noted [here](https://gitter.im/ethereum/AllCoreDevs?at=5cfa2cb465392c3b60d43ba6).
+- If net gas metering ends up being implemented as part of the State Rent pathway in Istanbul, 1283 would be made redundant, but would [not cause](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) any issues as long as is implemented with account versioning. Given 1283 is strongly desired, implementing it even if metering is planned for State Rent seems preferred.
 
 #### Key decisions:
-- Whether to implement net gas metering directly on EVM or implement it once Alexey's state rend has been implemented
-- Are account versioning EIPs (likely 1702) happening, (most likely yes) see **account versioning** cluster?
-- In AllCoreDevs #61, there was a request for a 1283 to be replaced by new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283). Is this still required?
-
-#### Key actions:
-- If gas metering on EVM (1283) desired, and account versioning happens then 1706 is not required
-- If gas metering on EVM (1283) desired and no account versioning happening in Istanbul, have people review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
-- If gas metering to happen once Alexey's state rent goes ahead, plan for metering to happen in synchony with rate rent roadmap in an appropriate fork. (Neither 1283 nor 1087 go into Istanbul).
+- Are there any opposed to implementing 1706 even if not explicitly required by 1283 (that is, if account versioning goes ahead)? If no, people need to review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
 
 
 #### Probable path forward
-- Prepare for Istanbul: 1283 (if metering happening directly on EVM)
+- Prepare for Istanbul: 1283, 1706
 - Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 1706 (presuming account versioning goes ahead)
+- Shelve indefinitely: None
+
 
 
 ### **Account versioning cluster**
