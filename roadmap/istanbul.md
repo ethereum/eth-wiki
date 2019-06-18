@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T05:04:22.411Z
+date: 2019-06-18T05:04:51.493Z
 tags: 
 ---
 
@@ -308,7 +308,7 @@ Three account versioning proposals, only one must be selected
 #### Probable path forward
 - Prepare for Istanbul: 615, 1702 ("design 2 / alternate version / account version with-code-prefix").
 - Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 663, 1891 and (1707+1712)
+- Shelve indefinitely: 663, 1891, 1707, 1712
 
 ### **Storage gas cost cluster**
 
