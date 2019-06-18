@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T04:56:01.937Z
+date: 2019-06-18T04:56:43.174Z
 tags: 
 ---
 
@@ -366,7 +366,7 @@ Other EIPs that affect storage gas costs might be:
 
 ### **State rent cluster**
 #### Key benefits
-Maintainpresent-day ethereum by making optimisations that keep state size small
+Maintain present-day ethereum by making optimisations that keep state size small
 
 #### Key concepts:
 
