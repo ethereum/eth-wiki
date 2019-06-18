@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T02:50:09.818Z
+date: 2019-06-18T04:01:57.097Z
 tags: 
 ---
 
@@ -249,12 +249,13 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 1706 (if account versioning goes ahead)
 
+
 ### **Account versioning cluster**
 
 Link to previous Core Dev gathering presentation on account versioning: https://git.that.world/talks/20190417-account-versioning.git/plain/presentation.pdf
 
 #### Key benefits: 
-Versioning enables eWASM to coexist with EVM in one block and makes future EVM upgrades safer.  Static jumps enable strong formal analysis of contracts
+Versioning enables eWASM to coexist with EVM in one block and makes future EVM upgrades safer. Included in the account versioning group is the EVM upgrade (615) that enables static jumps, which enable strong formal analysis of contracts
 
 #### Relation to Previous Hardfork postmortem
 For Istanbul, we have some EIPs that propose to decrease operation costs. As part of the last hard fork postmortem, one of the main reason the re-entry bug happened is because EIP-1283 was the first to-be-on-mainnet EIP that includes gas cost decrement. Later in the discussion, it's generally agreed that if we ever want to do another gas/operation cost decrement, we'd either need extra assessment, or it needs to be combined with account versioning.
@@ -270,13 +271,19 @@ As a result, account versioning EIPs affect a larger portion of Istanbul EIPs th
 - [663 Unlimited SWAP and DUP instructions](https://eips.ethereum.org/EIPS/eip-663) (Alex Beregszaszi)
 
 #### Key concepts:
-- Dynamic jumps are [hugely problematic](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/25) for contract analysis (control-flow, data-flow, static and formal) and are going to eventually be deprecated. This will be achieved by first by introducing static jumps and subroutines then by later discouraging dynamic jumps entirely. Static jumps [significantly lower the bar for static analysis during formal verication of smart contracts](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58)
-- Static jumps are introduced by moving the frame pointer/returner to new stack and by treating subroutines arguments as local variables
+Versioning:
 - EVM versions allow older (dynamic jumping contracts) and newer (static jumping contracts) to co-exist.
 - EVM versions allow eWASM contracts and EVM contracts to co-exist within one block.
-- EVM versions allow EVM upgrades to [guarantee that the behaviour of older contracts is better preserved](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440/30)
+- EVM versions allow EVM upgrades to guarantee that the behaviour of [older contracts is better preserved](https://ethereum-magicians.org/t/immutables-invariants-and-upgradability/2440/30)
+- See presentation on versioning [here](https://git.that.world/talks/20190417-account-versioning.git/plain/presentation.pdf)
+
+EVM upgrade to enable static jumps:
+- Dynamic jumps are [hugely problematic](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/25) for contract analysis (control-flow, data-flow, static and formal) and are going to eventually be deprecated. This will be achieved by first by introducing static jumps and subroutines then by later discouraging dynamic jumps entirely. Static jumps significantly lower the bar for static analysis during [formal verification of smart contracts](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58)
+- Static jumps are introduced by moving the frame pointer/returner to new stack and by treating subroutines arguments as local variables
 - A dynamic jump is theoretically slower because takes a binary search of a table of every JUMPDEST in the program O(log n) vs O(1) for static jumps, however no testing has confirmed a realised speed gain.
 - Static jumps and subroutines are introduced in a single EIP (rather than multiple EIPs) to harness the momentum and get the change implemented, rather than first implementing subroutines (composed of dynamic jumps) then static jumps in a separate fork. The individual components (if split into mulptiple EIPs) [are mostly useless in isolation](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/56)
+- 615 [has an implementation](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) for ethereum client devs to model their implementations on.
+- While there are ten new opcodes introduced by 615, each opcode is [mapped](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/44) to a similar functional element in eWASM.
 
 #### EIP interactions
 - 615 requires one of the account versioning proposals to go ahead (1702, 1707/1217 or 1891)
@@ -284,29 +291,23 @@ As a result, account versioning EIPs affect a larger portion of Istanbul EIPs th
 
 
 Three account versioning proposals, only one must be selected
-- **1702 (preferred)**. In the EIP see under Specification -> Contract Deployment -> [Alternative Design](https://eips.ethereum.org/EIPS/eip-1702)
+- **1702 (preferred)**. The EIP has two variants, with the second variant being preferred (In the EIP see under Specification -> Contract Deployment -> [Alternative Design](https://eips.ethereum.org/EIPS/eip-1702))
 - 1707 + 1712 (likely not for istanbul). Version as RLP item based on code header prefix. Possibly backward incompatible.
 - 1891 (likely not for Istanbul). Store version in a dedicated contract, and [use new opcodes VCREATE/VCREATE2 to get version](https://github.com/ethereum/EIPs/pull/1891/files). Compared to other two solutions will have worse performance (extra to call to state trie), but is less complex and benefits by: 1) Allowing account state format to stay the same, 2) allowing precompile invocation to stay the same and 3) by preventing forging of version bytes.
 
-**1702 flavour**
-- The first variant makes contract deployment transaction deploys a contract family, and only allow newest account version to be deployed at root. I have slight preference of this. Once we deploy newer versions (like eWASM), older versions (like EVM) should not be able to be deployed again. This is just architecturally simple. This variant is preferred by EIP author Wei Tang
-- The second variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant was preferred by the 615 team when last discussed.
+**1702 flavours: 1 without-code-prefix (not preferred) and 2 with-code-prefix (preferred)**
+- Design 1: A contract can only deploy subcontract with the same version.Requires either only allowing deploying "newest" version, or achange in RLP structure in contract creation transactions.
+- Design 1 variant makes contract deployment transaction deploys a contract family, and only allow newest account version to be deployed at root. Once we deploy newer versions (like eWASM), older versions (like EVM) should not be able to be deployed again. This is just architecturally simple. EIP-1702 author Wei Tang slightly prefers this, but is not compatible with 615.
+- Design 2: All version that is not zero requires a code prefix (such as\0asm). It can be variable length, but must be unique.
+- Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [is preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team. This option has rough [consensus](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b), and is [preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf68f41b76eac527aa0c4cb) by the Wei Tang (1702 author) because contracts that use CREATE2 would not have to inherit the version of the factory contract.
 
 #### Key questions to ask moving forward:
-- Is it true that 663 would provide no additional benefit if 615 goes ahead and can be shelved?
-- Which [flavour](https://gitter.im/ethereum/AllCoreDevs?at=5cf63e1a5de053468b0dafd1) of 1702 is preferred?
-- Precompile invocation is a topic modified by EIPs in the **Elliptic Curve cluster**. Is it true that 1702 will affect the precompile-based EIPs in the **Elliptic curve cluster** which will need some attention?
-- 615 [has an implementation](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) for ethereum client devs to model their implementations on. Can we signal to the client teams that yes 615 will go ahead, so that they can work on their implementations?
-- What specifically is required of the [solidity team and testing team](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254) as a next step for 615?
-- Is there are need to prove with testing that static jumps from 615 are faster that dynamic jumps, given there are [significant benefits in contract security analysis (as per Neville Grech)](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/58) to be had?
-- Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and [interested in helping](](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) ) to get it into Istanbul
-- Are there serious technical concerns that require 615 to be split into separate EIPs (First subroutines then static jumps)? 
-- While 615 introduces ten new opcodes, which [Bryant Eisenbach](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/39) and [Nick Johnson](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/31) though was a large number. The [opcodes are mapped to similar functional elements in eWASM](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/44) which will help with the EVM->eWASM transition. Are people happy that this is a good fair rationale for the number of opcodes?
-  - Can someone explain how does this help eWASM? Perhaps that the opcodes have functional analogues in eWASM will make it easier for people to transition from composing for EVM to composing for eWASM.
-
+- Is there any strong opposition to 1702-design-2 (account versioning with code prefix)? If no, then 1707, 1712 and 1891 can be shelved.
+- Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and was [interested in helping](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) to get it into Istanbul. Maybe some help could be offered to the solidity team and testing team for the next-steps as mentioned by Greg [here](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254).
+- Are there any voices that would like 663 to go ahead, given that 615 is likely progressing for Istanbul and would render 663 redundant?
 
 #### Probable path forward
-- Prepare for Istanbul: 615, 1702
+- Prepare for Istanbul: 615, 1702 ("design 2 / alternate version / account version with-code-prefix").
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 663, 1891 and (1707+1712)
 
