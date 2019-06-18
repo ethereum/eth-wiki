@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T05:39:52.025Z
+date: 2019-06-18T05:49:13.107Z
 tags: 
 ---
 
@@ -98,7 +98,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Elliptic curve** | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| None planned	| Zachary Williamson to re-run benchmarks. Mariano Conti [is offering help if needed](https://twitter.com/nanexcool/status/1134583012748869634) 	|
 | **Elliptic curve** | [1109](https://eips.ethereum.org/EIPS/eip-1109) PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)	| 2046 conflicts with 1109. 	| Jordi Baylina will attend [21 June All Core Devs Call](https://github.com/ethereum/pm/issues/102) to support 1109	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) |
 | **Storage writing** | [1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps	| Need to decide if metering goes on EVM or alongside sate rent pathway. As per dev call #61 Possibly needs new EIP which explains differences between [EIP 1087](https://eips.ethereum.org/EIPS/eip-1087) and [EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) 	| None planned	| Decide if metering on EVM or with state rent. Does Wei Tang submit new EIP comparing to 1087? 	|
-| **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| Whilst could co-exist with 1965, the function of is largely superceded by 1965, which is progressing. 	| None planned	| Anyone interested in progressing this EIP alongside 1965 should make their case in the [forum](https://ethereum-magicians.org/t/eip-1344-add-chain-id-opcode/1131/93)	|
+| **Chain metadata** | [1344](https://eips.ethereum.org/EIPS/eip-1344) ChainID opcode	| Can co-exist with 1965, which provides similar but complementary function | None planned	| Any final concerns that this should not co-exist with 1965 should be directed to the [forum](https://ethereum-magicians.org/t/eip-1344-add-chain-id-opcode/1131/93)	|
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No consensus on whether precompiles should be addressed via a range (1352) or by client-based-lists | None planned	| Anyone interested in seeing this go ahead should make their case [here](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151)	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| None planned	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
