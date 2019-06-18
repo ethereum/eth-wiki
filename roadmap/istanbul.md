@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T06:07:14.289Z
+date: 2019-06-18T06:08:49.379Z
 tags: 
 ---
 
@@ -247,7 +247,7 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 #### Probable path forward
 - Prepare for Istanbul: 1283 (if metering happening directly on EVM)
 - Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 1706 (if account versioning goes ahead)
+- Shelve indefinitely: 1706 (presuming account versioning goes ahead)
 
 
 ### **Account versioning cluster**
