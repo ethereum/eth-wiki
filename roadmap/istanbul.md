@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T07:12:48.123Z
+date: 2019-06-18T10:50:04.097Z
 tags: 
 ---
 
@@ -236,10 +236,11 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 - [1706 Disable SSTORE with gasleft lower than call stipend](https://eips.ethereum.org/EIPS/eip-1706) (Alex Forshtat, Yoav Weiss). 1706 is a required for 1832 to be compatible with many existing contracts if no account versioning is implemented.
 
 #### Key concepts:
-- Net gas metering is a [desired](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) feature. This can be provided with 1283 in a timely fashion without depending on the State Rent EIPs, through the use of account versioning.
+- Net gas metering is a [desired](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) feature. This can be provided with 1283 in a timely fashion without depending on the State Rent EIPs, with or without the use of account versioning.
 - Net gas metering significantly reduces the gas cost for mutex and multi-step token transfers, which are necessary for synchronous cross dapp interactions. Benefits include improving [uniswap](https://gitter.im/ethereum/AllCoreDevs?at=5cfa77c8481ef4167be72d39).
 - Even if account versioning goes ahead and 1706 is not explicitly required, it is simple to implement and would avoid future issues with repricing as noted [here](https://gitter.im/ethereum/AllCoreDevs?at=5cfa2cb465392c3b60d43ba6).
-- If net gas metering ends up being implemented as part of the State Rent pathway in Istanbul, 1283 would be made redundant, but would [not cause](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) any issues as long as is implemented with account versioning. Given 1283 is strongly desired, implementing it even if metering is planned for State Rent seems preferred.
+- Net gas metering would [not interfere](https://gitter.im/ethereum/AllCoreDevs?at=5cfa29c1cea8295279090c00) with State Rent EIPs, or complicate their designs. First, net gas metering can be implemented with account versioning. Second, even if net gas metering is implemented without account versioning, it can be easily toggled on or off many times on-chain without hugely affecting existing contracts. Given 1283 is strongly desired, implementing it even if metering is planned for State Rent seems preferred.
+- It can be [beneficial](https://gitter.im/ethereum/AllCoreDevs?at=5cfa2e6a702b7e5e76439672) to implement net gas metering without account versioning, because existing contracts can also receive gas reduction.
 
 #### Key decisions:
 - Are there any opposed to implementing 1706 even if not explicitly required by 1283 (that is, if account versioning goes ahead)? If no, people need to review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
