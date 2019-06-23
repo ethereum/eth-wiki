@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-18T10:50:04.097Z
+date: 2019-06-23T00:46:40.388Z
 tags: 
 ---
 
@@ -92,7 +92,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | Cluster | EIP (strike == not for istanbul)  | Any [non-checkpoint](https://docs.google.com/spreadsheets/d/1Mgo7mJ6b6wimUwafsMo1l-b44uec28E_Hq8EQ7YdeEM/edit#gid=0) issue preventing suitability for Istanbul? 	| Planned AMA or ACD call date 	| Step required	|
 |---	|--- |---	|---	|---	|---	|
 | **Account versioning** | [615](https://eips.ethereum.org/EIPS/eip-615) Subroutines and Static Jumps for the EVM	| Authoring team (mainly Greg Colvin) may need volunteers to help generate tests or implementations. | None planned	| Volunteers interested in seeing this EIP succeed (e.g. Feist from Trail of Bits?) could reach out to Greg to offer a hand  |
-| **Account versioning** | ~~[663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions~~	| [Solves the same](https://youtu.be/lF_XxqxgVuA?t=1934) stack-access problem as 615, which is likely going ahead. Additionally, three technical options are presented and would need to be refined. 	| None planned	| If 615 is cancelled, 663 may be desired. If so, select one of the three options.	|
+| **Account versioning** | [663](https://eips.ethereum.org/EIPS/eip-663) Unlimited SWAP and DUP instructions	| [Solves the same](https://youtu.be/lF_XxqxgVuA?t=1934) stack-access problem as 615, which is likely going ahead. Additionally, three technical options are presented and would need to be refined. 	| None planned	| If 615 is cancelled, 663 may be desired. If so, select one of the three options.	|
 | - | ~~[689](https://eips.ethereum.org/EIPS/eip-689) Address Collision of Contract Address Causes Exceptional Halt~~	| [Not needed](https://youtu.be/lF_XxqxgVuA?t=283). No hard fork required and is covered by [issue 684](https://github.com/ethereum/EIPs/issues/684) 	| None planned | Non-istanbul client implementations	|
 | - | [1057](https://eips.ethereum.org/EIPS/eip-1057) ProgPoW, a Programmatic Proof-of-Work	| Audit may find hardward/software issues. Danno notes that [a small addition is required](https://ethereum-magicians.org/t/eip-progpow-a-programmatic-proof-of-work/272/13) 	| None planned	| Danno Ferrin to implement addition. Work on client implementations as if will go in. If audit happens and issue found, may need to delay to April hard fork. 	|
 | **Elliptic curve** | [1108](https://eips.ethereum.org/EIPS/eip-1108) Reduce alt_bn128 precompile gas costs	| Benchmarks [incomplete](https://youtu.be/lF_XxqxgVuA?t=2896) 	| None planned	| Zachary Williamson to re-run benchmarks. Mariano Conti [is offering help if needed](https://twitter.com/nanexcool/status/1134583012748869634) 	|
