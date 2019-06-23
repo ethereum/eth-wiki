@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T03:35:30.411Z
+date: 2019-06-23T03:39:37.304Z
 tags: 
 ---
 
@@ -117,7 +117,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Chain metadata** | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| No issues | None planned	| -	|
 | - | ~~[1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters~~	| Not yet discussed in gitter AMA or dev call. [Looks like](https://ethereum-magicians.org/t/eip-1985-sane-limits-for-certain-evm-parameters/3224/6) this doesn't need a hard fork 	| None planned	|  Non-istanbul client implementations	|
 | **Chain metadata** | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| There are concerns that ChainID should be removed from the EIP 	| None planned	|  	Parties interested in moving the EIP ahead should discuss in the [forum](https://ethereum-magicians.org/t/eip-2014-extended-state-oracle/3301/5) |
-| **Elliptic curve** | [2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b and Blake2s	| No issues. Existing Golang implementation for [blake2b](https://github.com/golang/crypto/tree/master/blake2b) and [blake2s](https://github.com/golang/crypto/tree/master/blake2s)| None planned	| Work toward 2b and 2s implementations for istanbul 	|
+| **Elliptic curve** | ~~[2024 PR](https://github.com/ethereum/EIPs/pull/2024) Proposal for supporting Blake2b and Blake2s~~	| Superceded by 2129 | None planned	| -|
 | - | [2025 PR](https://github.com/ethereum/EIPs/pull/2025) Funding ETH1.X through a Developer Block Reward for 18 Months	| Minimal voices for or against have been heard 	| None planned	| Would you like to see funding for improving core ethereum? Gather support on any forum you see fit and bring your evidence to the [EIP notes](https://github.com/MadeofTin/EIPs/issues/9)! |
 | **State rent** | [2026](https://eips.ethereum.org/EIPS/eip-2026) State Rent H - Fixed Prepayment for accounts	| Not yet discussed in gitter AMA or dev call 	| None planned | POC Implementation WIP 	|
 | **State rent** | [2027](https://eips.ethereum.org/EIPS/eip-2027) State Rent C - Net contract size accounting	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
@@ -125,6 +125,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **State rent** | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884 and 2035 	| None planned	| Martin Holst Swende (1884) and Alexey Akhunov (2035) to coordinate preferred SLOAD modification	|
+| **Elliptic curve** | [2129 Blake 2b 'F' Precompile](https://github.com/ethereum/EIPs/pull/2129) (Matt Luongo) | None | None planned | Client implementations |
 | **Storage gas cost** | [2045](https://eips.ethereum.org/EIPS/eip-2045) add EIP for fractional gas costs	| None 	| None planned	| 1. Casey to guide Geth/Parity to implement EVM-One changes to; 2) Enable benchmarks to; 3) Determine specific parameters for the EIP	|
 | **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| Any volunteer to discuss with Jordi (1109) on the next ACD call?	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
 
