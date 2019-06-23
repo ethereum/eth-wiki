@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T03:31:06.041Z
+date: 2019-06-23T03:35:30.411Z
 tags: 
 ---
 
@@ -180,6 +180,7 @@ Curves in the ecosystem not related to the Istanbul EIPs
 - [1109 PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
 - [1108 Reduce alt_bn128 precompile gas costs](https://eips.ethereum.org/EIPS/eip-1108) (Antonio Salazar Cardozo, Zachary Williamson)
 - [2024 Proposal for supporting Blake2b](https://github.com/ethereum/EIPs/pull/2024) (James Hancock)
+- [2129 Blake 2b 'F' Precompile](https://github.com/ethereum/EIPs/pull/2129) (Matt Luongo)
 - [2046 Reduced gas cost for static calls made to precompiles](https://eips.ethereum.org/EIPS/eip-2046) (Alex Beregszaszi)
 - [1930 CALLs with strict gas semantic. Revert if not enough gas available](https://eips.ethereum.org/EIPS/eip-1930) (Ronan Sandford)
 
