@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T03:44:34.161Z
+date: 2019-06-23T04:01:03.497Z
 tags: 
 ---
 
@@ -304,11 +304,11 @@ Three account versioning proposals, only one must be selected
 - 1707 + 1712 (likely not for istanbul). Version as RLP item based on code header prefix. Possibly backward incompatible.
 - 1891 (likely not for Istanbul). Store version in a dedicated contract, and [use new opcodes VCREATE/VCREATE2 to get version](https://github.com/ethereum/EIPs/pull/1891/files). Compared to other two solutions will have worse performance (extra to call to state trie), but is less complex and benefits by: 1) Allowing account state format to stay the same, 2) allowing precompile invocation to stay the same and 3) by preventing forging of version bytes.
 
-**1702 flavours: 1 without-code-prefix (not preferred) and 2 with-code-prefix (preferred)**
+**1702 flavours: 1 with-optional-code-prefix (Preferred) and 2 with-compulsory-code-prefix (not preferred)**
 - Design 1: A contract can only deploy subcontract with the same version.Requires either only allowing deploying "newest" version, or achange in RLP structure in contract creation transactions.
-- Design 1 variant makes contract deployment transaction deploys a contract family, and only allow newest account version to be deployed at root. Once we deploy newer versions (like eWASM), older versions (like EVM) should not be able to be deployed again. This is just architecturally simple. EIP-1702 author Wei Tang slightly prefers this, but is not compatible with 615.
+- Design 1 variant makes contract deployment transaction deploys a contract family, and only allow newest account version to be deployed at root. Once we deploy newer versions (like eWASM), older versions (like EVM) should not be able to be deployed again. This is just architecturally simple. EIP-1702 author Wei Tang slightly prefers this, and the 615 team is okay with this design (as per ACD call #63 1hr6mins).
 - Design 2: All version that is not zero requires a code prefix (such as\0asm). It can be variable length, but must be unique.
-- Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [is preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team. This option has rough [consensus](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b), and is [preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf68f41b76eac527aa0c4cb) by the Wei Tang (1702 author) because contracts that use CREATE2 would not have to inherit the version of the factory contract.
+- Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [was previously preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team and had [support](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b). However in subsequent discussion between Wei and Greg, Design 1 was decided that it was preferred.
 
 #### Key questions to ask moving forward:
 - Is there any strong opposition to 1702-design-2 (account versioning with code prefix)? If no, then 1707, 1712 and 1891 can be shelved.
