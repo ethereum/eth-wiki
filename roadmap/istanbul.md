@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T03:06:32.630Z
+date: 2019-06-23T03:31:06.041Z
 tags: 
 ---
 
@@ -204,9 +204,11 @@ The goal is to make precompiles cheaper. Both EIPs seek to make 1108, 2024 and 1
 
 **Specific curve optimisations:**
 
-There is a lot of interest in enabling immediate use of specific curves. Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks. Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use. Both 1108 and 2024 can coexist with 1962 [without issue](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
+There is a lot of interest in enabling immediate use of specific curves. Alt_bn128 is enabled by 1108. 1108 also supplements 1829 which reduces the cost of addition, multiplication and and pairing checks. 
 
-In ACD call 63 (45min41s), James Preswitch outlined that 2024 is superceded by a new [implementation](https://github.com/ethereum/EIPs/pull/2129) with F-compression, with smaller codebase changes, with less work required by client teams. Maintained by Keep, who have implemented in Geth. pull 2129. This looks faster than the dedicated Blake2b EIP. The 2s curve could be a nice-to-have, for future ZCash-Ethereum interop, but at the moment is has no implementation and maybe could go in the April 2020 hard fork. It looks like this EIP supercedes 2024, 1109 and 1962.
+Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use. Both 1108 and 2024 can coexist with 1962 [without issue](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
+
+In ACD call 63 (45min41s), James Preswitch outlined that 2024 is superceded by a new [implementation](https://github.com/ethereum/EIPs/pull/2129) with F-compression, with smaller codebase changes, with less work required by client teams. Maintained by Keep, who have implemented in Geth. It is faster than the dedicated Blake2b 2024. The 2s curve could be a nice-to-have, for future ZCash-Ethereum interop, but at the moment has no implementation and maybe could go in the April 2020 hard fork. 
 
 **DOS attack mitigation**
 
@@ -222,9 +224,9 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 
 
 #### Probable path forward
-- Prepare for Istanbul: 1108, 1962, 2129.
+- Prepare for Istanbul: 1108, 1962, 2129. One of 1109 vs 2046.
 - Prepare for April 2020 Hard Fork: Blake 2s curve precompile (see 2129).
-- Shelve indefinitely: 1829, (2024, 1109 and 2046 - all superceded by 2129).
+- Shelve indefinitely: 1829, 2024.
 
 
 
