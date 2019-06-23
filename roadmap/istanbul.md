@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T04:07:07.195Z
+date: 2019-06-23T04:13:01.084Z
 tags: 
 ---
 
@@ -311,11 +311,10 @@ Three account versioning proposals, only one must be selected
 - Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [was previously preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team and had [support](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b). However in subsequent discussion between Wei and Greg, Design 1 was decided that it was preferred.
 
 #### Key questions to ask moving forward:
-- Is there any strong opposition to 1702-design-2 (account versioning with code prefix)? If no, then 1707, 1712 and 1891 can be shelved.
 - Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and was [interested in helping](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) to get it into Istanbul. Maybe some help could be offered to the solidity team and testing team for the next-steps as mentioned by Greg [here](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254).
 
 #### Probable path forward
-- Prepare for Istanbul: 615, 1702 ("design 2 / alternate version / account version with-code-prefix").
+- Prepare for Istanbul: 615, 1702 ("design 1")
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 663, 1891, 1707, 1712
 
