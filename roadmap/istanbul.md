@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T03:03:32.209Z
+date: 2019-06-23T03:04:17.416Z
 tags: 
 ---
 
@@ -215,7 +215,6 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This [may benefit EIPs](https://gitter.im/ethereum/AllCoreDevs?at=5cf576215de053468b08b9b8) that modify CALL/STATICCALL behaviour. The winner out of 1109 vs 2046 will need to be checked against 1930 to ensure behaviour is as expected.  
 
 
-
 #### Key questions to ask moving forward:
 - Do people want to define precompiles as address ranges (as in 1352) or do they prefer client based lists (status quo). If 1352 is preferred, the concerns in the discussion-to forum need addressing.
 - Do people want the new PRECOMILEDCALL opcode in 1109 to call precompiles with or is 2046 preferred, which changes the STATTICALL behaviour when the destination is a precompile?
@@ -225,7 +224,7 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 #### Probable path forward
 - Prepare for Istanbul: 1108, 1962, 2129.
 - Prepare for April 2020 Hard Fork: Blake 2s curve precompile (see 2129).
-- Shelve indefinitely: 1829, (2024, 1109 2046 - all superceded by 2129).
+- Shelve indefinitely: 1829, (2024, 1109 and 2046 - all superceded by 2129).
 
 
 
