@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T05:02:51.229Z
+date: 2019-06-23T05:07:49.655Z
 tags: 
 ---
 
@@ -162,8 +162,8 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | - | [1352](https://eips.ethereum.org/EIPS/eip-1352) Specify restricted address range for precompiles/system contracts	| No consensus on whether precompiles should be addressed via a range (1352) or by client-based-lists | None planned	| Anyone interested in seeing this go ahead should make their case [here](https://ethereum-magicians.org/t/eip-1352-restricted-address-range-for-precompiles-system-contracts/1151)	|
 | - | [1380](https://eips.ethereum.org/EIPS/eip-1380) Reduced gas cost for call to self	| Not yet discussed in gitter AMA or dev call. EIP title needs to be [clearer](https://github.com/ethereum/EIPs/pull/1803/#issuecomment-488119162) 	| None planned	| Update EIP title 	|
 | - | [1559](https://eips.ethereum.org/EIPS/eip-1559) Fee market change for ETH 1.0 chain	| Péter Szilágyi: [May effect transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506) Rick Dudley: EIP may not be completed in time 	| None planned	| Rick Dudley to work toward Istanbul and make patch for network propagation 	|
-| **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| Rough consensus has formed around Design-2 (with code prefix). No issues unless there is strong preference for Design-1 (no prefix) 	| None planned	| Those strongly opposed to this EIP or Design-2 (with prefix) should raise issues in the main discussions-to thread |
-| **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| May not be needed for 1283 (because account versioning progressing well), but may still be benificial for future changes	| None planned	| Interested parties to review the parity [implementation](paritytech/parity-ethereum#10191)	|
+| **Account versioning** | [1702](https://eips.ethereum.org/EIPS/eip-1702) Generalized Account Versioning Scheme	| The Design-1 variant has been accepted 	| None planned	| - |
+| **Storage writing** | [1706](https**://eips.ethereum.org/EIPS/eip-1706) Disable SSTORE with gasleft lower than call stipend	| May not be needed for 1283 (because account versioning happening), but may still be benificial for future changes	| None planned	| Interested parties to review the parity [implementation](paritytech/parity-ethereum#10191)	|
 | **Account versioning** | ~~[1707 PR](https://github.com/ethereum/EIPs/pull/1707) Use Version Byte Prefix for Contract Account Versioning~~ | Not needed, given 1702 progressing. 	| None planned	| -	|
 | **Account versioning** | ~~[1712 PR](https://github.com/ethereum/EIPs/pull/1712) Disallow Deployment of Unused Opcodes~~	| Not needed, given 1702 progressing. 	| None planned	|  -	|
 | - | [1803](https://eips.ethereum.org/EIPS/eip-1803) Rename opcodes for clarity	| Not yet discussed in gitter AMA or dev call 	| None planned	|  	|
@@ -173,7 +173,7 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **Account versioning** | ~~[1891 PR](https://github.com/ethereum/EIPs/pull/1891) Contract-based Account Versioning~~	| Given 1702 progressing, 1891 is redundant. | None planned	| -	|
 | **Elliptic curve** | [1930](https://eips.ethereum.org/EIPS/eip-1930) CALLs with strict gas semantic. Revert if not enough gas available	| Not yet discussed in gitter AMA or dev call 	| None planned	| |
 | **Chain metadata** | ~~[1959](https://eips.ethereum.org/EIPS/eip-1959) New Opcode to check if a chainID is part of the history of chainIDs~~	| Not needed, given superceded by 1965 which is progressing. 	| None planned	| -	|
-| **Elliptic curve** | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| Not yet discussed on dev call | 21 June Dev Call | Alexander Vlasov (@shamatar) will attend [21 June dev call](https://github.com/ethereum/pm/issues/102) to present EIP. See ****Elliptic curve** cluster** for related EIPs |
+| **Elliptic curve** | [1962](https://eips.ethereum.org/EIPS/eip-1962) EC arithmetic and pairings with runtime definitions	| - | 21 June Dev Call | Implementations and testing |
 | **Chain metadata** | [1965](https://eips.ethereum.org/EIPS/eip-1965) Method to check if a chainID is valid at a specific block Number	| No issues | None planned	| -	|
 | - | ~~[1985](https://eips.ethereum.org/EIPS/eip-1985) Sane limits for certain EVM parameters~~	| Not yet discussed in gitter AMA or dev call. [Looks like](https://ethereum-magicians.org/t/eip-1985-sane-limits-for-certain-evm-parameters/3224/6) this doesn't need a hard fork 	| None planned	|  Non-istanbul client implementations	|
 | **Chain metadata** | [2014](https://eips.ethereum.org/EIPS/eip-2014) Extended State Oracle	| There are concerns that ChainID should be removed from the EIP 	| None planned	|  	Parties interested in moving the EIP ahead should discuss in the [forum](https://ethereum-magicians.org/t/eip-2014-extended-state-oracle/3301/5) |
@@ -185,10 +185,9 @@ Below is a one-glance table to summarise the current roadblock for each EIP. The
 | **State rent** | [2029](https://eips.ethereum.org/EIPS/eip-2029) State Rent A - State counters contract	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **State rent** | [2031](https://eips.ethereum.org/EIPS/eip-2031) State Rent B - Net transaction counter	| Not yet discussed in gitter AMA or dev call 	| None planned	| POC Implementation WIP 	|
 | **Storage gas cost** | [2035](https://eips.ethereum.org/EIPS/eip-2035) Stateless Clients - Repricing SLOAD and SSTORE to pay for block proofs	| SLOAD is affected by 1884 and 2035 	| None planned	| Martin Holst Swende (1884) and Alexey Akhunov (2035) to coordinate preferred SLOAD modification	|
-| **Elliptic curve** | [2129 Blake 2b 'F' Precompile](https://github.com/ethereum/EIPs/pull/2129) (Matt Luongo) | None | None planned | Client implementations |
 | **Storage gas cost** | [2045](https://eips.ethereum.org/EIPS/eip-2045) add EIP for fractional gas costs	| None 	| None planned	| 1. Casey to guide Geth/Parity to implement EVM-One changes to; 2) Enable benchmarks to; 3) Determine specific parameters for the EIP	|
 | **Elliptic curve** | [2046](https://eips.ethereum.org/EIPS/eip-2046) Reduced gas cost for static calls made to precompiles	| 2046 conflicts with 1109.   	| Any volunteer to discuss with Jordi (1109) on the next ACD call?	| Alex Beregszaszi (2046), Jordi Baylina (1109) and **elliptic curve** stakeholders need to [discuss](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447) 	|
-
+| **Elliptic curve** | [2129](https://github.com/ethereum/EIPs/pull/2129) Blake 2b 'F' Precompile (Matt Luongo) | None | None planned | Client implementations |
 
 </div>
 
