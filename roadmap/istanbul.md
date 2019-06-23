@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T05:07:49.655Z
+date: 2019-06-23T13:26:29.631Z
 tags: 
 ---
 
@@ -92,7 +92,7 @@ There are a number of EIPs to process and make decisions on.
     - Those that are superceded or have some opposition and lack a voice **Will not happen**.
     - This grouping is not definitive, or a source of truth. Edits to the wiki to move EIPs into different categories would be helpful.
 
-**10 Probable**, if implementation and tests completed. (Trivial or polished EIPs)
+**11 Probable**, if implementation and tests completed. (Trivial or polished EIPs)
 - 1108: Matt Luongo will report back on status of benchmarks, implementation and testing after discussions with Antonio & Zach.
 - 1380
 - 1702 **Accepted ACD #63**: Design 1 was confirmed. Implementations and design of testing framework to be commenced.
@@ -101,17 +101,17 @@ There are a number of EIPs to process and make decisions on.
 - 1848
 - 1884
 - 1930
-- 1962 Implementation by Alex in rust with tests. Awaiting geth/parity implementation.
-- 2129 **Accepted ACD #63**. Implementation by Keep team, lots of support for it to replace 2024.
+- 1962: Implementation by Alex in rust with tests. Awaiting geth implementation.
+- 2028: Authors [working hard](https://gitter.im/ethereum/AllCoreDevs?at=5d0f75e54b0b7b477b498aa8) to refine EIP parameters 
+- 2129 **Accepted ACD #63**: Implementation by Keep team, lots of support for it to replace 2024.
 
-**8 Possible**, with refinements based on feedback and implementation and testing
+**7 Possible**, with refinements based on feedback and implementation and testing
 - 615: Needs a dedicated discussion alongside 663. Is there support?
 - 663: Requires decision about 615.
 - 1109 or 2046: Decision needed to proceed. New PRECOMPILEDCALL or modify STATICCALL?
 - 1283: Already has implementations. James Hancock to talk to Dimitry re: testing.
 - 1344: Needs further discussion (1344, 1965, 1959).
 - 1965: Needs further discussion (1344, 1965, 1959).
-- 2028
 - 2045: Next step is 1) Port optimisations from Evmone to Geth/Parity then 2) Benchmark costs in Geth/Parity. 
 
 **10 Could happen**, with some very clear advocation, implementation and testing.
