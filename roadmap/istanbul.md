@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T13:26:29.631Z
+date: 2019-06-23T13:50:40.826Z
 tags: 
 ---
 
@@ -357,7 +357,7 @@ EVM upgrade to enable static jumps:
 
 #### EIP interactions
 - 615 requires one of the account versioning proposals to go ahead (1702, 1707/1217 or 1891)
-- 663 is [made redundant](https://github.com/ethereum/EIPs/pull/663#issuecomment-318838695) by 615 through the use of [PUTLOCAL and GETLOCAL](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/33). It would also [break safety guarantees](https://gitter.im/ethereum/AllCoreDevs?at=5cf7f34bf31ba302588e445a) if co-implemented with 615.
+- 663 can coexist with 615, as discussed by [Greg](https://gitter.im/ethereum/AllCoreDevs?at=5d085a3ed1b1df620d1937be). Previous opinion was that 663 is [made redundant](https://github.com/ethereum/EIPs/pull/663#issuecomment-318838695) by 615 through the use of [PUTLOCAL and GETLOCAL](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/33). It was also thought initially that it would [break safety guarantees](https://gitter.im/ethereum/AllCoreDevs?at=5cf7f34bf31ba302588e445a) if co-implemented with 615, though not the case, as long as 663 is not 'unlimited', but limited ot the stack frame.
 
 
 Three account versioning proposals, only one must be selected
@@ -369,7 +369,7 @@ Three account versioning proposals, only one must be selected
 - Design 1: A contract can only deploy subcontract with the same version.Requires either only allowing deploying "newest" version, or achange in RLP structure in contract creation transactions.
 - Design 1 variant makes contract deployment transaction deploys a contract family, and only allow newest account version to be deployed at root. Once we deploy newer versions (like eWASM), older versions (like EVM) should not be able to be deployed again. This is just architecturally simple. EIP-1702 author Wei Tang slightly prefers this, and the 615 team is okay with this design (as per ACD call #63 1hr6mins).
 - Design 2: All version that is not zero requires a code prefix (such as\0asm). It can be variable length, but must be unique.
-- Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [was previously preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team and had [support](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b). However in subsequent discussion between Wei and Greg, Design 1 was decided that it was preferred.
+- Design 2 variant allows all versions to be deployed, but it requires contract header prefix for all subsequent account versions. This variant [was previously preferred](https://gitter.im/ethereum/AllCoreDevs?at=5cf6733c82e5c67322287ece) by the 615 team and had [support](https://gitter.im/ethereum/AllCoreDevs?at=5cf68498f3a60a79a451a78b). However in subsequent discussion between Wei and Greg, Design 1 was decided to be preferred.
 
 #### Key questions to ask moving forward:
 - Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and was [interested in helping](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) to get it into Istanbul. Maybe some help could be offered to the solidity team and testing team for the next-steps as mentioned by Greg [here](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254).
@@ -378,6 +378,7 @@ Three account versioning proposals, only one must be selected
 - Prepare for Istanbul: (Possible: 615 vs 663), 1702 ("design 1")
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: 1891, 1707, 1712
+
 
 ### **Storage gas cost cluster**
 
