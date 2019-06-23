@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T02:48:18.417Z
+date: 2019-06-23T03:03:32.209Z
 tags: 
 ---
 
@@ -200,7 +200,13 @@ There were [no supporting arguments in a recent discussion](https://gitter.im/et
 
 **Make precompile call costs cheaper, either by modifying an existing opcode (2046) or introducing a new opcode (1109)**
 
-The goal is to make precompiles cheaper. Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. The decision of 1109 vs 2046 is still **undecided**. The [options](https://gitter.im/ethereum/AllCoreDevs?at=5cf53d0bfaac6439343331a3) for calling precompiles are either to create a new opcode (choose 1109) or to modify the semantics of STATICCALL if the destination is a precomile. **Action required**: Decide if we prefer a new opcode or to modify an old opcode.
+The goal is to make precompiles cheaper. Both EIPs seek to make 1108, 2024 and 1962 cheaper by reducing the cost of calling a precompile. The decision of 1109 vs 2046 was **undecided**. The [options](https://gitter.im/ethereum/AllCoreDevs?at=5cf53d0bfaac6439343331a3) for calling precompiles are either to create a new opcode (choose 1109) or to modify the semantics of STATICCALL if the destination is a precomile. **Action required**: Decide if we prefer a new opcode or to modify an old opcode.
+
+**Specific curve optimisations:**
+
+There is a lot of interest in enabling immediate use of specific curves. Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks. Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use. Both 1108 and 2024 can coexist with 1962 [without issue](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
+
+In ACD call 63 (45min41s), James Preswitch outlined that 2024 is superceded by a new [implementation](https://github.com/ethereum/EIPs/pull/2129) with F-compression, with smaller codebase changes, with less work required by client teams. Maintained by Keep, who have implemented in Geth. pull 2129. This looks faster than the dedicated Blake2b EIP. The 2s curve could be a nice-to-have, for future ZCash-Ethereum interop, but at the moment is has no implementation and maybe could go in the April 2020 hard fork. It looks like this EIP supercedes 2024, 1109 and 1962.
 
 **DOS attack mitigation**
 
@@ -208,9 +214,7 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 
 1930 Adds the ability to make calls with specific amounts of gas, with a revert endpoint, through new variants of STATICCALL, DELEGATECALL and CALL. This [may benefit EIPs](https://gitter.im/ethereum/AllCoreDevs?at=5cf576215de053468b08b9b8) that modify CALL/STATICCALL behaviour. The winner out of 1109 vs 2046 will need to be checked against 1930 to ensure behaviour is as expected.  
 
-**Specific curve optimisations:**
 
-There is a lot of interest in enabling immediate use of specific curves. Alt_bn128 is enabled by 1108 which supplements 1829 by reducing the cost of addition, multiplication and and pairing checks. Blake2b is enabled by 2024 which introduces a specific precompile for Blake2b for immediate use. Both 1108 and 2024 can coexist with 1962 [without issue](https://gitter.im/ethereum/AllCoreDevs?at=5cf4d34a6fc5846bab533deb)
 
 #### Key questions to ask moving forward:
 - Do people want to define precompiles as address ranges (as in 1352) or do they prefer client based lists (status quo). If 1352 is preferred, the concerns in the discussion-to forum need addressing.
@@ -219,9 +223,9 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 
 
 #### Probable path forward
-- Prepare for Istanbul: 1108, 2024, 1962, (1109 vs 2046)
-- Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 1829
+- Prepare for Istanbul: 1108, 1962, 2129.
+- Prepare for April 2020 Hard Fork: Blake 2s curve precompile (see 2129).
+- Shelve indefinitely: 1829, (2024, 1109 2046 - all superceded by 2129).
 
 
 
