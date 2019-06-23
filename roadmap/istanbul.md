@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T04:16:02.456Z
+date: 2019-06-23T04:18:55.461Z
 tags: 
 ---
 
@@ -225,7 +225,7 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 - Are there any concerns about DOS attacks that only make calls to precompiles cheaper? None have been voiced, and any concerns should be raised [here](https://ethereum-magicians.org/t/eip-1109-remove-call-costs-for-precompiled-contracts/447/9)
 
 #### Key question
-- 1108 Matt Luongo to discuss with Antionio and Zach and report back about next steps.
+- 1108 Matt Luongo to discuss with Antonio Salazar Cardozo, Zachary Williamson to complete benchmarks and polish implementation/testing and report back with progress.
 
 #### Probable path forward
 - Prepare for Istanbul: 1108, 1962, 2129. One of 1109 vs 2046.
