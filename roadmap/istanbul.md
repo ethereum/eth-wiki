@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T01:25:01.415Z
+date: 2019-06-23T02:48:18.417Z
 tags: 
 ---
 
@@ -192,7 +192,7 @@ Both 1829 and 1962 allow for new curves to be added later without waiting for sp
 - Pairing operations are introduced
 - Different ABI due to variable parameter length
 
-There were [no supporting arguments in a recent discussion](https://gitter.im/ethereum/AllCoreDevs?at=5cf52f58ff3f016baa9a64c7) for 1829, and 1962 is progressing well. 1962 requires either 1109 or 2046 to make calls economically viable (see below).
+There were [no supporting arguments in a recent discussion](https://gitter.im/ethereum/AllCoreDevs?at=5cf52f58ff3f016baa9a64c7) for 1829, and 1962 is progressing well, so 1829 will not be needed. 1962 requires either 1109 or 2046 to make calls economically viable (see below).
 
 **How to define a precompile? (address range with 1352 vs client-based lists of known precompiles)**
 
@@ -250,7 +250,6 @@ There is a lot of interest in enabling immediate use of specific curves. Alt_bn1
 - Prepare for Istanbul: 1283, 1706
 - Prepare for April 2020 Hard Fork: None
 - Shelve indefinitely: None
-
 
 
 ### **Account versioning cluster**
