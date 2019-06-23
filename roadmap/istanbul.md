@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T04:13:01.084Z
+date: 2019-06-23T04:14:37.775Z
 tags: 
 ---
 
@@ -314,9 +314,9 @@ Three account versioning proposals, only one must be selected
 - Are more hands needed on deck for 615? Feist Josselin from Trail of Bits is excited about the possibilities this enables for formal verification and was [interested in helping](https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm/2728/85) to get it into Istanbul. Maybe some help could be offered to the solidity team and testing team for the next-steps as mentioned by Greg [here](https://gitter.im/ethereum/AllCoreDevs?at=5cf1660d6bec22299e6fa254).
 
 #### Probable path forward
-- Prepare for Istanbul: 615, 1702 ("design 1")
+- Prepare for Istanbul: (Possible: 615 vs 663), 1702 ("design 1")
 - Prepare for April 2020 Hard Fork: None
-- Shelve indefinitely: 663, 1891, 1707, 1712
+- Shelve indefinitely: 1891, 1707, 1712
 
 ### **Storage gas cost cluster**
 
