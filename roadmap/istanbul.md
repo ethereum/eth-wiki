@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T04:25:49.451Z
+date: 2019-06-23T05:00:59.954Z
 tags: 
 ---
 
@@ -81,6 +81,66 @@ Previous AMA dates for reference:
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vS7t5kwTrxL3zja2hLIPcNchPtBoXBeSxWNG8-tm5vlGPV4XycY7PMQDWKQGRXd_vwEPLO8dIbPR7EH/pub?w=2762&amp;h=1430">
 
 [Link to Google Drawing](https://docs.google.com/drawings/d/14vSgSGLkr9iPLTpOuZrtSoGyspHYDPh9ue6Ki4hrj54/)
+
+
+### Probability Guide
+
+There are a number of EIPs to process and make decisions on.
+    - Trivial EIPs without opposition and non-trivial EIPs with support and very clear plans for testing and implementation are **Probable** in this grouping.
+    - Non-trivial EIPs that need small modifications or have unclear implementation and testing plans are **Possible**.
+    - More complicated EIPs or those where there is unclear consensus or minimal implementation/testing plans **Could happen**.
+    - Those that are superceded or have some opposition and lack a voice **Will not happen**.
+    - This grouping is not definitive, or a source of truth. Edits to the wiki to move EIPs into different categories would be helpful.
+
+**10 Probable**, if implementation and tests completed. (Trivial or polished EIPs)
+- 1108: Matt Luongo will report back on status of benchmarks, implementation and testing after discussions with Antonio & Zach.
+- 1380
+- 1702 **Accepted ACD #63**: Design 1 was confirmed. Implementations and design of testing framework to be commenced.
+- 1706
+- 1803
+- 1848
+- 1884
+- 1930
+- 1962 Implementation by Alex in rust with tests. Awaiting geth/parity implementation.
+- 2129 **Accepted ACD #63**. Implementation by Keep team, lots of support for it to replace 2024.
+
+**8 Possible**, with refinements based on feedback and implementation and testing
+- 615: Needs a dedicated discussion alongside 663. Is there support?
+- 663: Requires decision about 615.
+- 1109 or 2046: Decision needed to proceed. New PRECOMPILEDCALL or modify STATICCALL?
+- 1283: Already has implementations. James Hancock to talk to Dimitry re: testing.
+- 1344: Needs further discussion (1344, 1965, 1959).
+- 1965: Needs further discussion (1344, 1965, 1959).
+- 2028
+- 2045: Next step is 1) Port optimisations from Evmone to Geth/Parity then 2) Benchmark costs in Geth/Parity. 
+
+**10 Could happen**, with some very clear advocation, implementation and testing.
+- 1057
+- 1352: Needs discussion.
+    - Is this meta-only? 
+    - How do people want precompiles to be defined? Ranges vs client lists. 
+    - Martin had questions about this EIP that were not addressed.
+    - EEA moving toward 1352.
+- 1559
+- 2014: Does this need to be modified to exclude the ChainID component?
+- 2025
+- 2026
+- 2027
+- 2029
+- 2031
+- 2035
+
+**8 Will not happen**, unless significant advocation seen.
+- 689
+- 1707
+- 1712
+- 1829: A subset of (and is superceded by) 1962.
+- 1891
+- 1959: Looks to be superceded by 1965.
+- 1985
+- 2024: Superceded by 2024.
+
+
 
 ### Roadblock Spotter
 
