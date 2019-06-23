@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-06-23T05:00:59.954Z
+date: 2019-06-23T05:02:51.229Z
 tags: 
 ---
 
