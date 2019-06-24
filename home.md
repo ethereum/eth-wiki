@@ -2,7 +2,7 @@
 title: Hello my chinese friends!
 description: 
 published: true
-date: 2019-06-24T10:48:53.434Z
+date: 2019-06-24T10:49:16.015Z
 tags: 
 ---
 
