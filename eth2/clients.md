@@ -1,5 +1,10 @@
-<!-- TITLE: ETH2 Clients -->
-<!-- SUBTITLE: A list of Ethereum 2.0 clients -->
+---
+title: ETH2 Clients
+description: A list of Ethereum 2.0 clients
+published: true
+date: 2019-06-24T11:29:30.213Z
+tags: 
+---
 
 ## Beacon Chain Implementations
 
@@ -21,4 +26,5 @@
 See also:
 
 * Learn more about the [ETH2 organizations on EthHub](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth2.0-teams/teams-building-eth2.0)
+* Updated [list of ETH2.0 clients](https://www.combatnerd.com/news/ethereum-20-clients/)
 * A [list of ETH1 clients](/eth1/clients) is also maintained on this wiki
