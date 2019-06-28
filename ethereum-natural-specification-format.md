@@ -1,8 +1,12 @@
-<!-- TITLE: Ethereum Natural Specification Format -->
+---
+title: Ethereum Natural Specification Format
+description: 
+published: true
+date: 2019-06-28T22:52:08.864Z
+tags: 
+---
 
-
-
-Solidity contracts can <b><a href="http://obatcytotec.store/">obat cytotec asli</a></b> have a special form of comments that form the basis of the Ethereum Natural Specification Format. For a usage example please check [here](Natspec-Example/).
+Solidity contracts can have a special form of comments that form the basis of the Ethereum Natural Specification Format. For a usage example please check [here](Natspec-Example/).
 
 # Documentation Example
 
@@ -12,12 +16,11 @@ This example shows a contract and a function using all available tags. Note: Nat
 
 ```solidity
 pragma solidity ^0.4.19;
-<b><a href="https://vienshop.net/">Obat Aborsi</a></b>
 /// @title A simulator for Bug Bunny, the most famous Rabbit
 /// @author Warned Bros
 /// @notice You can use this contract for only the most basic simulation
 /// @dev All function calls are currently implement without side effects
-contract <b><a href="https://klinikibunda.com/">obat cytotec</a></b> BugsBunny {
+contract BugsBunny {
     /// @author Bob Clampett
     /// @notice Determine if Bugs will accept `(_food)` to eat
     /// @dev String comparison may be inefficient
@@ -31,33 +34,6 @@ contract <b><a href="https://klinikibunda.com/">obat cytotec</a></b> BugsBunny {
 
 # Tags
 
-
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-semarang/">Jual obat aborsi semrang</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bandung/">Jual obat aborsi bandung</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jakarta/">Jual obat aborsi jakarta</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-batam/">Jual obat aborsi batam</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-malang/">Jual obat aborsi malang</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-palembang/">Jual obat aborsi palembang</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-pekanbaru/">Jual obat aborsi pekanbaru</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jogja/">Jual obat aborsi jogja</a></b><br></br>
-
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-denpasar/">Jual obat aborsi denpasar</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-samarinda/">Jual obat aborsi samarinda</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bekasi/">Jual obat aborsi bekasi</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-balikapapn/">Jual obat aborsi balikpapan</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-banjarmasin/">Jual obat aborsi banjarmasin</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-ambon/">Jual obat aborsi ambon</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-kupang/">Jual obat aborsi kupang</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-jayapura/">Jual obat aborsi jayapura</a></b><br></br>
-
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-manado/">Jual obat aborsi manado</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-medan/">Jual obat aborsi medan</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-makassar/">Jual obat aborsi makassar</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-tangerang/">Jual obat aborsi tangerang</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-surabaya/">Jual obat aborsi surabaya</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-solo/">Jual obat aborsi solo</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-pontianak/">Jual obat aborsi pontianak</a></b><br></br>
-<b><a href="https://cytotecpharmacy.com/jual-obat-aborsi-bogor/">Jual obat aborsi bogor</a></b><br></br>
 All tags are optional. The following table explains the purpose of each NatSpec tag and where it may be used.
 
 | Tag       |                                          | Context                       |
@@ -144,7 +120,7 @@ The above documentation will produce the following user documentation json file 
 }
 ```
 
-Note that the key by which to find the methods is the function's canonical signature as defined in the [Contract ABI](Ethereum-Contract-ABI#signature) and not simply the function's <b><a href="https://obataborsimanjur.biz/">Obat Aborsi Manjur</a></b> name.
+Note that the key by which to find the methods is the function's canonical signature as defined in the [Contract ABI](Ethereum-Contract-ABI#signature) and not simply the function's name.
 
 ## Developer Documentation
 
@@ -173,4 +149,4 @@ Apart from the user documentation file, a developer documentation json file shou
 
 ## Example usage
 
-There is a <b><a href="https://cytotecobataborsi.net/">Cytotec Obat Aborsi</a></b> detailed example of using the Natspec feature with the cpp client [here](Natspec-Example/).
+There is a detailed example of using the Natspec feature with the cpp client [here](Natspec-Example/).
