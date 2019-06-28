@@ -1,6 +1,10 @@
-<!-- TITLE: Subtleties -->
-
-
+---
+title: Subtleties
+description: 
+published: true
+date: 2019-06-28T17:00:52.153Z
+tags: 
+---
 
 ## Memory
 
@@ -46,12 +50,12 @@
     * The entire `STARTGAS` is added to `gas_used` unless the exception is the result of a `REVERT` opcode
     * All other execution is reverted
 * If a `CALL` operation's sub-execution triggers an exception, then:
-    * Ether value is still sent
+    * Ether value is not sent
     * All gas is consumed unless the exception is the result of a `REVERT` opcode
     * `0` is appended onto the stack
     * All other execution is reverted
 * If a `CREATE` operation's sub-execution triggers an exception, then:
-    * Ether value is lost
+    * Ether value is not sent
     * All gas is consumed unless the exception is the result of a `REVERT` opcode
     * All other execution is reverted
     * The current implementations add `0` onto the stack, but it does not matter, since with 0 gas remaining the parent execution will instaquit anyway
