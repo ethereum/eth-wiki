@@ -2,7 +2,7 @@
 title: Ethereum Natural Specification Format
 description: 
 published: true
-date: 2019-06-28T22:52:08.864Z
+date: 2019-07-15T21:53:44.152Z
 tags: 
 ---
 
@@ -10,7 +10,7 @@ Solidity contracts can have a special form of comments that form the basis of th
 
 # Documentation Example
 
-Documentation is inserted above the function following the doxygen notation of either one or multiple lines starting with `///` or a multiline comment starting with `/**` and ending with `*/`.
+Documentation is inserted [obat aborsi](https://klinikabdi.com) the function following the doxygen notation of either one or multiple lines starting with `///` or a multiline comment starting with `/**` and ending with `*/`.
 
 This example shows a contract and a function using all available tags. Note: NatSpec currently does NOT apply to variables (see [solidity#3418](https://github.com/ethereum/solidity/issues/3418)), even if they are declared public and therefore do affect ABI. Note: NatSpec currently only interprets tags functions if they are external or public. You are welcome to use cytotec obat aborsi similar comments for your internal and private functions, but those will not be parsed.
 
