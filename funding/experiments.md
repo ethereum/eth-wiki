@@ -2,13 +2,13 @@
 title: Funding Experiments
 description: 
 published: true
-date: 2019-07-23T03:23:03.544Z
+date: 2019-07-23T03:26:07.027Z
 tags: 
 ---
 
 See the top level [Funding](/funding) page for sources of funding and related info.
 
-Please use this [EthMagicians thread for discussion »]()
+Please use this [EthMagicians thread for discussion »](https://ethereum-magicians.org/t/funding-and-eth1x/3496)
 
 # Resources
 
