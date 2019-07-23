@@ -2,11 +2,13 @@
 title: Funding Experiments
 description: 
 published: true
-date: 2019-07-23T02:44:42.338Z
+date: 2019-07-23T03:23:03.544Z
 tags: 
 ---
 
-_Note: WIP work by @bmann_
+See the top level [Funding](/funding) page for sources of funding and related info.
+
+Please use this [EthMagicians thread for discussion »]()
 
 # Resources
 
@@ -66,12 +68,22 @@ The [ETH1 page](/eth1) lists Working Groups, which came out of [CoreDevsBerlin](
 
 Infrastructure, using Testing as an example, is largely leaderless. There are a couple of people paid by the EF that work on it. Hasn't been an effort to coordinate testnets, consensus tests, network tests, etc. White Block / Zak Cole have said they could lead some of this.
 
-Coordination (eg. release management) doesn't have a solid process and no one dedicated to it other than Hudson. Danno & Tim Beiko who work for Pegasys / ConsenSys deserve a shout out for leaning into the hard fork process and EIP / All Core Devs process. Alex (axic) is also doing a ton of work around this, but is also juggling EVM work and eWASM work and a ton of other development projects.
+Coordination (eg. release management) doesn't have a solid process and no one dedicated to it other than Hudson (who also is the only community person, travels a ton, AND does devops work for the foundation). Danno & Tim Beiko who work for Pegasys / ConsenSys deserve a shout out for leaning into the hard fork process and EIP / All Core Devs process. Alex (axic) is also doing a ton of work around this, but is also juggling EVM work and eWASM work and a ton of other development projects.
 
 Infrastructure for ETH1x broadly is kind of run by various people who work with the EF, but is also largely undocumented and not currently able to be run by anyone outside the EF. There is an attempt at documenting what infrastructure is needed / who has keys to what on the [Infrastructure](/infrastructure) page.
 
-I think it would be a very interesting process to see how many people are working on ETH1x across the EF, Parity, and Pegasys (just listing those that have active mainnet clients). Infrastructure is this special case which is most effective when done "centrally" or at least collaborated on closely.
+I think it would be a very interesting process to see how many people are working on ETH1x across the EF, Parity, and Pegasys (just listing those that have active mainnet clients -- see [ETH1 clients](/eth1/clients)).
+
+Infrastructure is this special case which is most effective when done "centrally" or at least collaborated on closely.
 
 Only Goerli Testnet is an example of an independent team / group coming together to do this effectively.
 
-Status' Nimbus client is working on being ETH1x compatible, too.
+## Detailed Budgets
+
+Since this has come up several times, I don't think this is necessary. It's all just people, and you can use the Compensation section above to just see how many people you need for how long.
+
+So, for example, let's say there was a Testing lead plus 1 more full time person, in addition to people already at the EF and some volunteers from White Block and Pegasys. They'd work on improving and documenting testing, hard fork process, testnets, and so on, for 1 year. 2 people @ $10KUSD x 12 months = $240K. On top of that, you might fund R&D or Projects of another $60K, where those 2 people would help coordinate and guide those projects.
+
+Those people are separately responsible for software, hardware, travel, taxes in their home country, accounting, and who knows what else. The budget templates linked at the top of this page have a pretty easy way to outline this, but the main cost driver is going to be how many person months need to get funded.
+
+In case that's confusing, the Projects section says < $50K grants. So, it might be 4 person months, of 2 people for 2 months and then some contract work.
