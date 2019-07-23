@@ -1,4 +1,10 @@
-<!-- TITLE: Ethereum 1x -->
+---
+title: Ethereum 1x
+description: 
+published: true
+date: 2019-07-23T02:26:41.266Z
+tags: 
+---
 
 This is the current "version" of Ethereum. [EthHub has extensive information and background on ETH1x](https://docs.ethhub.io/ethereum-roadmap/ethereum-1.x/).
 
@@ -29,16 +35,20 @@ Discussion groups for at least one proposal (e.g. [elliptic curve linear combina
 ## Ewasm
 Building a spec for Ethereum-flavoured WebAssembly (wasm) and determining what might go into ETH1x vs. preparing for ETH2.
 
+_Note: there are people working at the EF working on this, but there is no plan of record or list of EIPs. Related to some of the EVM Evolution work._
+
 ## EVM Evolution
 
 Improvements to the current EVM around speed, safety, and interoperability. Safety improvements will increase the capabilities of static analysis and formal verification tools operating on EVM. Interoperability improvements include making EVM a better code generation target for higher-level languages like Solidity and Vyper, as well as lower-level bytecode formats such as WebAssembly/Ewasm and LLVM IR. Also helping form long-term plans for EVM across the ETH1x and ETH2 roadmaps.
 
-* Leads: Brooke Zelenka, Greg Colvin
+* Leads: 
 
 ### EIPs
 
-* EIP 615
+* EIP 615 (withdrawn)
 * VM Versioning by @sorpaas is needed for both 615 and eWASM
+
+_Note: currently unfunded, so leads Brooke Zelenka & Greg Colvin have stepped away from core Ethereum work_
 
 ## Fee Market change
 Also known as EIP-1559, splitting gas fees that transactions are paying into two parts. One part gets burnt (destroyed), another - paid to the miners. In theory, this should make total transaction fees more stable and predictable.
