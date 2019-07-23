@@ -2,11 +2,16 @@
 title: Funding Experiments
 description: 
 published: true
-date: 2019-06-27T13:20:44.856Z
+date: 2019-07-23T02:20:40.944Z
 tags: 
 ---
 
 _Note: WIP work by @bmann_
+
+# Resources
+
+* Related to this page, @bmann wrote up a Funding Taxonomy & Issues https://ethereum-magicians.org/t/funding-taxonomy-issues-for-ethereum-ecosystem/2014
+* Long term cashflow & budgets for projects, with templates by @bmann https://ethereum-magicians.org/t/discussing-long-term-cashflow-and-budgets-for-ethereum-projects-teams-and-individuals/1849
 
 # Funding Required
 
@@ -39,9 +44,13 @@ Dedicated maintainer funding to work on an app or area of focus (e.g. testing).
 * Amount: $120K+ (12+ person months)
 * Project time: 12 months
 
+Typically would need 1 - 2 senior people plus collaboration across multiple ecosystem groups and/or 1-2 additional team members or sub-projects.
+
+Example: Testing & Hardfork Rollout Process.
+
 # Compensation
 
-The current approach by the EF is that they pay contractors a max of $50/hr. For full time, 160 hours per month, that works out to $8K/month, or $96K annual "salary".
+The current approach by the EF is that they pay contractors a max of $50/hr. For full time, 160 hours per month, that works out to $8K/month, or $96K annual "salary". As well, EF covers some expenses and travel.
 
 We use $10KUSD per month per "senior" person as a baseline compensation. Teams can still slice and dice this how they like, but it simplifies budgeting while still putting the onus on the team to cover travel, taxes, and other expenses.
 
