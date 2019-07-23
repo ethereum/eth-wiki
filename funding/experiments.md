@@ -2,7 +2,7 @@
 title: Funding Experiments
 description: 
 published: true
-date: 2019-07-23T02:20:40.944Z
+date: 2019-07-23T02:30:09.856Z
 tags: 
 ---
 
@@ -55,3 +55,11 @@ The current approach by the EF is that they pay contractors a max of $50/hr. For
 We use $10KUSD per month per "senior" person as a baseline compensation. Teams can still slice and dice this how they like, but it simplifies budgeting while still putting the onus on the team to cover travel, taxes, and other expenses.
 
 Rather than having every team figure out what they can afford to work for, we use a flat rate approach.
+
+# What needs funding in ETH1x?
+
+The [ETH1 page](/eth1) lists Working Groups, which came out of #coredevsberlin. Alexey's State Rent group is sort of "perma funded" by the EF for now, and Alexey negotiated 3 months of funding for some of the other Working Groups.
+
+Infrastructure, using Testing as an example, is largely leaderless. There are a couple of people paid by the EF that work on it. Hasn't been an effort to coordinate testnets, consensus tests, network tests, etc. White Block / Zak Cole have said they could lead some of this.
+
+Infrastructure for ETH1x broadly is kind of run by various people who work with the EF, but is also largely undocumented and not currently able to be run by anyone outside the EF. There is an attempt at documenting what infrastructure is needed / who has keys to what on the [Infrastructure](/infrastructure) page
