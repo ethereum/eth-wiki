@@ -2,7 +2,7 @@
 title: Funding Experiments
 description: 
 published: true
-date: 2019-07-23T03:26:07.027Z
+date: 2019-07-31T15:15:54.268Z
 tags: 
 ---
 
@@ -18,6 +18,12 @@ Please use this [EthMagicians thread for discussion »](https://ethereum-magicia
 # Funding Required
 
 There are 2 - 3 types of funding required to sustain and grow the Ethereum ecosystem. For purposes of this document, we are focusing on the existing Ethereum (ETH1x) Stack.
+
+_Funding time frame_ is defined as **maximum** time from application to money-in-bank. Ideally, this process also leads to a "quick no" if not approved -- so that people get feedback and can move on to looking at other opportunities. This could also be mixed and matched -- get started with a one-off grant, and in parallel work on an R&D or Infrastructure sized grant. People idling for 3 months is not an ideal situation, and in many cases is only possible if they already have a day job, are part of a company, or otherwise are burning savings. 
+
+See the **Compensation** section for the background on person month costs.
+
+Project time is start to finish.
 
 ## Projects
 
