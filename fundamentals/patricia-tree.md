@@ -152,14 +152,10 @@ First, we convert both paths and values to `bytes`. Below, actual byte represent
 Now, we build such a trie with the following key/value pairs in the underlying DB:
 
     rootHash: [ <16>, hashA ]
-    hashA:    [ <>, <>, <>, <>, hashB, <>, <>, <>, hashC, <>, <>, <>, <>, <>, <>, <>, <> ]
-    hashC:    [ <20 6f 72 73 65>, 'stallion' ]
+    hashA:    [ <>, <>, <>, <>, hashB, <>, <>, <>, [ <20 6f 72 73 65>, 'stallion' ], <>, <>, <>, <>, <>, <>, <>, <> ]  
     hashB:    [ <00 6f>, hashD ]
     hashD:    [ <>, <>, <>, <>, <>, <>, hashE, <>, <>, <>, <>, <>, <>, <>, <>, <>, 'verb' ]
-    hashE:    [ <17>, hashF ]
-    hashF:    [ <>, <>, <>, <>, <>, <>, hashG, <>, <>, <>, <>, <>, <>, <>, <>, <>, 'puppy' ]
-    hashG:    [ <35>, 'coin' ]
-
+    hashE:    [ <17>, [ <>, <>, <>, <>, <>, <>, [ <35>, 'coin' ], <>, <>, <>, <>, <>, <>, <>, <>, <>, 'puppy' ] ]
 
 When one node is referenced inside another node, what is included is `H(rlp.encode(x))`, where `H(x) = sha3(x) if len(x) >= 32 else x` and `rlp.encode` is the [RLP](RLP) encoding function.
 
