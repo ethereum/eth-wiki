@@ -2,7 +2,7 @@
 title: Eth2 hello!
 description: 
 published: true
-date: 2019-08-26T05:39:57.617Z
+date: 2019-08-26T05:47:32.290Z
 tags: 
 ---
 
