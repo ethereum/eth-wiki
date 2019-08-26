@@ -2,7 +2,7 @@
 title: Eth2 hello!
 description: 
 published: true
-date: 2019-08-26T05:39:20.811Z
+date: 2019-08-26T05:39:57.617Z
 tags: 
 ---
 
@@ -16,6 +16,7 @@ tags:
 
 <div class="i-visual" id="clique-visual"></div>
 <script>
+  console.log("hello");
       ReactDOM.render(
         e(
           InteractiveFigure, {
