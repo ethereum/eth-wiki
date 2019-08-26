@@ -2,7 +2,7 @@
 title: Eth2 hello!
 description: 
 published: true
-date: 2019-08-26T06:02:42.645Z
+date: 2019-08-26T06:06:40.263Z
 tags: 
 ---
 
@@ -19,13 +19,15 @@ tags:
 
 <div class="i-visual" id="clique-visual"></div>
 <script>
+  document.getElementById("clique-visual").innerText = "hello";
   console.log("hello");
       ReactDOM.render(
         e(
           "p", null, "hello"
         ),
         document.querySelector('#clique-visual')
-      )
+      );
+  document.get
 </script>
 
 # Header
