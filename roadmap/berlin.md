@@ -2,7 +2,7 @@
 title: Berlin
 description: Notes about the hard fork upgrade following Istanbul
 published: true
-date: 2019-08-31T06:16:21.117Z
+date: 2019-08-31T06:20:37.853Z
 tags: 
 ---
 
@@ -77,13 +77,13 @@ Review of the EIPs will be ongoing, those complete the following hurdles will pr
 
 ## Proposal History
 
-Below are some themes that are among the discussed potential changes.
+This [diagram](https://docs.google.com/drawings/d/1K40GGAcNGjWhe9I0G4AIgGxppgLiL5_gdFcg9lG2YWI/edit?usp=sharing) loosely captures the proposal history for Istanbul and Berlin. Below are some themes that are among the discussed potential changes.
 
-- EVM stack: An improvement of the stack operation is proposed, affecting SWAP and DUP instructions
-- Account versioning: Initially highly favoured in the lead up to Istanbul, largely because it was required for EIP-615. Then without a specific use case in mind it was thought that if needed a tailored solution should be implemented to ensure functionality is as desired. While still on the list for Berlin, it is up for discussion as to whether it will go ahead.
-- Elliptic curves: Some specific curves implemented, with more general curve solutions still desired by community and left to be polished for the Berlin fork.
-- Proof Of Work change: After long community discussion, a proof of work change will probably go ahead once auditing is complete and any issues rectified.
-- Gas calculation granularity: Creating a system that will enable more precise gas costing.
+- **EVM stack**: An improvement of the stack operation is proposed, affecting SWAP and DUP instructions
+- **Account versioning**: Initially highly favoured in the lead up to Istanbul, largely because it was required for EIP-615. Then without a specific use case in mind it was thought that if needed a tailored solution should be implemented to ensure functionality is as desired. While still on the list for Berlin, it is up for discussion as to whether it will go ahead.
+- **Elliptic curves**: Some specific curves implemented, with more general curve solutions still desired by community and left to be polished for the Berlin fork.
+- **Proof Of Work change**: After long community discussion, a proof of work change will probably go ahead once auditing is complete and any issues rectified.
+- **Gas calculation**: Creating a system that will enable more precise gas costing.
 
 ---------
 
