@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-08-31T04:29:42.330Z
+date: 2019-08-31T05:24:13.508Z
 tags: 
 ---
 
@@ -25,7 +25,25 @@ Regular small hard forks allow upgrades to be included in more timely and manage
 # TL;DR
 
 
-Istanbul brings upgrades that will align the costs of opcodes with their computational costs, improve denial-of-service attack resilience. Some elliptic curves will enable new crytpgraphic operations and apps can leverage those. 
+Istanbul brings upgrades that will:
+- Align the costs of opcodes with their computational costs and improve denial-of-service attack resilience
+- Make layer 2 solutions based on SNARKs and STARKs more performant.
+- Enable Ethereum and Zcash to interoperate
+- Allow contracts to introduce more creative functions.
+
+Specifically:
+
+**[EIP-152](https://github.com/ethereum/EIPs/pull/2129)** Adds the ability to verify the Equihash PoW within an ethereum contract. This will enable a relay and atomic-swap transactions between Zcash.
+
+**[EIP-1108](https://eips.ethereum.org/EIPS/eip-1108)** Makes zk-SNARKs cheaper, allowing for cheaper scaling and privacy applications to be built. See Matter labs, Aztec, Rollup and Zether for examples.
+
+**[EIP-1344](https://eips.ethereum.org/EIPS/eip-1344)** Adds a way for contracts to track the correct chain. To be used by contracts, especially those used by layer 2 (state channels, plasma), to follow the correct layer 1 chain, especially during a hard fork.
+
+**[EIP-1884](https://eips.ethereum.org/EIPS/eip-1884)** Changes the cost of some EVM opcodes to prevent spamming attacks and to balance blocks better. The amount that must be paid for each operation in ethereum usually matches the computation required for that operation. This change increases some costs of some opcodes that are computationally intensive but currently cheap.
+
+**[EIP-2028](https://eips.ethereum.org/EIPS/eip-2028)** Makes zk-SNARKs and zk-STARKs cheaper by reducing the cost of calling data within transactions. This will make layer 2 solutions able to increase throughput.
+
+**[EIP-2200](https://gist.github.com/karalabe/adc43c07db9f03be82093cd5466562b0)** Changes the calculation of cost of storage in the EVM and will enable contracts to introduce new functions including re-entry locks and same-contract multi-send.
 
 ### Road to Istanbul in-brief
 1. EIPs were considered
@@ -87,15 +105,13 @@ James Hancock has created an automated Google Sheet that covers additional miles
 
 ## Proposal History
 
-### Entire list of EIPs proposed
+### Entire original list of EIPs proposed for consideration
 
 38 EIPs were proposed in total. After initial discussions in various forums, they were informally/tentatively sorted into groups based a combination of support, clarity, implementation, testing.
 - 12 Probable (152, 1108, 1380, 1702, 1706, 1803, 1848, 1884, 1930, 1962, 2028, 2200)
 - 8 Possible (615, 663, 1109, 2046, 1283, 1344, 1965, 2045)
 - 10 Less likely (1057, 1352, 1559, 2014, 2025, 2026, 2027, 2029, 2031, 2035)
 - 8 Not likely (689, 1707, 1712, 1829, 1891, 1959, 1985, 2024)
-
-After further discussion and review, the final decisions were:
 
 ### 6 EIPs 'Accepted' (for inclusion in Istanbul)
 
@@ -255,7 +271,7 @@ Curves enabled and possible uses:
 - The alt_bn128 curve (cheaper with 1108).
 - Edwards curves (Weierstrass form) in general (cheaper with 1829). This covers curves of the naming convention 'Ed-'.
 - Ed25519 is specifically enabled by 665.
-- [LibSNARK](https://github.com/scipr-lab/libsnark/tree/f7c87b88744ecfd008126d415494d9b34c4c1b20) which uses edwards 'ed-', bn128 or alt_bn128 curves]. Edwards curves are made cheaper with 1829. The alt_bn128 curve is are made cheaper with 1108).
+- [LibSNARK](https://github.com/scipr-lab/libsnark/tree/f7c87b88744ecfd008126d415494d9b34c4c1b20) which uses edwards 'ed-', bn128 or alt_bn128 curves. Edwards curves are made cheaper with 1829. The alt_bn128 curve is are made cheaper with 1108.
 - Aztec (made cheaper with 1108) which uses [alt_bn128](https://github.com/AztecProtocol/AZTEC)
 - Private ERC20/721 transactions on ethereum mainnet with Nightfall (public domain code made by EY) (made cheaper with 1108) using [alt_bn128](https://github.com/EYBlockchain/nightfall/issues/14)
 - [Matter labs](https://github.com/matter-labs/matter-network) scaling solution uses Alt_bn128
@@ -272,14 +288,14 @@ Curves in the ecosystem not related to the Istanbul EIPs
 - secp384r1 for Estonia e-residency. Unclear if enabled by ECADD/ECMUL precompiles from 1829
 
 #### Relevant EIPs:
+- [152 Blake 2b 'F' Precompile](https://github.com/ethereum/EIPs/pull/2129) (Matt Luongo)
 - [1829 Precompile for Elliptic Curve Linear Combinations](https://eips.ethereum.org/EIPS/eip-1829) (Remco Bloemen)
 - [1962 EC arithmetic and pairings with runtime definitions](https://eips.ethereum.org/EIPS/eip-1962) (Alex Vlasov)
 - [1109 PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)](https://eips.ethereum.org/EIPS/eip-1109) (Jordi Baylina)
 - [1108 Reduce alt_bn128 precompile gas costs](https://eips.ethereum.org/EIPS/eip-1108) (Antonio Salazar Cardozo, Zachary Williamson)
-- [2024 Proposal for supporting Blake2b](https://github.com/ethereum/EIPs/pull/2024) (James Hancock)
-- [152 Blake 2b 'F' Precompile](https://github.com/ethereum/EIPs/pull/2129) (Matt Luongo)
-- [2046 Reduced gas cost for static calls made to precompiles](https://eips.ethereum.org/EIPS/eip-2046) (Alex Beregszaszi)
 - [1930 CALLs with strict gas semantic. Revert if not enough gas available](https://eips.ethereum.org/EIPS/eip-1930) (Ronan Sandford)
+- [2024 Proposal for supporting Blake2b](https://github.com/ethereum/EIPs/pull/2024) (James Hancock)
+- [2046 Reduced gas cost for static calls made to precompiles](https://eips.ethereum.org/EIPS/eip-2046) (Alex Beregszaszi)
 
 #### Key concepts and EIP interactions
 
