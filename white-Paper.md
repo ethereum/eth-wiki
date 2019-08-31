@@ -16,6 +16,7 @@ Satoshi Nakamoto's development of Bitcoin in 2009 has often been hailed as a rad
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
+- [A Next-Generation Smart Contract and Decentralized Application Platform](#a-next-generation-smart-contract-and-decentralized-application-platform)
 - [Introduction to Bitcoin and Existing Concepts](#introduction-to-bitcoin-and-existing-concepts)
   - [History](#history)
   - [Bitcoin As A State Transition System](#bitcoin-as-a-state-transition-system)
@@ -516,7 +517,7 @@ The concept of an arbitrary state transition function as implemented by the Ethe
 6. Secure property titles with owner authority: http://szabo.best.vwh.net/securetitle.html
 7. Bitcoin whitepaper: http://bitcoin.org/bitcoin.pdf
 8. Namecoin: https://namecoin.org/
-9. Zooko's triangle: http://en.wikipedia.org/wiki/Zooko's_triangle
+9. Zooko's triangle: http://en.wikipedia.org/wiki/Zooko%27s_triangle
 10. Colored coins whitepaper: https://docs.google.com/a/buterin.com/document/d/1AnkP_cVZTCMLIzw4DvsW6M8Q2JC0lIzrTLuoWu2z1BE/edit
 11. Mastercoin whitepaper: https://github.com/mastercoin-MSC/spec
 12. Decentralized autonomous corporations, Bitcoin Magazine: http://bitcoinmagazine.com/7050/bootstrapping-a-decentralized-autonomous-corporation-part-i/
