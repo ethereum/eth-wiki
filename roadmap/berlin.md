@@ -2,7 +2,7 @@
 title: Berlin
 description: Notes about the hard fork upgrade following Istanbul
 published: true
-date: 2019-08-31T05:47:21.578Z
+date: 2019-08-31T06:16:21.117Z
 tags: 
 ---
 
@@ -77,11 +77,7 @@ Review of the EIPs will be ongoing, those complete the following hurdles will pr
 
 ## Proposal History
 
-
-
-### Analysis of themes discussed versus included
-
-Below are some themes that were among the discussed potential changes.
+Below are some themes that are among the discussed potential changes.
 
 - EVM stack: An improvement of the stack operation is proposed, affecting SWAP and DUP instructions
 - Account versioning: Initially highly favoured in the lead up to Istanbul, largely because it was required for EIP-615. Then without a specific use case in mind it was thought that if needed a tailored solution should be implemented to ensure functionality is as desired. While still on the list for Berlin, it is up for discussion as to whether it will go ahead.
@@ -95,16 +91,16 @@ Below are some themes that were among the discussed potential changes.
 
 <div align="center">
 
-| EIP | Title | Status | Status note | See discussion cluster |
+| EIP | Title | Status | Status note | Topic |
 |-|- |-|-|--------|-|
-|[EIP-663](https://eips.ethereum.org/EIPS/eip-663)|Unlimited SWAP and DUP instructions|Tentatively accepted (Berlin)|Addresses similar stack-access problem as 615 (withdrawn). Three technical options are presented (needs refining). Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)  | Account versioning |
-|[EIP-1057](https://eips.ethereum.org/EIPS/eip-1057)|ProgPoW, a Programmatic Proof-of-Work|Tentatively accepted (Berlin) in decision [66.3](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2066.md)|Pending audit results|Independent|
-|[EIP-1380](https://eips.ethereum.org/EIPS/eip-1380)|Reduced gas cost for call to self|Tentatively accepted (Berlin)|Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Independent|
-|[EIP-1702](https://eips.ethereum.org/EIPS/eip-1702)| Generalized Account Versioning Scheme|Tentatively accepted (Berlin)|Design-1 variant was been accepted in decision [63.2](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2063.md). Concerns about what specifically this is needed for.|Account versioning|
-|[EIP-1962](https://eips.ethereum.org/EIPS/eip-1962)|EC arithmetic and pairings with runtime definitions|Tentatively accepted (Berlin) in decision [66.5](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2066.md)|-|Elliptic curve|
-|[EIP-1985](https://eips.ethereum.org/EIPS/eip-1985)|Sane limits for certain EVM parameters|Tentatively accepted (Berlin)|Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Independent|
-|[EIP-2045](https://eips.ethereum.org/EIPS/eip-2045)|add EIP for fractional gas costs|Tentatively accepted (Berlin)|Geth/Parity to be guided to implement EVM-One changes, benchmark and determine specific specific parameters for the EIP. Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)	|Storage gas cost|
-|[EIP-2046](https://eips.ethereum.org/EIPS/eip-2046)|Reduced gas cost for static calls made to precompiles|Tentatively accepted (Berlin)|Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Elliptic curve|
+|[EIP-663](https://eips.ethereum.org/EIPS/eip-663)|Unlimited SWAP and DUP instructions|Proposed|Tentatively raised for Berlin in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)  | EVM stack |
+|[EIP-1057](https://eips.ethereum.org/EIPS/eip-1057)|ProgPoW, a Programmatic Proof-of-Work|Proposed|Pending audit results|PoW|
+|[EIP-1380](https://eips.ethereum.org/EIPS/eip-1380)|Reduced gas cost for call to self|Proposed|Tentatively raised for Berlin in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Gas|
+|[EIP-1702](https://eips.ethereum.org/EIPS/eip-1702)| Generalized Account Versioning Scheme|Proposed|Design-1 variant was tentatively proposed for Berlin in decision [63.2](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2063.md)|Account versioning|
+|[EIP-1962](https://eips.ethereum.org/EIPS/eip-1962)|EC arithmetic and pairings with runtime definitions|Proposed|Tentatively raised for Berlin in decision [66.5](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2066.md)|Elliptic curve|
+|[EIP-1985](https://eips.ethereum.org/EIPS/eip-1985)|Sane limits for certain EVM parameters|Proposed|Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|EVM stack|
+|[EIP-2045](https://eips.ethereum.org/EIPS/eip-2045)|add EIP for fractional gas costs|Proposed| Tentatively proposed for Berlin in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)	|Gas|
+|[EIP-2046](https://eips.ethereum.org/EIPS/eip-2046)|Reduced gas cost for static calls made to precompiles|Proposed|Tentatively proposed for Berlin in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Elliptic curve|
 
 
 </div>
