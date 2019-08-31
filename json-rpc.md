@@ -1365,8 +1365,8 @@ Returns information about a uncle of a block by hash and uncle index position.
 ##### Parameters
 
 
-1. `DATA`, 32 Bytes - hash a block.
-2. `QUANTITY` - the uncle's index position.
+1. `DATA`, 32 Bytes - The hash of a block.
+2. `QUANTITY` - The uncle's index position.
 
 ```js
 params: [
