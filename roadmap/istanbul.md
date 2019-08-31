@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-08-29T15:26:50.671Z
+date: 2019-08-31T04:29:42.330Z
 tags: 
 ---
 
@@ -28,7 +28,7 @@ Regular small hard forks allow upgrades to be included in more timely and manage
 Istanbul brings upgrades that will align the costs of opcodes with their computational costs, improve denial-of-service attack resilience. Some elliptic curves will enable new crytpgraphic operations and apps can leverage those. 
 
 ### Road to Istanbul in-brief
-1. Many EIPs were considered
+1. EIPs were considered
     - EIPs were discussed in All Core Devs calls, with priority given when an author was in attendance for a call.
     - EIPs were split into clusters by scope to facilitate discussion
     - Discussions in the Ethereum Magicians forum, AllCoreDevs gitter
@@ -39,7 +39,7 @@ Istanbul brings upgrades that will align the costs of opcodes with their computa
 3. Implementations and testing finalised
 4. Ropsten testnet fork planned to give one month between testnet and mainnet forks.
 5. Mainnet fork planned
-6. The 'rejected temporarily' EIPs to be included in the next fork (Berlin fork)
+6. The 'tentatively accepted' EIPs to be included in the next fork (Berlin fork)
 
 # Context
 
