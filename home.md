@@ -2,7 +2,7 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-09-02T12:38:38.375Z
+date: 2019-09-02T12:53:03.474Z
 tags: 
 ---
 
@@ -19,7 +19,7 @@ This is the community [wiki](https://en.wikipedia.org/wiki/Wiki) covering all so
 
 | Basics  	|   R&amp;D	| Infrastructure  	|
 |---	|---	|---	|---	|---	|
-| [Home](/)  	| [Sharding introduction &amp; R&amp;D Compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](sharding-faqs) &amp; [roadmap](sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
+| [Home](/)  	| [Sharding compendium](sharding-introduction-r-d-compendium),<br/>[FAQs](sharding-faqs) and [roadmap](sharding-roadmap)  	| [Chain Spec Format](ethereum-chain-spec-format)  	|   	|   	|
 |  [Ethereum Whitepaper](white-Paper) 	|  [Casper Proof-of-Stake compendium](casper-proof-of-stake-compendium) and [FAQs](proof-of-stake-faqs) 	| [Inter-exchange Client Address Protocol](inter-exchange-client-address-protocol-icap)  		|
 | [Ethereum Introduction](ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](natspec-determination)  	|
 | [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](network-status) |
@@ -27,7 +27,7 @@ This is the community [wiki](https://en.wikipedia.org/wiki/Wiki) covering all so
 | [Releases](releases) | **[Ethereum Virtual Machine (EVM)](ethereum-virtual-machine-(evm)-awesome-list)** | [Mining](mining) |
 | [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](licensing) |
 | [Design Rationale](design-rationale) | **[ÐApp Development](dapp-development)** | [URL Hint Protocol](url-hint-Protocol) |
-| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |  | 
+| EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) | [Hard Fork Roadmap](/roadmap) | 
 | [Old github wiki](https://github.com/ethereum/wiki/wiki) |
 | [Glossary](glossary) |
 
