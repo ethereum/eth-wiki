@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T12:13:34.302Z
+date: 2019-09-02T12:16:19.173Z
 tags: 
 ---
 
@@ -88,7 +88,7 @@ meta-EIP [here](https://eips.ethereum.org/EIPS/eip-609)
 # Constantinople
 Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburg fork. More [here](/roadmap/petersburg).
 
-Noteable in this upgrade were changes to allow layer 2 solutions to predefine the addresses of future contracts allowing for simpler starte channels.
+Noteable in this upgrade were changes to allow layer 2 solutions to pre-define the addresses of future contracts. This allows state channels to deploy contracts that could be deployed on-chain, but may not be required to.
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
