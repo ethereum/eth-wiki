@@ -1,12 +1,14 @@
-<!-- TITLE: Raspberry Pi instructions -->
+---
+title: Raspberry Pi instructions
+description: 
+published: true
+date: 2019-09-02T12:34:21.059Z
+tags: 
+---
 
-
-
-# This page has been deleted.
-
-For `eth` on single-board-computers, head to one of these articles:
-- [Installing binaries for Linux SBCs](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/installing-binaries/linux-sbcs.html)
-- [Building from source](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/building-from-source/index.html#building-from-source)
-- [Linux ARM cross-builds](http://www.ethdocs.org/en/latest/ethereum-clients/cpp-ethereum/building-from-source/linux-arm.html).
+# Raspberry Pi
+The disk IO requirements are a bottleneck for the humble raspberry pi. Minimal testing data is available, and the raspberry pi 4 might be better equipped than the pi 2 and pi 3.
+- Discussion on reddit [here](https://www.reddit.com/r/ethereum/comments/cgr9y4/ethereum_on_arm_nanopct4_and_raspberry_pi_images/eygpr80/)
+- Images for raspberry pi's can be downloaded [here](https://github.com/diglos/pi-gen)
 
 Or directly to http://ethembedded.com for instructions spanning multiple Ethereum clients (`eth`, `geth` and `parity`).
