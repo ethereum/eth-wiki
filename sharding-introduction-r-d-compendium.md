@@ -1,8 +1,12 @@
-<!-- TITLE: Sharding Introduction R&D Compendium -->
-<!-- SUBTITLE: Sharding is the planned scaling approach for Ethereum; work is in progress on R&D. -->
+---
+title: Sharding Introduction R&D Compendium
+description: Sharding is the planned scaling approach for Ethereum; work is in progress on R&D.
+published: true
+date: 2019-09-02T13:03:26.508Z
+tags: 
+---
 
-[![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
-[![Sharding](https://img.shields.io/badge/gitter-sharding-4AB495.svg)](https://gitter.im/ethereum/sharding)
+Sharding chat [here](https://gitter.im/ethereum/sharding)
 
 Ethereum 1.0 can only process 7-15 transactions per second, the goal of sharding is to partition all network computational resources into shards, so that a node (a single computer as a peer connected to the network) doesn't have to process (download, compute, store, read) every transaction in the history of the blockchain, in order to make a new transaction (write and upload) or otherwise participate in securing and using Ethereum; rather a node can just participate in a single shard, or more if it so chooses. Multiple shards are handled separately by different subsets of securing participants, aka securitors (which include notaries, proposers, miners and validators)[[1]](https://eprint.iacr.org/2017/406.pdf). The primary goal is a massive scalability improvement, potentially exponential in phase 6 of the [roadmap](https://github.com/ethereum/wiki/wiki/Sharding-roadmap); and probably at least a 100 fold increase in transactions per second with earlier phases. Quadratic sharding involves having shards at a depth of at most 1 from the main chain, that is, there are no shards within a shard, or a manager shard managing sub-shards; whereas exponential sharding has shards within shards, recursively.
 
