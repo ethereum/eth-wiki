@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T11:05:51.191Z
+date: 2019-09-02T11:30:15.395Z
 tags: 
 ---
 
@@ -11,6 +11,21 @@ Prior information is available on the [releases](/releases) page.
 The formal process of hardforks is documented in [EIP 233](https://eips.ethereum.org/EIPS/eip-233), along with some recent discussion on [EthMagicians](https://ethereum-magicians.org/t/eep-5-ethereum-hardfork-process-request-for-collaboration/2305).
 
 The [ETH1](/eth1) page lists Working Groups and areas of focus.
+
+
+# Philosophy
+
+**Pro-fork:** The community has embraced the concept of hard forks, with the understanding that new major changes can be challenging but rewarding.
+
+**Regular cadence:** Forks have increasingly been moving toward a traditional software release-schedule. Regular small hard forks allow upgrades to be included in more timely and manageable way that large infrequent forks, as described [here](https://ethereum-magicians.org/t/more-frequent-smaller-hardforks-vs-less-frequent-larger-ones/2929/28) 
+
+The fork will ideally follow an *EIP-centric* approach outlined [here](https://notes.ethereum.org/@holiman/S1ELAYY7S?type=view). This approach will allow EIPs to mature independently of forking schedule. When mature, they can be added to the next scheduled fork.
+
+Steps for EIPs:
+1. Endorsement (by major clients, developers and community stakeholders)
+2. Implementation (merged into major clients)
+3. Testing
+4. Acceptance (Allocate to a specific hard fork)
 
 # Upgrade history
 
@@ -30,12 +45,31 @@ The [ETH1](/eth1) page lists Working Groups and areas of focus.
 |11|TBC|TBC|Shanghai|
 |12|TBC|TBC|Devcon names thereafter|
 
+# Frontier
+
+The first block
+
+# Frontier Thawing
+
+Addition of the ice-age to the protocol to make a hard fork *required* in the future. This promoted planned upgrades. More details here [here](https://blog.ethereum.org/2015/08/04/ethereum-protocol-update-1/)
+
+# Homestead
+
+meta-EIP [here](https://eips.ethereum.org/EIPS/eip-606)
+
+# DAO Fork
+
+# Tangerine Whistle 
+
+# Spurious Dragon
+
+# Byzantium
+
 # Constantinople
-Constantinople is planned for Q1 of 2019. Planned date was originally January 16th, 2019, 12:00pm UTC. Now will activate February 25th, 2019, at the same time as [Petersburgh](/roadmap/petersburgh), which de-activates EIP-1283.
+Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburgh fork. More [here](/roadmap/petersburgh).
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
-* ~~[EIP 1283](https://eips.ethereum.org/EIPS/eip-1283) Net gas metering for SSTORE without dirty maps~~
 * [EIP 1014](https://eips.ethereum.org/EIPS/eip-1014) Skinny CREATE2
 * [EIP 1234](https://eips.ethereum.org/EIPS/eip-1234) Constantinople Difficulty Bomb Delay and Block Reward Adjustment
 
@@ -49,7 +83,14 @@ Istanbul is planned for Q4 of 2019. Planned date is October 16th, 2019, 12:00pm 
 
 More details on the [road to Istanbul](/roadmap/istanbul).
 
-# Next Timelines
+# Berlin
+
+# London
+
+# Subsequent forks
+
+Named after the devcon location sequence
+
 
 ## Cheesy Hardfork 6 Month Schedule
 Current discussion is on moving towards a 6-month cycle. [Danno is leading discussion on a Cheesy Hardfork Schedule](https://ethereum-magicians.org/t/more-frequent-smaller-hardforks-vs-less-frequent-larger-ones/2929/28)
