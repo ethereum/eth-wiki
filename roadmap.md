@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T12:08:53.989Z
+date: 2019-09-02T12:12:00.585Z
 tags: 
 ---
 
@@ -80,6 +80,9 @@ This fork closely followed Tangerine Whistle and implemented additional changes 
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-607)
 
 # Byzantium
+
+This fork included a number of specific upgrades to allow richer funtionality between contracts and some features to allow specific features related to elliptic curves.
+
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-609)
 
 # Constantinople
