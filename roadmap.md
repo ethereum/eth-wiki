@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T11:41:55.190Z
+date: 2019-09-02T11:49:40.718Z
 tags: 
 ---
 
@@ -45,6 +45,8 @@ Steps for EIPs:
 |11|TBC|TBC|Shanghai|
 |12|TBC|TBC|Devcon names thereafter|
 
+A good summary of the initial forks can be seen in the StackExchange response [here](https://ethereum.stackexchange.com/questions/13014/please-provide-a-summary-of-the-ethereum-hard-forks/13015#13015)
+
 # Frontier
 
 The first block in the Ethereum mainnet.
@@ -59,11 +61,18 @@ meta-EIP [here](https://eips.ethereum.org/EIPS/eip-606)
 
 # DAO Fork
 
+meta-EIP [here](https://eips.ethereum.org/EIPS/eip-779)
+
 # Tangerine Whistle 
+
+meta-EIP [here](https://eips.ethereum.org/EIPS/eip-608)
 
 # Spurious Dragon
 
+meta-EIP [here](https://eips.ethereum.org/EIPS/eip-607)
+
 # Byzantium
+meta-EIP [here](https://eips.ethereum.org/EIPS/eip-609)
 
 # Constantinople
 Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburgh fork. More [here](/roadmap/petersburg).
@@ -73,22 +82,22 @@ Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation 
 * [EIP 1014](https://eips.ethereum.org/EIPS/eip-1014) Skinny CREATE2
 * [EIP 1234](https://eips.ethereum.org/EIPS/eip-1234) Constantinople Difficulty Bomb Delay and Block Reward Adjustment
 
-## Useful Reading
-* [Sep 2018 Coindesk article](https://www.coindesk.com/constantinople-ahead-what-you-need-to-know-about-ethereums-big-upgrade)
-* [Jan 2019 /u/cartercarlson summary from /r/ethereum](https://www.reddit.com/r/ethereum/comments/abv70c/heres_a_summary_of_the_constantinople_update/)
-* [Jan 2019 Ethereum Foundation Blog](https://blog.ethereum.org/2019/01/11/ethereum-constantinople-upgrade-announcement/)
+More details can be found in:
+- This Coindesk article [here](https://www.coindesk.com/constantinople-ahead-what-you-need-to-know-about-ethereums-big-upgrade)
+- Reddit [here](https://www.reddit.com/r/ethereum/comments/abv70c/heres_a_summary_of_the_constantinople_update/)
+- The Ethereum Foundation Blog [here](https://blog.ethereum.org/2019/01/11/ethereum-constantinople-upgrade-announcement/)
 
 # Istanbul
 
-More details [here](/roadmap/istanbul).
+See the wiki page [here](/roadmap/istanbul).
 
 # Berlin
 
-More details [here](/roadmap/berlin).
+See the wiki page [here](/roadmap/berlin).
 
 # London
 
-More details [here](/roadmap/london).
+See the wiki page [here](/roadmap/london).
 
 # Subsequent forks
 
@@ -102,6 +111,6 @@ Upgrades will include features that:
   - Addition of more shards, with interoperability between shards
 
 # Serenity / ETH2
-See the [ETH2 Specs Github Repo](https://github.com/ethereum/eth2.0-specs).
+See the ETH2 Specs Github Repo [here](https://github.com/ethereum/eth2.0-specs).
 
-The [ETH2 Project Management repo](https://github.com/ethereum/eth2.0-pm) holds ongoing notes and meetings.
+The ETH2 Project Management repo [here](https://github.com/ethereum/eth2.0-pm).
