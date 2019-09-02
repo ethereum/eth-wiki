@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T11:30:15.395Z
+date: 2019-09-02T11:41:55.190Z
 tags: 
 ---
 
@@ -47,11 +47,11 @@ Steps for EIPs:
 
 # Frontier
 
-The first block
+The first block in the Ethereum mainnet.
 
 # Frontier Thawing
 
-Addition of the ice-age to the protocol to make a hard fork *required* in the future. This promoted planned upgrades. More details here [here](https://blog.ethereum.org/2015/08/04/ethereum-protocol-update-1/)
+Addition of the ice-age to the protocol to make a hard fork *required* in the future. This promoted planned upgrades. More details here [here](https://blog.ethereum.org/2015/08/04/ethereum-protocol-update-1/).
 
 # Homestead
 
@@ -66,7 +66,7 @@ meta-EIP [here](https://eips.ethereum.org/EIPS/eip-606)
 # Byzantium
 
 # Constantinople
-Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburgh fork. More [here](/roadmap/petersburgh).
+Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburgh fork. More [here](/roadmap/petersburg).
 
 * [EIP 145](https://eips.ethereum.org/EIPS/eip-145) Bitwise shifting instructions in the EVM
 * [EIP 1052](https://eips.ethereum.org/EIPS/eip-1052) EXTCODEHASH opcode
@@ -79,26 +79,27 @@ Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation 
 * [Jan 2019 Ethereum Foundation Blog](https://blog.ethereum.org/2019/01/11/ethereum-constantinople-upgrade-announcement/)
 
 # Istanbul
-Istanbul is planned for Q4 of 2019. Planned date is October 16th, 2019, 12:00pm UTC.
 
-More details on the [road to Istanbul](/roadmap/istanbul).
+More details [here](/roadmap/istanbul).
 
 # Berlin
 
+More details [here](/roadmap/berlin).
+
 # London
+
+More details [here](/roadmap/london).
 
 # Subsequent forks
 
 Named after the devcon location sequence
-
-
-## Cheesy Hardfork 6 Month Schedule
-Current discussion is on moving towards a 6-month cycle. [Danno is leading discussion on a Cheesy Hardfork Schedule](https://ethereum-magicians.org/t/more-frequent-smaller-hardforks-vs-less-frequent-larger-ones/2929/28)
-
-* "Asiago" April 2020
-* "Brie" October 2020
-
-_Note: We are **not** using cheese names, they are annoying on purpose to force us to choose new names as part of the hardfork meta creation process!_
+Upgrades will include features that:
+- Improve and maintain the mainnet ('ETH1')
+- Integrate the mainnet with the scaling upgrade ('Serenity/ETH2'). 
+	- Mainnet to recognise the Beacon Chain (phase 0)
+  - Mainnet to inherit the finality of the Beacon Chain
+  - Mainnet to be added as one shard under the scope of the Beacon Chain
+  - Addition of more shards, with interoperability between shards
 
 # Serenity / ETH2
 See the [ETH2 Specs Github Repo](https://github.com/ethereum/eth2.0-specs).
