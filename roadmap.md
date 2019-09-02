@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T12:05:43.100Z
+date: 2019-09-02T12:08:53.989Z
 tags: 
 ---
 
@@ -74,6 +74,8 @@ Described in the Ethereum Foundation blog [here](https://blog.ethereum.org/2016/
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-608)
 
 # Spurious Dragon
+
+This fork closely followed Tangerine Whistle and implemented additional changes to mitigate the effect of the spam attack, among other improvements.
 
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-607)
 
