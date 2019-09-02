@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T11:49:40.718Z
+date: 2019-09-02T12:05:43.100Z
 tags: 
 ---
 
@@ -57,13 +57,19 @@ Addition of the ice-age to the protocol to make a hard fork *required* in the fu
 
 # Homestead
 
-meta-EIP [here](https://eips.ethereum.org/EIPS/eip-606)
+Upgrades to improve contracts and networking, outlined in the meta-EIP [here](https://eips.ethereum.org/EIPS/eip-606)
 
 # DAO Fork
+
+A challenging fork for the community in which, after a hack of a high profile contract, accounts were refunded as outlined [here](https://ethereum.stackexchange.com/questions/7832/give-a-summary-of-the-fork-state-changes-in-block-1920000). This hard fork is notable in that the unmodified chain was mined by a number of people, who now maintain the separate Ethereum Classic chain in which the hack was never refunded.
 
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-779)
 
 # Tangerine Whistle 
+
+This fork increased the cost of EVM opcodes that were computationally expensive relative to financial cost. The opcodes were the basis of a spam attack, and the upgrade also made changes to mitigate the effect of the attack.
+
+Described in the Ethereum Foundation blog [here](https://blog.ethereum.org/2016/10/18/faq-upcoming-ethereum-hard-fork/)
 
 meta-EIP [here](https://eips.ethereum.org/EIPS/eip-608)
 
