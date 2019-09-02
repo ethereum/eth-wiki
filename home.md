@@ -2,7 +2,7 @@
 title: Welcome to the Ethereum Wiki
 description: 
 published: true
-date: 2019-09-02T12:23:05.749Z
+date: 2019-09-02T12:38:38.375Z
 tags: 
 ---
 
@@ -23,7 +23,7 @@ This is the community [wiki](https://en.wikipedia.org/wiki/Wiki) covering all so
 |  [Ethereum Whitepaper](white-Paper) 	|  [Casper Proof-of-Stake compendium](casper-proof-of-stake-compendium) and [FAQs](proof-of-stake-faqs) 	| [Inter-exchange Client Address Protocol](inter-exchange-client-address-protocol-icap)  		|
 | [Ethereum Introduction](ethereum-introduction)  	| [Alternative blockchains, randomness,<br/>economics, and other research topics](alternative-blockchains,-randomness,-economics,-and-other-research-topics)  	| [NatSpec Determination](natspec-determination)  	|
 | [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](network-status) |
-| [Getting Ether](getting-ether) | [Governance](governance-compendium) | [Single board computers](https://github.com/diglos/userpatches) |
+| [Getting Ether](getting-ether) | [Governance](governance-compendium) | [Single board computers](https://eth.wiki/en/single-board-computers) |
 | [Releases](releases) | **[Ethereum Virtual Machine (EVM)](ethereum-virtual-machine-(evm)-awesome-list)** | [Mining](mining) |
 | [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](licensing) |
 | [Design Rationale](design-rationale) | **[ÐApp Development](dapp-development)** | [URL Hint Protocol](url-hint-Protocol) |
