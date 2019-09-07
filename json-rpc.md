@@ -150,6 +150,7 @@ The examples also do not include the URL/IP & port combination which must be the
 * [eth_getUncleCountByBlockNumber](#eth_getunclecountbyblocknumber)
 * [eth_getCode](#eth_getcode)
 * [eth_sign](#eth_sign)
+* [eth_signTransaction](#eth_signtransaction)
 * [eth_sendTransaction](#eth_sendtransaction)
 * [eth_sendRawTransaction](#eth_sendrawtransaction)
 * [eth_call](#eth_call)
@@ -908,6 +909,51 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 ```
 
 An example how to use solidity ecrecover to verify the signature calculated with `eth_sign` can be found [here](https://gist.github.com/bas-vk/d46d83da2b2b4721efb0907aecdb7ebd). The contract is deployed on the testnet Ropsten and Rinkeby.
+
+***
+
+#### eth_signTransaction
+
+Signs an Ethereum transaction with a provided account's private key in preparation for submitting to the transaction pool.  The signing account must be unlocked.
+
+##### Parameters
+
+1. `Object` - The transaction object
+  - `to`: `DATA`, 20 Bytes - (optional when creating new contract) The address the transaction is directed to.
+  - `gas`: `QUANTITY`  - Integer of the gas provided for the transaction execution. It will return unused gas.
+  - `gasPrice`: `QUANTITY`  - Integer of the gasPrice used for each paid gas
+  - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
+  - `data`: `DATA`  - The compiled code of a contract OR the hash of the invoked method signature and encoded parameters. For details see [Ethereum Contract ABI](Ethereum-Contract-ABI)
+  - `nonce`: `QUANTITY`  - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
+
+```js
+params: [{
+  "to": "0xF0109fC8DF283027b6285cc889F5aA624EaC1F55",
+  "gas": "0x76c0", // 30400
+  "gasPrice": "0x9184e72a000", // 10000000000000
+  "value": "0x9184e72a", // 2441406250
+  "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
+}]
+```
+
+##### Returns
+
+`DATA` - the signed transaction object which is then ready to be submitted to the transaction pool.
+
+Use [eth_sendRawTransaction](#eth_sendrawtransaction) to submit the signed transaction object to the transaction pool.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_signTransaction","params":[{see above}],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "0xf868808504a817c80082520894f0109fc8df283027b6285cc889f5aa624eac1f55843b9aca008026a0afa02d193471bb974081585daabf8a751d4decbb519604ac7df612cc11e9226da04bf1bd55e82cebb2b09ed39bbffe35107ea611fa212c2d9a1f1ada4952077118"
+}
+```
 
 ***
 
