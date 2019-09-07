@@ -504,7 +504,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 {
   "id":73,
   "jsonrpc": "2.0",
-  "result": "0x09184e72a000" // 10000000000000
+  "result": "0x1dfd14000" // 8049999872 Wei
 }
 ```
 
