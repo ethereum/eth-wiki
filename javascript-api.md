@@ -1525,14 +1525,14 @@ web3.eth.sendRawTransaction('0x' + serializedTx.toString('hex'), function(err, h
 
 #### web3.eth.sign
 
-    web3.eth.sign(address, dataToSign, [, callback])
+    web3.eth.sign(dataToSign, address, [, callback])
 
 Signs data from a specific account. This account needs to be unlocked.
 
 ##### Parameters
 
-1. `String` - Address to sign with.
-2. `String` - Data to sign.
+1. `String` - Data to sign.
+2. `String` - Address to sign with.
 3. `Function` - (optional) If you pass a callback the HTTP request is made asynchronous. See [this note](#using-callbacks) for details.
 
 ##### Returns
@@ -1551,8 +1551,8 @@ Note that if you are using `ecrecover`, `v` will be either `"00"` or `"01"`. As 
 ##### Example
 
 ```js
-var result = web3.eth.sign("0x135a7de83802408321b74c322f8558db1679ac20",
-    "0x9dd2c369a187b4e6b9c402f030e50743e619301ea62aa4c0737d4ef7e10a3d49"); // second argument is web3.sha3("xyz")
+var result = web3.eth.sign("0x9dd2c369a187b4e6b9c402f030e50743e619301ea62aa4c0737d4ef7e10a3d49",
+    "0x135a7de83802408321b74c322f8558db1679ac20"); // first argument is web3.sha3("xyz")
 console.log(result); // "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 ```
 
