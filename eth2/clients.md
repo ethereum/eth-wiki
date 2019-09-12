@@ -2,7 +2,7 @@
 title: ETH2 Clients
 description: A list of Ethereum 2.0 clients
 published: true
-date: 2019-06-24T11:29:30.213Z
+date: 2019-09-12T07:49:01.731Z
 tags: 
 ---
 
@@ -10,16 +10,16 @@ tags:
 
 |Client Name|Organization|Programming Language|License|
 |---|---|---|---|
-|[Lodestar](https://github.com/ChainSafeSystems/lodestar_chain)|ChainSafe|JavaScript (TypeScript)|GPLv3|
-|[Harmony](https://github.com/ethereum/ethereumj/tree/research/sharding)|EtherCamp|Java|GPLv3|
-|[Shasper](https://github.com/paritytech/shasper)|Parity|Rust/Substrate|GPLv3|
 |[Artemis](https://github.com/PegaSysEng/artemis)|PegaSys|Java|Apache 2.0|
-|[Prysm](https://github.com/prysmaticlabs/prysm)|Prysmatic Labs|Go|GPLv3|
+|[Firefly](https://github.com/ethereum/firefly)[^firefly]|Ethereum Foundation|Go|BSD-3-Clause|
+|[Harmony](https://github.com/ethereum/ethereumj/tree/research/sharding)|EtherCamp|Java|GPLv3|
 |[Lighthouse](https://github.com/sigp/lighthouse)|Sigma Prime|Rust|GPLv2|
+|[Lodestar](https://github.com/ChainSafeSystems/lodestar_chain)|ChainSafe|JavaScript (TypeScript)|GPLv3|
 |[Nimbus](https://github.com/status-im/nimbus)|Status|Nim|Apache 2.0 / MIT|
+|[Prysm](https://github.com/prysmaticlabs/prysm)|Prysmatic Labs|Go|GPLv3|
+|[Shasper](https://github.com/paritytech/shasper)|Parity|Rust/Substrate|GPLv3|
 |[Trinity](https://github.com/ethereum/beacon_chain)|Ethereum Foundation|Python|MIT|
 |[Yeeth](https://github.com/yeeth/BeaconChain.swift)|ZK Labs|Swift|GPLv3|
-|[Firefly](https://github.com/ethereum/firefly)[^firefly]|Ethereum Foundation|Go|BSD-3-Clause|
 
 [^firefly]: This is essentially Geth for ETH2, and is an empty repo for now.
 
