@@ -1,6 +1,10 @@
-<!-- TITLE: Getting Ether -->
-
-
+---
+title: Getting Ether
+description: 
+published: true
+date: 2019-10-18T10:49:41.545Z
+tags: 
+---
 
 [![Documentation
 chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
@@ -35,8 +39,9 @@ In order to obtain Ether, you need to either:
 After you get Ether it is recommended that you transfer it to a wallet
 which you have the private key for, such as
 [MyEtherWallet](https://myetherwallet.com) or
-[MyCrypto](https://www.mycrypto.com/). Then to use Ether to make
-transfers [MetaMask](https://metamask.io/) (a browser extension which
+[MyCrypto](https://www.mycrypto.com/) or 
+[Guarda Wallet](https://guarda.co). Then to use Ether to make
+transfers [MetaMask](https://metamask.io/)(a browser extension which
 allows Ethereum dApps to be run through your browser) is recommended.
 
 Trustless services
