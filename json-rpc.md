@@ -12,6 +12,8 @@ Geth 1.4 has experimental pub/sub support. See [this](https://github.com/ethereu
 
 Parity 1.6 has experimental pub/sub support See [this](https://github.com/paritytech/parity/wiki/JSONRPC-Eth-Pub-Sub-Module) for more information.
 
+Hyperledger Besu 1.3 has pub/sub support. See [this](https://besu.hyperledger.org/en/stable/HowTo/Interact/APIs/RPC-PubSub/) for more information.
+
 ## JavaScript API
 
 To talk to an ethereum node from inside a JavaScript application use the [web3.js](https://github.com/ethereum/web3.js) library, which gives a convenient interface for the RPC methods.
@@ -23,11 +25,11 @@ Default JSON-RPC endpoints:
 
 | Client | URL |
 |-------|:------------:|
-| C++ |  http://localhost:8545 | 
-| Go |http://localhost:8545 | 
-| Py | http://localhost:4000 | 
-| Parity | http://localhost:8545 | 
-
+| C++ |  http://localhost:8545 |
+| Go |http://localhost:8545 |
+| Py | http://localhost:4000 |
+| Parity | http://localhost:8545 |
+| Hyperledger Besu | http://localhost:8545 |
 
 ### Go
 
@@ -66,20 +68,29 @@ You can also specify JSON-RPC port (default is 8545):
 ### Python
 In python the JSONRPC server is currently started by default and listens on `127.0.0.1:4000`
 
-You can change the port and listen address by giving a config option. 
+You can change the port and listen address by giving a config option.
 
 `pyethapp -c jsonrpc.listen_port=4002 -c jsonrpc.listen_host=127.0.0.2 run`
 
+### Java
+
+Run a Besu node on mainnet with the HTTP JSON-RPC service enabled:
+
+```bash
+besu --rpc-http-enabled
+```
+More details can be found in the [documentation](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#rpc-http-enabled).
+
 ## JSON-RPC support
 
-| | cpp-ethereum | go-ethereum | py-ethereum| parity |
-|-------|:------------:|:-----------:|:-----------:|:-----:|
-| JSON-RPC 1.0 | &#x2713; | | | |
-| JSON-RPC 2.0 | &#x2713; | &#x2713; | &#x2713; | &#x2713; |
-| Batch requests | &#x2713; |  &#x2713; |  &#x2713; | &#x2713; |
-| HTTP | &#x2713; | &#x2713; | &#x2713; | &#x2713; |
-| IPC | &#x2713; | &#x2713; | | &#x2713; |
-| WS | | &#x2713; | | &#x2713; |
+| | cpp-ethereum | go-ethereum | py-ethereum| parity | hyperledger-besu |
+|-------|:------------:|:-----------:|:-----------:|:-----:|:-----:|
+| JSON-RPC 1.0 | &#x2713; | | | | |
+| JSON-RPC 2.0 | &#x2713; | &#x2713; | &#x2713; | &#x2713; | &#x2713; |
+| Batch requests | &#x2713; |  &#x2713; |  &#x2713; | &#x2713; | &#x2713; |
+| HTTP | &#x2713; | &#x2713; | &#x2713; | &#x2713; | &#x2713; |
+| IPC | &#x2713; | &#x2713; | | &#x2713; | |
+| WS | | &#x2713; | | &#x2713; | &#x2713; |
 
 ## HEX value encoding
 
@@ -99,7 +110,7 @@ When encoding **UNFORMATTED DATA** (byte arrays, account addresses, hashes, byte
 - WRONG: 0xf0f0f (must be even number of digits)
 - WRONG: 004200 (must be prefixed 0x)
 
-Currently [cpp-ethereum](https://github.com/ethereum/cpp-ethereum),[go-ethereum](https://github.com/ethereum/go-ethereum), and [parity](https://github.com/paritytech/parity) provide JSON-RPC communication over http and IPC (unix socket Linux and OSX/named pipes on Windows). Version 1.4 of go-ethereum and version 1.6 of Parity onwards have websocket support.
+Currently [cpp-ethereum](https://github.com/ethereum/cpp-ethereum),[go-ethereum](https://github.com/ethereum/go-ethereum), and [parity](https://github.com/paritytech/parity) provide JSON-RPC communication over http and IPC (unix socket Linux and OSX/named pipes on Windows). Version 1.4 of go-ethereum, version 1.6 of Parity and version 1.3 of Hyperledger Besu onwards have websocket support.
 
 ## The default block parameter
 
@@ -180,7 +191,7 @@ The examples also do not include the URL/IP & port combination which must be the
 * [db_putString](#db_putstring)
 * [db_getString](#db_getstring)
 * [db_putHex](#db_puthex)
-* [db_getHex](#db_gethex) 
+* [db_getHex](#db_gethex)
 * [shh_post](#shh_post)
 * [shh_version](#shh_version)
 * [shh_newIdentity](#shh_newidentity)
@@ -602,7 +613,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 
 #### eth_getStorageAt
 
-Returns the value from a storage position at a given address. 
+Returns the value from a storage position at a given address.
 
 ##### Parameters
 
@@ -621,7 +632,7 @@ Calculating the correct position depends on the storage to retrieve. Consider th
 contract Storage {
     uint pos0;
     mapping(address => uint) pos1;
-    
+
     function Storage() {
         pos0 = 1234;
         pos1[msg.sender] = 5678;
@@ -736,7 +747,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 ***
 
 #### eth_getBlockTransactionCountByNumber
-> > 
+> >
 Returns the number of transactions in a block matching the given block number.
 
 
@@ -882,7 +893,7 @@ The sign method calculates an Ethereum specific signature with: `sign(keccak256(
 
 By adding a prefix to the message makes the calculated signature recognisable as an Ethereum specific signature. This prevents misuse where a malicious DApp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
 
-**Note** the address to sign with must be unlocked. 
+**Note** the address to sign with must be unlocked.
 
 ##### Parameters
 account, message
@@ -1370,11 +1381,11 @@ params: [
   - `contractAddress `: `DATA`, 20 Bytes - The contract address created, if the transaction was a contract creation, otherwise `null`.
   - `logs`: `Array` - Array of log objects, which this transaction generated.
   - `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.
-  
+
 It also returns _either_ :
 
   - `root` : `DATA` 32 bytes of post-transaction stateroot (pre Byzantium)
-  - `status`: `QUANTITY` either `1` (success) or `0` (failure) 
+  - `status`: `QUANTITY` either `1` (success) or `0` (failure)
 
 
 ##### Example
@@ -1968,7 +1979,7 @@ Used for submitting mining hashrate.
 
 ##### Parameters
 
-1. `Hashrate`, a hexadecimal string representation (32 bytes) of the hash rate 
+1. `Hashrate`, a hexadecimal string representation (32 bytes) of the hash rate
 2. `ID`, String - A random hexadecimal(32 bytes) ID identifying the client
 
 ```js
