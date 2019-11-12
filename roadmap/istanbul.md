@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-08-31T06:17:37.384Z
+date: 2019-11-12T17:42:03.735Z
 tags: 
 ---
 
@@ -43,7 +43,7 @@ Specifically:
 
 **[EIP-2028](https://eips.ethereum.org/EIPS/eip-2028)** Makes zk-SNARKs and zk-STARKs cheaper by reducing the cost of calling data within transactions. This will make layer 2 solutions able to increase throughput.
 
-**[EIP-2200](https://gist.github.com/karalabe/adc43c07db9f03be82093cd5466562b0)** Changes the calculation of cost of storage in the EVM and will enable contracts to introduce new functions including re-entry locks and same-contract multi-send.
+**[EIP-2200](https://eips.ethereum.org/EIPS/eip-2200)** Changes the calculation of cost of storage in the EVM and will enable contracts to introduce new functions including re-entry locks and same-contract multi-send.
 
 ### Road to Istanbul in-brief
 1. EIPs were considered
