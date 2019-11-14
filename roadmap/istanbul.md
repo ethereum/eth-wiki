@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-11-12T17:42:03.735Z
+date: 2019-11-14T16:07:45.425Z
 tags: 
 ---
 
@@ -73,8 +73,8 @@ Previous hard fork details are summarised in this stack exchange question [here]
 |5|2675000|2016-11-22|Spurious Dragon|
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
-|8|TBD|TBD|**Istanbul**|
-|9|TBD|TBD|Berlin (Devcon location)|
+|8|9069000|2019-12-04 ([tentative](https://twitter.com/TimBeiko/status/1190269448621633536))|**Istanbul**|
+|9|TBD|2020-06 (tentative)|Berlin (Devcon location)|
 |10|TBD|TBD|London|
 |11|TBC|TBC|Devcon names thereafter|
 
@@ -89,7 +89,8 @@ Previous hard fork details are summarised in this stack exchange question [here]
 * 2019-xx-xx Ropsten testnet fork
 * 2019-10-(8th to 11th) DevCon5, Osaka Japan
 * 2019-10-16 (Wed) Initial projected date for mainnet upgrade (“Istanbul”)
-* Istanbul + xx Months: Berlin fork (initially projected to )
+* 2019-12-04 (Wed) New date for mainnet upgrade ("Istanbul")
+* Istanbul + ~6 Months: Berlin fork (initially projected to 2020 Jan)
 Rough plan is April 2020 for next Hardfork, go up to [Roadmap](/roadmap) for more info.
 
 # Proposals
