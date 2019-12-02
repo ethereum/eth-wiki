@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-11-14T15:37:34.879Z
+date: 2019-12-02T16:14:09.274Z
 tags: 
 ---
 
@@ -39,7 +39,7 @@ Steps for EIPs:
 |5|2675000|2016-11-22|Spurious Dragon|
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
-|8|9069000|2019-12-04 ([tentative](https://twitter.com/TimBeiko/status/1190269448621633536))|[Istanbul](/roadmap/istanbul)|
+|8|9069000|2019-12-07 ([tentative](https://blog.ethereum.org/2019/11/20/ethereum-istanbul-upgrade-announcement/))|[Istanbul](/roadmap/istanbul)|
 |9|TBD|2020-06 (tentative)|[Berlin](/roadmap/berlin)|
 |10|TBD|TBD|[London](/roadmap/london)|
 |11|TBC|TBC|Shanghai|
