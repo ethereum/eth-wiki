@@ -2,7 +2,7 @@
 title: ETH2 Clients
 description: A list of Ethereum 2.0 clients
 published: true
-date: 2019-12-04T18:42:07.587Z
+date: 2019-12-04T18:42:56.881Z
 tags: 
 ---
 
@@ -11,7 +11,7 @@ tags:
 |Client Name|Organization|Programming Language|License|
 |---|---|---|---|
 |[Artemis](https://github.com/PegaSysEng/artemis)|PegaSys|Java|Apache 2.0|
-|[Firefly](https://github.com/ethereum/firefly)[^firefly]|Ethereum Foundation|Go|BSD-3-Clause|
+|[Firefly](https://github.com/ethereum/firefly)\*|Ethereum Foundation|Go|BSD-3-Clause|
 |[Harmony](https://github.com/ethereum/ethereumj/tree/research/sharding)|EtherCamp|Java|GPLv3|
 |[Lighthouse](https://github.com/sigp/lighthouse)|Sigma Prime|Rust|GPLv2|
 |[Lodestar](https://github.com/ChainSafeSystems/lodestar_chain)|ChainSafe|JavaScript (TypeScript)|GPLv3|
@@ -21,7 +21,7 @@ tags:
 |[Trinity](https://github.com/ethereum/beacon_chain)|Ethereum Foundation|Python|MIT|
 |[Yeeth](https://github.com/yeeth/BeaconChain.swift)|Yeeth|Swift|GPLv3|
 
-[^firefly]: This is essentially Geth for ETH2, and is an empty repo for now.
+\* Firefly is essentially Geth for ETH2, and is an empty repo for now.
 
 See also:
 
