@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-12-02T16:14:09.274Z
+date: 2019-12-08T11:42:49.378Z
 tags: 
 ---
 
@@ -39,11 +39,12 @@ Steps for EIPs:
 |5|2675000|2016-11-22|Spurious Dragon|
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
-|8|9069000|2019-12-07 ([tentative](https://blog.ethereum.org/2019/11/20/ethereum-istanbul-upgrade-announcement/))|[Istanbul](/roadmap/istanbul)|
-|9|TBD|2020-06 (tentative)|[Berlin](/roadmap/berlin)|
-|10|TBD|TBD|[London](/roadmap/london)|
-|11|TBC|TBC|Shanghai|
-|12|TBC|TBC|Devcon names thereafter|
+|8|9069000|2019-12-08 |[Istanbul](/roadmap/istanbul)|
+|9|9200000|2019-12-31 (tentative)|[Muir Glacier](/roadmap/muir_glacier)|
+|10|TBD|2020-06 (tentative)|[Berlin](/roadmap/berlin)|
+|11|TBD|TBD|[London](/roadmap/london)|
+|12|TBC|TBC|Shanghai|
+|13|TBC|TBC|Devcon names thereafter|
 
 A good summary of the initial forks can be seen in the StackExchange response [here](https://ethereum.stackexchange.com/questions/13014/please-provide-a-summary-of-the-ethereum-hard-forks/13015#13015)
 
@@ -103,6 +104,10 @@ More details can be found in:
 # Istanbul
 
 See the wiki page [here](/roadmap/istanbul).
+
+# Muir Glacier
+
+An update to delay the difficulty bomb
 
 # Berlin
 
