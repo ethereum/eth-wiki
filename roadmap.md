@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-12-08T11:52:31.404Z
+date: 2019-12-08T11:56:07.326Z
 tags: 
 ---
 
@@ -29,7 +29,7 @@ Steps for EIPs:
 
 # Upgrade history
 
-| Fork number | Block number | Date | Name |
+| Fork number | Block number | Date (yyyy-mm-dd) | Name |
 |---|---|---|---|
 |0|1|2015-07-30|Frontier|
 |1|200000|2015-09-07|Frontier Thawing|
