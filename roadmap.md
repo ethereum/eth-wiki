@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-12-08T11:56:07.326Z
+date: 2019-12-08T12:04:28.249Z
 tags: 
 ---
 
@@ -103,11 +103,22 @@ More details can be found in:
 
 # Istanbul
 
-See the wiki page [here](/roadmap/istanbul).
+See the wiki page [here](/roadmap/istanbul) and the hard fork meta [here](https://eips.ethereum.org/EIPS/eip-1679)
+
+EIP-152: Add Blake2 compression function F precompile
+EIP-1108: Reduce alt_bn128 precompile gas costs
+EIP-1344: Add ChainID opcode
+EIP-1884: Repricing for trie-size-dependent opcodes
+EIP-2028: Calldata gas cost reduction
+EIP-2200: Rebalance net-metered SSTORE gas cost with consideration of SLOAD gas cost change
+
+The Ethereum Foundation blog [here](https://blog.ethereum.org/2019/11/20/ethereum-istanbul-upgrade-announcement/).
+
+The Cat Herders blog [here](https://medium.com/ethereum-cat-herders/istanbul-testnets-are-coming-53973bcea7df).
 
 # Muir Glacier
 
-An update to delay the difficulty bomb
+An update to delay the difficulty bomb, see the wiki page [here](/roadmap/muir_glacier).
 
 # Berlin
 
