@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-11-14T16:07:45.425Z
+date: 2019-12-08T12:08:56.664Z
 tags: 
 ---
 
@@ -89,9 +89,7 @@ Previous hard fork details are summarised in this stack exchange question [here]
 * 2019-xx-xx Ropsten testnet fork
 * 2019-10-(8th to 11th) DevCon5, Osaka Japan
 * 2019-10-16 (Wed) Initial projected date for mainnet upgrade (“Istanbul”)
-* 2019-12-04 (Wed) New date for mainnet upgrade ("Istanbul")
-* Istanbul + ~6 Months: Berlin fork (initially projected to 2020 Jan)
-Rough plan is April 2020 for next Hardfork, go up to [Roadmap](/roadmap) for more info.
+* 2019-12-08 Mainnet upgrade ("Istanbul")
 
 # Proposals
 
@@ -498,8 +496,4 @@ Planned prototyping and implementation, in order of decreasing priority:
 
 # Post-Istanbul
 
-The next fork will be called Berlin and will primarily be composed of the EIPs that did not make it into Istanbul (those in the 'tentatively accepted' category).
-
-TODO: Create [eth.wiki/roadmap/berlin](eth.wiki/roadmap/berlin) page and reference the next fork meta-EIP, which will follow the template [here](https://eips.ethereum.org/EIPS/eip-233)
-
-The fork following Berlin will consist of EIPs mature enough to go in, following the EIP-centric development cycle. Forks will preferentially be small and on-time rather than large and late, with the knowledge that regular forks allow almost-ready EIPs a concrete timeline for incorporation.
+The next fork will be called [Muir Glacier](eth.wiki/roadmap/muir_glacier) and will address the difficulty bomb.
