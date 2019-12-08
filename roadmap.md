@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-12-08T11:42:49.378Z
+date: 2019-12-08T11:52:31.404Z
 tags: 
 ---
 
