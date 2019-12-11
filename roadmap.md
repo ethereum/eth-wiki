@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-12-08T12:04:28.249Z
+date: 2019-12-11T12:22:09.438Z
 tags: 
 ---
 
@@ -40,7 +40,7 @@ Steps for EIPs:
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
 |8|9069000|2019-12-08 |[Istanbul](/roadmap/istanbul)|
-|9|9200000|2019-12-31 (tentative)|[Muir Glacier](/roadmap/muir_glacier)|
+|9|9200000|2020-01-06 ([tentative](https://pegasys.tech/all-you-need-to-know-about-the-two-upcoming-ethereum-upgrades-istanbul-muir-glacier/))|[Muir Glacier](/roadmap/muir_glacier)|
 |10|TBD|2020-06 (tentative)|[Berlin](/roadmap/berlin)|
 |11|TBD|TBD|[London](/roadmap/london)|
 |12|TBC|TBC|Shanghai|
