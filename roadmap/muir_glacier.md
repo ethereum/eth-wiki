@@ -2,7 +2,7 @@
 title: Muir Glacier
 description: An upgrade to address the difficulty bomb
 published: true
-date: 2019-12-08T11:54:33.953Z
+date: 2019-12-11T12:25:15.999Z
 tags: 
 ---
 
@@ -19,6 +19,6 @@ The fork contains [EIP-2384](https://eips.ethereum.org/EIPS/eip-2384), which del
 
 # Block Number
 
-The fork is due to execute at block number 4200000, which occurs around December 32, 2019.
+The fork is due to execute at block number 4200000, which will occur around December 31, 2019.
 
 The countdown and upgrade status of nodes can be seen [here](https://ethernodes.org/muir_glacier)
