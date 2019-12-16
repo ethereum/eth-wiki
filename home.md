@@ -25,7 +25,7 @@ This is the community [wiki](https://en.wikipedia.org/wiki/Wiki) covering all so
 | [Uses: DAOs and dapps](decentralized-apps-(dapps)) | [Hard Problems of Cryptocurrency](problems) | [Network Status](network-status) |
 | [Getting Ether](getting-ether) | [Governance](governance-compendium) | [Single board computers](https://eth.wiki/en/single-board-computers) |
 | [Releases](releases) | **[Ethereum Virtual Machine (EVM)](ethereum-virtual-machine-(evm)-awesome-list)** | [Mining](mining) |
-| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](Clients,-tools,-dapp-browsers,-wallets-and-other-projects)** | [Licensing](licensing) |
+| [FAQs](FAQs) | **[Ethereum clients, tools, wallets, dapp<br/>browsers and other projects](clients-tools-dapp-browsers-wallets-and-other-projects)** | [Licensing](licensing) |
 | [Design Rationale](design-rationale) | **[ÐApp Development](dapp-development)** | [URL Hint Protocol](url-hint-Protocol) |
 | EVM intro: [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) <br/> [Beige Paper](https://github.com/chronaeon/beigepaper) and [Py-EVM](https://github.com/ethereum/py-evm) |  | [Hard Fork Roadmap](/roadmap) 
 | [Old github wiki](https://github.com/ethereum/wiki/wiki) |
