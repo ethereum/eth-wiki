@@ -1,0 +1,18 @@
+site_name: Ethereum Wiki
+nav:
+  - Home: index.md
+  - Basics:
+    - Ethereum Whitepaper: white-paper.md
+    - Ethereum Introduction: ethereum-introduction.md
+    - "Uses: DAOs and dapps": decentralized-apps-dapps.md
+    - Getting Ether: getting-ether.md
+    - Releases: releases.md
+    - Design Rationale: design-rationale.md
+    - FAQs: faqs.md
+    - Glossary: glossary.md
+  - EVM Intro:
+      - Ethereum Yellow Paper: https://ethereum.github.io/yellowpaper/paper.pdf
+      - Ethereum Beige Paper: https://github.com/chronaeon/beigepaper
+      - PY-EVM: https://github.com/ethereum/py-evm
+theme: readthedocs
+repo_url: https://github.com/ethresearch/eth-wiki
