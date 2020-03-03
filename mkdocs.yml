@@ -3,7 +3,7 @@ nav:
   - Home: index.md
   - Basics:
     - Ethereum Whitepaper: white-paper.md
-    - Ethereum Introduction: ethereum-introduction.md
+    - Ethereum Introduction: fundamentals/ethereum-introduction.md
     - "Uses: DAOs and dapps": decentralized-apps-dapps.md
     - Getting Ether: getting-ether.md
     - Releases: releases.md
