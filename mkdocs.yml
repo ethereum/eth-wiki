@@ -5,14 +5,26 @@ nav:
     - Ethereum Whitepaper: white-paper.md
     - Ethereum Introduction: fundamentals/ethereum-introduction.md
     - "Uses: DAOs and dapps": decentralized-apps-dapps.md
-    - Getting Ether: getting-ether.md
+    - Getting Ether: fundamentals/getting-ether.md
     - Releases: releases.md
     - Design Rationale: design-rationale.md
     - FAQs: faqs.md
     - Glossary: glossary.md
   - EVM Intro:
-      - Ethereum Yellow Paper: https://ethereum.github.io/yellowpaper/paper.pdf
-      - Ethereum Beige Paper: https://github.com/chronaeon/beigepaper
-      - PY-EVM: https://github.com/ethereum/py-evm
+    - Ethereum Yellow Paper: https://ethereum.github.io/yellowpaper/paper.pdf
+    - Ethereum Beige Paper: https://github.com/chronaeon/beigepaper
+    - PY-EVM: https://github.com/ethereum/py-evm
+  - R&D: 
+    - Introduction: rd.md
+    - Sharding: 
+      - Introduction & Compendium: sharding-introduction-r-d-compendium.md
+      - FAQs: sharding-faqs.md
+      - Roadmap: sharding-roadmap.md
+    - Casper:
+      - Introduction & Compendium: casper-proof-of-stake-compendium.md
+      - FAQs: proof-of-stake-faqs.md
+    - Other research topics: alternative-blockchains-randomness-economics-and-other-research-topics.md
+    - Hard Problems of Cryptocurrency: problems.md
+    - Governance: governance-compendium.md 
 theme: readthedocs
 repo_url: https://github.com/ethresearch/eth-wiki

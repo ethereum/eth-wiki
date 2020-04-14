@@ -1,12 +1,14 @@
+# Ethereum Introduction
+
 [![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
 Note that due to the lightning-fast pace of development in the Ethereum space with core development and dapps continually being launched, certain parts of this article may be outdated. You can help by keeping it up to date!
 
-# About blockchains
+## About blockchains
 
 For an introduction to blockchains, see [this TED talk](https://www.youtube.com/watch?v=RplnSVTzvnU).
 
-# About Ethereum
+## About Ethereum
 
 <a href="https://www.ethereum.org/" target="_blank" rel="nofollow noopener noreferrer">Ethereum</a> is a [decentralized](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) blockchain platform for "building unstoppable applications", while Ether is the cryptocurrency used on this platform. 
 
@@ -16,11 +18,16 @@ The simplest way to understand Ethereum is to know what it does. Just like how i
 
 <!-- TODO: Where to host PDFs -->
 
-1.  [A Next-Generation Smart Contract and Decentralized Application Platform](https://github.com/ethereum/wiki/wiki/White-Paper) - Ethereum White Paper
-2.  [A secure decentralised generalised transaction ledger" and a generalised "transactional singleton machine with shared-state"](https://ethereum.github.io/yellowpaper/paper.pdf). 
-    Also described as crypto-law, and: "Ethereum, taken as a whole, can be viewed as a transaction-based state machine: we begin with a genesis state and incrementally execute transactions to morph it into some final state. It is this final state which we accept as the canonical \``version'' of the world of Ethereum. The state can include such information as account balances, reputations, trust arrangements, data pertaining to information of the physical world; in short, anything that can currently be represented by a computer is admissible. Transactions thus represent a valid arc between two states; the `valid' part is important---there exist far more invalid state changes than valid state changes. Invalid state changes might, \\eg, be things such as reducing an account balance without an equal and opposite increase elsewhere. A valid state transition is one which comes about through a transaction."—Ethereum Yellow Paper
+1.  [A Next-Generation Smart Contract and Decentralized Application Platform](../white-paper.md) - Ethereum White Paper
+
+2.  [A secure decentralised generalised transaction ledger" and a generalised "transactional singleton machine with shared-state"](https://ethereum.github.io/yellowpaper/paper.pdf).
+
+    Also described as crypto-law, and: "Ethereum, taken as a whole, can be viewed as a transaction-based state machine: we begin with a genesis state and incrementally execute transactions to morph it into some final state. It is this final state which we accept as the canonical 'version' of the world of Ethereum. The state can include such information as account balances, reputations, trust arrangements, data pertaining to information of the physical world; in short, anything that can currently be represented by a computer is admissible. Transactions thus represent a valid arc between two states; the 'valid' part is important - there exist far more invalid state changes than valid state changes. Invalid state changes might, e.g., be things such as reducing an account balance without an equal and opposite increase elsewhere. A valid state transition is one which comes about through a transaction."—Ethereum Yellow Paper
+
 3.  [An open source "programmable blockchain"](http://ethdocs.org/en/latest/introduction/what-is-ethereum.html) — Ethdocs
+
 4.  "[Ethereum transactions perform financial and database operations contingent on the evaluation of more complex computational scripts.](https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf)" — TrueBit
+
     The sources for the first and third bullet points are more general introductions, while the second is a technical introduction and specification of the Ethereum Virtual Machine. Another introduction is available [here](https://bitsonblocks.net/2016/10/02/a-gentle-introduction-to-ethereum/), but it is outdated.
 
 Let's briefly breakdown what the terms above mean.
@@ -43,7 +50,7 @@ Here is a blog post from Vitalik Buterin, the founder of Ethereum, on [Ethereum 
 
 ## Uses
 
-The platform part of Ethereum makes it much more useful than just a cryptocurrency. With it, you can create any decentralized application (known as a dapp, which works over a peer-to- peer network rather than a centralized client-server network 💻🕸️), so the functionality is only limited by what programs could potentially do and not do, and by consequence, what programmers develop, 👨‍💻 but it can theoretically be used for any economic or governance activity. 
+The platform part of Ethereum makes it much more useful than just a cryptocurrency. With it, you can create any decentralized application (known as a dapp, which works over a peer-to- peer network rather than a centralized client-server network 💻🕸️), so the functionality is only limited by what programs could potentially do and not do, and by consequence, what programmers develop, 👨‍💻 but it can theoretically be used for any economic or governance activity.
 
 ### List of dapps
 
@@ -100,23 +107,24 @@ For the continual improvement of humanity, there needs to be balance in life bet
 
 ## Bugs
 
-Ethereum has had expensive bugs, such as those listed [here](Major-issues-resulting-in-lost-or-stuck-funds) and [here](https://github.com/ethereum/wiki/wiki/Bugs).
+Ethereum has had expensive bugs, such as those listed [here](../major-issues-resulting-in-lost-or-stuck-funds.md) and [here](../famous-bugs.md).
 
 ## How do you buy and sell Ether, the currency of Ethereum?
 
-Refer to [here](../getting-ether.md).
+Refer to [here](./getting-ether.md).
 
 ## Development
 
 Are you interested in learning to develop smart contracts with Ethereum, and develop a really useful dapp and become a millionaire?
 
-Check out the [Ethereum website](https://www.ethereum.org/)! Then, you can [read the Solidity docs](https://solidity.readthedocs.io/en/develop/).
+Check out the [Ethereum website](https://www.ethereum.org/)! Then, you can [read the Solidity docs](https://solidity.readthedocs.io/en/latest).
 
 If you want to help contribute to core development, there is also:
 
 -   the [Yellow Paper](https://github.com/ethereum/yellowpaper);
 -   [Beige Paper](https://github.com/chronaeon/beigepaper); and
 -   [Py-EVM](https://github.com/ethereum/py-evm).
+-   [Geth (Go implementation)](https://github.com/ethereum/go-ethereum)
 
 ## Core development
 
@@ -125,7 +133,7 @@ If you want to help contribute to core development, there is also:
 -   documentation and specification review, e.g. (and in particular) of [EIPs](https://github.com/ethereum/EIPs); 
 -   [many other repositories](https://github.com/ethereum).
 
-For R&D, refer to [here](R&D).
+For R&D, refer to [here](../r&d.md).
 
 ## Programming languages
 
