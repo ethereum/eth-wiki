@@ -1,4 +1,4 @@
-# Default Extra Data Standard
+# Extra Data Standard
 
 Implementations are encouraged to follow this protocol for populating the `extraData` field of mined blocks.
 
