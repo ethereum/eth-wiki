@@ -1,6 +1,4 @@
-<!-- TITLE: Dagger Hashimoto -->
-
-
+# Dagger Hashimoto
 
 ## Introduction
 
@@ -10,8 +8,8 @@ The information in this article shall be kept for historical purposes.
 
 Dagger Hashimoto aims to simultaneously satisfy two goals:
 
-1. **ASIC-resistance**: the benefit from creating specialized hardware for the algorithm should be as small as possible, ideally to the point that even in an economy where ASICs have been developed the speedup is sufficiently small that it is still marginally profitable for users on ordinary computers to mine with spare CPU power.
-2. **Light client verifiability**: a block should be relatively efficiently verifiable by a light client.
+1.  **ASIC-resistance**: the benefit from creating specialized hardware for the algorithm should be as small as possible, ideally to the point that even in an economy where ASICs have been developed the speedup is sufficiently small that it is still marginally profitable for users on ordinary computers to mine with spare CPU power.
+2.  **Light client verifiability**: a block should be relatively efficiently verifiable by a light client.
 
 With an additional modification, we also specify how to fulfill a third goal if desired, but at the cost of additional complexity:
 
@@ -19,13 +17,13 @@ With an additional modification, we also specify how to fulfill a third goal if 
 
 Dagger Hashimoto builds on two key pieces of previous work:
 
-* [Hashimoto](http://diyhpl.us/%7Ebryan/papers2/bitcoin/meh/hashimoto.pdf), an algorithm by Thaddeus Dryja which intends to achieve ASIC resistance by being IO-bound, ie. making memory reads the limiting factor in the mining process. The theory is that RAM is in principle inherently a much more generic ingredient than computation, and billions of dollars of research already go into optimizing it for different use cases which often involve near-random access patterns (hence "random access memory"); hence, existing RAM is likely to be moderately close to optimal for evaluating the algorithm. Hashimoto uses the blockchain as a source of data, simultaneously satisfying (1) and (3) above.
-* [Dagger](http://www.hashcash.org/papers/dagger.html), an algorithm by Vitalik Buterin which uses directed acyclic graphs to simultaneously achieve memory-hard computation but memory-easy validation. The core principle is that each individual nonce only requires a small portion of a large total data tree, and recomputing the subtree for each nonce is prohibitive for mining - hence the need to store the tree - but okay for a single nonce's worth of verification. Dagger was meant to be an alternative to existing memory-hard algorithms like [Scrypt](http://en.wikipedia.org/wiki/Scrypt), which are memory-hard but are also very hard to verify when their memory-hardness is increased to genuinely secure levels. However, Dagger was proven to be vulnerable to shared memory hardware acceleration [by Sergio Lerner](https://bitslog.wordpress.com/2014/01/17/ethereum-dagger-pow-is-flawed/) and was then dropped in favor of other avenues of research.
+-   [Hashimoto](http://diyhpl.us/%7Ebryan/papers2/bitcoin/meh/hashimoto.pdf), an algorithm by Thaddeus Dryja which intends to achieve ASIC resistance by being IO-bound, ie. making memory reads the limiting factor in the mining process. The theory is that RAM is in principle inherently a much more generic ingredient than computation, and billions of dollars of research already go into optimizing it for different use cases which often involve near-random access patterns (hence "random access memory"); hence, existing RAM is likely to be moderately close to optimal for evaluating the algorithm. Hashimoto uses the blockchain as a source of data, simultaneously satisfying (1) and (3) above.
+-   [Dagger](http://www.hashcash.org/papers/dagger.html), an algorithm by Vitalik Buterin which uses directed acyclic graphs to simultaneously achieve memory-hard computation but memory-easy validation. The core principle is that each individual nonce only requires a small portion of a large total data tree, and recomputing the subtree for each nonce is prohibitive for mining - hence the need to store the tree - but okay for a single nonce's worth of verification. Dagger was meant to be an alternative to existing memory-hard algorithms like [Scrypt](http://en.wikipedia.org/wiki/Scrypt), which are memory-hard but are also very hard to verify when their memory-hardness is increased to genuinely secure levels. However, Dagger was proven to be vulnerable to shared memory hardware acceleration [by Sergio Lerner](https://bitslog.wordpress.com/2014/01/17/ethereum-dagger-pow-is-flawed/) and was then dropped in favor of other avenues of research.
 
 Approaches that were tried between Dagger and Dagger Hashimoto but are currently not our primary focus include:
 
-* "Blockchain-based proof of work" - a proof of work function that involves running contracts taken from the blockchain. The approach was abandoned because it was long-range attack vulnerabilities, since attackers can create forks and populate them with contracts that they have a secret fast "trapdoor" execution mechanism for.
-* "Random circuit" - a proof of work function developed largely by Vlad Zamfir that involves generating a new program every 1000 nonces - essentially, choosing a new hash function each time, faster than even FPGAs can reconfigure. The approach was temporarily put aside because it was difficult to see what mechanism one can use to generate random programs that would be general enough so that specialization gains would be low; however, we see no fundamental reasons why the concept cannot be made to work.
+-   "Blockchain-based proof of work" - a proof of work function that involves running contracts taken from the blockchain. The approach was abandoned because it was long-range attack vulnerabilities, since attackers can create forks and populate them with contracts that they have a secret fast "trapdoor" execution mechanism for.
+-   "Random circuit" - a proof of work function developed largely by Vlad Zamfir that involves generating a new program every 1000 nonces - essentially, choosing a new hash function each time, faster than even FPGAs can reconfigure. The approach was temporarily put aside because it was difficult to see what mechanism one can use to generate random programs that would be general enough so that specialization gains would be low; however, we see no fundamental reasons why the concept cannot be made to work.
 
 The difference between Dagger Hashimoto and Hashimoto is that, instead of using the blockchain as a data source, Dagger Hashimoto uses a custom-generated 1 GB data set, which updates based on block data every N blocks. The data set is generated using the Dagger algorithm, allowing for the efficient calculation of a subset specific to every nonce for the light client verification algorithm. The difference between Dagger Hashimoto and Dagger is that, unlike in the original Dagger, the dataset used to query the block is semi-permanent, only being updated at occasional intervals (eg. once per week). This means that the portion of the effort that goes toward generating the dataset is close to zero, so Sergio Lerner's arguments regarding shared memory speedups become negligible.
 
@@ -143,7 +141,7 @@ Essentially, it is simply a rewrite of the above algorithm that removes the loop
 
 ## Double Buffer of DAGs
 
-In a full client, a [*double buffer*](https://en.wikipedia.org/wiki/Multiple_buffering) of 2 DAGs produced by the above formula is used.  The idea is that DAGs are produced every `epochtime` number of blocks according to the params above.  The client does not use the latest DAG produced, but the previous one. The benefit of this is that it allows the DAGs to be replaced over time without needing to incorporate a step where miners must suddenly recompute all of the data. Otherwise, there is the potential for an abrupt temporary slowdown in chain processing at regular intervals and dramatically increasing centralization and thus 51% attack risks within those few minutes before all data is recomputed.
+In a full client, a [_double buffer_](https://en.wikipedia.org/wiki/Multiple_buffering) of 2 DAGs produced by the above formula is used.  The idea is that DAGs are produced every `epochtime` number of blocks according to the params above.  The client does not use the latest DAG produced, but the previous one. The benefit of this is that it allows the DAGs to be replaced over time without needing to incorporate a step where miners must suddenly recompute all of the data. Otherwise, there is the potential for an abrupt temporary slowdown in chain processing at regular intervals and dramatically increasing centralization and thus 51% attack risks within those few minutes before all data is recomputed.
 
 The algorithm used to generate the actual set of DAGs used to compute the work for a block is as follows:
 
@@ -239,6 +237,7 @@ def mine(daggerset, params, block):
 ```
 
 Here is the verification algorithm:
+
 ```python
 def verify(daggerset, params, block, nonce):
     result = hashimoto(daggerset, get_dagsize(params, block),
@@ -258,29 +257,31 @@ def light_verify(params, header, nonce):
 
 Also, note that Dagger Hashimoto imposes additional requirements on the block header:
 
-* For two-layer verification to work, a block header must have both the nonce and the middle value pre-sha3
-* Somewhere, a block header must store the sha3 of the current seedset
+-   For two-layer verification to work, a block header must have both the nonce and the middle value pre-sha3
+-   Somewhere, a block header must store the sha3 of the current seedset
 
-# Appendix
+## Appendix
 
 As noted above, the RNG used for DAG generation relies on some results from number theory. First, we provide assurance that the Lehmer RNG that is the basis for the `picker` variable has a wide period.  Second, we show that `pow(x,3,P)` will not map `x` to `1` or `P-1` provided `x ∈ [2,P-2]` to start.  Finally, we show that `pow(x,3,P)` has a low collision rate when treated as a hashing function.
 
-## Lehmer Random Number Generator
+### Lehmer Random Number Generator
 
 While the `produce_dag` function does not need to produce unbiased random numbers, a potential threat is that `seed**i % P` only takes on a handful of values. This could provide an advantage to miners recognizing the pattern over those that do not.
 
-To avoid this, a result from number theory is appealed to. A [*Safe Prime*](https://en.wikipedia.org/wiki/Safe_prime) is defined to be a prime `P` such that `(P-1)/2` is also prime.  The *order* of a member `x` of the [multiplicative group](https://en.wikipedia.org/wiki/Multiplicative_group_of_integers_modulo_n) `ℤ/nℤ` is defined to be the minimal `m` such that <center><pre>xᵐ mod P ≡ 1</pre></center>
+To avoid this, a result from number theory is appealed to. A [_Safe Prime_](https://en.wikipedia.org/wiki/Safe_prime) is defined to be a prime `P` such that `(P-1)/2` is also prime.  The _order_ of a member `x` of the [multiplicative group](https://en.wikipedia.org/wiki/Multiplicative_group_of_integers_modulo_n) `ℤ/nℤ` is defined to be the minimal `m` such that <center><pre>xᵐ mod P ≡ 1</pre></center>
 Given these definitions, we have:
 
 > Observation 1. Let `x` be a member of the multiplicative group `ℤ/Pℤ` for a safe prime `P`.  If `x mod P ≠ 1 mod P` and `x mod P ≠ P-1 mod P`, then the order of `x` is either `P-1` or `(P-1)/2`.
 
-*Proof*.  Since `P` is a safe prime, then by [Lagrange's Theorem][Lagrange] we have that the order of `x` is either `1`, `2`, `(P-1)/2`, or `P-1`.
+_Proof_.  Since `P` is a safe prime, then by [Lagrange's Theorem][Lagrange] we have that the order of `x` is either `1`, `2`, `(P-1)/2`, or `P-1`.
 
 The order of `x` cannot be `1`, since by Fermat's Little Theorem we have:
+
 <center><pre>x<sup>P-1</sup> mod P ≡ 1</pre></center>
 Hence `x` must be a multiplicative identity of `ℤ/nℤ`, which is unique.  Since we assumed that `x ≠ 1` by assumption, this is not possible.
 
 The order of `x` cannot be `2` unless `x = P-1`, since this would violate that `P` is prime.
+
 <div align="right">◻</div>
 
 From the above proposition, we can recognize that iterating `(picker * init) % P` will have a cycle length of at least `(P-1)/2`.  This is because we selected `P` to be a safe prime approximately equal to be a higher power of two, and `init` is in the interval `[2,2**256+1]`.  Given the magnitude fo `P`, we should never expect a cycle from modular exponentiation.
@@ -291,7 +292,7 @@ When we are assigning the first cell in the DAG (the variable labeled `init`), w
 
 [Lagrange]: https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory)
 
-## Modular Exponentiation as a Hash Function
+### Modular Exponentiation as a Hash Function
 
 For certain values of `P` and `w`, the function `pow(x, w, P)` may have many collisions.  For instance, `pow(x,9,19)` only takes on values `{1,18}`. 
 
@@ -303,39 +304,40 @@ Thus, given that `P` is prime and `w` is relatively prime to `P-1`, we have that
 
 In the special case that `P` is a safe prime as we have selected, then `P-1` only has factors 1, 2, `(P-1)/2` and `P-1`.  Since `P` > 7, we know that 3 is relatively prime to `P-1`, hence `w=3` satisfies the above proposition.
 
-## More Efficient Cache-based Evaluation Algos
+## More Efficient Cache-based Evaluation Algorithm
 
-    def quick_calc(params, seed, p):
-        cache = produce_dag(params, seed, params["cache_size"])
-        return quick_calc_cached(cache, params, p)
+```python
+def quick_calc(params, seed, p):
+    cache = produce_dag(params, seed, params["cache_size"])
+    return quick_calc_cached(cache, params, p)
 
-    def quick_calc_cached(cache, params, p):
-        P = params["P"]
-        if p < len(cache):
-            return cache[p]
-        else:
-            x = pow(cache[0], p + 1, P)
-            for _ in range(params["k"]):
-                x ^= quick_calc_cached(cache, params, x % p)
-            return pow(x, params["w"], P)
+def quick_calc_cached(cache, params, p):
+    P = params["P"]
+    if p < len(cache):
+        return cache[p]
+    else:
+        x = pow(cache[0], p + 1, P)
+        for _ in range(params["k"]):
+            x ^= quick_calc_cached(cache, params, x % p)
+        return pow(x, params["w"], P)
 
-    def quick_hashimoto(seed, dagsize, params, header, nonce):
-        cache = produce_dag(params, seed, params["cache_size"])
-        return quick_hashimoto_cached(cache, dagsize, params, header, nonce)
+def quick_hashimoto(seed, dagsize, params, header, nonce):
+    cache = produce_dag(params, seed, params["cache_size"])
+    return quick_hashimoto_cached(cache, dagsize, params, header, nonce)
 
-    def quick_hashimoto_cached(cache, dagsize, params, header, nonce):
-        m = dagsize // 2
-        mask = 2**64 - 1
-        mix = sha3(encode_int(nonce) + header)
-        for _ in range(params["accesses"]):
-            mix ^= quick_calc_cached(cache, params, m + (mix & mask) % m)
-        return dbl_sha3(mix)
+def quick_hashimoto_cached(cache, dagsize, params, header, nonce):
+    m = dagsize // 2
+    mask = 2**64 - 1
+    mix = sha3(encode_int(nonce) + header)
+    for _ in range(params["accesses"]):
+        mix ^= quick_calc_cached(cache, params, m + (mix & mask) % m)
+    return dbl_sha3(mix)
+```
 
-
------------------------------------
+* * *
 
 Special thanks to feedback from:
 
-* Tim Hughes
-* Matthew Wampler-Doty
-* Thaddeus Dryja
+-   Tim Hughes
+-   Matthew Wampler-Doty
+-   Thaddeus Dryja

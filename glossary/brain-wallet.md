@@ -1,6 +1,4 @@
-<!-- TITLE: Brain Wallet -->
-
-
+# Brain Wallet
 
 A "brain wallet" is the name given to the combination of a seed phrase and a means of deriving a secret key from that phrase alone, without reference to e.g. an additional file. Brain wallets have two main usages; firstly for using a simple password/passphrase to define and protect their account. Secondly for backing up the secret key of an account by using a mnemonic string.
 
@@ -8,11 +6,11 @@ In the first case, the security of the secret key, and therefore the account and
 
 In the second case, the security of the secret key is already provided through the entropy present in the phrase, and as such the KDF can be relatively simple.
 
-# Standard Method
+## Standard Method
 
 Ethereum brain wallets are formed through applying a predefined KDF to a seed to get a result `R`, then using `R` as an accumulator for 16384 repeat KDF operations. This process is continued until the result, when used as a private key, forms a valid Direct ICAP (34 digit) address, defined as the first byte of the address being 0.
 
-```
+```text
 FUNCTION toBrain(STRING seed) RETURNS SECRET
 	A = KDF(seed)
 	REPEAT 16384 TIMES
@@ -33,14 +31,13 @@ In this variant, the Standard Method is used with a KDF of the Keccak-256 operat
 
 Benchmarking SHA3 in Go [2] on a i5-4278U CPU @ 2.60GHz gives 16384 hashes in 30ms. A C implementation on a high-end CPU would be significantly faster.
 
-
 ## Enhanced KDF
 
 In this variant, the Standard Method is used with a KDF of the Scrypt operation.
 
----
+* * *
 
-### **Comments (Gustav):**
+## Comments (Gustav):
 
 Even though the seed in AZ is generated for people and can thus be designed to have enough entropy, it is desirable to configure a KDF to be as strong as possible without impacting usability.
 
@@ -48,6 +45,6 @@ I would recommend we configure a KDF that is much harder (even up to 1-2s CPU ti
 
 This would make our brainwallets much harder to crack, and perhaps even allowing the seed to be shorter, improving usability.
 
-1. https://rya.nc/cracking_cryptocurrency_brainwallets.pdf
-2. https://github.com/ethereum/go-ethereum/blob/master/crypto/crypto_test.go#L65
-3. https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition
+1.  <https://rya.nc/cracking_cryptocurrency_brainwallets.pdf>
+2.  <https://github.com/ethereum/go-ethereum/blob/master/crypto/crypto_test.go#L65>
+3.  <https://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition>

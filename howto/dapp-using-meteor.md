@@ -1,38 +1,40 @@
-<!-- TITLE: Dapp using Meteor -->
-
-
+# Dapp using Meteor
 
 This tutorial will show you how to setup a Meteor app to be used as a Ðapp and probably answer a few questions on why Meteor should be used.
 
-1. [Create your Ðapp](#create-your-%C3%90app)
-2. [Start your Ðapp](#start-your-%C3%90app)
-3. [Connect your Ðapp](#connect-your-%C3%90app)
-4. [Run your Ðapp](#run-your-%C3%90app)
-5. [Add Ðapp styles](#add-%C3%90app-styles)
-6. [Using ethereum:elements](#using-ethereumelements)
-7. [Ðapp code structure](#%C3%90app-code-structure)
-8. [Bundle your Ðapp](#bundle-your-%C3%90app)
-9. [Submit your Ðapp](#submit-your-%C3%90app)
+-   [Dapp using Meteor](#dapp-using-meteor)
+    -   [FAQ](#faq)
+        -   [Isn't Meteor a full stack framework, how does that fit into Ðapp development](#isnt-meteor-a-full-stack-framework-how-does-that-fit-into-%c3%90app-development)
+        -   [Do I need to host my Ðapp on a server?](#do-i-need-to-host-my-%c3%90app-on-a-server)
+    -   [Create your Ðapp](#create-your-%c3%90app)
+    -   [Start your Ðapp](#start-your-%c3%90app)
+        -   [A short excursion into Meteors folder structure](#a-short-excursion-into-meteors-folder-structure)
+        -   [Connect your Ðapp](#connect-your-%c3%90app)
+        -   [Run your Ðapp](#run-your-%c3%90app)
+    -   [Add Ðapp styles](#add-%c3%90app-styles)
+    -   [Using ethereum packages](#using-ethereum-packages)
+        -   [Example usage](#example-usage)
+    -   [Ðapp code structure](#%c3%90app-code-structure)
+    -   [Bundle your Ðapp](#bundle-your-%c3%90app)
+    -   [Submit your Ðapp](#submit-your-%c3%90app)
 
 ## FAQ
 
 ### Isn't Meteor a full stack framework, how does that fit into Ðapp development
 
-True, Meteor is a full stack framework and its main improvement is realtime web applications, but Meteor is also the first framework (i know of), which fully embraced *s*ingle *p*age *a*pp (SPA) development and provided all necessary tools.
+True, Meteor is a full stack framework and its main improvement is realtime web applications, but Meteor is also the first framework (i know of), which fully embraced _s_ingle _p_age _a_pp (SPA) development and provided all necessary tools.
 
 5 reasons why Meteor is a perfect fit:
 
-1. Its purely written in JS and has all the tools a SPA needs (Templating engine, Model, on-the-fly compiling, bundling)
-2. You get a development environment, which has live reload, CSS injection and support for many pre-compilers (LESS, Coffeescript, etc) out of the box
-3. You can get all frontend code as single `index.html` with one `js` and `css` file plus your assets, using [meteor-build-client](https://github.com/frozeman/meteor-build-client). You can then host it everywhere or simple run the `index.html` itself or distribute it later on *swarm*.
-4. It embraces full reactivity, which make building consistent interface much easier (similar to angular.js `$scope` or binding)
-5. It has a great model called Minimongo, which gives you a mongoDB like interface for a reactive in-memory database, which can also be [auto-persisted to localstorage](https://atmospherejs.com/frozeman/persistent-minimongo) or [indexedDB](https://atmospherejs.com/frozeman/persistent-minimongo2)
+1.  Its purely written in JS and has all the tools a SPA needs (Templating engine, Model, on-the-fly compiling, bundling)
+2.  You get a development environment, which has live reload, CSS injection and support for many pre-compilers (LESS, Coffeescript, etc) out of the box
+3.  You can get all frontend code as single `index.html` with one `js` and `css` file plus your assets, using [meteor-build-client](https://github.com/frozeman/meteor-build-client). You can then host it everywhere or simple run the `index.html` itself or distribute it later on _swarm_.
+4.  It embraces full reactivity, which make building consistent interface much easier (similar to angular.js `$scope` or binding)
+5.  It has a great model called Minimongo, which gives you a mongoDB like interface for a reactive in-memory database, which can also be [auto-persisted to localstorage](https://atmospherejs.com/frozeman/persistent-minimongo) or [indexedDB](https://atmospherejs.com/frozeman/persistent-minimongo2)
 
 ### Do I need to host my Ðapp on a server?
 
 No, using [meteor-build-client](https://github.com/frozeman/meteor-build-client) you can get all the static assets of your Ðapp to run without a server, though if you use a router like [iron-](https://atmospherejs.com/iron/router) or [flow-router](https://atmospherejs.com/meteorhacks/flow-router), you need to use hash (`index.html#!/mypath`) routes instead of clean HTML5 pushstate routes.
-
-***
 
 ## Create your Ðapp
 
@@ -43,26 +45,27 @@ $ curl https://install.meteor.com/ | sh
 ```
 
 Then create an app:
+
 ```bash
 $ meteor create myDapp
 $ cd myDapp
 ```
 
 Next add the web3 package:
+
 ```bash
 $ meteor add ethereum:web3
 ```
 
 I recommend also to add the following packages:
 
-- [ethereum:dapp-styles](https://atmospherejs.com/ethereum/dapp-styles) - The LESS/CSS framework which gives your dapp a nice Mist-consistent look.
-- [ethereum:tools](https://atmospherejs.com/ethereum/tools) - This package gives you the `EthTools` object with a set of formatting an conversion functions and template helpers for ether.
-- [ethereum:elements](https://atmospherejs.com/ethereum/elements) - A set of interface elements specifically made for ethereum.
-- [ethereum:accounts](https://atmospherejs.com/ethereum/accounts) - Gives you the reactive `EthAccounts` collection with all current available ethereum accounts, where balances will be automatically updated.
-- [ethereum:blocks](https://atmospherejs.com/ethereum/blocks) - Gives you the reactive `EthBlocks` collection with the latest 50 blocks. To get the lastest block use `EthBlocks.latest` (It will also have the latest default gasPrice)
-- [frozeman:template-var](https://atmospherejs.com/frozeman/template-var) - Gives you the `TemplateVar` object, that allows you to set reactive variables, which are template instance specific. See the [readme](https://atmospherejs.com/frozeman/template-var) for more.
-- [frozeman:persistent-minimongo2](https://atmospherejs.com/frozeman/persistent-minimongo2) - Allows you to auto persist your minimongo collection in local storage
-
+-   [ethereum:dapp-styles](https://atmospherejs.com/ethereum/dapp-styles) - The LESS/CSS framework which gives your dapp a nice Mist-consistent look.
+-   [ethereum:tools](https://atmospherejs.com/ethereum/tools) - This package gives you the `EthTools` object with a set of formatting an conversion functions and template helpers for ether.
+-   [ethereum:elements](https://atmospherejs.com/ethereum/elements) - A set of interface elements specifically made for ethereum.
+-   [ethereum:accounts](https://atmospherejs.com/ethereum/accounts) - Gives you the reactive `EthAccounts` collection with all current available ethereum accounts, where balances will be automatically updated.
+-   [ethereum:blocks](https://atmospherejs.com/ethereum/blocks) - Gives you the reactive `EthBlocks` collection with the latest 50 blocks. To get the lastest block use `EthBlocks.latest` (It will also have the latest default gasPrice)
+-   [frozeman:template-var](https://atmospherejs.com/frozeman/template-var) - Gives you the `TemplateVar` object, that allows you to set reactive variables, which are template instance specific. See the [readme](https://atmospherejs.com/frozeman/template-var) for more.
+-   [frozeman:persistent-minimongo2](https://atmospherejs.com/frozeman/persistent-minimongo2) - Allows you to auto persist your minimongo collection in local storage
 
 ## Start your Ðapp
 
@@ -71,14 +74,15 @@ I recommend also to add the following packages:
 Meteor doesn't force you to have a specific folder structure, though some folders have specific meaning and will be treated differently when bundling/running your application.
 
 Folders with specific treatment
-- `client` - files in a folder called `client` will only be loaded by the client part of your app and as we are building a Ðapp, that's where most of our files go.
-- `lib` - files in folders called `lib` will load before other files in the same folder. This is an ideal place your init files, libraries, or ethereum specific files.
-- `public` - a folder called `public` contains assets meteor will make available on the root of your webserver (or later bundled Ðapp)
-- There are a few more specific folders like `server`, `tests`, `packages`, etc. If you want to get to know them take a look at the [Meteor docs](http://docs.meteor.com/#/full/structuringyourapp)
+
+-   `client` - files in a folder called `client` will only be loaded by the client part of your app and as we are building a Ðapp, that's where most of our files go.
+-   `lib` - files in folders called `lib` will load before other files in the same folder. This is an ideal place your init files, libraries, or ethereum specific files.
+-   `public` - a folder called `public` contains assets meteor will make available on the root of your webserver (or later bundled Ðapp)
+-   There are a few more specific folders like `server`, `tests`, `packages`, etc. If you want to get to know them take a look at the [Meteor docs](http://docs.meteor.com/#/full/structuringyourapp)
 
 So to build a Ðapp we ideally create the following folder structure in our `myDapp` folder:
 
-```
+```text
 - myDapp
    - client
       - lib
@@ -88,9 +92,10 @@ So to build a Ðapp we ideally create the following folder structure in our `myD
    - public
 ```
 
-**Note** The community provides also Meteor Ðapp Boilerplates like this one from Nick Dodson: https://github.com/SilentCicero/meteor-dapp-boilerplate
+**Note** The community provides also Meteor Ðapp Boilerplates like this one from Nick Dodson: <https://github.com/SilentCicero/meteor-dapp-boilerplate>
 
 ### Connect your Ðapp
+
 To connect our dapp we need to start `geth` with the right CORS headers in another terminal:
 
 ```bash
@@ -123,7 +128,7 @@ If we go to `http://localhost:3000`, we should see a website appear and if we op
 
 If you want your Ðapp to nicely fit later into Mist and have follow the official look use the [dapp-styles css css/less framework](https://atmospherejs.com/ethereum/dapp-styles).
 
-*Note that they are under heavy development and the class names and elements may change.*
+_Note that they are under heavy development and the class names and elements may change._
 
 To add it simple add the following packages to your Ðapp:
 
@@ -157,6 +162,7 @@ If you look into you `myDapp.html` you will find the `hello` template.
 Just add a helper called `{{currentBlock}}` some where between the `<template name="hello">..</template>` tags.
 
 Now open the `myDapp.js` and add after the `counter() {..}` the `currentBlock` helper:
+
 ```js
 Template.elements.helpers({
     counter() {
@@ -172,19 +178,17 @@ Then initialize EthBlocks by adding `EthBlocks.init();` after `this.counter = ne
 
 If you now check your Ðapp in the browser you should see the latest block number, which will increase once you mine.
 
-
-*For more examples please checkout the packages readmes and the [demo](http://ethereum-elements.meteor.com) ([source](https://github.com/frozeman/meteor-ethereum-elements-demo)) for more.*
+_For more examples please checkout the packages readmes and the [demo](http://ethereum-elements.meteor.com) ([source](https://github.com/frozeman/meteor-ethereum-elements-demo)) for more._
 
 ## Ðapp code structure
 
-*This tutorial won't go into building apps with Meteor. For this please refer to the [Meteor's tutorials](https://www.meteor.com/tutorials/blaze/creating-an-app), [A list of good resources](https://www.meteor.com/tools/resources), [EventMinded](https://www.eventedmind.com) (payed tutorials) or books like [Building Single-page Web Apps with Meteor](https://www.packtpub.com/web-development/building-single-page-web-apps-meteor) or [Discover Meteor](http://discovermeteor.com).*
+_This tutorial won't go into building apps with Meteor. For this please refer to the [Meteor's tutorials](https://www.meteor.com/tutorials/blaze/creating-an-app), [A list of good resources](https://www.meteor.com/tools/resources), [EventMinded](https://www.eventedmind.com) (payed tutorials) or books like [Building Single-page Web Apps with Meteor](https://www.packtpub.com/web-development/building-single-page-web-apps-meteor) or [Discover Meteor](http://discovermeteor.com)._
 
-
-TODO
 Short:
-- put ethereum related stuff into `client/lib/ethereum/somefile.js`
-- use `myCollection.observe({added: func, changed: func, removed: func})` to communicate to ethereum, keep ethereum logic out of your app as much as possible. This way you just write and read from your reactive collections and the observe functions will handle the rest (e.g. sendTransactions)
-- Filters etc will add logs etc to your collections. So you keep all the callback mess out of your app logic.
+
+-   put ethereum related stuff into `client/lib/ethereum/somefile.js`
+-   use `myCollection.observe({added: func, changed: func, removed: func})` to communicate to ethereum, keep ethereum logic out of your app as much as possible. This way you just write and read from your reactive collections and the observe functions will handle the rest (e.g. sendTransactions)
+-   Filters etc will add logs etc to your collections. So you keep all the callback mess out of your app logic.
 
 For an example see the [Ethereum-Wallet](https://github.com/ethereum/meteor-dapp-wallet).
 
@@ -206,5 +210,6 @@ Be aware that when running your app on the `file://` protocol, you won't be able
 
 In the future you will be able to simply upload your Ðapp on swarm.
 
-## Submit your Ðapp 
+## Submit your Ðapp
+
 To get early traffic to your Ðapp, you can submit your Ðapp to [Dapp Insight](https://dappinsight.com). This is a most popular Dapp analytics tool which listing all the running Dapps in the world.
