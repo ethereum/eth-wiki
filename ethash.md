@@ -1,4 +1,4 @@
-<!-- TITLE: Ethash -->
+# Ethash
 
 **This spec is REVISION 23. Whenever you substantively (ie. not clarifications) update the algorithm, please update the revision number in this sentence. Also, in all implementations please include a spec revision number**
 
