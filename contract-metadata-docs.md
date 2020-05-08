@@ -60,8 +60,7 @@ In order to avoid malicious agents hijacking metadata by overwriting the namereg
 -   the link should be registered before a contract is deployed and is immutable from then on. 
 -   before the corresponding contract is deployed, we check if the correct metadata bundle is found in the registry and confirmed to a satisfying level of certainty (X blocks).
 
-How it looks like in `Alethzero` is illustrated [here]|(
-<https://github.com/ethereum/wiki/wiki/NatSpec-Example>)
+How it looks like in `Alethzero` is illustrated [here](https://solidity.readthedocs.io/en/latest/natspec-format.html)
 
 ### Metadata Access
 

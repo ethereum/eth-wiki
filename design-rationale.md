@@ -58,7 +58,7 @@ The Merkle Patricia tree/trie, previously envisioned by Alan Reiner and implemen
 1.  Every unique set of key/value pairs maps uniquely to a root hash, and it is not possible to spoof membership of a key/value pair in a trie (unless an attacker has ~2^128 computing power)
 2.  It is possible to change, add or delete key/value pairs in logarithmic time
 
-This gives us a way of providing an efficient, easily updateable, "fingerprint" of our entire state tree. The Ethereum MPT is formally described here: <https://github.com/ethereum/wiki/wiki/Patricia-Tree>
+This gives us a way of providing an efficient, easily updateable, "fingerprint" of our entire state tree. The Ethereum MPT is formally described [here](./fundamentals/patricia-tree.md).
 
 Specific design decisions in the MPT include:
 
@@ -70,7 +70,7 @@ Specific design decisions in the MPT include:
 
 ## RLP
 
-RLP ("recursive length prefix") encoding is the main serialization format used in Ethereum, and is used everywhere - for blocks, transactions, account state data and wire protocol messages. RLP is formally described here: <https://github.com/ethereum/wiki/wiki/RLP>
+RLP ("recursive length prefix") encoding is the main serialization format used in Ethereum, and is used everywhere - for blocks, transactions, account state data and wire protocol messages. RLP is formally described [here](./fundamentals/rlp.md).
 
 RLP is intended to be a highly minimalistic serialization format; its sole purpose is to store nested arrays of bytes. Unlike [protobuf](https://developers.google.com/protocol-buffers/docs/pythontutorial), [BSON](http://bsonspec.org/) and other existing solutions, RLP does not attempt to define any specific data types such as booleans, floats, doubles or even integers; instead, it simply exists to store structure, in the form of nested arrays, and leaves it up to the protocol to determine the meaning of the arrays. Key/value maps are also not explicitly supported; the semi-official suggestion for supporting key/value maps is to represent such maps as `[[k1, v1], [k2, v2], ...]` where `k1, k2...` are sorted using the standard ordering for strings.
 
@@ -202,7 +202,6 @@ Some particular design decisions that were made:
 -   **32 byte word size** - the alternative is 4 or 8 byte words, as in most other architectures, or unlimited, as in Bitcoin. 4 or 8 byte words are too restrictive to store addresses and big values for crypto computations, and unlimited values are too hard to make a secure gas model around. 32 bytes is ideal because it is just large enough to store 32 byte values common in many crypto implementations, as well as addresses (and provides the ability to pack address and value into a single storage index as an optimization), but not so large as to be extremely inefficient.
 -   **Having our own VM at all** - the alternative is reusing Java, or some Lisp dialect, or Lua. We decided that having a specialized VM was appropriate because (i) our VM spec is much simpler than many other virtual machines, because other virtual machines have to pay a much lower cost for complexity, whereas in our case every additional unit of complexity is a step toward high barriers of entry creating development centralization and potential for security flaws including consensus failures, (ii) it allows us to specialize the VM much more, eg. by having a 32 byte word size, (iii) it allows us not to have a very complex external dependency which may lead to installation difficulties, and (iv) a full security review of Ethereum specific to our particular security needs would necessitate a security review of the external VM anyway, so the effort savings are not that large.
 -   **Using a variable extendable memory size** - we deemed a fixed memory size unnecessarily restrictive if the size is small and unnecessarily expensive if the size is large, and noted that if statements for memory access are necessary in any case to check for out-of-bounds access, so fixed size would not even make execution more efficient. 
-    <!--See https://github.com/ethereum/wiki/issues/559 for why this is commented out:* **Not having a stack size limit** - no particular justification either way; note that limits are not strictly necessary in many cases as the combination of gas costs and a block-level gas limit will always act as a ceiling on the consumption of every resource.-->
 -   **Having a 1024 call depth limit** - many programing languages break at high stack depths much more quickly than they break at high levels of memory usage or computational load, so the implied limit from the block gas limit may not be sufficient.
 -   **No types** - done for simplicity. Instead, signed and unsigned opcodes for DIV, SDIV, MOD, SMOD are used instead (it turns out that for ADD and MUL the behavior of signed and unsigned opcodes is equivalent), and the transformations for fixed point arithmetic (high-depth fixed-point arithmetic is another benefit of 32-byte words) are in all cases simple, eg. at 32 bits of depth, `a * b -> (a * b) / 2^32`, `a / b -> a * 2^32 / b`, and +, - and \* are unchanged from integer cases.
 

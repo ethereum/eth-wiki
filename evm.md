@@ -21,6 +21,7 @@ Here is [how to contribute](./contributing.md).
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
+- [EVM Awesome List](#evm-awesome-list)
 - [Specification](#specification)
 - [Illustration](#illustration)
 - [Tutorials](#tutorials)
@@ -60,7 +61,7 @@ Here is [how to contribute](./contributing.md).
     - A hands on guide to understanding how the EVM works, with examples written in raw byte-code and solidity
 * [Diving Into The Ethereum Virtual Machine](https://medium.com/@hayeah/diving-into-the-ethereum-vm-6e8d5d2f3c30)
     - An article series examining different aspects of the EVM by walking you through Solidity's assembly output
-* [Consensus Datastructures](https://github.com/ethereum/wiki/wiki/Consensus-Datastructures)
+* [Consensus Datastructures](./consensus-datastructures.md)
 
 ## Tests
 
@@ -83,7 +84,7 @@ Here is [how to contribute](./contributing.md).
     - A Python implementation designed to be highly configurable and modular and compliant with the Ethereum test suite, work is in progress on it to run a full node and develop sharding.
 * [EthereumJ](https://github.com/ethereum/ethereumj) in Java
     - A client with its own EVM implementation
-* For more, see [here](https://github.com/ethereum/wiki/wiki/Clients).
+* For more, see [here](./clients-tools-dapp-browsers-wallets-and-other-projects.md).
 
 ### Other Implementations
 

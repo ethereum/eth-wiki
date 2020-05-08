@@ -1,15 +1,10 @@
-<!-- TITLE: Whisper Overview -->
+# Whisper Overview
 
-[< Back to Whisper](Whisper)
-
-## Whisper Overview[^go-ethereum-wiki]
-[^go-ethereum-wiki]: Imported from [go-ethereum wiki](https://github.com/ethereum/go-ethereum/wiki/Whisper-Overview) 2019-01-07 (no edits since [2017-05-10](https://github.com/ethereum/go-ethereum/wiki/Whisper-Overview/_history)
-
-Whisper is a pure identity-based messaging system. Whisper provides a simple low-level API without being based upon or influenced by the low-level hardware attributes and characteristics. Peer-to-peer communication between the nodes of Whisper network uses the underlying [ÐΞVp2p Wire Protocol](https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol). Whisper was not designed to provide a connection-oriented system, nor for simply delivering data between a pair of particular network endpoints. However, this might be necessary in some very specific cases (e.g. delivering the expired messages in case they were missed), and Whisper protocol will accommodate for that. Whisper is designed for easy and efficient broadcasting, and also for low-level asynchronous communications. It is designed to be a building block in next generation of unstoppable ÐApps. It was designed to provide resilience and privacy at considerable expense. At its most secure mode of operation, Whisper can theoretically deliver 100% darkness. Whisper should also allow the users to configure the level of privacy (how much information it leaks concerning the ÐApp content and ultimately, user activities) as a trade-off for performance. 
+Whisper is a pure identity-based messaging system. Whisper provides a simple low-level API without being based upon or influenced by the low-level hardware attributes and characteristics. Peer-to-peer communication between the nodes of Whisper network uses the underlying [ÐΞVp2p Wire Protocol](https://github.com/ethereum/devp2p/blob/master/rlpx.md). Whisper was not designed to provide a connection-oriented system, nor for simply delivering data between a pair of particular network endpoints. However, this might be necessary in some very specific cases (e.g. delivering the expired messages in case they were missed), and Whisper protocol will accommodate for that. Whisper is designed for easy and efficient broadcasting, and also for low-level asynchronous communications. It is designed to be a building block in next generation of unstoppable ÐApps. It was designed to provide resilience and privacy at considerable expense. At its most secure mode of operation, Whisper can theoretically deliver 100% darkness. Whisper should also allow the users to configure the level of privacy (how much information it leaks concerning the ÐApp content and ultimately, user activities) as a trade-off for performance. 
 
 Basically, all Whisper messages are supposed to be sent to every Whisper node. In order to prevent a DDoS attack, proof-of-work (PoW) algorithm is used. Messages will be processed (and forwarded further) only if their PoW exceeds a certain threshold, otherwise they will be dropped. 
 
-### Encryption in version 5
+## Encryption in version 5
 
 All Whisper messages are encrypted and then sent via underlying ÐΞVp2p Protocol, which in turn uses its own encryption, on top of Whisper encryption. Every Whisper message must be encrypted either symmetrically or asymmetrically. Messages could be decrypted by anyone who possesses the corresponding key. 
 
@@ -21,11 +16,11 @@ Asymmetric encryption uses the standard Elliptic Curve Integrated Encryption Sch
 
 Although we assume these standard encryption algorithms to be reasonably secure, users are encouraged to use their own custom encryption on top of the default Whisper encryption.
 
-#### Envelopes
+### Envelopes
 
 Envelopes are the packets sent and received by Whisper nodes. Envelopes contain the encrypted payload and some metadata in plain format, because these data is essential for decryption. Envelopes are transmitted as RLP-encoded structures of the following format:
 
-	[ Version, Expiry, TTL, Topic, AESNonce, Data, EnvNonce ]
+    [ Version, Expiry, TTL, Topic, AESNonce, Data, EnvNonce ]
 
 Version: up to 4 bytes (currently one byte containing zero). Version indicates encryption method. If Version is higher than current, envelope could not be decrypted, and therefore only forwarded to the peers.
 
@@ -43,7 +38,7 @@ EnvNonce: 8 bytes of arbitrary data (used for PoW calculation).
 
 Whisper nodes know nothing about content of envelopes which they can not decrypt. The nodes pass envelopes around regardless of their ability to decrypt the message, or their interest in it at all. This is an important component in Whisper's dark communications strategy.
 
-#### Messages
+### Messages
 
 Message is the content of Envelope's payload in plain format (unencrypted).
 
@@ -64,7 +59,7 @@ The first several bytes of padding (up to four bytes) indicate the total size of
 
 Flags byte uses only three bits in v.5. First two bits indicate, how many bytes indicate the padding size. The third byte indicates if signature is present. Other bits must be set to zero for backwards compatibility of future versions. 
 
-#### Topics
+### Topics
 
 It might not be feasible to try to decrypt ALL incoming envelopes, because decryption is quite expensive. In order to facilitate the filtering, Topics were introduced to the Whisper protocol. Topic gives a probabilistic hint about encryption key. Single Topic corresponds to a single key (symmetric or asymmetric). 
 
@@ -82,18 +77,19 @@ It is also possible to publish a partial Topic (first bytes), and then filter th
 
 Examples:
 
-	Partial Topic: 0x12 (first byte must be 0x12, the last three bytes - random)
-	Partial Topic: 0x1234 (first two bytes must be {0x12, 0x34}, the last two bytes - random)
-	Partial Topic: 0x123456 (first three bytes must be {0x12, 0x34, 0x56}, the last byte - random)
+    Partial Topic: 0x12 (first byte must be 0x12, the last three bytes - random)
+    Partial Topic: 0x1234 (first two bytes must be {0x12, 0x34}, the last two bytes - random)
+    Partial Topic: 0x123456 (first three bytes must be {0x12, 0x34, 0x56}, the last byte - random)
 
-#### Filters
+### Filters
 
 Any Ðapp can install multiple Filters utilising the Whisper API. Filters contain the secret key (symmetric or asymmetric), and some conditions, according to which the Filter should try to decrypt the incoming Envelopes. If Envelope does not satisfy those conditions, it should be ignored. Those are:
-- array of possible Topics (or partial Topics)
-- Sender address 
-- Recipient address 
-- PoW requirement
-- AcceptP2P: boolean value, indicating whether the node accepts direct messages from trusted peers (reserved for some specific purposes, like Client/MailServer implementation)
+
+-   array of possible Topics (or partial Topics)
+-   Sender address 
+-   Recipient address 
+-   PoW requirement
+-   AcceptP2P: boolean value, indicating whether the node accepts direct messages from trusted peers (reserved for some specific purposes, like Client/MailServer implementation)
 
 All incoming messages, that have satisfied the Filter conditions AND have been successfully decrypted, will be saved by the corresponding Filter until the Ðapp requests them. Ðapps are expected to poll for incoming messages at regular time intervals. All installed Filters are independent of each other, and their conditions might overlap. If a message satisfies the conditions of multiple Filters, it will be stored in each of the Filters.
 
@@ -101,7 +97,7 @@ In future versions subscription will be used instead of polling.
 
 In case of partial Topic, the message will match the Filter if first X bytes of the message Topic are equal to the corresponding bytes of partial Topic in Filter (where X can be 1, 2 or 3). The last bytes of the message Topic are ignored in this case.
 
-#### Proof of Work
+### Proof of Work
 
 The purpose of PoW is spam prevention, and also reducing the burden on the network. The cost of computing PoW can be regarded as the price you pay for allocated resources if you want the network to store your message for a specific time (TTL). In terms of resources, it does not matter if the network stores X equal messages for Y seconds, or Y messages for X seconds. Or N messages of Z bytes each versus Z messages of N bytes. So, required PoW should be proportional to both message size and TTL.
 
@@ -109,30 +105,30 @@ After creating the Envelope, its Nonce should be repeatedly incremented, and the
 
 In version 5, PoW is defined as average number of iterations, required to find the current BestBit (the number of leading zero bits in the hash), divided by message size and TTL:
 
-<code>PoW = (2^BestBit) / (size * TTL)</code>
+`PoW = (2^BestBit) / (size \* TTL)`
 
 Thus, we can use PoW as a single aggregated parameter for the message rating. In the future versions every node will be able to set its own PoW requirement dynamically and communicate this change to the other nodes via the Whisper protocol. Now it is only possible to set PoW requirement at the Ðapp startup.
 
-### Packet Codes (ÐΞVp2p level)
+## Packet Codes (ÐΞVp2p level)
 
-As a sub-protocol of [ÐΞVp2p](https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol), Whisper sends and receives its messages within ÐΞVp2p packets. 
+As a sub-protocol of [ÐΞVp2p](https://github.com/ethereum/devp2p/blob/master/rlpx.md), Whisper sends and receives its messages within ÐΞVp2p packets. 
 Whisper v5 supports the following packet codes:
 
-<code>Status (0x0)</code>
+`Status (0x0)`
 
-<code>Messages (0x1)</code>
+`Messages (0x1)`
 
-<code>P2PMessage (0x2)</code>
+`P2PMessage (0x2)`
 
-<code>P2PRequest (0x3)</code>
+`P2PRequest (0x3)`
 
 Also, the following codes might be supported in the future:
 
-<code>PoWRequirement (0x4)</code>
+`PoWRequirement (0x4)`
 
-<code>BloomFilterExchange (0x5)</code>
+`BloomFilterExchange (0x5)`
 
-### Basic Operation
+## Basic Operation
 
 Nodes are expected to receive and send envelopes continuously. They should maintain a map of envelopes, indexed by expiry time, and prune accordingly. They should also efficiently deliver messages to the front-end API through maintaining mappings between Ðapps, their filters and envelopes.
 
@@ -140,18 +136,18 @@ When a node's envelope memory becomes exhausted, a node may drop envelopes it co
 
 Nodes should always treat messages that its ÐApps have created no different than incoming messages.
 
-#### Creating and Sending Messages
+### Creating and Sending Messages
 
 To send a message, the node should place the envelope its envelope pool. Then this envelope will be forwarded to the peers in due course along with the other envelopes. Composing an envelope from a basic payload, is done in a few steps:
 
-- Compose the Envelope data by concatenating the relevant flag byte, padding, payload (randomly generated or provided by user), and an optional signature.
-- Encrypt the data symmetrically or asymmetrically.
-- Add a Topic.
-- Set the TTL attribute.
-- Set the expiry as the present Unix time plus TTL.
-- Set the nonce which provides the best PoW.
+-   Compose the Envelope data by concatenating the relevant flag byte, padding, payload (randomly generated or provided by user), and an optional signature.
+-   Encrypt the data symmetrically or asymmetrically.
+-   Add a Topic.
+-   Set the TTL attribute.
+-   Set the expiry as the present Unix time plus TTL.
+-   Set the nonce which provides the best PoW.
 
-### Mail Server
+## Mail Server
 
 Suppose, a Ðapp waits for messages with certain Topic and suffers an unexpected network failure for certain period of time. As a result, a number of important messages will be lost. Since those messages are expired, there is no way to resend them via the normal Whisper channels, because they will be rejected and the peer punished.
 
@@ -159,18 +155,16 @@ One possible way to solve this problem is to run a Mail Server, which would stor
 
 In order to facilitate this task, protocol-level support is provided in version 5. New message types are introduced to Whisper v.5: mailRequestCode and p2pCode.
 
-- mailRequestCode is used by the node to request historic (expired) messages from the Mail Server. The payload of this message should be understood by the Server. The Whisper protocol is entirely agnostic about it. It might contain a time frame, the node's authorization details, filtering information, payment details, etc.
+-   mailRequestCode is used by the node to request historic (expired) messages from the Mail Server. The payload of this message should be understood by the Server. The Whisper protocol is entirely agnostic about it. It might contain a time frame, the node's authorization details, filtering information, payment details, etc.
 
-- p2pCode is a peer-to-peer message, that is not supposed to be forwarded to other peers. It will also bypass the protocol-level checks for expiry and PoW threshold.
+-   p2pCode is a peer-to-peer message, that is not supposed to be forwarded to other peers. It will also bypass the protocol-level checks for expiry and PoW threshold.
 
 There is MailServer interface defined in the codebase for easy Mail Server implementation. One only needs to implement two functions:
 
-```
-type MailServer interface {
-	Archive(env *Envelope)
-	DeliverMail(whisperPeer *Peer, data []byte)
-}
-```
+    type MailServer interface {
+    	Archive(env *Envelope)
+    	DeliverMail(whisperPeer *Peer, data []byte)
+    }
 
 Archive should just save all incoming messages.
 

@@ -23,7 +23,7 @@ In order to obtain Ether, you need to either:
     Note that
     [this](https://ethereum-homestead.readthedocs.io/en/latest/mining.html)
     Homestead guide is outdated, which is the same as
-    [this](Mining) mining wiki).
+    [this](./mining.md) mining wiki).
     However, this is not recommended as Ethereum is going to transition
     to proof-of-stake, making mining obsolescent. Becoming a miner would
     involve investing in a mining rig (several GPUs, plus maybe other

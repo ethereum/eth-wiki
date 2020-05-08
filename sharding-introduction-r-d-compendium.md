@@ -22,7 +22,7 @@ For information on sharding, refer to (sorted roughly from the most recent/impor
 -   [Sharding workshop notes](https://hackmd.io/s/HJ_BbgCFz#%E2%9F%A0-General-Introduction)
 -   [Ethereum sharding workshop blog post](https://medium.com/@icebearhww/ethereum-sharding-workshop-in-taipei-a44c0db8b8d9)
 -   [HackMD note: Ethereum Research Sharding Compendium](http://notes.ethereum.org/s/BJc_eGVFM)
--   [Wiki: ethresear.ch Sharding Compendium](https://github.com/ethereum/wiki/wiki/Wiki:-ethresear.ch-Sharding-Compendium)
+-   [Wiki: ethresear.ch Sharding Compendium](./ethresearch-sharding-compendium.md)
 
 ## Implementations
 
@@ -50,7 +50,7 @@ Implementations under development include:
 ## Alternative scaling approaches to sharding
 
 -   Moved to [here](./alternative-blockchains-randomness-economics-and-other-research-topics.md).
--   For precursor research scaling ideas, see para 2. [here](https://vitalik.ca/2017-09-15-prehistory.html) (see the links to hypercubes and [Chain Fibers](https://github.com/ethereum/wiki/wiki/Chain-Fibers-Redux)—a precursor to [sharding](https://github.com/ethereum/wiki/wiki/Sharding-introduction-R&D-compendium), as well as hub-and-spoke chains). - 
+-   For precursor research scaling ideas, see para 2. [here](https://vitalik.ca/2017-09-15-prehistory.html) (see the links to hypercubes and [Chain Fibers](./chain-fibers-redux.md)—a precursor to [sharding](./sharding-introduction-r-d-compendium.md), as well as hub-and-spoke chains). - 
 -   [Scaling proposals](https://github.com/jpitts/eth-community-discussions/blob/master/proposals-to-scale.md)
 
 ## Glossary

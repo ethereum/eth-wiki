@@ -120,7 +120,7 @@ With the eth client
 ### Where can I learn about contract development?
 
 -   Articles
-    -   [Ethereum Development Tutorial](Ethereum-Development-Tutorial)
+    -   [Ethereum Development Tutorial](./howto/ethereum-development-tutorial.md)
 -   Videos
     -   [Ethereum](https://www.youtube.com/user/ethereumproject/videos)
     -   [EtherCasts](https://www.youtube.com/user/EtherCasts/videos)
@@ -177,7 +177,7 @@ With the eth client
 -   [The PoC 6 API for C++](https://github.com/ethereum/cpp-ethereum/wiki/Client-Development-with-PoC-6)
 -   [The PoC 5 API for Go](https://github.com/ethereum/go-ethereum/wiki/PoC-5-Public-Go-API)
 -   [The PoC 6 API for QML](https://github.com/ethereum/go-ethereum/wiki/QML-PoC6-API)
--   [The PoC 7 API for JavaScript](JavaScript-API)
+-   [The PoC 7 API for JavaScript](./javascript-api.md)
 
 ### Where can I learn about ÐApp development?
 

@@ -5,7 +5,7 @@ As a Ðapp developer you have three main resources which allow Ðapp development
 ## Main Resources
 
 -   [Web3 JavaScript API](JavaScript-API) - This is the main JavaScript SDK to use when you want to interact with a nodes API
--   [JSON RPC API](JSON-RPC) - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the [Web3 JavaScript API](https://github.com/ethereum/wiki/wiki/JavaScript-API).
+-   [JSON RPC API](JSON-RPC) - This is the low level JSON RPC 2.0 interface to interface with a node. This API is used by the [Web3 JavaScript API](./javascript-api.md).
 -   [Solidity Documentation](https://solidity.readthedocs.org/en/latest/) - Solidity is the Ethereum-developed Smart Contract language, which compiles to EVM (Ethereum Virtual Machine) opcodes.
 -   [Remix IDE](http://remix.ethereum.org/) - Solidity editor in the browser that helps efficient writing, debugging and deploying contracts
 -   [Dapp Insight](https://dappinsight.com) - This is a most popular Dapp analytics tool which listing all the running Dapps in the world with their true usage data. 

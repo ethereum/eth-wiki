@@ -1068,7 +1068,7 @@ Here, the call to `Deposit` will behave identical to
 
 ### Additional Resources for Understanding Events:
 
-- Javascript documentation: <https://github.com/ethereum/wiki/wiki/JavaScript-API#contract-events>
+- [Javascript documentation](./javascript-api.md)
 - Example usage of events: <https://github.com/debris/smart-exchange/blob/master/lib/contracts/SmartExchange.sol>
 - How to access them in js: <https://github.com/debris/smart-exchange/blob/master/lib/exchange_transactions.js>
 

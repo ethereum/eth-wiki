@@ -2,7 +2,7 @@
 
 **This spec is REVISION 23. Whenever you substantively (ie. not clarifications) update the algorithm, please update the revision number in this sentence. Also, in all implementations please include a spec revision number**
 
-Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. See [https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md](https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md) for the original version.
+Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. [Read the original version](./glossary/dagger-hashimoto.md).
 
 The general route that the algorithm takes is as follows:
 
@@ -13,7 +13,7 @@ The general route that the algorithm takes is as follows:
 
 The large dataset is updated once every 30000 blocks, so the vast majority of a miner's effort will be reading the dataset, not making changes to it.
 
-See [https://github.com/ethereum/wiki/wiki/Ethash-Design-Rationale](Ethash-Design-Rationale) for design rationale considerations for this algorithm.
+See [Ethhash design rationale](./ethash/design-rationale.md) for design rationale considerations for this algorithm.
 
 ## Definitions
 

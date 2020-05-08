@@ -49,9 +49,9 @@ NOTE: all clients are listed in alphabetical order.
 
 ## Other projects, tools, etc.
 
--   [sharding](https://github.com/ethereum/wiki/wiki/Sharding-introduction-R&D-compendium)
--   [Casper Proof-of-Stake](https://github.com/ethereum/wiki/wiki/Casper-Proof-of-Stake-compendium)
--   [smart contract languages](https://github.com/ethereum/wiki/wiki/%C3%90App-Development):
+-   [sharding](./sharding-introduction-r-d-compendium.md)
+-   [Casper Proof-of-Stake](./casper-proof-of-stake-compendium.md)
+-   [smart contract languages](./dapp-development.md):
     -   Solidity: [repo](https://github.com/ethereum/solidity), join the chat at <https://gitter.im/ethereum/solidity>, [docs](https://solidity.readthedocs.org/en/latest/), see the above link for more resources.
     -   Vyper: [repo](https://github.com/ethereum/vyper)
     -   LLL and other deprecated languages

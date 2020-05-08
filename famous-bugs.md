@@ -1,6 +1,6 @@
 # Famous Bugs
 
-Bugs that resulted in lost or stuck funds have been moved to here: <https://github.com/ethereum/wiki/wiki/Major-issues-resulting-in-lost-or-stuck-funds>
+Bugs that resulted in lost or stuck funds have been moved to [here](./major-issues-resulting-in-lost-or-stuck-funds.md).
 
 ## Geth Consensus Bug
 

@@ -34,7 +34,7 @@ See also: <https://bitcoin.org/en/vocabulary>
 
 See also: <http://ethereum.org/ethereum.html>
 
--   **Serialization**: the process of converting a data structure into a sequence of bytes. Ethereum internally uses an encoding format called recursive-length prefix encoding (RLP), described [here](https://github.com/ethereum/wiki/wiki/RLP)
+-   **Serialization**: the process of converting a data structure into a sequence of bytes. Ethereum internally uses an encoding format called recursive-length prefix encoding (RLP), described [here](./fundamentals/rlp.md)
 -   **Patricia tree** (or **trie**): a data structure which stores the state of every account. The trie is built by starting from each individual node, then splitting the nodes into groups of up to 16 and hashing each group, then making hashes of hashes and so forth until there is one final "root hash" for the entire trie. The trie has the important properties that (1) there is exactly one possible trie and therefore one possible root hash for each set of data, (2) it is very easy to update, add or remove nodes in the trie and generate the new root hash, (3) there is no way to modify any part of the tree without changing the root hash, so if the root hash is included in a signed document or a valid block the signature or proof of work secures the entire tree, and (4) one can provide just the "branch" of a tree going down to a particular node as cryptographic proof that that node is indeed in the tree with that exact content. Patricia trees are also used to store the internal storage of accounts as well as transactions and ommers. See [here](http://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/) for a more detailed description.
 -   **Uncle**: See **Ommer**, the gender-neutral alternative to aunt/uncle.
 -   **Ommer**: a child of a parent of a parent of a block that is not the parent, or more generally a child of an ancestor that is not itself an ancestor. If A is an ommer of B, B is a **nibling** (niece/nephew) of A.
@@ -50,7 +50,7 @@ See also: <http://ethereum.org/ethereum.html>
 
 ## Casper and scaling research
 
-See also: <https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ> and <https://github.com/ethereum/wiki/wiki/Sharding-FAQ>
+See [proof of stake FAQs](./proof-of-stake-faqs.md) and [sharding FAQs](./sharding-faqs.md).
 
 -   **Security deposit**: a quantity of ether that a user deposits into a mechanism (often a proof of stake consensus mechanism, though this can also be used for other applications) that a user normally expects to be able to eventually withdraw and recover, but which can be taken away in the event of malfeasance from the user's side.
 -   **Validator**: a participant in proof of stake consensus. Validators need to submit a security deposit in order to get included in the validator set.
