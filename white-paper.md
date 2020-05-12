@@ -1,14 +1,57 @@
-<!-- TITLE: White Paper -->
+---
+title: White Paper
+description: English Ethereum white paper
+published: true
+date: 2019-06-16T22:06:55.802Z
+tags: 
+---
 
 # A Next-Generation Smart Contract and Decentralized Application Platform
-
-[![Documentation chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/ethereum/documentation)
 
 > An introductory paper to Ethereum, introduced before launch, which is maintained.
 
 Satoshi Nakamoto's development of Bitcoin in 2009 has often been hailed as a radical development in money and currency, being the first example of a digital asset which simultaneously has no backing or [intrinsic value](http://bitcoinmagazine.com/8640/an-exploration-of-intrinsic-value-what-it-is-why-bitcoin-doesnt-have-it-and-why-bitcoin-does-have-it/) and no centralized issuer or controller. However, another - arguably more important - part of the Bitcoin experiment is the underlying blockchain technology as a tool of distributed consensus, and attention is rapidly starting to shift to this other aspect of Bitcoin. Commonly cited alternative applications of blockchain technology include using on-blockchain digital assets to represent custom currencies and financial instruments ([colored coins](https://docs.google.com/a/buterin.com/document/d/1AnkP_cVZTCMLIzw4DvsW6M8Q2JC0lIzrTLuoWu2z1BE/edit)), the ownership of an underlying physical device ([smart property](https://en.bitcoin.it/wiki/Smart_Property)), non-fungible assets such as domain names ([Namecoin](http://namecoin.org)), as well as more complex applications involving having digital assets being directly controlled by a piece of code implementing arbitrary rules ([smart contracts](http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html)) or even blockchain-based [decentralized autonomous organizations](http://bitcoinmagazine.com/7050/bootstrapping-a-decentralized-autonomous-corporation-part-i/) (DAOs). What Ethereum intends to provide is a blockchain with a built-in fully fledged Turing-complete programming language that can be used to create "contracts" that can be used to encode arbitrary state transition functions, allowing users to create any of the systems described above, as well as many others that we have not yet imagined, simply by writing up the logic in a few lines of code.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
 
+- [A Next-Generation Smart Contract and Decentralized Application Platform](#a-next-generation-smart-contract-and-decentralized-application-platform)
+- [Introduction to Bitcoin and Existing Concepts](#introduction-to-bitcoin-and-existing-concepts)
+  - [History](#history)
+  - [Bitcoin As A State Transition System](#bitcoin-as-a-state-transition-system)
+  - [Mining](#mining)
+  - [Merkle Trees](#merkle-trees)
+  - [Alternative Blockchain Applications](#alternative-blockchain-applications)
+  - [Scripting](#scripting)
+- [Ethereum](#ethereum)
+  - [Philosophy](#philosophy)
+  - [Ethereum Accounts](#ethereum-accounts)
+  - [Messages and Transactions](#messages-and-transactions)
+  - [Messages](#messages)
+  - [Ethereum State Transition Function](#ethereum-state-transition-function)
+  - [Code Execution](#code-execution)
+  - [Blockchain and Mining](#blockchain-and-mining)
+- [Applications](#applications)
+  - [Token Systems](#token-systems)
+  - [Financial derivatives and Stable-Value Currencies](#financial-derivatives-and-stable-value-currencies)
+  - [Identity and Reputation Systems](#identity-and-reputation-systems)
+  - [Decentralized File Storage](#decentralized-file-storage)
+  - [Decentralized Autonomous Organizations](#decentralized-autonomous-organizations)
+  - [Further Applications](#further-applications)
+- [Miscellanea And Concerns](#miscellanea-and-concerns)
+  - [Modified GHOST Implementation](#modified-ghost-implementation)
+  - [Fees](#fees)
+  - [Computation And Turing-Completeness](#computation-and-turing-completeness)
+  - [Currency And Issuance](#currency-and-issuance)
+  - [Mining Centralization](#mining-centralization)
+  - [Scalability](#scalability)
+- [Conclusion](#conclusion)
+- [Notes and Further Reading](#notes-and-further-reading)
+  - [Notes](#notes)
+  - [Further Reading](#further-reading)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Introduction to Bitcoin and Existing Concepts
 
@@ -36,7 +79,7 @@ But:
     
     APPLY({ Alice: $50, Bob: $50 },"send $70 from Alice to Bob") = ERROR
 
-The "state" in Bitcoin is the collection of all coins (technically, "unspent transaction outputs" or UTXO) that have been mined and not yet spent, with each UTXO having a denomination and an owner (defined by a 20-byte address which is essentially a cryptographic public key<sup>[fn. 1](White-Paper#notes)</sup>). A transaction contains one or more inputs, with each input containing a reference to an existing UTXO and a cryptographic signature produced by the private key associated with the owner's address, and one or more outputs, with each output containing a new UTXO to be added to the state.
+The "state" in Bitcoin is the collection of all coins (technically, "unspent transaction outputs" or UTXO) that have been mined and not yet spent, with each UTXO having a denomination and an owner (defined by a 20-byte address which is essentially a cryptographic public key<sup>[fn. 1](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup>). A transaction contains one or more inputs, with each input containing a reference to an existing UTXO and a cryptographic signature produced by the private key associated with the owner's address, and one or more outputs, with each output containing a new UTXO to be added to the state.
 
 The state transition function `APPLY(S,TX) -> S'` can be defined roughly as follows:
 
@@ -57,7 +100,7 @@ If we had access to a trustworthy centralized service, this system would be triv
 The algorithm for checking if a block is valid, expressed in this paradigm, is as follows:
 
 1. Check if the previous block referenced by the block exists and is valid.
-2. Check that the timestamp of the block is greater than that of the previous block<sup>[fn. 2](White-Paper#notes)</sup> and less than 2 hours into the future
+2. Check that the timestamp of the block is greater than that of the previous block<sup>[fn. 2](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup> and less than 2 hours into the future
 3. Check that the proof of work on the block is valid.
 4. Let `S[0]` be the state at the end of the previous block.
 5. Suppose `TX` is the block's transaction list with `n` transactions. For all `i` in `0...n-1`, set `S[i+1] = APPLY(S[i],TX[i])` If any application returns an error, exit and return false.
@@ -123,9 +166,9 @@ The intent of Ethereum is to create an alternative protocol for building decentr
 
 The design behind Ethereum is intended to follow the following principles:
 
-1. **Simplicity**: the Ethereum protocol should be as simple as possible, even at the cost of some data storage or time inefficiency.<sup>[fn. 3](White-Paper#notes)</sup> An average programmer should ideally be able to follow and implement the entire specification,<sup>[fn. 4](White-Paper#notes)</sup> so as to fully realize the unprecedented democratizing potential that cryptocurrency brings and further the vision of Ethereum as a protocol that is open to all. Any optimization which adds complexity should not be included unless that optimization provides very substantial benefit.
-2. **Universality**: a fundamental part of Ethereum's design philosophy is that Ethereum does not have "features".<sup>[fn. 5](White-Paper#notes)</sup> Instead, Ethereum provides an internal Turing-complete scripting language, which a programmer can use to construct any smart contract or transaction type that can be mathematically defined. Want to invent your own financial derivative? With Ethereum, you can. Want to make your own currency? Set it up as an Ethereum contract. Want to set up a full-scale Daemon or Skynet? You may need to have a few thousand interlocking contracts, and be sure to feed them generously, to do that, but nothing is stopping you with Ethereum at your fingertips.
-3. **Modularity**: the parts of the Ethereum protocol should be designed to be as modular and separable as possible. Over the course of development, our goal is to create a program where if one was to make a small protocol modification in one place, the application stack would continue to function without any further modification. Innovations such as Ethash (see the [Yellow Paper Appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) or [wiki article](Ethash)), modified Patricia trees ([Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.D), [wiki](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)) and RLP ([YP](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.B), [wiki](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)) should be, and are, implemented as separate, feature-complete libraries. This is so that even though they are used in Ethereum, even if Ethereum does not require certain features, such features are still usable in other protocols as well. Ethereum development should be maximally done so as to benefit the entire cryptocurrency ecosystem, not just itself.
+1. **Simplicity**: the Ethereum protocol should be as simple as possible, even at the cost of some data storage or time inefficiency.<sup>[fn. 3](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup> An average programmer should ideally be able to follow and implement the entire specification,<sup>[fn. 4](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup> so as to fully realize the unprecedented democratizing potential that cryptocurrency brings and further the vision of Ethereum as a protocol that is open to all. Any optimization which adds complexity should not be included unless that optimization provides very substantial benefit.
+2. **Universality**: a fundamental part of Ethereum's design philosophy is that Ethereum does not have "features".<sup>[fn. 5](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup> Instead, Ethereum provides an internal Turing-complete scripting language, which a programmer can use to construct any smart contract or transaction type that can be mathematically defined. Want to invent your own financial derivative? With Ethereum, you can. Want to make your own currency? Set it up as an Ethereum contract. Want to set up a full-scale Daemon or Skynet? You may need to have a few thousand interlocking contracts, and be sure to feed them generously, to do that, but nothing is stopping you with Ethereum at your fingertips.
+3. **Modularity**: the parts of the Ethereum protocol should be designed to be as modular and separable as possible. Over the course of development, our goal is to create a program where if one was to make a small protocol modification in one place, the application stack would continue to function without any further modification. Innovations such as Ethash (see the [Yellow Paper Appendix](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.J) or [wiki article](https://github.com/ethereum/wiki/wiki/Ethash)), modified Patricia trees ([Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.D), [wiki](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree)) and RLP ([YP](https://ethereum.github.io/yellowpaper/paper.pdf#appendix.B), [wiki](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP)) should be, and are, implemented as separate, feature-complete libraries. This is so that even though they are used in Ethereum, even if Ethereum does not require certain features, such features are still usable in other protocols as well. Ethereum development should be maximally done so as to benefit the entire cryptocurrency ecosystem, not just itself.
 4. **Agility**: details of the Ethereum protocol are not set in stone. Although we will be extremely judicious about making modifications to high-level constructs, for instance with the [sharding roadmap](https://ethresear.ch/t/sharding-phase-1-spec/1407/), abstracting execution, with only data availability enshrined in consensus. Computational tests later on in the development process may lead us to discover that certain modifications, e.g. to the protocol architecture or to the Ethereum Virtual Machine (EVM), will substantially improve scalability or security. If any such opportunities are found, we will exploit them.
 5. **Non-discrimination** and **non-censorship**: the protocol should not attempt to actively restrict or prevent specific categories of usage. All regulatory mechanisms in the protocol should be designed to directly regulate the harm and not attempt to oppose specific undesirable applications. A programmer can even run an infinite loop script on top of Ethereum for as long as they are willing to keep paying the per-computational-step transaction fee.
 
@@ -189,7 +232,7 @@ For example, suppose that the contract's code is:
     if !self.storage[calldataload(0)]:
         self.storage[calldataload(0)] = calldataload(32)
 
-Note that in reality the contract code is written in the low-level EVM code; this example is written in Serpent, one of our high-level languages, for clarity, and can be compiled down to EVM code. Suppose that the contract's storage starts off empty, and a transaction is sent with 10 ether value, 2000 gas, 0.001 ether gasprice, and 64 bytes of data, with bytes 0-31 representing the number `2` and bytes 32-63 representing the string `CHARLIE`.<sup>[fn. 6](White-Paper#notes)</sup> The process for the state transition function in this case is as follows:
+Note that in reality the contract code is written in the low-level EVM code; this example is written in Serpent, one of our high-level languages, for clarity, and can be compiled down to EVM code. Suppose that the contract's storage starts off empty, and a transaction is sent with 10 ether value, 2000 gas, 0.001 ether gasprice, and 64 bytes of data, with bytes 0-31 representing the number `2` and bytes 32-63 representing the string `CHARLIE`.<sup>[fn. 6](https://github.com/ethereum/wiki/wiki/White-Paper#notes)</sup> The process for the state transition function in this case is as follows:
 
 1. Check that the transaction is valid and well formed.
 2. Check that the transaction sender has at least 2000 * 0.001 = 2 ether. If it is, then subtract 2 ether from the sender's account.
@@ -212,7 +255,7 @@ The code in Ethereum contracts is written in a low-level, stack-based bytecode l
 
 The code can also access the value, sender and data of the incoming message, as well as block header data, and the code can also return a byte array of data as an output.
 
-The formal execution model of EVM code is surprisingly simple. While the Ethereum virtual machine is running, its full computational state can be defined by the tuple `(block_state, transaction, message, code, memory, stack, pc, gas)`, where `block_state` is the global state containing all accounts and includes balances and storage. At the start of every round of execution, the current instruction is found by taking the `pc`the byte of `code` (or 0 if `pc >= len(code)`), and each instruction has its own definition in terms of how it affects the tuple. For example, `ADD` pops two items off the stack and pushes their sum, reduces `gas` by 1 and increments `pc` by 1, and `SSTORE` pops the top two items off the stack and inserts the second item into the contract's storage at the index specified by the first item. Although there are many ways to optimize Ethereum virtual machine execution via just-in-time compilation, a basic implementation of Ethereum can be done in a few hundred lines of code.
+The formal execution model of EVM code is surprisingly simple. While the Ethereum virtual machine is running, its full computational state can be defined by the tuple `(block_state, transaction, message, code, memory, stack, pc, gas)`, where `block_state` is the global state containing all accounts and includes balances and storage. At the start of every round of execution, the current instruction is found by taking the `pc`-th byte of `code` (or 0 if `pc >= len(code)`), and each instruction has its own definition in terms of how it affects the tuple. For example, `ADD` pops two items off the stack and pushes their sum, reduces `gas` by 1 and increments `pc` by 1, and `SSTORE` pops the top two items off the stack and inserts the second item into the contract's storage at the index specified by the first item. Although there are many ways to optimize Ethereum virtual machine execution via just-in-time compilation, a basic implementation of Ethereum can be done in a few hundred lines of code.
 
 ## Blockchain and Mining
 
@@ -225,7 +268,7 @@ The Ethereum blockchain is in many ways similar to the Bitcoin blockchain, altho
 3. Check that the block number, difficulty, transaction root, uncle root and gas limit (various low-level Ethereum-specific concepts) are valid.
 4. Check that the proof of work on the block is valid.
 5. Let `S[0]` be the state at the end of the previous block.
-6. Let `TX` be the block's transaction list, with `n` transactions. For all `i` in `0...n-1`, set `S[i+1] = APPLY(S[i],TX[i])`. If any applications returns an error, or if the total gas consumed in the block up until this point exceeds the `GASLIMIT`, return an error. 
+6. Let `TX` be the block's transaction list, with `n` transactions. For all `i` in `0...n-1`, set `S[i+1] = APPLY(S[i],TX[i])`. If any application returns an error, or if the total gas consumed in the block up until this point exceeds the `GASLIMIT`, return an error. 
 7. Let `S_FINAL` be `S[n]`, but adding the block reward paid to the miner.
 8. Check if the Merkle tree root of the state `S_FINAL` is equal to the final state root provided in the block header. If it is, the block is valid; otherwise, it is not valid.
 
@@ -239,7 +282,7 @@ In general, there are three types of applications on top of Ethereum. The first 
 
 ## Token Systems
 
-On-blockchain token systems have many applications ranging from sub-currencies representing assets such as USD or gold to company stocks, individual tokens representing smart property, secure unforgeable coupons, and even token systems with no ties to conventional value at all, used as point systems for incentivization. Token systems are surprisingly easy to implement in Ethereum. The key point to understand is that all a currency, or token system, fundamentally is a database with one operation: subtract X units from A and give X units to B, with the provison that (1) A had at least X units before the transaction and (2) the transaction is approved by A. All that it takes to implement a token system is to implement this logic into a contract.
+On-blockchain token systems have many applications ranging from sub-currencies representing assets such as USD or gold to company stocks, individual tokens representing smart property, secure unforgeable coupons, and even token systems with no ties to conventional value at all, used as point systems for incentivization. Token systems are surprisingly easy to implement in Ethereum. The key point to understand is that a currency, or token system, fundamentally is a database with one operation: subtract X units from A and give X units to B, with the provision that (1) A had at least X units before the transaction and (2) the transaction is approved by A. All that it takes to implement a token system is to implement this logic into a contract.
 
 The basic code for implementing a token system in Serpent looks as follows:
 
@@ -460,7 +503,7 @@ The concept of an arbitrary state transition function as implemented by the Ethe
 1. A sophisticated reader may notice that in fact a Bitcoin address is the hash of the elliptic curve public key, and not the public key itself. However, it is in fact perfectly legitimate cryptographic terminology to refer to the pubkey hash as a public key itself. This is because Bitcoin's cryptography can be considered to be a custom digital signature algorithm, where the public key consists of the hash of the ECC pubkey, the signature consists of the ECC pubkey concatenated with the ECC signature, and the verification algorithm involves checking the ECC pubkey in the signature against the ECC pubkey hash provided as a public key and then verifying the ECC signature against the ECC pubkey.
 2. Technically, the median of the 11 previous blocks.
 3. The Ethereum protocol should be as simple as practical, but it may be necessary to have quite a high level of complexity, for instance to scale, to internalize costs of storage, bandwidth and I/O, for security, privacy, transparency, etc. Where complexity is necessary, documentation should be as clear, concise and up-to-date as possible, so that someone completely unschooled in Ethereum can learn it and become an expert.
-4. See the [Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) for the Ethereum Virtual Machine (which is useful as a specification and as a reference for building an Ethereum client from scratch), while also there are many topics in the Ethereum wiki, such as sharding developmment, core development, dapp development, research, Casper R&D, and networking protocols. For research and possible future implementation there is [ethresear.ch](https://ethresear.ch).
+4. See the [Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) for the Ethereum Virtual Machine (which is useful as a specification and as a reference for building an Ethereum client from scratch), while also there are many topics in the [Ethereum wiki](https://github.com/ethereum/wiki/wiki), such as sharding developmment, core development, dapp development, research, Casper R&D, and networking protocols. For research and possible future implementation there is [ethresear.ch](https://ethresear.ch).
 5. Another way of expressing this is abstraction. The [latest roadmap](https://ethresear.ch/t/sharding-phase-1-spec/1407/67) is planning to abstract execution, allowing execution engines to not necessarily have to follow one canonical specification, but for instance it could be tailored for a specific application, as well as a shard. (This heterogeneity of execution engines is not explicitly stated in the roadmap. There is also heterogeneous sharding, which Vlad Zamfir conceptualized.)
 6. Internally, 2 and "CHARLIE" are both numbers, with the latter being in big-endian base 256 representation. Numbers can be at least 0 and at most 2<sup>256</sup>-1.
 
@@ -484,8 +527,8 @@ The concept of an arbitrary state transition function as implemented by the Ethe
 16. GHOST: https://eprint.iacr.org/2013/881.pdf
 17. StorJ and Autonomous Agents, Jeff Garzik: http://garzikrants.blogspot.ca/2013/01/storj-and-bitcoin-autonomous-agents.html
 18. Mike Hearn on Smart Property at Turing Festival: http://www.youtube.com/watch?v=Pu4PAMFPo5Y
-19. [Ethereum RLP](fundamentals/RLP)
-20. [Ethereum Merkle Patricia trees](fundamentals/Patricia-Tree)
+19. Ethereum RLP: https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-RLP
+20. Ethereum Merkle Patricia trees: https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-Patricia-Tree
 21. Peter Todd on Merkle sum trees: http://sourceforge.net/p/bitcoin/mailman/message/31709140/
 
 For history of the white paper, see https://github.com/ethereum/wiki/blob/old-before-deleting-all-files-go-to-wiki-wiki-instead/old-whitepaper-for-historical-reference.md#historical-sources-of-the-white-paper
