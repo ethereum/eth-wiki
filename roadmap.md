@@ -2,7 +2,7 @@
 title: Roadmap
 description: Ethereum Roadmap, including links to ETH1x and ETH2 / Serenity
 published: true
-date: 2019-09-02T12:16:19.173Z
+date: 2019-12-11T12:26:03.174Z
 tags: 
 ---
 
@@ -29,7 +29,7 @@ Steps for EIPs:
 
 # Upgrade history
 
-| Fork number | Block number | Date | Name |
+| Fork number | Block number | Date (yyyy-mm-dd) | Name |
 |---|---|---|---|
 |0|1|2015-07-30|Frontier|
 |1|200000|2015-09-07|Frontier Thawing|
@@ -39,11 +39,12 @@ Steps for EIPs:
 |5|2675000|2016-11-22|Spurious Dragon|
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
-|8|TBD|TBD|[Istanbul](/roadmap/istanbul)|
-|9|TBD|TBD|[Berlin](/roadmap/berlin)|
-|10|TBD|TBD|[London](/roadmap/london)|
-|11|TBC|TBC|Shanghai|
-|12|TBC|TBC|Devcon names thereafter|
+|8|9069000|2019-12-08 |[Istanbul](/roadmap/istanbul)|
+|9|9200000|2019-12-31 (tentative)|[Muir Glacier](/roadmap/muir_glacier)|
+|10|TBD|2020-06 (tentative)|[Berlin](/roadmap/berlin)|
+|11|TBD|TBD|[London](/roadmap/london)|
+|12|TBC|TBC|Shanghai|
+|13|TBC|TBC|Devcon names thereafter|
 
 A good summary of the initial forks can be seen in the StackExchange response [here](https://ethereum.stackexchange.com/questions/13014/please-provide-a-summary-of-the-ethereum-hard-forks/13015#13015)
 
@@ -102,7 +103,22 @@ More details can be found in:
 
 # Istanbul
 
-See the wiki page [here](/roadmap/istanbul).
+See the wiki page [here](/roadmap/istanbul) and the hard fork meta [here](https://eips.ethereum.org/EIPS/eip-1679)
+
+EIP-152: Add Blake2 compression function F precompile
+EIP-1108: Reduce alt_bn128 precompile gas costs
+EIP-1344: Add ChainID opcode
+EIP-1884: Repricing for trie-size-dependent opcodes
+EIP-2028: Calldata gas cost reduction
+EIP-2200: Rebalance net-metered SSTORE gas cost with consideration of SLOAD gas cost change
+
+The Ethereum Foundation blog [here](https://blog.ethereum.org/2019/11/20/ethereum-istanbul-upgrade-announcement/).
+
+The Cat Herders blog [here](https://medium.com/ethereum-cat-herders/istanbul-testnets-are-coming-53973bcea7df).
+
+# Muir Glacier
+
+An update to delay the difficulty bomb, see the wiki page [here](/roadmap/muir_glacier).
 
 # Berlin
 

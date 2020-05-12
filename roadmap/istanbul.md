@@ -2,7 +2,7 @@
 title: Istanbul
 description: October 2019 Planned Ethereum Network Upgrade
 published: true
-date: 2019-08-31T06:17:37.384Z
+date: 2019-12-08T12:08:56.664Z
 tags: 
 ---
 
@@ -43,7 +43,7 @@ Specifically:
 
 **[EIP-2028](https://eips.ethereum.org/EIPS/eip-2028)** Makes zk-SNARKs and zk-STARKs cheaper by reducing the cost of calling data within transactions. This will make layer 2 solutions able to increase throughput.
 
-**[EIP-2200](https://gist.github.com/karalabe/adc43c07db9f03be82093cd5466562b0)** Changes the calculation of cost of storage in the EVM and will enable contracts to introduce new functions including re-entry locks and same-contract multi-send.
+**[EIP-2200](https://eips.ethereum.org/EIPS/eip-2200)** Changes the calculation of cost of storage in the EVM and will enable contracts to introduce new functions including re-entry locks and same-contract multi-send.
 
 ### Road to Istanbul in-brief
 1. EIPs were considered
@@ -73,8 +73,8 @@ Previous hard fork details are summarised in this stack exchange question [here]
 |5|2675000|2016-11-22|Spurious Dragon|
 |6|4370000|2017-10-16|Byzantium|
 |7|7280000|2019-02-28|Constantinople|
-|8|TBD|TBD|**Istanbul**|
-|9|TBD|TBD|Berlin (Devcon location)|
+|8|9069000|2019-12-04 ([tentative](https://twitter.com/TimBeiko/status/1190269448621633536))|**Istanbul**|
+|9|TBD|2020-06 (tentative)|Berlin (Devcon location)|
 |10|TBD|TBD|London|
 |11|TBC|TBC|Devcon names thereafter|
 
@@ -89,8 +89,7 @@ Previous hard fork details are summarised in this stack exchange question [here]
 * 2019-xx-xx Ropsten testnet fork
 * 2019-10-(8th to 11th) DevCon5, Osaka Japan
 * 2019-10-16 (Wed) Initial projected date for mainnet upgrade (“Istanbul”)
-* Istanbul + xx Months: Berlin fork (initially projected to )
-Rough plan is April 2020 for next Hardfork, go up to [Roadmap](/roadmap) for more info.
+* 2019-12-08 Mainnet upgrade ("Istanbul")
 
 # Proposals
 
@@ -497,8 +496,4 @@ Planned prototyping and implementation, in order of decreasing priority:
 
 # Post-Istanbul
 
-The next fork will be called Berlin and will primarily be composed of the EIPs that did not make it into Istanbul (those in the 'tentatively accepted' category).
-
-TODO: Create [eth.wiki/roadmap/berlin](eth.wiki/roadmap/berlin) page and reference the next fork meta-EIP, which will follow the template [here](https://eips.ethereum.org/EIPS/eip-233)
-
-The fork following Berlin will consist of EIPs mature enough to go in, following the EIP-centric development cycle. Forks will preferentially be small and on-time rather than large and late, with the knowledge that regular forks allow almost-ready EIPs a concrete timeline for incorporation.
+The next fork will be called [Muir Glacier](eth.wiki/roadmap/muir_glacier) and will address the difficulty bomb.
