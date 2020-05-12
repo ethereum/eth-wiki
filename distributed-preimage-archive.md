@@ -1,14 +1,12 @@
-<!-- TITLE: Distributed Preimage Archive -->
+# Distributed Preimage Archive
 
-
-
-# Purpose
+## Purpose
 
 DPA stores small pieces of information (preimage objects, arbitrary strings of bytes of limited length) retrievable by their (cryptographic) hash value. Thus, preimage objects stored in DPA have implicit integrity protection. The hash function used for key assignment is assumed to be collision-free, meaning that colliding keys for different preimage objects are assumed to be practically impossible.
 
 DPA serves as a fast, redundant store optimized for speedy retrieval and long-term reliability. Its most frequent use within Ethereum is to cache objects that can be retrieved and/or re-constructed by other means at significant cost. Since the key is derived from the preimage, there is no sense in which we can talk about multiple or alternative values for keys, the store is immutable.
 
-# High-level design
+## High-level design
 
 DPA is organized as a DHT (Distributed Hash Table): each participating node has an address (resolved into a network address by the p2p layer) coming from the same value set as the range of the hash function. In particular it is the hash of the public key (NodeID field of the DEVP2P handshake).
 
@@ -18,9 +16,9 @@ Each node is interested in being able to find preimages to hash values as fast a
 
 Nodes provide the following services through a public network API:
 
-1. Inserting new preimages into DPA
-1. Retrieving preimages from their own storage, if they have it.
-1. Sharing routing information to a given node address
+1.  Inserting new preimages into DPA
+2.  Retrieving preimages from their own storage, if they have it.
+3.  Sharing routing information to a given node address
 
 Locally, in addition to the above, nodes also provide the service of storing and retrieving large chunks of data. When storing, the data is disassembled into a tree of blocks according to a scheme resulting in the key corresponding to the root block. Given the key of the root block the data can then can be reassembled with the help of recursively retrieving the blocks in the tree. 
 
@@ -39,14 +37,14 @@ When a node received a store request, it remembers it for a while and does not f
 
 Retrieval requests have the following parameters:
 
-1. The hash of the queried pre-image
-1. Timeout value for routed retrieval, zero if routing is not required
+1.  The hash of the queried pre-image
+2.  Timeout value for routed retrieval, zero if routing is not required
 
 If the node has the pre-image, it is returned, called a delivery. Otherwise, the following happens:
 
-1. The entire row in the Kademlia table corresponding to the queried hash is returned.
-1. If routing is deemed not worth the effort (timeout is too short), this fact is also communicated.
-1. Otherwise, the same query is recursively done and if it succeeds within the specified timeout, the result is sent to the querying node.
+1.  The entire row in the Kademlia table corresponding to the queried hash is returned.
+2.  If routing is deemed not worth the effort (timeout is too short), this fact is also communicated.
+3.  Otherwise, the same query is recursively done and if it succeeds within the specified timeout, the result is sent to the querying node.
 
 Successfully found pre-images are automatically re-inserted into DPA.
 

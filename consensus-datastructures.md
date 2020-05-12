@@ -1,6 +1,6 @@
-<!-- TITLE: Consensus Datastructures -->
+# Consensus Datastructures
 
-```
+```text
 Block =
 	ParentHash: BlockHash,
 	UncleHash: BlockHash[],
@@ -19,11 +19,11 @@ Block =
 	Nonce: UInt8[8],
 ```
 
-```
+```text
 BlockHash = keccak256(rlp(Block))
 ```
 
-```
+```text
 StateRoot = patriciaTree(keccak256(Address) => rlp(
 	Nonce,
 	Balance,
@@ -32,19 +32,19 @@ StateRoot = patriciaTree(keccak256(Address) => rlp(
 ))
 ```
 
-```
+```text
 StorageRoot = patriciaTree(UInt256 => UInt256)
 ```
 
-```
+```text
 TransactionRoot = patriciaTree(rlp(TransactionIndexInBlock) => rlp(Transaction)).rootHash
 ```
 
-```
+```text
 TransactionReceiptRoot = patriciaTree(rlp(TransactionIndexInBlock) => rlp(TransactionReceipt)).rootHash
 ```
 
-```
+```text
 Transaction =
 	AccountNonce: UInt64
 	Price: UInt256
@@ -56,7 +56,7 @@ Transaction =
 	S: UInt256
 ```
 
-```
+```text
 TransactionReceipt =
 	PostStateOrStatus: StateRoot|UInt32, // TODO: figure out what this union actually means
 	CumulativeGasUsed: UInt64,

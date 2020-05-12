@@ -1,6 +1,4 @@
-<!-- TITLE: URL Hint Protocol -->
-
-
+# URL Hint Protocol
 
 There exists a root `Registry` contract at address 0x42 (this is the auctioning thing). There exists a contract interface, `register`, which `Registry` implements.
 
@@ -10,9 +8,9 @@ Entries in `register`, when looked up (indexed by a string32 name) have several 
 
 `register` is the address of a subregistry contract (some contract implementing `register`) which gets queried recursively.
 
-### Example
+## Example
 
-- `eth://gavofyork` results in the main Registry (at 0x42) being queried for the entry `gavofyork`. The content field of this entry (a SHA3 hash of a zip file OR manifest) is used to display content (see Content section for more info).
+-   `eth://gavofyork` results in the main Registry (at 0x42) being queried for the entry `gavofyork`. The content field of this entry (a SHA3 hash of a zip file OR manifest) is used to display content (see Content section for more info).
 
 ## URL Composition
 
@@ -24,17 +22,17 @@ Any periods `.` before the left-most slash `/` delineate components which are sp
 
 So non-canonical forms of the above address are:
 
-- `tools.gavofyork/site/contact`
-- `site.tools.gavofyork/contact`
-- `contact.site.tools.gavofyork`
+-   `tools.gavofyork/site/contact`
+-   `site.tools.gavofyork/contact`
+-   `contact.site.tools.gavofyork`
 
 NOTE: any periods after the leftmost `/` are treated no differently than other alphanumeric characters.
 
-### Example
+## Example
 
-- `eth://gavofyork/site` results in the main Registry (at 0x42) being queried for the entry `gavofyork`. The register field of this entry (an address of a `register`-implementing contract) is then queried for the entry `site`. The `content` field of this entry is used to display content.
+-   `eth://gavofyork/site` results in the main Registry (at 0x42) being queried for the entry `gavofyork`. The register field of this entry (an address of a `register`-implementing contract) is then queried for the entry `site`. The `content` field of this entry is used to display content.
 
-# Content
+## Content
 
 Normally Swarm would be used to determine the content from the content hash.
 
@@ -45,4 +43,3 @@ The content downloaded should be treated in many ways (and hashed) to discover w
 It will be up to the dapp/content uploader to keep URLHint entries updated.
 
 The address of the URLHint contract will be specified on an ad-hoc basis and users will be able to enter additional ones into their browser.
-

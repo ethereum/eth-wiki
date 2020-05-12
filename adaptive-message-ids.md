@@ -1,33 +1,32 @@
-<!-- TITLE: Adaptive Message IDs -->
+# Adaptive Message IDs
 
-
-
-### Goal
+## Goal
 
 Dynamic numeric identities for the sub protocol message types rather than the current fixed id system. This way we don't have to reserve parts of the message ID space up front and have a central entity to police this space to prevent clashes.
 
-### Overview
+## Overview
 
 All sub-protocol message IDs begin at 0x10 and count only those messages in the shared protocols, in alphabetical order. Sub-protocol versioning is provided in the base protocol to allow guarantees that there is consensus over the number and order of messages for each sub-protocol between peers.
 
-### Needed Changes
+## Needed Changes
 
-Wire protocol Hello package changed to (*note protocol version has changed to 1*):
+Wire protocol Hello package changed to (_note protocol version has changed to 1_):
 
 **Hello**
-[`0x00`: `P`, `p2pVersion`: `P`, `clientId`: `B`, [[`cap1`: `B_3`, `capVersion1`: `P`], [`cap2`: `B_3`, `capVersion2`: `P`], ...], `listenPort`: `P`, `nodeId`: `B_64`] First packet sent over the connection, and sent once by both sides. No other messages may be sent until a Hello is received.
-* `p2pVersion` Specifies the implemented version of the P2P protocol. Now must be 1.
-* `clientId` Specifies the client software identity, as a human-readable string (e.g. "Ethereum(++)/1.0.0").
-* `cap` Specifies a peer capability name as a length-3 ASCII string. Current supported capabilities are `eth`, `shh`.
-* `capVersion` Specifies a peer capability version as a positive integer. Current supported versions are 35 for `eth`, and 2 for `shh`.
-* `listenPort` specifies the port that the client is listening on (on the interface that the present connection traverses). If 0 it indicates the client is not listening.
-* `nodeId` is the Unique Identity of the node and specifies a 512-bit hash that identifies this node.
+\[`0x00`: `P`, `p2pVersion`: `P`, `clientId`: `B`, \[[`cap1`: `B_3`, `capVersion1`: `P`], [`cap2`: `B_3`, `capVersion2`: `P`], ...], `listenPort`: `P`, `nodeId`: `B_64`] First packet sent over the connection, and sent once by both sides. No other messages may be sent until a Hello is received.
+
+-   `p2pVersion` Specifies the implemented version of the P2P protocol. Now must be 1.
+-   `clientId` Specifies the client software identity, as a human-readable string (e.g. "Ethereum(++)/1.0.0").
+-   `cap` Specifies a peer capability name as a length-3 ASCII string. Current supported capabilities are `eth`, `shh`.
+-   `capVersion` Specifies a peer capability version as a positive integer. Current supported versions are 35 for `eth`, and 2 for `shh`.
+-   `listenPort` specifies the port that the client is listening on (on the interface that the present connection traverses). If 0 it indicates the client is not listening.
+-   `nodeId` is the Unique Identity of the node and specifies a 512-bit hash that identifies this node.
 
 All `eth` sub-protocol message ids are lowered by `0x10` and have a `+` prepended to them to denote that the given ID is offset by some dynamic amount.
 
-### Conversation overview
+## Conversation overview
 
-```
+```text
 [23:11:29] gavofyork: for each shared sub protocol, in alphabetic order, you deploy the subprotocol's messages
 [23:11:40] gavofyork: (after the basic p2p messages)
 [23:12:42] gavofyork: so for two whisper-only peers, defined message types are Hello = 0x00, Disconnect, Ping, Pong, GetPeers, Peers = 0x05, WhisperMessage1 = 0x06, ...

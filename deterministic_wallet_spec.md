@@ -1,4 +1,4 @@
-<!-- TITLE: Deterministic_Wallet_Spec -->
+# Deterministic Wallet Spec
 
 Address/key generation
 

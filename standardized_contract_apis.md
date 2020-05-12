@@ -1,10 +1,6 @@
-<!-- TITLE: Standardized_Contract_APIs -->
+# Standardized_Contract_APIs
 
-
-
-**NOTE** The token API is currently debated as an ERC (Ethereum request for comment) and may be outdated: https://github.com/ethereum/EIPs/issues/20
-
-***
+**NOTE** The token API is currently debated as an ERC (Ethereum request for comment) and may be outdated: <https://github.com/ethereum/EIPs/issues/20>
 
 Although Ethereum allows developers to create absolutely any kind of application without restriction to specific feature types, and prides itself on its "lack of features", there is nevertheless a need to standardize certain very common use cases in order to allow users and applications to more easily interact with each other. This includes sending currency units, registering names, making offers on exchanges, and other similar functions. A standard typically consists of a set of function signatures for a few methods, eg. `send`, `register`, `delete`, providing the set of arguments and their formats in the [Ethereum contract ABI](Ethereum-Contract-ABI) language.
 
@@ -16,7 +12,6 @@ All function names are in lower camelCase (eg. `sendCoin`) and all event names a
 
 Also known as tokens, coins and sub-currencies.
 
-
 ## TF Registries (see [ERC 22](https://github.com/ethereum/EIPs/issues/22) for the latest)
 
 Token registries contain information about tokens. There is at least one global registry (though other may create more like the global Registry) to which you can add your token. Adding your token to it would increase the experience of the user that the GUI Client can use or not.
@@ -26,11 +21,13 @@ Token registries contain information about tokens. There is at least one global 
 Registries (eg. domain name systems) have the following API:
 
 ### Methods
+
 #### reserve
 
 ```js
 reserve(string _name) returns (bool _success)
 ```
+
 Reserves a name and sets its owner to you if it is not yet reserved.
 
 #### owner
@@ -38,6 +35,7 @@ Reserves a name and sets its owner to you if it is not yet reserved.
 ```js
 owner(string _name) constant returns (address _r)
 ```
+
 Get the owner of a particular name.
 
 #### transfer
@@ -45,6 +43,7 @@ Get the owner of a particular name.
 ```js
 transfer(string _name, address _newOwner)
 ```
+
 Transfer ownership of a name.
 
 #### setAddr
@@ -60,6 +59,7 @@ Set the primary address associated with a name (similar to an A record in tradit
 ```js
 addr(string _name) constant returns (address _r)
 ```
+
 Get the primary address associated with a name.
 
 #### setContent
@@ -91,6 +91,7 @@ Records the name as referring to a sub-registrar at the given address.
 ```js
 subRegistrar(string _name) constant returns (address _r)
 ```
+
 Gets the sub-registrar associated with the given name.
 
 #### disown
@@ -107,16 +108,16 @@ Relinquishes control over a name that you currently control.
 
 ```js
 event Changed(string name, bytes32 indexed __hash_name)
-````
+```
 
 Triggered when changed to a domain happen.
-
 
 ## Data feeds
 
 The data feed standard is a _templated standard_, ie. in the below descriptions one should be free to replace `<t>` with any desired data type, eg. `uint256`, `bytes32`, `address`, `real192x64`.
 
 ### Methods
+
 #### get
 
 ```js
@@ -151,12 +152,12 @@ Sets the currency that the fee is paid in
 
 The latter two methods are optional; also, note that the fee may be charged either in ether or subcurrency; if the contract charges in ether then the `setFeeCurrency` method is unnecessary.
 
-
 ## Forwarding contracts (eg. multisig)
 
 Forwarding contracts will likely work very differently depending on what the authorization policy of each one is. However, there are some standard workflows that should be used as much as possible:
 
 ### Methods
+
 #### execute
 
 ```js

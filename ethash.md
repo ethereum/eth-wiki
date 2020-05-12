@@ -1,8 +1,8 @@
-<!-- TITLE: Ethash -->
+# Ethash
 
 **This spec is REVISION 23. Whenever you substantively (ie. not clarifications) update the algorithm, please update the revision number in this sentence. Also, in all implementations please include a spec revision number**
 
-Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. See [https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md](https://github.com/ethereum/wiki/blob/master/Dagger-Hashimoto.md) for the original version.
+Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. [Read the original version](./glossary/dagger-hashimoto.md).
 
 The general route that the algorithm takes is as follows:
 
@@ -13,9 +13,9 @@ The general route that the algorithm takes is as follows:
 
 The large dataset is updated once every 30000 blocks, so the vast majority of a miner's effort will be reading the dataset, not making changes to it.
 
-See [https://github.com/ethereum/wiki/wiki/Ethash-Design-Rationale](Ethash-Design-Rationale) for design rationale considerations for this algorithm.
+See [Ethhash design rationale](./ethash/design-rationale.md) for design rationale considerations for this algorithm.
 
-# Definitions
+## Definitions
 
 We employ the following definitions:
 
@@ -34,7 +34,7 @@ CACHE_ROUNDS = 3                  # number of rounds in cache production
 ACCESSES = 64                     # number of accesses in hashimoto loop
 ```
 
-##### A note regarding "SHA3" hashes described in this specification
+### A note regarding "SHA3" hashes described in this specification
 
 Ethereum's development coincided with the development of the SHA3 standard, and the
 standards process made a late change in the padding of the finalized hash algorithm, so that Ethereum's
@@ -201,7 +201,7 @@ In order to compute the seed hash that would be used to mine on top of a given b
 
 Note that for smooth mining and verifying, we recommend pre-computing future seedhashes and datasets in a separate thread.
 
-# Appendix
+## Appendix
 
 The following code should be prepended if you are interested in running the above python spec as code.
 
@@ -1005,6 +1005,3 @@ cache_sizes = [
 284163136, 284294848, 284426176, 284556992, 284687296, 284819264, 
 284950208, 285081536]
 ```
-
-
-This is my edit to update the timestamp.

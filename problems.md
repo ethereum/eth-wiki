@@ -1,39 +1,37 @@
-<!-- TITLE: Problems -->
+# Problems
 
 The science of cryptography, which has existed to some degree for millennia but in a formal and systematized form for less than fifty years, can be most simply defined as the study of communication in an adversarial environment. In a similar vein, we can define cryptoeconomics as a field that goes one step further: the study of economic interaction in an adversarial environment. To distinguish itself from traditional economics, which certainly studies both economic interaction and adversaries, cryptoeconomics generally focuses on interactions that take place over network protocols. Particular domains of cryptoeconomics include:
 
-* Online trust and reputation systems
-* Cryptographic tokens / cryptocurrencies, and more generally digital assets
-* Self-executing "smart" contracts
-* Consensus algorithms
-* Anti-spam and anti-sybil attack algorithms
-* Incentivized marketplaces for computational resources
-* Decentralized systems for social welfare / mutual aid / basic income
-* Decentralized governance (for both for-profit and non-profit entities)
+-   Online trust and reputation systems
+-   Cryptographic tokens / cryptocurrencies, and more generally digital assets
+-   Self-executing "smart" contracts
+-   Consensus algorithms
+-   Anti-spam and anti-sybil attack algorithms
+-   Incentivized marketplaces for computational resources
+-   Decentralized systems for social welfare / mutual aid / basic income
+-   Decentralized governance (for both for-profit and non-profit entities)
 
 The increasing prominence of cryptoeconomics in the last five years is to a large extent the result of the growth of cryptocurrencies and digital tokens, and brings a new, and interesting, dimension to cryptography. While before cryptography was, by and large, a purely computational and information-theoretic science, with strong guarantees built on security assumptions that are close to absolute, once money enters the picture the perfect world of mathematics must interact with a much more messy reality of human social structures, economic incentives, partial guarantees and known vulnerabilities that can only be mitigated, and not outright removed. While a cryptographer is used to assumptions of the form "this algorithm is guaranteed to be unbreakable provided that these underlying math problems remain hard", the world of cryptoeconomics must contend with fuzzy empirical factors such as the difficulty of collusion attacks, the relative quantity of altruistic, profit-seeking and anti-altruistic parties, the level of concentration of different kinds of resources, and in some cases even sociocultural circumstances.
 
 In traditional applied cryptography, security assumptions tend to look something like this:
 
-1. No one can do more than 2<sup>79</sup> computational steps
-2. Factoring is hard (ie. superpolynomial)
-3. Taking nth roots modulo composites is hard
-4. The elliptic curve discrete logarithm problem cannot be solved faster than in 2<sup>n/2</sup> time
+1.  No one can do more than 2<sup>79</sup> computational steps
+2.  Factoring is hard (ie. superpolynomial)
+3.  Taking nth roots modulo composites is hard
+4.  The elliptic curve discrete logarithm problem cannot be solved faster than in 2<sup>n/2</sup> time
 
 In cryptoeconomics, on the other hand, the basic security assumptions that we depend on are, alongside the cryptographic assumptions, roughly the following:
 
-1. No set of individuals that control more than 25% of all computational resources is capable of colluding
-2. No set of individuals that control more than 25% of all money is capable of colluding
-3. The amount of computation of a certain proof of work function that can be accomplished with a given amount of money is not superlinear beyond a point which is reasonably low
-4. There exists a non-negligible number of altruists and a non-negligible number of crazies or political opponents of the system, and the majority of users can be reasonably modeled as being close to economically rational
-5. The number of users of a system is large, and users can appear or disappear at any time, although at least some users are persistent
-6. Censorship is impossible, and any two nodes can send messages to each other relatively quickly.
-7. It is trivial to generate a very large number of IP addresses, and one can purchase an unlimited amount of network bandwidth
-8. Many users are anonymous, so negative reputations and debts are close to unenforceable
+1.  No set of individuals that control more than 25% of all computational resources is capable of colluding
+2.  No set of individuals that control more than 25% of all money is capable of colluding
+3.  The amount of computation of a certain proof of work function that can be accomplished with a given amount of money is not superlinear beyond a point which is reasonably low
+4.  There exists a non-negligible number of altruists and a non-negligible number of crazies or political opponents of the system, and the majority of users can be reasonably modeled as being close to economically rational
+5.  The number of users of a system is large, and users can appear or disappear at any time, although at least some users are persistent
+6.  Censorship is impossible, and any two nodes can send messages to each other relatively quickly.
+7.  It is trivial to generate a very large number of IP addresses, and one can purchase an unlimited amount of network bandwidth
+8.  Many users are anonymous, so negative reputations and debts are close to unenforceable
 
 There will also be additional security assumptions specific to certain problems. Thus, quite often it will not even be possible to definitively say that a certain protocol is secure or insecure or that a certain problem has been solved. Rather, it will be necessary to create solutions that are optimized for particular empirical and social realities, and continue further and further optimizing them over time.
-
-
 
 ## Technology
 
@@ -51,11 +49,11 @@ Ideally, a blockchain design should exist that works, and has similar security p
 
 **Additional Assumptions and Requirements**:
 
-* There exist a large number of miners in the network
-* Miners may be using specialized hardware or unspecialized hardware. Specialized hardware should be assumed to be more powerful than unspecialized hardware by a large (eg. 10000) constant factor at specific tasks.
-* Ordinary users will be using unspecialized hardware
-* Ideally, after some number of blocks (perhaps logarithmic in the total size of the network) every transaction should require 51% of network hashpower to reverse. However, solutions where transactions can pay very small fees for a lower "level" of security are acceptable, though one should take care to avoid situations where an attacker can profit by performing one attack to reverse very many small transactions at the same time
-* Ideally, the solution should work for and maintain as many properties as possible of a generalized account-based blockchain (eg. Ethereum), though solutions specific to currency, domain registrations or other specialized use cases are acceptable
+-   There exist a large number of miners in the network
+-   Miners may be using specialized hardware or unspecialized hardware. Specialized hardware should be assumed to be more powerful than unspecialized hardware by a large (eg. 10000) constant factor at specific tasks.
+-   Ordinary users will be using unspecialized hardware
+-   Ideally, after some number of blocks (perhaps logarithmic in the total size of the network) every transaction should require 51% of network hashpower to reverse. However, solutions where transactions can pay very small fees for a lower "level" of security are acceptable, though one should take care to avoid situations where an attacker can profit by performing one attack to reverse very many small transactions at the same time
+-   Ideally, the solution should work for and maintain as many properties as possible of a generalized account-based blockchain (eg. Ethereum), though solutions specific to currency, domain registrations or other specialized use cases are acceptable
 
 ### 2. Timestamping
 
@@ -67,20 +65,20 @@ However, this solution requires an important ingredient: the blockchain must be 
 
 **Additional Assumptions and Requirements**
 
-* All legitimate users have clocks in a normal distribution around some "real" time with standard deviation 20 seconds.
-* No two nodes are more than 20 seconds apart in terms of the amount of time it takes for a message originating from one node to reach any other node.
-* The solution is allowed to rely on an existing concept of "N nodes"; this would in practice be enforced with proof-of-stake or non-sybil tokens (see #9).
-* The system should continuously provide a time which is within 120s (or less if possible) of the internal clock of >99% of honestly participating nodes. Note that this also implies that the system should be self-consistent to within about 190s.
-* The system should exist without relying on any kind of proof-of-work.
-* External systems may end up relying on this system; hence, it should remain secure against attackers controlling < 25% of nodes regardless of incentives.
+-   All legitimate users have clocks in a normal distribution around some "real" time with standard deviation 20 seconds.
+-   No two nodes are more than 20 seconds apart in terms of the amount of time it takes for a message originating from one node to reach any other node.
+-   The solution is allowed to rely on an existing concept of "N nodes"; this would in practice be enforced with proof-of-stake or non-sybil tokens (see #9).
+-   The system should continuously provide a time which is within 120s (or less if possible) of the internal clock of >99% of honestly participating nodes. Note that this also implies that the system should be self-consistent to within about 190s.
+-   The system should exist without relying on any kind of proof-of-work.
+-   External systems may end up relying on this system; hence, it should remain secure against attackers controlling &lt; 25% of nodes regardless of incentives.
 
 ### 3. Arbitrary Proof of Computation
 
 Perhaps the holy grail of the study zero-knowledge proofs is the concept of an arbitrary proof of computation: given a program P with input I, the challenge is to create a zero-knowledge proof that you ran P with input I and received output O, such that the proof can be verified quickly (ie. in polylogarithmic or ideally constant time) even if the original computation took a very large number of steps to complete. In an ideal setup, the proof would even hide the value of I, just proving that you ran P with some output with result O, and if I needs to be made public it can be embedded into the program. Such a primitive, if possible, would have massive implications for cryptocurrency:
 
-1. The blockchain scalability problem would be much easier to solve. Instead of miners publishing blocks containing a list of transactions, they would be publishing a proof that they ran the blockchain state updater with some list of transactions and produced a certain output; thus, instead of transactions needing to be verified by every node in the network, they could be processed by one miner and then every other miner and user could quickly verify the proof of computation and if the proof turns out correct they would accept the new state. This is not a complete solution, because there would still be a need to transmit data, but the problem would be much easier with this powerful building block.
-2. The blockchain privacy problem would be much easier to solve. The blockchain scalability solution above would hide the details behind individual transactions; it would only reveal the fact that all of them are legitimate, so transactions would be hidden from everyone but the sender and the receiver.
-3. It would become computationally viable to use a Turing-complete consensus network as a generic distributed cloud computing system; if you have any computation you wanted done, you would be able to publish the program for miners and miners would be able to run the program for you and deliver the result alongside a proof of its validity.
+1.  The blockchain scalability problem would be much easier to solve. Instead of miners publishing blocks containing a list of transactions, they would be publishing a proof that they ran the blockchain state updater with some list of transactions and produced a certain output; thus, instead of transactions needing to be verified by every node in the network, they could be processed by one miner and then every other miner and user could quickly verify the proof of computation and if the proof turns out correct they would accept the new state. This is not a complete solution, because there would still be a need to transmit data, but the problem would be much easier with this powerful building block.
+2.  The blockchain privacy problem would be much easier to solve. The blockchain scalability solution above would hide the details behind individual transactions; it would only reveal the fact that all of them are legitimate, so transactions would be hidden from everyone but the sender and the receiver.
+3.  It would become computationally viable to use a Turing-complete consensus network as a generic distributed cloud computing system; if you have any computation you wanted done, you would be able to publish the program for miners and miners would be able to run the program for you and deliver the result alongside a proof of its validity.
 
 There is a large amount of existing research on this topic, including a protocol known as "SCIP" (Succinct Computational Integrity and Privacy) that is already working in test environments, although with the limitation that a trusted third party is required to initially set up the keys; use of this prior work by both its original developers and others is encouraged.
 
@@ -88,9 +86,9 @@ There is a large amount of existing research on this topic, including a protocol
 
 **Requirements And Additional Assumptions**
 
-* The runtime of `POC_PROVE` should be in `O(n*polylog(n))` where `n` is the number of steps required to run the program.
-* The runtime of `POC_VERIFY` should be either constant or logarithmic in the number of steps, and at most linear in the maximum memory usage of the program.
-* The protocol should require no trusted third parties. If TTPs are required, the protocol should include a mechanism for simulating one efficiently using secure multiparty computation.
+-   The runtime of `POC_PROVE` should be in `O(n*polylog(n))` where `n` is the number of steps required to run the program.
+-   The runtime of `POC_VERIFY` should be either constant or logarithmic in the number of steps, and at most linear in the maximum memory usage of the program.
+-   The protocol should require no trusted third parties. If TTPs are required, the protocol should include a mechanism for simulating one efficiently using secure multiparty computation.
 
 ### 4. Code Obfuscation
 
@@ -108,8 +106,8 @@ If this construction can be made better, the potential benefits are massive. The
 
 **Additional Assumptions and Requirements**
 
-* Successful attacks must have an expected runtime above 2^80
-* The algorithm should be sufficiently fast that a standard ECDSA signature or an AES encryption should be feasible within 10<sup>8</sup> computational steps (more specifically, 10<sup>8</sup> gas in the Ethereum VM)
+-   Successful attacks must have an expected runtime above 2^80
+-   The algorithm should be sufficiently fast that a standard ECDSA signature or an AES encryption should be feasible within 10<sup>8</sup> computational steps (more specifically, 10<sup>8</sup> gas in the Ethereum VM)
 
 ### 5. Hash-Based Cryptography
 
@@ -123,10 +121,10 @@ The question is, can we do better? There is an approach known as hash ladders, a
 
 **Requirements And Additional Assumptions**
 
-* The computational effort of producing a signature should be less than 2<sup>24</sup> computational steps, assuming a hash takes 2<sup>8</sup> steps (a reasonable assumption due to hardware optimizations and in the future hashing ASICs built into chips)
-* The size of a signature should be as small as possible
-* The size of a public key should be as small as possible
-* The signature algorithm should be scalable to add any number of uses, although likely at the cost of adding a constant number of bytes per signature for every 2x increase in the maximum number of uses, and if possible the setup time should be sublinear in the number of uses.
+-   The computational effort of producing a signature should be less than 2<sup>24</sup> computational steps, assuming a hash takes 2<sup>8</sup> steps (a reasonable assumption due to hardware optimizations and in the future hashing ASICs built into chips)
+-   The size of a signature should be as small as possible
+-   The size of a public key should be as small as possible
+-   The signature algorithm should be scalable to add any number of uses, although likely at the cost of adding a constant number of bytes per signature for every 2x increase in the maximum number of uses, and if possible the setup time should be sublinear in the number of uses.
 
 ## Consensus
 
@@ -159,17 +157,17 @@ One approach at solving the problem is creating a proof-of-work algorithm based 
 
 Ultimately, perfect ASIC resistance is impossible; there are always portions of circuits that are going to be unused by any specific algorithm and that can be trimmed to cut costs in a specialized device. However, what we are looking for is not perfect ASIC resistance but rather economic ASIC resistance. Economic ASIC resistance can be defined as follows. First of all, we note that in a non-specialized environment mining returns are sublinear - everyone owns one computer, say with N units of unused computational power, so up to N units of mining cost only the additional electricity cost, whereas mining beyond N units costs both electricity and hardware. If the cost of mining with specialized hardware, including the cost of research and development, is higher per unit hashpower than the cost of those first N units of mining per user then one can call an algorithm economically ASIC resistant.
 
-For a more in-depth discussion on ASIC-resistant hardware, see [https://blog.ethereum.org/2014/06/19/mining/](https://blog.ethereum.org/2014/06/19/mining/)
+For a more in-depth discussion on ASIC-resistant hardware, see <https://blog.ethereum.org/2014/06/19/mining/>
 
 **Problem**: Create two functions, `PoWProduce(data,diff) -> nonce` and `PoWVerify(data,nonce,diff) -> { 0, 1 }`, to serve as alternatives to Hashcash such that it is economically unattractive to produce an ASIC for `PoWProduce`
 
 **Additional Assumptions And Requirements**:
 
-* `PoWProduce` must have expected runtime linear in `diff`
-* `PoWVerify` must have runtime at most polylogarithmic in `diff`
-* Running `PoWProduce` should be the most efficient, or very close to the most efficient, way to produce values that return `1` when checked with `PoWVerify` (ie. no software optimization)
-* `PoWProduce` must not be superlinear in computational power or time; that is to say, the expected number of successful `PoWProduce` computations for a node with `N` dollars worth of hardware after `t` seconds should be bounded by `kNt` for some `k`. Furthermore, the linearity should kick in quickly; ie. $1000 worth of mining hardware should function with over 90% efficiency.
-* It should be shown with reasonably rigorous technological and economic analysis that the algorithm is economically ASIC resistant.
+-   `PoWProduce` must have expected runtime linear in `diff`
+-   `PoWVerify` must have runtime at most polylogarithmic in `diff`
+-   Running `PoWProduce` should be the most efficient, or very close to the most efficient, way to produce values that return `1` when checked with `PoWVerify` (ie. no software optimization)
+-   `PoWProduce` must not be superlinear in computational power or time; that is to say, the expected number of successful `PoWProduce` computations for a node with `N` dollars worth of hardware after `t` seconds should be bounded by `kNt` for some `k`. Furthermore, the linearity should kick in quickly; ie. $1000 worth of mining hardware should function with over 90% efficiency.
+-   It should be shown with reasonably rigorous technological and economic analysis that the algorithm is economically ASIC resistant.
 
 ### 7. Useful Proof of Work
 
@@ -183,12 +181,12 @@ Note that there is one major concern with this approach that has been identified
 
 **Requirements**
 
-* `PoWProduce` must have expected runtime linear in `diff`
-* `PoWVerify` must have expected runtime at most polylogarithmic in `diff`
-* Running `PoWProduce` should be the most efficient way to produce values that return `1` when checked with `PoWVerify`
-* `PoWProduce` must not be superlinear in computational power or time; that is to say, the expected number of successful `PoWProduce` computations for a node with `N` dollars worth of hardware after `t` seconds should be bounded by `kNt` for some `k`. Furthermore, the linearity should kick in quickly; ie. $1000 worth of mining hardware should function with over 90% efficiency.
-* `PoWProduce` must produce a public good, such that the total value to everyone of the public good produced is greater than the cost of all resources invested into the mining process.
-* The system must be able to exist without a trusted third party, but it is reasonable to allow a trusted third party to serve as a data source for useful computations. If the trusted third party acts maliciously in any way, the public good may be negated but the blockchain mining should not be compromised.
+-   `PoWProduce` must have expected runtime linear in `diff`
+-   `PoWVerify` must have expected runtime at most polylogarithmic in `diff`
+-   Running `PoWProduce` should be the most efficient way to produce values that return `1` when checked with `PoWVerify`
+-   `PoWProduce` must not be superlinear in computational power or time; that is to say, the expected number of successful `PoWProduce` computations for a node with `N` dollars worth of hardware after `t` seconds should be bounded by `kNt` for some `k`. Furthermore, the linearity should kick in quickly; ie. $1000 worth of mining hardware should function with over 90% efficiency.
+-   `PoWProduce` must produce a public good, such that the total value to everyone of the public good produced is greater than the cost of all resources invested into the mining process.
+-   The system must be able to exist without a trusted third party, but it is reasonable to allow a trusted third party to serve as a data source for useful computations. If the trusted third party acts maliciously in any way, the public good may be negated but the blockchain mining should not be compromised.
 
 ### 8. Proof of Stake
 
@@ -202,14 +200,14 @@ Another problem to keep in mind is the issue of so-called "long-range attacks" -
 
 The Slasher algorithm, described [here](http://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/) and implemented by Zack Hess as a proof-of-concept [here](https://github.com/zack-bitcoin/slasher), represents my own attempt at fixing the nothing-at-stake problem. The core idea is that (1) the miners for each block are determined ahead of time, so in the event of a fork a miner will either have an opportunity to mine a given block on all chains or no chains, and (2) if a miner is caught signing two distinct blocks with the same block number they can be deprived of their reward. The algorithm is viable and effective, but it suffers from two flaws of unknown significance. First, if all of the miners for a given block learn each other's identities beforehand, they can meet up and collude to shut down the network. Second, the nothing-at-stake problem remains for attacks going back more than 3000 blocks, although this is a smaller issue because such attacks would be very obvious and can automatically trigger warnings.
 
-For a more in-depth discussion on proof of stake, see [https://blog.ethereum.org/2014/07/05/stake/](https://blog.ethereum.org/2014/07/05/stake/)
+For a more in-depth discussion on proof of stake, see <https://blog.ethereum.org/2014/07/05/stake/>
 
 **Problem**: create a proof-of-stake algorithm that solves the nothing-at-stake problem and long-range attack problems, without introducing new collusion risks that require less than 25% of stakeholders to succeed.
 
 **Additional Requirements And Assumptions**
 
-* The expected return from mining should be bounded by `k` times the miner's stake for some `k`, and assuming $1 billion total participating stake a stake of $1000 should be able to reach 90% of this maximum efficiency.
-* The algorithm should be fully incentive-compatible, addressing the double-voting issue defined above and the collusion issue defined above at both short and long range.
+-   The expected return from mining should be bounded by `k` times the miner's stake for some `k`, and assuming $1 billion total participating stake a stake of $1000 should be able to reach 90% of this maximum efficiency.
+-   The algorithm should be fully incentive-compatible, addressing the double-voting issue defined above and the collusion issue defined above at both short and long range.
 
 ### 9. Proof of Storage
 
@@ -225,12 +223,12 @@ However, the problem with Permacoin is that it leaves unclear what files should 
 
 **Additional Assumptions And Requirements**
 
-* The currency must be future-proof, being able to expand the amount of data stored over time; the system should not eventually fall into some failure state if hard disk space continues to get cheaper and more efficient.
-* The currency should ideally be maximally useful. At the least, the currency should allow people to upload their own files and have them stored, providing an uploading network with minimal cryptographic overhead, although ideally the currency should select for files that are public goods, providing net total value to society in excess of the number of currency units issued.
-* The expected return from mining should be at most slightly superlinear, ie. it must be bounded by `ks/(1-s)` for some `k`, where `s` is the miner's share of the total network, although perfect linearity is ideal.
-* The system should be maximally resistant against mining pool centralization as a result of any small degree of superlinearity.
-* The system should be secure against nothing-at-stake and long-range attacks.
-* The system should be secure against attacker involving users uploading specially formatted files or storing their own data.
+-   The currency must be future-proof, being able to expand the amount of data stored over time; the system should not eventually fall into some failure state if hard disk space continues to get cheaper and more efficient.
+-   The currency should ideally be maximally useful. At the least, the currency should allow people to upload their own files and have them stored, providing an uploading network with minimal cryptographic overhead, although ideally the currency should select for files that are public goods, providing net total value to society in excess of the number of currency units issued.
+-   The expected return from mining should be at most slightly superlinear, ie. it must be bounded by `ks/(1-s)` for some `k`, where `s` is the miner's share of the total network, although perfect linearity is ideal.
+-   The system should be maximally resistant against mining pool centralization as a result of any small degree of superlinearity.
+-   The system should be secure against nothing-at-stake and long-range attacks.
+-   The system should be secure against attacker involving users uploading specially formatted files or storing their own data.
 
 ## Economics
 
@@ -250,10 +248,10 @@ Another approach is to attempt to create a currency which tracks a specific asse
 
 **Requirements**
 
-* The expected root-mean-square daily change in the logarithm of the price of the asset should be less than 25% of that of Bitcoin under similar conditions. Ideally, the asset should be guaranteed to almost always maintain a value within 10% of an arbitrary cryptographic or real-world asset for which price information is easily accessible
-* The expectation analysis should take into account black swan risks (ie. systems where the variance is 0% 99% of the time but 10x in a day the other 1% of the time are unacceptable)
-* The solution must come with a model, including parameters such as short-term-consumption purchases, medium-term purchases, speculative purchases, positive and negative media, adoption and regulatory events, irrational actors and actors with political motives, show that their model well fits the history of Bitcoin and potentially major altcoins without overfitting, and show that under the model the other two requirements hold
-* Zero-total-supply assets, ie. assets where each unit is balanced by a collateralized debt of a unit, are allowed, although such systems must include a robust margin-calling mechanism because it is assumed that most users are anonymous and can therefore trivially run away from debts
+-   The expected root-mean-square daily change in the logarithm of the price of the asset should be less than 25% of that of Bitcoin under similar conditions. Ideally, the asset should be guaranteed to almost always maintain a value within 10% of an arbitrary cryptographic or real-world asset for which price information is easily accessible
+-   The expectation analysis should take into account black swan risks (ie. systems where the variance is 0% 99% of the time but 10x in a day the other 1% of the time are unacceptable)
+-   The solution must come with a model, including parameters such as short-term-consumption purchases, medium-term purchases, speculative purchases, positive and negative media, adoption and regulatory events, irrational actors and actors with political motives, show that their model well fits the history of Bitcoin and potentially major altcoins without overfitting, and show that under the model the other two requirements hold
+-   Zero-total-supply assets, ie. assets where each unit is balanced by a collateralized debt of a unit, are allowed, although such systems must include a robust margin-calling mechanism because it is assumed that most users are anonymous and can therefore trivially run away from debts
 
 ### 11. Decentralized Public Goods Incentivization
 
@@ -261,11 +259,11 @@ One of the challenges in economic systems in general is the problem of "public g
 
 So far, most problems to public goods have involved centralization; some large organization, whether a big company or a government, agrees to offer some of its private services only to those individuals who participate in paying for the public good. Often this is done implicitly: for example, some of the money from each purchase of an iPad goes toward research and development (some of which is a public good, and some of which is an excludable "club good"). At other times, it's more explicit, as in the case of taxation. In order for decentralized economic systems (we'll refer to decentralized economic systems that somehow rely on cryptography and/or cryptocurrency as "cryptoeconomic systems") to be effective, ways of incentivizing production of public goods relevant to that system are required. A few possible approaches include:
 
-* **Assurance contracts** - the idea behind an assurance contract is that `N` people may or may not put their funds into a pool, where that pool pays to produce a public good if and only if at least $X in total is contributed. Otherwise, the pool pays everyone back. If the pool creator acts optimally, the tipping point will be right at the top of the bell curve that is the probability distribution for how much other people might contribute, meaning that the chance that one user with their contribution of `X/N` will be pivotal should, by central limit theorem, approach `~1/sqrt(N)`, creating a `sqrt(N)`-sized amplifying effect on their donation. 
-* **Dominant assurance contracts** - a special type of assurance contract, called a dominant assurance contract, involves an entrepreneur that pays all contributors back slightly more than 100% of what they put in if the fund fails to reach its target (and takes profits if the fund succeeds); this provides an incentive for someone to create optimally targeted assurance contracts.
-* **Currency issuance** - a cryptoeconomic system can contain its own currency or token system which is somehow necessary or useful in some part of the system. These currency units can then either be generated by the system and then sold or directly assigned to reward contribution. This approach gets around the free-rider problem because no one needs to pay the $1 explicitly; the value arises out of the emergent value of the network which is does not cost people to support.
-* **Status goods issuance** - a status good can be defined as a good that confers only relative benefit to its holder and not absolute benefit to society; for example, you may stand out in the public if you wear an expensive diamond necklace, but if everyone could trivially obtain such a necklace the situation would be very similar to a world with no diamond necklaces at all. A cryptoeconomic system can release its own status goods, and then sell or award them. One example of a status good is a "badge"; some online forums, for example, show a special badge beside users that have contributed funds to support the forum's development and maintenance. Another important example of a status good is a namespace; for example, a decentralized messaging protocol may be able to fund itself by selling off all of the 1-4 letter usernames.
-* **Recursive rewarding** - this is in some ways a mirror image of the concept of "recursive punishment" that arguably underlies a large number of social protocols. For example, consider the case of tax-funded police forces. In natural circumstances, there often arise opportunities to take actions which are beneficial to the perpetrator, but ultimately harmful to society as a whole (eg. theft). The most common solution to this problem is punishment - an act which is harmful in itself, but which shifts the incentives so that attacking is no longer beneficial to the perpetrator. However, there is a problem: there is no incentive to participate in the punishment process. This is solved by making punishment obligatory, with non-participation (in modern society by paying taxes) itself punishable by the same mechanism. Recursive rewarding is a mirror image of this strategy: here, we reward a desirable action, and people who participate in the rewarding mechanism (eg. by giving reward recipients a discount in shops) are themselves to be rewarded.
+-   **Assurance contracts** - the idea behind an assurance contract is that `N` people may or may not put their funds into a pool, where that pool pays to produce a public good if and only if at least $X in total is contributed. Otherwise, the pool pays everyone back. If the pool creator acts optimally, the tipping point will be right at the top of the bell curve that is the probability distribution for how much other people might contribute, meaning that the chance that one user with their contribution of `X/N` will be pivotal should, by central limit theorem, approach `~1/sqrt(N)`, creating a `sqrt(N)`-sized amplifying effect on their donation. 
+-   **Dominant assurance contracts** - a special type of assurance contract, called a dominant assurance contract, involves an entrepreneur that pays all contributors back slightly more than 100% of what they put in if the fund fails to reach its target (and takes profits if the fund succeeds); this provides an incentive for someone to create optimally targeted assurance contracts.
+-   **Currency issuance** - a cryptoeconomic system can contain its own currency or token system which is somehow necessary or useful in some part of the system. These currency units can then either be generated by the system and then sold or directly assigned to reward contribution. This approach gets around the free-rider problem because no one needs to pay the $1 explicitly; the value arises out of the emergent value of the network which is does not cost people to support.
+-   **Status goods issuance** - a status good can be defined as a good that confers only relative benefit to its holder and not absolute benefit to society; for example, you may stand out in the public if you wear an expensive diamond necklace, but if everyone could trivially obtain such a necklace the situation would be very similar to a world with no diamond necklaces at all. A cryptoeconomic system can release its own status goods, and then sell or award them. One example of a status good is a "badge"; some online forums, for example, show a special badge beside users that have contributed funds to support the forum's development and maintenance. Another important example of a status good is a namespace; for example, a decentralized messaging protocol may be able to fund itself by selling off all of the 1-4 letter usernames.
+-   **Recursive rewarding** - this is in some ways a mirror image of the concept of "recursive punishment" that arguably underlies a large number of social protocols. For example, consider the case of tax-funded police forces. In natural circumstances, there often arise opportunities to take actions which are beneficial to the perpetrator, but ultimately harmful to society as a whole (eg. theft). The most common solution to this problem is punishment - an act which is harmful in itself, but which shifts the incentives so that attacking is no longer beneficial to the perpetrator. However, there is a problem: there is no incentive to participate in the punishment process. This is solved by making punishment obligatory, with non-participation (in modern society by paying taxes) itself punishable by the same mechanism. Recursive rewarding is a mirror image of this strategy: here, we reward a desirable action, and people who participate in the rewarding mechanism (eg. by giving reward recipients a discount in shops) are themselves to be rewarded.
 
 Many of these approached can arguably be done in concert, or even simultaneously within one mechanism.
 
@@ -273,11 +271,11 @@ Many of these approached can arguably be done in concert, or even simultaneously
 
 **Additional Assumptions And Requirements**
 
-* A fully trustworthy oracle exists for determining whether or not a certain public good task has been completed (in reality this is false, but this is the domain of another problem)
-* The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and decentralized cryptographic entities
-* A certain degree of cultural filtering or conditioning may be required for the mechanism to work, but this should be as small as possible
-* No reliance on trusted parties or centralized parties should be required. Where some kind of "supernode" role does exist, the protocol should provide a way for anyone to participate in that function with a mechanism for rewarding those who do it well
-* The mechanism should ideally be able to handle both public goods which everyone values and public goods which are only valued by a small portion of the population (eg. the production of a freely available book or video on a specific topic)
+-   A fully trustworthy oracle exists for determining whether or not a certain public good task has been completed (in reality this is false, but this is the domain of another problem)
+-   The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and decentralized cryptographic entities
+-   A certain degree of cultural filtering or conditioning may be required for the mechanism to work, but this should be as small as possible
+-   No reliance on trusted parties or centralized parties should be required. Where some kind of "supernode" role does exist, the protocol should provide a way for anyone to participate in that function with a mechanism for rewarding those who do it well
+-   The mechanism should ideally be able to handle both public goods which everyone values and public goods which are only valued by a small portion of the population (eg. the production of a freely available book or video on a specific topic)
 
 ### 12. Reputation systems
 
@@ -289,10 +287,10 @@ However, there are also differences. First, money is an absolute score - I have 
 
 However, up until very recently, reputation has been a very informal concept, having no concept of score and instead relying entirely on individual opinion. Because opinion is relatively easy to manipulate, this means that reputation as a concept has been highly suboptimal in its implementation, and has been quite vulnerable to informational and psychological attacks. Some specific problems are:
 
-1. How do we know how what the value of someone's reputation with someone else is after a particular number of interactions? A common attack on informal reputation systems is the "long con" - act honestly but passively and cheaply for a very long time, accumulate trust, and then suddenly go all out and destructively capitalize on one's reputation as much as possible. The initial dormant phase is cheap for the attacker, but ends up resulting in the attacker accumulating a disproportionately large amount of trust for the community and thereby ultimately causing much more damage than good. Overcompensate for this too much, however, and there ends up being no opportunity to gain trust.
-2. How do we incorporate secondary trust? In general, when `A` is deciding whether or not to trust `B`, `A` has not had any prior dealings with `B`, and therefore has no way of knowing whether or not `B` is trustworthy. One approach is to just look at all ratings for `B`, but then we run into the issue of Sybil attacks: what if `B` creates 50000 fake users, all of whom rate each other highly, to give good ratings to him? To solve this problem, reputation systems rely on a fallback known as a web of trust: find some chain of people `P[1] ... P[k]` such that `A` trusts `P[1]`, `P[i]` trusts `P[i+1]` for all `i`, and `P[k]` trusts `B`. Under the "six degrees of separation hypothesis", any two people in the world except those completely disconnected from society have such a chain of maximum length `k = 5` (so at most six hops total). However, the question arises, if `A` has a certain rating for `P[1]` and `P[1]` has a certain rating for `B`, what should the reputation system recommend to `B`?
-3. If a reputation system becomes more formalized, are there market attacks that reduce its effectiveness to simply being just another form of money? Specifically, how would a reputation system where giving reputation is free handle users multiplying their reputation with millions of "I praise you if you praise me" trades? Will such trades need to be explicitly banned, punishable by loss of reputation, or is there a better solution?
-4. How do we deal with double use attacks? Specifically, suppose that `A` has a reputation with value `R = $1000`. Using this reputation, `A` has a business dealing where `P[1]` trusts her for $600. Then, she simultaneously engages in such a dealing with `P[2], P[3] ... P[10]`, each of whom individually believe that `A` will not betray them since $600 < $1000, and then runs away with $6000 taking the $1000 hit from the value of her reputation. How do we prevent such fractional reserve-like scenarios?
+1.  How do we know how what the value of someone's reputation with someone else is after a particular number of interactions? A common attack on informal reputation systems is the "long con" - act honestly but passively and cheaply for a very long time, accumulate trust, and then suddenly go all out and destructively capitalize on one's reputation as much as possible. The initial dormant phase is cheap for the attacker, but ends up resulting in the attacker accumulating a disproportionately large amount of trust for the community and thereby ultimately causing much more damage than good. Overcompensate for this too much, however, and there ends up being no opportunity to gain trust.
+2.  How do we incorporate secondary trust? In general, when `A` is deciding whether or not to trust `B`, `A` has not had any prior dealings with `B`, and therefore has no way of knowing whether or not `B` is trustworthy. One approach is to just look at all ratings for `B`, but then we run into the issue of Sybil attacks: what if `B` creates 50000 fake users, all of whom rate each other highly, to give good ratings to him? To solve this problem, reputation systems rely on a fallback known as a web of trust: find some chain of people `P[1] ... P[k]` such that `A` trusts `P[1]`, `P[i]` trusts `P[i+1]` for all `i`, and `P[k]` trusts `B`. Under the "six degrees of separation hypothesis", any two people in the world except those completely disconnected from society have such a chain of maximum length `k = 5` (so at most six hops total). However, the question arises, if `A` has a certain rating for `P[1]` and `P[1]` has a certain rating for `B`, what should the reputation system recommend to `B`?
+3.  If a reputation system becomes more formalized, are there market attacks that reduce its effectiveness to simply being just another form of money? Specifically, how would a reputation system where giving reputation is free handle users multiplying their reputation with millions of "I praise you if you praise me" trades? Will such trades need to be explicitly banned, punishable by loss of reputation, or is there a better solution?
+4.  How do we deal with double use attacks? Specifically, suppose that `A` has a reputation with value `R = $1000`. Using this reputation, `A` has a business dealing where `P[1]` trusts her for $600. Then, she simultaneously engages in such a dealing with `P[2], P[3] ... P[10]`, each of whom individually believe that `A` will not betray them since $600 &lt; $1000, and then runs away with $6000 taking the $1000 hit from the value of her reputation. How do we prevent such fractional reserve-like scenarios?
 
 **Problem**: design a formalized reputation system, including a score `rep(A,B) -> V` where `V` is the reputation of `B` from the point of view of `A`, a mechanism for determining the probability that one party can be trusted by another, and a mechanism for updating the reputation given a record of a particular open or finalized interaction.
 
@@ -300,11 +298,11 @@ Note that for the purpose of this use case we are targeting specifically the "ca
 
 **Additional Assumptions and Requirements**
 
-* The system has access to a record of all finalized transactions inside the system and all transactions in progress, although entities are of course able to choose to make deals outside the system
-* It is allowed to introduce mechanisms like charity donations, public goods provision and sacrifices as a way of increasing one's reputation. However, if non-monetary contributions are allowed, there needs to be some mechanism for measuring their value
-* For simplicity, we can assume that interactions between two people are of the form "A pays, then B sends the product and A receives", with no possibility for loss beyond the principal (eg. food poisoning) or ambiguous quality. Ideally, however, the system should account for such possibilities.
-* The system should continue to be reasonably accurate whether the parties involved are simple programs (eg. micropayment software protocols), more complicated AIs, DAOs, individual humans or human centralized or decentralized organizations
-* If a mechanism is provided for determining the probability of a successful interaction, a success metric for the system can be defined as the sum over all transactions of `V * (S * log(p) - (1-S) * log(1-p))`, where `S = 1` if the transaction succeeded and `S = 0` if there was a registered complaint, `p` is the assigned probability and `V` is the value of the transaction. The objective is to maximize this metric.
+-   The system has access to a record of all finalized transactions inside the system and all transactions in progress, although entities are of course able to choose to make deals outside the system
+-   It is allowed to introduce mechanisms like charity donations, public goods provision and sacrifices as a way of increasing one's reputation. However, if non-monetary contributions are allowed, there needs to be some mechanism for measuring their value
+-   For simplicity, we can assume that interactions between two people are of the form "A pays, then B sends the product and A receives", with no possibility for loss beyond the principal (eg. food poisoning) or ambiguous quality. Ideally, however, the system should account for such possibilities.
+-   The system should continue to be reasonably accurate whether the parties involved are simple programs (eg. micropayment software protocols), more complicated AIs, DAOs, individual humans or human centralized or decentralized organizations
+-   If a mechanism is provided for determining the probability of a successful interaction, a success metric for the system can be defined as the sum over all transactions of `V * (S * log(p) - (1-S) * log(1-p))`, where `S = 1` if the transaction succeeded and `S = 0` if there was a registered complaint, `p` is the assigned probability and `V` is the value of the transaction. The objective is to maximize this metric.
 
 ## Metrics
 
@@ -335,10 +333,10 @@ Alternatives to proof-of-proof include proof-of-optimization, finding optimal in
 
 **Additional Assumptions and Requirements**
 
-* Given a well-justified extrapolation of the global levels of human and computer competence at the underlying problem, over 75% of the rewards from the system should be provided by human labor, although software aids are allowed.
-* The algorithm must ideally be future-proof; that is to say, it must continue rewarding value production in the long term and should not be an area that will eventually be "solved" completely.
-* The distribution should be maximally egalitarian, though this is a secondary concern.
-* The system should be secure against front-running attacks, ie. if an individual submits a solution, then it should not be practical for even a moderately powerful attacker to look at the solution and then resubmit his own transaction containing the same solution and thereby steal the reward.
+-   Given a well-justified extrapolation of the global levels of human and computer competence at the underlying problem, over 75% of the rewards from the system should be provided by human labor, although software aids are allowed.
+-   The algorithm must ideally be future-proof; that is to say, it must continue rewarding value production in the long term and should not be an area that will eventually be "solved" completely.
+-   The distribution should be maximally egalitarian, though this is a secondary concern.
+-   The system should be secure against front-running attacks, ie. if an individual submits a solution, then it should not be practical for even a moderately powerful attacker to look at the solution and then resubmit his own transaction containing the same solution and thereby steal the reward.
 
 ### 14. Anti-Sybil systems
 
@@ -354,11 +352,11 @@ The question is, can we use these mechanisms, either separately or together, and
 
 **Additional Assumptions and Requirements**:
 
-* Everyone is part of a social network with similar characteristics to social networks now found in the real world, and social data can be provably provided to cryptoeconomic systems (eg. blockchains, Ethereum contracts)
-* The cost of obtaining one anti-Sybil token for a human should be as low as possible
-* The cost of obtaining multiple anti-Sybil tokens for a human should be as high as possible
-* The cost of obtaining anti-Sybil tokens for an automated system should be as high as possible (this is a more important criterion than high cost for multi-obtainment for humans)
-* The system should not create dependency on centralized parties (eg. government passport offices) that have the power to cheat the system
+-   Everyone is part of a social network with similar characteristics to social networks now found in the real world, and social data can be provably provided to cryptoeconomic systems (eg. blockchains, Ethereum contracts)
+-   The cost of obtaining one anti-Sybil token for a human should be as low as possible
+-   The cost of obtaining multiple anti-Sybil tokens for a human should be as high as possible
+-   The cost of obtaining anti-Sybil tokens for an automated system should be as high as possible (this is a more important criterion than high cost for multi-obtainment for humans)
+-   The system should not create dependency on centralized parties (eg. government passport offices) that have the power to cheat the system
 
 ### 15. Decentralized contribution metrics
 
@@ -370,8 +368,8 @@ This is a subclass of the general "social proof" problem; here, the particular c
 
 **Additional Assumptions and Requirements**
 
-* The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and other DAOs
-* There is no cryptographically verifiable information about the completion of any task; the system must rely entirely on some form of social proof
+-   The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and other DAOs
+-   There is no cryptographically verifiable information about the completion of any task; the system must rely entirely on some form of social proof
 
 ### 16. Decentralized success metrics
 
@@ -383,5 +381,5 @@ Here, information gathering costs are low, and information is accessible to ever
 
 **Additional Assumptions and Requirements**
 
-* The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and other DAOs
-* The system should be able to measure anything that humans can currently reach a rough consensus on (eg. price of an asset, temperature, global CO2 concentration
+-   The agents involved can be a combination of individual humans, teams of humans, AIs, simple software programs and other DAOs
+-   The system should be able to measure anything that humans can currently reach a rough consensus on (eg. price of an asset, temperature, global CO2 concentration
