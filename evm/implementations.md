@@ -13,7 +13,7 @@ All the ETH1 Clients include an EVM implementation, so they are copy-pasted from
 |[EthereumJS](https://ethereumjs.github.io/)|EthereumJS|JavaScript|MPL 2.0|
 |[Mana](https://github.com/mana-ethereum/mana)|POA Network|Elixir|Apache 2.0 / MIT|
 |[Nethermind](https://github.com/tkstanczak/nethermind)|Nethermind|C# / .NET Core|MIT|
-|[Pantheon](https://github.com/PegaSysEng/pantheon/)|PegaSys|Java|Apache 2.0|
+|[Hyperledger Besu](https://github.com/hyperledger/besu/)|PegaSys|Java|Apache 2.0|
 
 ## Additional Clients & Standalone EVM Implementations
 

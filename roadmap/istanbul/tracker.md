@@ -23,7 +23,7 @@ For each EIP, ideally link to a Github issue or label or milestone that the clie
 |[EthereumJS](https://ethereumjs.github.io/)|x|x|x|x||
 |[Mana](https://github.com/mana-ethereum/mana)|x|x|x|x||
 |[Nethermind](https://github.com/tkstanczak/nethermind)|x|x|x|x||
-|[Pantheon](https://github.com/PegaSysEng/pantheon/)|x|x|x|x||
+|[Hyperledger Besu](https://github.com/hyperledger/besu/)|x|x|x|x||
 |[Nimbus](https://github.com/status-im/nimbus)|x|x|x|x||
 
 ### How does each client team track Core EIP progress and/or Hardfork progress?
