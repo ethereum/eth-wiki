@@ -1,5 +1,4 @@
-<!-- TITLE: Ethereum Virtual Machine (EVM) -->
-<!-- SUBTITLE: Landing page for everything EVM related -->
+# Ethereum Virtual Machine (EVM)
 
 You can browse [all EVM pages](/evm/all), and here are selected top picks:
 
@@ -9,35 +8,13 @@ You can browse [all EVM pages](/evm/all), and here are selected top picks:
 
 > A list about the Ethereum Virtual Machine using the Awesome format.
 
-Note that a later version may be available [here](https://github.com/pirapira/awesome-ethereum-virtual-machine), however, if so, this version can easily be updated. 
+A later version may be available [here](https://github.com/pirapira/awesome-ethereum-virtual-machine), however, this version can easily be updated. 
 
 A curated list of resources on the Ethereum Virtual Machine (EVM), which is the virtual machine executed on the [Ethereum](https://ethereum.org/) network.
 
 Not listed there yet, but in the spirit of [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Here is [how to contribute](./contributing.md).
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
-
-- [EVM Awesome List](#evm-awesome-list)
-- [Specification](#specification)
-- [Illustration](#illustration)
-- [Tutorials](#tutorials)
-- [Tests](#tests)
-- [EVM Implementations](#evm-implementations)
-  - [Live on Main Network](#live-on-main-network)
-  - [Other Implementations](#other-implementations)
-- [Programming Languages that Compile into EVM](#programming-languages-that-compile-into-evm)
-  - [Programming Languages that Compile zk-SNARK Circuits and Proofs](#programming-languages-that-compile-zk-snark-circuits-and-proofs)
-- [Debuggers](#debuggers)
-- [Code Analyzers](#code-analyzers)
-- [Improvement Proposals](#improvement-proposals)
-- [Related Resources](#related-resources)
-- [License of This List](#license-of-this-list)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ## Specification
