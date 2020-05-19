@@ -1,7 +1,7 @@
 <!-- TITLE: Ethereum Virtual Machine (EVM) Implementations -->
 <!-- SUBTITLE: A list of all the EVM implementations, including private chains -->
 
-All the ETH1 Clients include an EVM implementation, so they are copy-pasted from the [source page](/eth1/clients) for convenience.
+All the ETH1 Clients include an EVM implementation, they are copy-pasted from the [source page](/eth1/clients) for convenience.
 
 |Client Name|Organization|Programming Language|License|
 |---|---|---|---|
