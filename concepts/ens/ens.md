@@ -1,11 +1,3 @@
----
-title: ENS supported TLDs
-description: 
-published: true
-date: 2019-09-05T03:33:02.067Z
-tags: 
----
-
 # ENS supported TLDs
 
 Ethereum Name Service will soon support most TLDs that have DNSSEC enabled.  The necessary DNSSEC algorithms are:

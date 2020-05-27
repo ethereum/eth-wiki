@@ -1,5 +1,4 @@
-<!-- TITLE: Testnets -->
-<!-- SUBTITLE: List of Ethereum testnets -->
+# Testnets
 
 There are a list of chain / network IDs at https://chainid.network that includes testnet info.
 

@@ -1,8 +1,8 @@
-# Infrastructure -->
+# Infrastructure
 
 This is an attempt to list who to talk to or ask questions about various pieces of Ethereum community infrastructure. Some of it may not get answered because of opsec reasons. If you come across something, please [file an issue in the Ethereum Cat Herders PM repo](https://github.com/ethereum-cat-herders/PM/issues) so it can be tracked and someone can help answer it.
 
-# EIPs Repo + Website
+## EIPs Repo + Website
 
 The Ethereum Improvement Proposal -- aka EIPs -- repo is at <https://github.com/ethereum/EIPs>. It contains the source code for a Jekyll website which is generated whenever files are committed. The generated website is at <https://eips.ethereum.org>
 
