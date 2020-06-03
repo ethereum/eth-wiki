@@ -18,7 +18,7 @@ The simplest way to understand Ethereum is to know what it does. Just like how i
 
 <!-- TODO: Where to host PDFs -->
 
-1.  [A Next-Generation Smart Contract and Decentralized Application Platform](../white-paper.md) - Ethereum White Paper
+1.  [A Next-Generation Smart Contract and Decentralized Application Platform](https://ethereum.org/whitepaper) - Ethereum White Paper
 
 2.  [A secure decentralised generalised transaction ledger" and a generalised "transactional singleton machine with shared-state"](https://ethereum.github.io/yellowpaper/paper.pdf).
 

@@ -28,7 +28,7 @@ Read [this](./fundamentals/ethereum-introduction.md#how-do-you-buy-and-sell-ethe
 -   Wiki: <http://ethereum.wiki> (this wiki)
 -   Twitter: <https://twitter.com/ethereum>
 -   Meetups: <http://ethereum.meetup.com>
--   Whitepaper: <https://github.com/ethereum/wiki/wiki/White-Paper>
+-   Whitepaper: <https://ethereum.org/whitepaper>
 -   Yellow Paper: <https://ethereum.github.io/yellowpaper/paper.pdf>
 -   Facebook: <https://www.facebook.com/ethereumproject>
 -   Youtube: <http://www.youtube.com/ethereumproject>

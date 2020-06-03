@@ -33,7 +33,7 @@ And should not have any of the following flaws:
 
 A simulator of difficulty adjustment is available at <https://github.com/ethereum/economic-modeling/blob/master/diffadjust/blkdiff.py> .
 
-The modified GHOST algorithm is defined [here](White-Paper#modified-ghost-implementation).
+The modified GHOST algorithm is defined [in the whitepaper](https://ethereum.org/whitepaper#modified-ghost-implementation).
 
 The following properties are desired:
 
@@ -46,7 +46,7 @@ The following properties are desired:
 
 ## Gas economics
 
--   The floating gas limit should achieve the compatibility objectives described in <https://github.com/ethereum/wiki/wiki/White-Paper#fees>
+-   The floating gas limit should achieve the compatibility objectives described in <https://ethereum.org/whitepaper#fees>
 -   There should not exist a way for a transaction to get itself executed and spend large amounts of computational resources on many nodes without paying for gas
     -   The following is an example vulnerability: a miner can create a transaction A that spends a very large amount of gas (eg. ~gaslimit \* 0.99) running useless computation. That miner then creates a transaction B with the same nonce that has no effect, and tries to mine a block containing B. If a miner produces a block containing B, it broadcasts A, forcing all other nodes on the network to waste time processing A, even though A actually getting accepted is nearly impossible since B is already published in a block.
 -   There should not be any kind of of perverse incentive in the way gas costs work on the high level (eg. how gas is passed from parent to child message, how gas is refunded, exception reversions, etc)
