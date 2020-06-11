@@ -1,12 +1,10 @@
-<!-- TITLE: Governance Compendium -->
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
-
-- [Against on chain governance:](#against-on-chain-governance)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+---
+title: Governance Compendium
+description: 
+published: true
+date: 2020-06-11T13:31:59.848Z
+tags: 
+---
 
 [![governance](https://badges.gitter.im/governance.svg)](https://gitter.im/ethereum/governance)
 [![Documentation chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/documentation)
@@ -34,6 +32,23 @@
 >
 > By making it possible for everyone in the world to organize, we are enabling a borderless, permissionless and more efficient creation of value
 
-- [Maker DAO](https://makerdao.com/) a stablecoin that uses a utility and governance volatile MKR token, for holders to use in governing the DAI stable coin
+ - [EthSignals.org](https://www.ethsignals.org) – Working group on improving Ethereum Governance with better signalling. Support the [tennagraph.com](tennagraph.com) – dapp for stances collection around EIPs.
 
+
+While the following projects do not have blockchain governance as a mission, they do relate to governance or deliberately use or plan to use governance mechanisms:
+
+- [Maker DAO](https://makerdao.com/) a stablecoin that uses a utility and governance volatile MKR token, for holders to use in governing the DAI stable coin
+- [Havven](https://havven.io): another stablecoin that involves issuing tokens against a distributed collateral pool. James Ray's opinion: this seems simpler than DAI, while also intuitively seeming to be more desirable. See e.g. [this Twitter thread](https://twitter.com/JamesCRay01/status/1046893184800841728) for a related proposal to issue a token against a distributed pool of _ethical_ assets, which should result in less downside volatility and more upside volatility or potential for growth.
 - [Pocket Network](http://pokt.network/). A decentralized blockchain which incentivizes running a full node and relaying transactions, supporting connecting to blockchains. See also https://ethresear.ch/t/incentivizing-full-state-nodes-as-an-api-service/2835/1, which has a link to their [white paper](https://ethresear.ch/uploads/default/original/2X/b/b662eec0f686f44f504eb49e69760fca42535682.pdf).
+
+## Mechanism design
+
+Infographic: https://twitter.com/VladZamfir/status/1014882947781087233
+
+It's important to try to match rewards in protocol as closely as possible with the true utility provided, which isn't done well with a volatile cryptocurrency. Protocol participants have external incentives such as capital costs.
+
+## Liberal Radicalism
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656
+
+An alternative societal funding mechanism to capitalism and representative democracy that provides (near) optimal funding provision of public goods. Related to governance because governance is often concerned with allocating a budget.
