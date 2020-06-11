@@ -1,3 +1,11 @@
+---
+title: json-rpc
+description: 
+published: true
+date: 2020-06-11T09:38:51.268Z
+tags: 
+---
+
 # JSON RPC API
 
 [JSON](http://json.org/) is a lightweight data-interchange format. It can represent numbers, strings, ordered sequences of values, and collections of name/value pairs.
@@ -13,7 +21,8 @@ Hyperledger Besu 1.3 has pub/sub support. See [this](https://besu.hyperledger.or
 ## JavaScript API
 
 To talk to an ethereum node from inside a JavaScript application use the [web3.js](https://github.com/ethereum/web3.js) library, which gives a convenient interface for the RPC methods.
-See the [JavaScript API](JavaScript-API) for more.
+
+See the [JavaScript API](/clients/javascript-api) for more details.
 
 ## JSON-RPC Endpoint
 
@@ -29,7 +38,8 @@ Default JSON-RPC endpoints:
 
 ### Go
 
-You can start the HTTP JSON-RPC with the `--rpc` flag
+You can start the HTTP JSON-RPC with the `--rpc` flag:
+
 ```bash
 geth --rpc
 ```
