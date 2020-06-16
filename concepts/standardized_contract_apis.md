@@ -1,4 +1,12 @@
-# Standardized_Contract_APIs
+---
+title: standardized_contract_apis
+description: 
+published: true
+date: 2020-06-16T09:05:53.857Z
+tags: 
+---
+
+# Standardized Contract APIs
 
 **NOTE** The token API is currently debated as an ERC (Ethereum request for comment) and may be outdated: <https://github.com/ethereum/EIPs/issues/20>
 
