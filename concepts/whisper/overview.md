@@ -1,8 +1,12 @@
-<!-- TITLE: Whisper Overview -->
+---
+title: Whisper Overview
+description: 
+published: true
+date: 2020-06-16T08:29:17.724Z
+tags: 
+---
 
-
-
-### Example ("Dream") API Usage
+## Example ("Dream") API Usage
 
 ```js
 var shh = web3.shh;
@@ -51,7 +55,7 @@ broadcastWatch.arrived(function(m)
 });
 ```
 
-### Basic operation
+## Basic operation
 
 `post` takes a JSON object containing four key parameters: 
 
@@ -66,7 +70,7 @@ shh.post({ "topics": t, "payload": p, "ttl": ttl, "workToProve": work });
 
 Two other parameters optionally specify the addressing: recipient (`to`), sender (`from`). The latter is meaningless unless a recipient has been specified.
 
-### Use cases
+## Use cases
 - `shh.post({ "topic": t, "payload": p });` No signature, no encryption: Anonymous broadcast; a bit like an anonymous subject-filtered twitter feed.
 - `shh.post({ "from": myIdentity, "topic": t, "payload": p });` Open signature, no encryption: Clear-signed broadcast; a bit like a normal twitter feed - anyone interested can see a particular identity is sending particular stuff out to no-one in particular.
 - `shh.post({ "to": recipient, "topic": t, "payload": p });` No signature, encryption: Encrypted anonymous message; a bit like an anonymous drop-box - message is private to the owner of the dropbox. They can't tell from whom it is.
@@ -102,7 +106,7 @@ Topics is constructed from a number of components - this simply compresses (sha3
 
 To filter on sender/recipient, they should be encoded within the topic by the sender.
 
-### Silent Operation
+## Silent Operation
 
 In normal operation (and assuming a non-degenerate attack condition), there is a trade-off between true anonymity/plausible deniability over ones communications and efficiency of operation. The more one advertises to ones peers attempting to "fish" for useful messages and steer such message towards oneself, the more one reveals to ones peers.
 
