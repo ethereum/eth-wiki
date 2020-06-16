@@ -1,10 +1,14 @@
-<!-- TITLE: Whisper PoC 2 Protocol Spec -->
-
-
+---
+title: Whisper PoC 2 Protocol Spec
+description: 
+published: true
+date: 2020-06-16T08:39:56.571Z
+tags: 
+---
 
 This page, in addition to the Whisper Wire Specification, details the full Whisper protocol for the first proof-of-concept and sets the vision for the final design. It evolve alongside the Whisper protocol as the prototype is refined. From it you should be able to develop compliant Whisper implementations. This document is intended to give only the base specification. Many of the aspects leading to an implementation of Whisper are game theoretic and best not prescribed in the specification, but rather left to individual implementation teams to determine for themselves.
 
-### What Whisper Is (and Is Not)
+## What Whisper Is (and Is Not)
 
 Whisper combines aspects of both DHTs and datagram messaging systems (e.g. UDP). As such it may be likened and compared to both, not dissimilar to the matter/energy duality (apologies to physicists for the blatant abuse of a fundamental and beautiful natural principle).
 
@@ -16,7 +20,7 @@ As such, Whisper is not a typical communications system. It is not designed to r
 
 Whisper is a new protocol designed expressly for a new paradigm of application development. It is designed from the ground up for easy and efficient multi-casting and broadcasting. Similarly, low-level partially-asynchronous communications is an important goal. Low-value traffic reduction or retardation is another goal (which might also be likened to the quest for QoS). It is designed to be a building block in next generation ÐApps which require large-scale many-to-many data-discovery, signal negotiation and modest transmissions with an absolute minimum of fuss and the expectation that one has a very reasonable assurance of complete privacy.
 
-### Pitch-Black Darkness
+## Pitch-Black Darkness
 
 Whisper operates around the notion of being user-configurable with regard to how much information it leaks concerning the ÐApp content and ultimately, the user activities. To understand information leakage, it is important to distinguish between mere encryption, and *darkness*. Many protocols, both those designed around p2p and more traditional client/server models provide a level of encryption. For some, encryption forms an intrinsic part of the protocol and, applied alone, delivers its primary requirement. While decentralising and encrypting is a great start on building a legitimately "post-Snowden" Web, it is not the end.
 
@@ -28,7 +32,7 @@ Even with encryption and packet forwarding through a third relay node, there is 
 
 A truly dark system is one that is utterly uncompromising in information leakage from metadata. At its most secure mode of operation, Whisper can (at a considerable cost of bandwidth and latency) deliver 100% dark operation. Even better, this applies not only for metadata collection from inter-peer conduits (i.e. backbone dragnet devices), but even against a much more arduous "100% - 2" attack; i.e. where every node in the network were compromised (though functional) save a pair running ÐApps for people that wanted to communicate without anybody else knowing.
 
-### Routing and Lack Thereof
+## Routing and Lack Thereof
 
 Fundamentally, at least with the present state of computer science, all systems present a trade off between the efficiency of deterministic (and thus supposedly optimal) routing and darkness (or, put another way, routing privacy). One of Whisper's differences is in providing a user-configurable trade-off between ones routing privacy and ones routing efficiency.
 
@@ -62,13 +66,13 @@ Here, `ttl` is given in seconds, `expiry` is the Unix time of the intended expir
 
 `nonce` is an arbitrary value. We say the work proved through the value of the SHA3 of the concatenation of the nonce and the SHA3 of the RLP of the packet save the nonce (i.e. just a 4-item RLP list), each of the components as a fixed-length 256-bit hash. When this final hash is interpreted as a BE-encoded value, the smaller it is, the higher the work proved. This is used later to judge a peer.
 
-### Topics
+## Topics
 
 Topics are cryptographically secure, probabilistic partial-classifications of the message. Each topic in the set (order is unimportant) is determined as the first (left) 4 bytes of the SHA3-256 hash of some arbitrary data given by the original author of the message. These might e.g. correspond to "twitter" hash-tags or an intended recipient's public key hashed with some session nonce or application-identity.
 
 Four bytes was chosen to minimise space should a large number of topics be mentioned while still keeping a sufficiently large space to avoid large-scale topic-collision (though it may yet be reviewed and possibly made dynamic in later revisions of the protocol).
 
-### Messages
+## Messages
 
 A message is formed as the concatenation of a single byte for flags (at present only a single flag is used), followed by any additional data (as stipulated by the flags) and finally the actual payload. This series of bytes is what forms the `data` item of the envelope and is always encrypted.
 
@@ -96,7 +100,7 @@ The payload is otherwise unformatted binary data.
 
 In the Javascript API, the distinction between envelopes and messages is blurred. This is because DApps should know nothing about envelopes whose message cannot be inspected; the fact that nodes pass envelopes around regardless of their ability to decode the message (or indeed their interest in it at all) is an important component in Whisper's dark communications strategy.
 
-### Basic Operation
+## Basic Operation
 
 Nodes are expected to receive and send envelopes continuously, as per the [protocol specification](Whisper-Wire-Protocol). They should maintain a map of envelopes, indexed by expiry time, and prune accordingly. They should also efficiently deliver messages to the front-end API through maintaining mappings between topics and envelopes.
 
@@ -106,7 +110,7 @@ Nodes should always keep messages that its ÐApps have created. Though not in Po
 
 Nodes should retain a set of per-ÐApp topics it is interested in.
 
-### Inserting (Authoring) Messages
+## Inserting (Authoring) Messages
 
 To insert a message, little more is needed than to place the envelope containing it in the node's envelope set that it maintains; the node should, according to its normal heuristics retransmit the envelope in due course. Composing an envelope from a basic payload, possible identities for authoring and access, a number of topics, a time-to-live and some parameters concerning work-proving targets is done through a few steps:
 
@@ -117,7 +121,7 @@ To insert a message, little more is needed than to place the envelope containing
 - Set the `expiry` as the present Unix time plus the time-to-live.
 - Set the `nonce` as that which provides the most work proved as per the previous definition, after some fixed amount of time of cycling through candidates or after a candidate surpasses some boundary; either should be given by the user.
 
-### Topic Masking and Advertising
+## Topic Masking and Advertising
 
 Nodes can advertise their topics of interest to each other. For that purpose they use a special type of Whisper message (TopicFilterPacket). The size of Bloom Filter they send to each other must be 64 bytes. Subsequently the rating system will be introduced -- peers sending useful messages will be rated higher then those sending random messages. 
 
@@ -135,6 +139,6 @@ Whisper bloom function accepts AbridgedTopic as a parameter (size: 4 bytes), and
 
 Thus, in order to produce the bloom, we use 27 bits out of 32 in the AbridgedTopic. For more details, please see the implementation of the function: TopicBloomFilterBase<N>::bloom() [libwhisper/BloomFilter.h].
 
-### Coming changes
+## Coming changes
 
 Also being considered for is support for plausible deniability through the use of session keys and a formalisation of the multicast mechanism.
