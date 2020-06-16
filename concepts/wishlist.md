@@ -1,14 +1,20 @@
+---
+title: wishlist
+description: 
+published: true
+date: 2020-06-16T08:48:41.791Z
+tags: 
+---
+
 # Wishlist
 
 This document outlines known flaws and missing features in current versions of Ethereum that we would like to see fixed in future versions. For the latest information, see [ethresear.ch](https://ethresear.ch/).
 
 ## Sharding
-
-[Read](./sharding-faqs.md).
+Read [Sharding-FAQs](/sharding/Sharding-FAQs)
 
 ## Proof of Stake
-
-[Read](./proof-of-stake-faqs.md).
+Read [proof-of-stake-faqs](/concepts/proof-of-stake-faqs)
 
 ## Trie
 
@@ -71,7 +77,8 @@ There is a mismatch between storage filling gas cost and the externality the sto
 
 There should ideally be some mechanism by which one can create events that trigger automatically at certain times in the future, without any overlay protocols (as one simple application of this, consider a dice game that depends on future block data as a source of randomness). For this to work effectively, one must introduce an "event tree" into the Ethereum state alongside the state tree, and add specialized opcodes for creating events (events can be seen as one-way calls that get "frozen" and then executed in the future). A mechanism for gas costs for events, particularly recurring events, should be determined.
 
-See "what are guaranteed cross-shard calls" for some discussion in the context of sharding [here](./sharding-faqs.md).
+See "what are guaranteed cross-shard calls" for some discussion in the context of sharding read [Sharding-FAQs](/sharding/Sharding-FAQs).
+
 
 ## Verification
 
