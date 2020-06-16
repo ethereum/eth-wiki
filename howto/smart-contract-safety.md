@@ -1,6 +1,12 @@
-# Ethereum Contract Security Techniques and Tips
+---
+title: smart-contract-safety
+description: 
+published: true
+date: 2020-06-16T09:38:53.954Z
+tags: 
+---
 
-**The community is encouraged to keep this wiki updated: it becomes more complete as more contributions are added.**
+# Ethereum Contract Security Techniques and Tips
 
 If you'd like to submit your Dapp and get early traffic, check out [Dapp Insight](https://dappinsight.com) for more information.
 
