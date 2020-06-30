@@ -1,4 +1,14 @@
+---
+title: benchmarks
+description: 
+published: true
+date: 2020-06-30T15:23:30.908Z
+tags: 
+---
+
 # Benchmarks
+> This page is out of date, it was created in February 2016 and its last significant update was that month.
+{.is-warning}
 
 ## Trie
 
