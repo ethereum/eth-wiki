@@ -1,4 +1,15 @@
+---
+title: ethereum-development-tutorial
+description: 
+published: true
+date: 2020-08-21T10:16:48.439Z
+tags: 
+---
+
 # Ethereum Development Tutorial
+
+> This post was originally written by Vitalik Buterin in 2014, so is more for historical record than something to follow now.
+{.is-warning}
 
 The purpose of this page is to serve as an introduction to the basics of Ethereum that you will need to understand from a development standpoint, in order to produce contracts and decentralized applications. For a general introduction to Ethereum, see [the white paper](https://ethereum.org/whitepaper), and for a full technical spec see the [yellow](http://gavwood.com/Paper.pdf) papers, although those are not prerequisites for this page; that is to say, this page is meant as an alternative introduction to Ethereum specifically targeted towards application developers.
 
