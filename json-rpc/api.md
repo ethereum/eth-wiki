@@ -158,6 +158,7 @@ The examples also do not include the URL/IP & port combination which must be the
 * [eth_gasPrice](#eth_gasprice)
 * [eth_accounts](#eth_accounts)
 * [eth_blockNumber](#eth_blocknumber)
+* [eth_chainId](#eth_chainId)
 * [eth_getBalance](#eth_getbalance)
 * [eth_getStorageAt](#eth_getstorageat)
 * [eth_getTransactionCount](#eth_gettransactioncount)
@@ -576,6 +577,32 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
   "id":83,
   "jsonrpc": "2.0",
   "result": "0x4b7" // 1207
+}
+```
+
+***
+
+#### eth_chainId
+
+Returns the currently configured chain ID, a value used in replay-protected transaction signing as introduced by EIP-155.
+
+##### Parameters
+none
+
+##### Returns
+
+`QUANTITY` - integer of the current chain ID.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":83}'
+
+// Result
+{
+  "id":83,
+  "jsonrpc": "2.0",
+  "result": "0x3d" // 61
 }
 ```
 
