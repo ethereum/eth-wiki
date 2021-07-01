@@ -52,7 +52,7 @@ Specifically:
     - Discussions in the Ethereum Magicians forum, AllCoreDevs gitter
 2. The EIPs were reviewed and ultimately classified as:
     - Desired and ready to go into a fork. These were 'accepted'
-    - Desired but not ready to go into a fork. These were were 'tentatively accepted' with the intention of including them in the fork-after-istanbul (Berlin fork, see below)
+    - Desired but not ready to go into a fork. These were 'tentatively accepted' with the intention of including them in the fork-after-istanbul (Berlin fork, see below)
     - Not desired due to fundamental issues including being withdrawn by the author. These were rejected indefinitely.
 3. Implementations and testing finalised
 4. Ropsten testnet fork planned to give one month between testnet and mainnet forks.
