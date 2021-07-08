@@ -52,6 +52,7 @@ Transaction =
 	AccountNonce: UInt64
 	Price: UInt256
 	GasLimit: UInt64
+	Destination: Address
 	Amount: UInt256
 	Payload: Bytes
 	V: UInt256
