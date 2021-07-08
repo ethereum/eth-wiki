@@ -26,5 +26,4 @@ tags:
 See also:
 
 * Learn more about the [ETH2 organizations on EthHub](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth2.0-teams/teams-building-eth2.0)
-* Updated [list of ETH2.0 clients](https://www.combatnerd.com/news/ethereum-20-clients/)
 * A [list of ETH1 clients](/eth1/clients) is also maintained on this wiki
