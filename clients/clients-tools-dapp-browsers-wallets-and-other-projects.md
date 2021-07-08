@@ -19,7 +19,7 @@ Non-official clients implementing the yellow paper specification are:
 -   `Hyperledger Besu` - Java client by Hyperledger: <https://github.com/hyperledger/besu> (ex-Pantheon) 
 -   `Mana` - Elixir by POA Network - <https://github.com/mana-ethereum/mana>
 -   `Minimal` - Go client by umbracle - <https://github.com/umbracle/minimal>
--   `Nethermind` - C# / .NET by Nethermind
+-   `Nethermind` - C# / .NET by Nethermind - <https://github.com/NethermindEth/nethermind>
 -   `Parity Ethereum` - Rust client by Parity Technologies : <https://www.parity.io/ethereum/>
 
 ## Third party implementations (GUI)
