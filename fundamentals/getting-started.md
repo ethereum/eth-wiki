@@ -3,7 +3,7 @@
 For an introduction to Ethereum, see the [beginners](https://ethereum.org/beginners/) section of ethereum.org.
 
 
-For an introduction targeted see [Ethereum introduction](./fundamentals/ethereum-introduction.md). If you want to get a deeper understanding, start by reading the [whitepaper](https://ethereum.org/whitepaper) and the [design rationale](./design-rationale.md). For a more formal review, read the [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf). If you are interested in being a core developer, find a project that interests you, and start contributing to that (maybe pro-bono initially, until maintainers like you and decide to hire you). 
+For an introduction targeted see [Ethereum introduction](./ethereum-introduction.md). If you want to get a deeper understanding, start by reading the [whitepaper](https://ethereum.org/whitepaper) and the [design rationale](./design-rationale.md). For a more formal review, read the [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf). If you are interested in being a core developer, find a project that interests you, and start contributing to that (maybe pro-bono initially, until maintainers like you and decide to hire you). 
 
 If you are interested in developing smart contracts you can see [here](https://en.wikipedia.org/wiki/Ethereum#Programming_languages), as well as under [ÐApp Development](./dapp-development.md) (which is also in the sidebar).
 

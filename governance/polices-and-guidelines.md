@@ -8,7 +8,7 @@ tags:
 
 # Index of Pages
 
-* [design-rationale.md](/policies-and-guidelines/design-rationale.md)
-* [governance-compendium.md](/policies-and-guidelines/governance-compendium.md)
+* [design-rationale.md](../fundamentals/design-rationale.md)
+* [governance-compendium.md](governance-compendium.md)
 
 

@@ -175,4 +175,4 @@ To get early traffic to your Ðapp, you can submit your Ðapp to [Dapp Insight](
 
 ## Fine Points To Keep Track Of
 
-See [subtleties](./../subtleties.md)
+See [subtleties](../faqs/subtleties.md)

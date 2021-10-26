@@ -1,6 +1,6 @@
 # Chain Fibers Redux
 
-_This article describes a scalability proposal made by Gavin Wood in 2015. Many of the principles described here have been a key inspiration for subsequent "[sharding](./sharding-faqs.md)" proposals._
+_This article describes a scalability proposal made by Gavin Wood in 2015. Many of the principles described here have been a key inspiration for subsequent "[sharding](../sharding/sharding-faqs.md)" proposals._
 
 ## Blockchain Scalability: Chain-Fibers Redux
 

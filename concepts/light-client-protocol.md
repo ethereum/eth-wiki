@@ -9,7 +9,7 @@ The purpose of the light client protocol is to allow users in low-capacity envir
 
 ## Background: Patricia Merkle Trees
 
-All substantial quantities of data in Ethereum are stored in a data structure known as the [Patricia Merkle tree](./fundamentals/patricia-tree.md), a tree structure where each node in the tree is the hash of its children. Each set of key/value pairs maps to a unique root hash, and only a small subset of nodes is needed to prove that a particular key/value combination is in the tree corresponding to a particular root hash.
+All substantial quantities of data in Ethereum are stored in a data structure known as the [Patricia Merkle tree](../fundamentals/patricia-tree.md), a tree structure where each node in the tree is the hash of its children. Each set of key/value pairs maps to a unique root hash, and only a small subset of nodes is needed to prove that a particular key/value combination is in the tree corresponding to a particular root hash.
 
 The size complexity of a Merkle proof scales linearly with the height of a tree; because each child in a tree has a particular number of children (in our case, up to 17), this means that the size complexity of a Merkle proof is logarithmic in the quantity of data stored. This means that, even if the entire state tree is a few gigabytes in size, if a node receives a state root from a trusted source that node has the ability to know with full certainty the validity of any information with the tree by only downloading a few kilobytes of data in a proof.
 
