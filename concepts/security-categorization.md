@@ -1,6 +1,6 @@
 # Security Categorization
 
-[See also](./design-rationale.md), for descriptions of potentially counterintuitive design decisions in Ethereum.
+[See also](../fundamentals/design-rationale.md), for descriptions of potentially counterintuitive design decisions in Ethereum.
 
 The purpose of this document is to attempt to create a taxonomy of key security properties that we are targeting for the Ethereum protocol, implementation and materials to have at launch time, as well as provide supplementary information where needed for each one.
 
@@ -13,7 +13,7 @@ The purpose of this document is to attempt to create a taxonomy of key security 
 
 ## Proof of Work
 
-The working spec description of Dagger Hashimoto is available [here](./ethash.md).
+The working spec description of Dagger Hashimoto is available [here](./ethash/ethash.md).
 
 The algorithm is intended to have the following key properties:
 

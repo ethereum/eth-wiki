@@ -10,12 +10,12 @@ tags:
 
 There are numerous pages underneath me.
 
-* [enode-url-format.md](fundamentals/enode-url-format.md)
-* [ethereum-introduction.md](fundamentals/ethereum-introduction.md)
-* [getting-ether.md](fundamentals/getting-ether.md)
-* [glossary.md](fundamentals/glossary.md)
-* [mining.md](fundamentals/mining.md)
-* [patricia-tree.md](fundamentals/mining.md)
-* [rlp.md](fundamentals/rlp.md)
-* [what-is-ethereum.md](fundamentals/what-is-ethereum.md)
-* [mining](/mining)
+* [enode-url-format.md](enode-url-format.md)
+* [ethereum-introduction.md](ethereum-introduction.md)
+* [getting-ether.md](getting-ether.md)
+* [glossary.md](glossary.md)
+* [mining.md](mining.md)
+* [patricia-tree.md](mining.md)
+* [rlp.md](rlp.md)
+* [what-is-ethereum.md](what-is-ethereum.md)
+* [mining](mining.md)

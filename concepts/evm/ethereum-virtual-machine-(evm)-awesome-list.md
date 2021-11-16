@@ -12,7 +12,7 @@ A curated list of resources on the Ethereum Virtual Machine (EVM), which is the 
 
 Not listed there yet, but in the spirit of [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Here is [how to contribute](./contributing.md).
+Here is [how to contribute](../../governance/contributing.md).
 
 ## Specification
 
