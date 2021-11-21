@@ -30,7 +30,7 @@ Bitcoin, along with many of its derivatives, stores data about users' balances i
 
 A user's "balance" in the system is thus the total value of the set of coins for which the user has a private key capable of producing a valid signature.
 
-![Triple-entry bookkepping example](https://bitcoin.org/img/dev/en-transaction-propagation.svg)  
+![Triple-entry bookkeeping example](https://bitcoin.org/img/dev/en-transaction-propagation.svg)  
 (Image from <https://bitcoin.org/en/developer-guide>)  
 
 Ethereum jettisons this scheme in favor of a simpler approach: the state stores a list of accounts where each account has a balance, as well as Ethereum-specific data (code and internal storage), and a transaction is valid if the sending account has enough balance to pay for it, in which case the sending account is debited and the receiving account is credited with the value. If the receiving account has code, the code runs, and internal storage may also be changed, or the code may even create additional messages to other accounts which lead to further debits and credits.
