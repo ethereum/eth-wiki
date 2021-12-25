@@ -102,7 +102,7 @@ In the Javascript API, the distinction between envelopes and messages is blurred
 
 ## Basic Operation
 
-Nodes are expected to receive and send envelopes continuously, as per the [protocol specification](Whisper-Wire-Protocol). They should maintain a map of envelopes, indexed by expiry time, and prune accordingly. They should also efficiently deliver messages to the front-end API through maintaining mappings between topics and envelopes.
+Nodes are expected to receive and send envelopes continuously, as per the [protocol specification](/concepts/whisper/poc-2-protocol-spec.md). They should maintain a map of envelopes, indexed by expiry time, and prune accordingly. They should also efficiently deliver messages to the front-end API through maintaining mappings between topics and envelopes.
 
 When a node's envelope memory becomes exhausted, a node may drop envelopes it considers unimportant or unlikely to please its peers. Nodes should consider peers good that pass them envelopes with low TTLs and high proofs-of-work. Nodes should consider peers bad that pass then expired envelopes or, worse, those that have an implied insertion time prior to the present.
 

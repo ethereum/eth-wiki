@@ -1,6 +1,6 @@
 # Ethash DAG Disk Storage Format
 
-Ethash is the PoW system. It requires a great huge dataset known as the DAG (name refers to [Dagger Hashimoto](Dagger-Hashimoto)). This takes a good long while to generate which is a pain. As such we tend to memoise it. Clients wishing to store the DAG in a cache should conform to this spec in order to share the cache with other clients:
+Ethash is the PoW system. It requires a great huge dataset known as the DAG (name refers to [Dagger Hashimoto](/concepts/dagger-hashimoto.md)). This takes a good long while to generate which is a pain. As such we tend to memoise it. Clients wishing to store the DAG in a cache should conform to this spec in order to share the cache with other clients:
 
 ## Location
 

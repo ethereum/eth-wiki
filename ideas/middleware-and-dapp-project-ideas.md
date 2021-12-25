@@ -73,7 +73,7 @@ Supported actions should ideally include:
 
 ## RANDAO
 
-Essentially, [this](https://forum.ethereum.org/discussion/2031/randao-a-dao-working-as-rng). Set it up as a decentralized service which any lottery or other randomness-based game can use; also, build a "full node software" package/plugin which facilitates participating in the RANDAO by providing random numbers.
+Essentially, [this](https://forum.ethereum.org/discussion/2031/randao-a-dao-working-as-rng)(dead link). Set it up as a decentralized service which any lottery or other randomness-based game can use; also, build a "full node software" package/plugin which facilitates participating in the RANDAO by providing random numbers.
 
 ## Interface with national ID
 

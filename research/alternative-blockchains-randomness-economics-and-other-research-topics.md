@@ -37,7 +37,7 @@ Cryptocurrencies](https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYw
 
 ### Ziliqa
 
-[Ziliqa](https://docs.zilliqa.com/whitepaper.pdf): a PoW sharded architecture consisting of a dataflow smart contract layer, and 5 other layers. Uses the EC-Schnorr multiginature signature scheme. However, RANDAO is preferable to aggregate/multisignature schemes since it is not prone to a 51% attack. Also uses committees, as is planned with Dfinity and Ethereum, although here the committees manage how miners are assigned to shards, whereas in Ethereum that is the task of the beacon chain and the sharding manager contract on the main chain. Uses PBFT consensus, which doesn't seem to be as good as [Casper](../concepts/casper-proof-of-stake-compendium.md) [FFG](https://eips.ethereum.org/EIPS/eip-1011), which is also used with PoW.
+[Ziliqa](https://docs.zilliqa.com/whitepaper.pdf): a PoW sharded architecture consisting of a dataflow smart contract layer, and 5 other layers. Uses the EC-Schnorr multiginature signature scheme. However, RANDAO is preferable to aggregate/multisignature schemes since it is not prone to a 51% attack. Also uses committees, as is planned with Dfinity and Ethereum, although here the committees manage how miners are assigned to shards, whereas in Ethereum that is the task of the beacon chain and the sharding manager contract on the main chain. Uses PBFT consensus, which doesn't seem to be as good as [Casper](/concepts/casper-proof-of-stake-compendium.md) [FFG](https://eips.ethereum.org/EIPS/eip-1011), which is also used with PoW.
 
 ### EOS
 

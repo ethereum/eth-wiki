@@ -1,7 +1,7 @@
 <!-- TITLE: Core Devs Berlin Meeting -->
 <!-- SUBTITLE: Istanbul & ETH1x Roadmap Planning, April 17 & 18th, 2019 -->
 
-Two days of meetings were held at Full Node in Berlin to discuss the [Istanbul hardfork](/roadmap/istanbul) and more broadly the [ETH1x roadmap](/roadmap) and processes and collaboration.
+Two days of meetings were held at Full Node in Berlin to discuss the [Istanbul hardfork](/roadmap/istanbul.md) and more broadly the [ETH1x roadmap](/roadmap/roadmap.md) and processes and collaboration.
 
 Original [ETHMagicians thread](https://ethereum-magicians.org/t/istanbul-eth1x-roadmap-planning-meeting-april-17th-18th-in-berlin/2899).
 

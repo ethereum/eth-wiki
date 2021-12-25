@@ -14,7 +14,7 @@ For an introduction to blockchains, see [this TED talk](https://www.youtube.com/
 
 Ethereum has been described in several ways.
 
-The simplest way to understand Ethereum is to know what it does. Just like how it is not necessary to fully understand the intricate workings of how a car works in order to appreciate it's utility, or to understand how electricity arrives in your light bulb when you turn it on, understanding the current and potential utility of Ethereum is a good start. Ethereum can be used for virtually any kind of transaction or agreement (to put it another way, any kind of activity that has an economic or governance aspect), at a lower cost than conventional alternatives, such as debit card payments, in a way that is trustless, secure, safe and censorship-resistant, all with high probability. An extensive and growing list of uses is available [here](../fundamentals/decentralized-apps-dapps.md).
+The simplest way to understand Ethereum is to know what it does. Just like how it is not necessary to fully understand the intricate workings of how a car works in order to appreciate it's utility, or to understand how electricity arrives in your light bulb when you turn it on, understanding the current and potential utility of Ethereum is a good start. Ethereum can be used for virtually any kind of transaction or agreement (to put it another way, any kind of activity that has an economic or governance aspect), at a lower cost than conventional alternatives, such as debit card payments, in a way that is trustless, secure, safe and censorship-resistant, all with high probability. An extensive and growing list of uses is available [here](/fundamentals/decentralized-apps-dapps.md).
 
 <!-- TODO: Where to host PDFs -->
 
@@ -54,7 +54,7 @@ The platform part of Ethereum makes it much more useful than just a cryptocurren
 
 ### List of dapps
 
-For a list of dapps, visit [here](../fundamentals/decentralized-apps-dapps.md). 
+For a list of dapps, visit [here](/fundamentals/decentralized-apps-dapps.md). 
 
 ## Market analysis
 
@@ -62,7 +62,7 @@ Assessing the actual usage of blockchains is a more reliable indicator than the 
 
 <!-- TODO: Update data below -->
 
-As of the 9th of January 2018, [the market capitalisation of Ethereum is $118.5 billion USD](https://cryptolization.com/ethereum) (refer to the link for the latest figure), and [it has been in circulation since 30 July 2015](../roadmap/releases.md), with the [first transaction](https://www.reddit.com/r/ethereum/comments/6qildp/what_is_the_first_ever_ethereum_transaction/) after the [genesis block](https://etherscan.io/block/0) using Ethereum on [7 August 2015](https://etherscan.io/block/46147). Compare this with the next largest and the current largest cryptocurrency, [Bitcoin, with a market cap of $253.0 billion USD](https://cryptolization.com/ethereum), where [it has been in circulation since January 2009](http://www.newyorker.com/reporting/2011/10/10/111010fa_fact_davis). Technically, Ethereum has had a much faster growth rate, while more importantly for long term investment (I do not encourage speculation or buying with capital that you can't afford to lose, without due diligence as that only causes volatility as has been seen) the fundamentals are much better than Bitcoin. While it is true that Bitcoin has more of a market and currency, e.g. in terms of more entities that will accept it as a form of payment, the creator of this wiki expects that time will change that (indeed the <a href="https://seekingalpha.com/article/4077679-ethereum-blasts-20-billion-market-cap-half-bitcoin" target="_blank" rel="noopener">market cap of Ethereum recently surpassed half that of Bitcoin, around May 2017</a>). Also, [the number of transactions of Ethereum surpassed that of several cryptocurrencies combined on 22 Nov 2017](https://www.reddit.com/r/ethereum/comments/7est9k/ethereum_is_now_processing_more_transactions_a/). However, note [this retort](https://www.reddit.com/r/ethereum/comments/7est9k/ethereum_is_now_processing_more_transactions_a/dq7a31u/).
+As of the 9th of January 2018, [the market capitalisation of Ethereum is $118.5 billion USD](https://cryptolization.com/ethereum) (refer to the link for the latest figure), and [it has been in circulation since 30 July 2015](/roadmap/releases.md), with the [first transaction](https://www.reddit.com/r/ethereum/comments/6qildp/what_is_the_first_ever_ethereum_transaction/) after the [genesis block](https://etherscan.io/block/0) using Ethereum on [7 August 2015](https://etherscan.io/block/46147). Compare this with the next largest and the current largest cryptocurrency, [Bitcoin, with a market cap of $253.0 billion USD](https://cryptolization.com/ethereum), where [it has been in circulation since January 2009](http://www.newyorker.com/reporting/2011/10/10/111010fa_fact_davis). Technically, Ethereum has had a much faster growth rate, while more importantly for long term investment (I do not encourage speculation or buying with capital that you can't afford to lose, without due diligence as that only causes volatility as has been seen) the fundamentals are much better than Bitcoin. While it is true that Bitcoin has more of a market and currency, e.g. in terms of more entities that will accept it as a form of payment, the creator of this wiki expects that time will change that (indeed the <a href="https://seekingalpha.com/article/4077679-ethereum-blasts-20-billion-market-cap-half-bitcoin" target="_blank" rel="noopener">market cap of Ethereum recently surpassed half that of Bitcoin, around May 2017</a>). Also, [the number of transactions of Ethereum surpassed that of several cryptocurrencies combined on 22 Nov 2017](https://www.reddit.com/r/ethereum/comments/7est9k/ethereum_is_now_processing_more_transactions_a/). However, note [this retort](https://www.reddit.com/r/ethereum/comments/7est9k/ethereum_is_now_processing_more_transactions_a/dq7a31u/).
 
 ## Issues
 
@@ -72,7 +72,7 @@ There also several issues with Ethereum, such as not being scalable enough, not 
 
 Ethereum will need to scale to process far more transactions per second (to become a "<a href="https://www.youtube.com/watch?v=j23HnORQXvs" target="_blank" rel="noopener">world computer</a>") than Visa, Mastercard and American Express combined (which process on the order of [tens of thousands of transactions per second](https://usa.visa.com/run-your-business/small-business-tools/retail.html) [in the link, CTRL+F 24,000]), while Ethereum 1.0, the current version as of December 30 2017, processed [a record of 1103523 transactions on Friday, December 22, 2017, or 12.77 transactions per second](https://web.archive.org/web/20171230005127/https://etherscan.io/chart/tx).
 
-Note that [Ripple claims that it's Consensus Ledger can process a thousand transactions per second](https://ripple.com/dev-blog/ripple-consensus-ledger-can-sustain-1000-transactions-per-second/), while it could process more with payment channels. "Although payment channels achieve practically infinite scalability by decoupling payment from settlement, they do so without incurring the risk typically associated with delayed settlement." Further note that Ripple achieves this by trading off on decentralization, through a [distributed network of validators or distributed servers](https://ripple.com/build/xrp-ledger-consensus-process/), while it has been described as a [federation protocol](https://wiki.ripple.com/Federation_protocol).
+Note that [Ripple claims that it's Consensus Ledger can process a thousand transactions per second](https://ripple.com/dev-blog/ripple-consensus-ledger-can-sustain-1000-transactions-per-second/), while it could process more with payment channels. "Although payment channels achieve practically infinite scalability by decoupling payment from settlement, they do so without incurring the risk typically associated with delayed settlement." Further note that Ripple achieves this by trading off on decentralization, through a [distributed network of validators or distributed servers](https://ripple.com/build/xrp-ledger-consensus-process/), while it has been described as a [federation protocol](https://wiki.ripple.com/Federation_protocol)(dead link).
 
 There are even more scalable blockchains that use a delegated proof of stake (DPOS) consensus protocol, such as Bitshares and Steem. [Bitshares can apparently process 100,000 TPS](https://bitshares.org/technology/industrial-performance-and-scalability/).
 
@@ -99,7 +99,7 @@ The mining process to crack cryptographic code (specifically to discover the non
 
 ## Quantum computing attacks
 
-If quantum computing becomes more performant Ethereum's cryptographic signature scheme, Elliptic Curve Digital Signature Algorithm (ECDSA), would be insecure. However, there are solutions for this that will be implemented soon in the [Constantinople release](Releases) with [EIP 86: Abstraction of transaction origin and signature, which has "**Custom cryptography**: users can upgrade to ed25519 signatures, Lamport hash ladder signatures or whatever other scheme they want on their own terms; they do not need to stick with ECDSA." Lamport signatures could be used in a quantum resistant algorithm](https://github.com/ethereum/EIPs/pull/208). More info on that is e.g. [here](https://ethereum.stackexchange.com/a/13577/95840)), [here](https://blog.ethereum.org/2015/12/24/understanding-serenity-part-i-abstraction/), and [here](./../howto/ethereum-development-tutorial.md).
+If quantum computing becomes more performant Ethereum's cryptographic signature scheme, Elliptic Curve Digital Signature Algorithm (ECDSA), would be insecure. However, there are solutions for this that will be implemented soon in the [Constantinople release](/roadmap/releases.md) with [EIP 86: Abstraction of transaction origin and signature, which has "**Custom cryptography**: users can upgrade to ed25519 signatures, Lamport hash ladder signatures or whatever other scheme they want on their own terms; they do not need to stick with ECDSA." Lamport signatures could be used in a quantum resistant algorithm](https://github.com/ethereum/EIPs/pull/208). More info on that is e.g. [here](https://ethereum.stackexchange.com/a/13577/95840)), [here](https://blog.ethereum.org/2015/12/24/understanding-serenity-part-i-abstraction/), and [here](/howto/ethereum-development-tutorial.md).
 
 ## No technological artefacts can be a panacea
 
@@ -107,11 +107,11 @@ For the continual improvement of humanity, there needs to be balance in life bet
 
 ## Bugs
 
-Ethereum has had expensive bugs, such as those listed [here](../faqs/major-issues-resulting-in-lost-or-stuck-funds.md) and [here](../faqs/famous-bugs.md).
+Ethereum has had expensive bugs, such as those listed [here](/faqs/major-issues-resulting-in-lost-or-stuck-funds.md) and [here](/faqs/famous-bugs.md).
 
 ## How do you buy and sell Ether, the currency of Ethereum?
 
-Refer to [here](./getting-ether.md).
+Refer to [here](/fundamentals/getting-ether.md).
 
 ## Development
 
@@ -128,16 +128,16 @@ If you want to help contribute to core development, there is also:
 
 ## Core development
 
--   [client development](../clients/clients-tools-dapp-browsers-wallets-and-other-projects.md);
+-   [client development](/clients/clients-tools-dapp-browsers-wallets-and-other-projects.md);
 -   if you're interested in testing, see the documentation [here](https://ethereum-tests.readthedocs.io/en/latest/), as well as [the Github tests repo](https://github.com/ethereum/tests), [a Gist here (it is outdated)](https://gist.github.com/Souptacular/fd197b1fac7c6d2660b0bef27a33ed40#lll-and-evm-stack-resources),  and [Gitter here](https://gitter.im/ethereum/tests);
 -   documentation and specification review, e.g. (and in particular) of [EIPs](https://github.com/ethereum/EIPs); 
 -   [many other repositories](https://github.com/ethereum).
 
-For R&D, refer to [here](../research/rd.md).
+For R&D, refer to [here](/research/rd.md).
 
 ## Programming languages
 
--   Learn Python first, e.g. with [Learn Python the Hard Way](https://www.learnpythonthehardway.org/) (I learnt using this, but it's rather condescending, so I'd recommend [Pydocs](https://docs.python.org/3/) instead). There's others, e.g. [Codecademy](https://www.codecademy.com/learn/learn-python), and [Coursera](https://www.coursera.org/courses?languages=en&query=learn+python), etc. Knowing Python is useful for research and demonstration, with demonstration e.g. for [client development](../clients/clients-tools-dapp-browsers-wallets-and-other-projects.md), e.g. for [Py-EVM](https://github.com/ethereum/py-evm) which is being used as an Ethereum client, to implement statelessness and sharding, as well as [vyper](https://github.com/ethereum/Vyper), an experimental, secure, smart contract programming language;
+-   Learn Python first, e.g. with [Learn Python the Hard Way](https://www.learnpythonthehardway.org/) (I learnt using this, but it's rather condescending, so I'd recommend [Pydocs](https://docs.python.org/3/) instead). There's others, e.g. [Codecademy](https://www.codecademy.com/learn/learn-python), and [Coursera](https://www.coursera.org/courses?languages=en&query=learn+python), etc. Knowing Python is useful for research and demonstration, with demonstration e.g. for [client development](/clients/clients-tools-dapp-browsers-wallets-and-other-projects.md), e.g. for [Py-EVM](https://github.com/ethereum/py-evm) which is being used as an Ethereum client, to implement statelessness and sharding, as well as [vyper](https://github.com/ethereum/Vyper), an experimental, secure, smart contract programming language;
 -   [LLL](https://media.consensys.net/an-introduction-to-lll-for-ethereum-smart-contract-development-e26e38ea6c23) (also see [here](https://github.com/ethereum/solidity/tree/develop/liblll) and [here](https://github.com/ethereum/solidity/tree/develop/lllc));
 -   [JULIA](https://solidity.readthedocs.io/en/develop/julia.html), an intermediate language for different Ethereum virtual machines;
 

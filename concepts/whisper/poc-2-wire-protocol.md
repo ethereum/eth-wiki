@@ -6,7 +6,7 @@ date: 2020-06-16T08:36:00.099Z
 tags: 
 ---
 
-Peer-to-peer communications between nodes running Whisper clients run using the underlying [ÐΞVp2p Wire Protocol](%C3%90%CE%9EVp2p-Wire-Protocol).
+Peer-to-peer communications between nodes running Whisper clients run using the underlying [ÐΞVp2p Wire Protocol](/archive/%C3%90%CE%9EVp2p-Wire-Protocol.md).
 
 This is a preliminary wire protocol for the Whisper subsystem. It will change.
 

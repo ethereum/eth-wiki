@@ -1,6 +1,6 @@
 # Bad Block Reporting
 
-Send a JSONRPC request to `https://badblocks.ethdev.com`:
+Send a JSONRPC request to `https://badblocks.ethdev.com` (dead link):
 
 Call `eth_badBlock(BADBLOCK)`, with `BADBLOCK` the object described below:
 

@@ -27,11 +27,11 @@ In order to obtain Ether, you need to either:
     friendly [Mist Ethereum GUI Wallet](https://github.com/ethereum/mist/releases) that as of Beta 6
     introduced the ability to purchase ether using the [ShapeShift API](http://shapeshift.io/).
 -   **not recommended**: become an Ethereum miner (see
-    [here](https://forum.ethereum.org/discussion/8886/quick-start-guide-to-mine-ethereum/p1).
+    [here](https://forum.ethereum.org/discussion/8886/quick-start-guide-to-mine-ethereum/p1)(dead link).
     Note that
     [this](https://ethereum-homestead.readthedocs.io/en/latest/mining.html)
     Homestead guide is outdated, which is the same as
-    [this](./mining.md) mining wiki).
+    [this](/fundamentals/mining.md) mining wiki).
     However, this is not recommended as Ethereum is going to transition
     to proof-of-stake, making mining obsolescent. Becoming a miner would
     involve investing in a mining rig (several GPUs, plus maybe other
@@ -119,10 +119,6 @@ You can also search for "{insert your country} Ether exchange".
 
 There's also this:
 <https://myetherwallet.github.io/knowledge-base/faq/buying-selling-exchanging-eth-tokens-fiat.html>.
-For further info (which lists more exchanges), see
-[here](Getting-Ether:-further-info).
-
-<!-- TODO: Fix link above -->
 
 ## Centralised fixed rate exchanges
 
@@ -311,7 +307,7 @@ https://www.huobi.com
 
 https://www.okcoin.com
 
-https://yunbi.com
+https://yunbi.com (dead link)
 
 **European Euros**
 
@@ -329,11 +325,11 @@ https://bitso.com
 
 https://coinone.co.kr/
 
-https://www.bithumb.com/
+https://www.bithumb.com/ (dead link)
 
 ## More details about what James Ray tried (not very necessary to know)
 
-You could skip to the [next section](https://github.com/ethereum/wiki/wiki/Ethereum-introduction.md#development)
+You could skip to the [next section](/fundamentals/getting-ether#development)
 
 I bought BTC in a different way. Step 2 worked for me. I will try step 1 next time I buy more BTC.
 

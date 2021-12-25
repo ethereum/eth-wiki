@@ -24,7 +24,7 @@ tags:
 Sourced in part from the [Constantinople Progress Tracker](https://github.com/ethereum/pm/wiki/Constantinople-Progress-Tracker).
 
 See also:
-* [older list of client tools, dapp browsers, wallets, and other projects](/clients-tools-dapp-browsers-wallets-and-other-projects)
+* [older list of client tools, dapp browsers, wallets, and other projects](/clients/clients-tools-dapp-browsers-wallets-and-other-projects.md)
 * [ETH2 Clients](/eth2/clients) - Beacon Chain implementations to date
 
 ---

@@ -10,4 +10,4 @@ tags:
 
 Welcome to the Ethereum Wiki Enterprise section! 
 
-* [Why use Mainnet for enterprise applications](/enterprise/whymainnet)
+* [Why use Mainnet for enterprise applications](/enterprise/whymainnet.md)

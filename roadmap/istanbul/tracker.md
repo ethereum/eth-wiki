@@ -6,8 +6,7 @@ date: 2019-07-01T17:38:54.103Z
 tags: 
 ---
 
-* See [Istanbul Roadmap](/roadmap/istanbul)
-* See [all Istanbul pages](/roadmap/istanbul/all)
+* See [Istanbul Roadmap](/roadmap/istanbul.md)
 
 ## Clients
 

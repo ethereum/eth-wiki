@@ -14,8 +14,8 @@ Of all the crypto projects I've looked into so far, including Ethereum, [Holocha
 See also [these scaling proposals](https://github.com/jpitts/eth-community-discussions/blob/master/proposals-to-scale.md).
 
 Alternative approaches to scaling other than sharding include state channels, side chains, multi-chains and off-chain computation. Projects are included [here in this summary spreadsheet by the Web3 Foundation](https://docs.google.com/spreadsheets/d/1BQ0bK_LhSQvxtvXryVoIcmxeKMuVJCq6oD0aS5_hpC8). [Parity Substrate](https://www.reddit.com/r/ethereum/comments/8dgoup/parity_substrate/) is another project. Other designs and sources of inspiration include:
-- [projects related to relaying transactions](https://github.com/ethereum/wiki/wiki/Relay-projects)
-- [storage incentivization projects](https://github.com/ethereum/wiki/wiki/Storage-projects)
+- [projects related to relaying transactions](/research/relay-projects.md)
+- [storage incentivization projects](/research/storage-projects.md)
 - [Dfinity](https://www.dfinity.org/pdf-viewer/pdfs/viewer?file=../library/dfinity-consensus.pdf), uses a random beacon chain and notaries, which Ethereum plans to implement, although the randomness source may be [RANDAO](https://github.com/ethereum/research/blob/master/sharding_fork_choice_poc/beacon_chain_node.py) instead of BLS aggregate signatures.
 - [Truebit](https://truebit.io/) interactive verification off-chain protocol for Ethereum.
 
@@ -34,7 +34,7 @@ Cryptocurrencies](https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYw
 
 ## Ziliqa
 
-[Ziliqa](https://docs.zilliqa.com/whitepaper.pdf): a PoW sharded architecture consisting of a dataflow smart contract layer, and 5 other layers. Uses the EC-Schnorr multiginature signature scheme. However, RANDAO is preferable to aggregate/multisignature schemes since it is not prone to a 51% attack. Also uses committees, as is planned with Dfinity and Ethereum, although here the committees manage how miners are assigned to shards, whereas in Ethereum that is the task of the beacon chain and the sharding manager contract on the main chain. Uses PBFT consensus, which doesn't seem to be as good as [Casper](https://github.com/ethereum/wiki/wiki/Casper-Proof-of-Stake-compendium) [FFG](https://eips.ethereum.org/EIPS/eip-1011), which is also used with PoW.
+[Ziliqa](https://docs.zilliqa.com/whitepaper.pdf): a PoW sharded architecture consisting of a dataflow smart contract layer, and 5 other layers. Uses the EC-Schnorr multiginature signature scheme. However, RANDAO is preferable to aggregate/multisignature schemes since it is not prone to a 51% attack. Also uses committees, as is planned with Dfinity and Ethereum, although here the committees manage how miners are assigned to shards, whereas in Ethereum that is the task of the beacon chain and the sharding manager contract on the main chain. Uses PBFT consensus, which doesn't seem to be as good as [Casper](/concepts/casper-proof-of-stake-compendium.md) [FFG](https://eips.ethereum.org/EIPS/eip-1011), which is also used with PoW.
 
 ## EOS
 
@@ -44,7 +44,7 @@ Cryptocurrencies](https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYw
 
 Both lack a Turing complete language to use for stored procedures (more commonly known by the less appropriate name of smart contract) and decentralised apps (dapps)
 
-Regarding Bitcoin Cash, doubling the block limit does not seem like a good idea, as it makes the network more centralized. The roadmap also includes "adaptive block size (market driven growth to 1 TB). Again this is not good for decentralization and security. It's uncertain how Bitcoin Cash and Bitcoin are going to be sustainable by having low rewards and high fees (and no gas limit, which is not good for pricing economics; FMI see DRAFT: Position paper on resource pricing (https://ethresear.ch/t/draft-position-paper-on-resource-pricing/2838)). Both will continue to use PoW which is bad for scaling, energy consumption, decentralization and security. Bitcoin using Lightning Network isn't sustainable long-term (like other L2 solutions); FMI see ethereum/wiki (https://github.com/ethereum/wiki/wiki/Sharding-FAQs#how-does-plasma-state-channels-and-other-layer-2-technologies-fit-into-the-trilemma).
+Regarding Bitcoin Cash, doubling the block limit does not seem like a good idea, as it makes the network more centralized. The roadmap also includes "adaptive block size (market driven growth to 1 TB). Again this is not good for decentralization and security. It's uncertain how Bitcoin Cash and Bitcoin are going to be sustainable by having low rewards and high fees (and no gas limit, which is not good for pricing economics; FMI see DRAFT: Position paper on resource pricing (https://ethresear.ch/t/draft-position-paper-on-resource-pricing/2838)). Both will continue to use PoW which is bad for scaling, energy consumption, decentralization and security. Bitcoin using Lightning Network isn't sustainable long-term (like other L2 solutions); FMI see ethereum/wiki (/sharding/Sharding-FAQs.md#how-does-plasma-state-channels-and-other-layer-2-technologies-fit-into-the-trilemma).
 
 ## Early research
-For precursor research scaling ideas, see para 2. [here](https://vitalik.ca/2017-09-15-prehistory.html) (see the links to hypercubes and [Chain Fibers](https://github.com/ethereum/wiki/wiki/Chain-Fibers-Redux)—a precursor to [sharding](https://github.com/ethereum/wiki/wiki/Sharding-introduction-R&D-compendium), as well as hub-and-spoke chains).
+For precursor research scaling ideas, see para 2. [here](https://vitalik.ca/2017-09-15-prehistory.html) (see the links to hypercubes and [Chain Fibers](/scalability/chain-fibers-redux.md)—a precursor to [sharding](/sharding/sharding-introduction-r-d-compendium.md), as well as hub-and-spoke chains).

@@ -13,7 +13,6 @@ There are numerous pages underneath me.
 * [enode-url-format.md](enode-url-format.md)
 * [ethereum-introduction.md](ethereum-introduction.md)
 * [getting-ether.md](getting-ether.md)
-* [glossary.md](glossary.md)
 * [mining.md](mining.md)
 * [patricia-tree.md](mining.md)
 * [rlp.md](rlp.md)

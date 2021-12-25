@@ -24,7 +24,7 @@ Sourced originally from the now [retired spec for phase 1 sharding](https://ethr
    * Blobs (Binary Large Objects) are collated in shards without transactions (which require execution)
    * Proposers submit blobs
    * Notaries
-   * For more details, see the [phase 1 spec](https://github.com/ethereum/eth2.0-specs/blob/master/specs/core/1_shard-data-chains.md) and [implementations](https://github.com/ethereum/wiki/wiki/Sharding-introduction-R&D-compendium#implementations).
+   * For more details, see the [phase 1 spec](https://github.com/ethereum/eth2.0-specs/blob/master/specs/core/1_shard-data-chains.md) and [implementations](/sharding/sharding-introduction-r-d-compendium.md#implementations).
 
 ### Phase 2: EVM state transition function
    - Full nodes only
@@ -48,7 +48,7 @@ Sourced originally from the now [retired spec for phase 1 sharding](https://ethr
 ### Phase 5: Tight coupling with main chain security: [here](https://hackmd.io/s/HJ_BbgCFz#%E2%9F%A0-1600---1645--Ethereum-20-End-game) and [more](https://ethresear.ch/search?q=tight%20coupling).
 
 -   Data availability proofs: [A note on data availability and erasure coding](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding), <https://ethresear.ch/t/sharding-and-data-forgetfulness/61>, 
--   [Casper](Casper-Proof-of-Stake-compendium) integration.
+-   [Casper](/concepts/casper-proof-of-stake-compendium.md) integration.
 -   [Internally fork-free sharding](https://ethresear.ch/search?q=internally%20fork-free)
 -   Manager shard
 
@@ -65,7 +65,7 @@ And a lot more: <https://ethresear.ch/c/sharding>.
 
 
 ## Ethereum 3.0
-- Casper CBC integration. See [here](https://github.com/ethereum/wiki/wiki/Casper-Proof-of-Stake-compendium) FMI.
+- Casper CBC integration. See [here](/concepts/casper-proof-of-stake-compendium.md) FMI.
 - zk-STARKs, e.g. via [StarkWare](https://www.starkware.co/); videos [here](https://www.youtube.com/watch?v=VUN35BC11Qw&t=2s), [here](https://www.youtube.com/watch?v=9VuZvdxFZQo&t=7s) and [here](https://www.youtube.com/watch?v=9VuZvdxFZQo&t=7s), as well as a paper [here](https://eprint.iacr.org/2018/046) (the abstract is a more succinct intro than the videos), while the full paper is more detailed; and  
 - [heterogeneous sharding](https://ethresear.ch/t/heterogeneous-sharding/1979)
 - Outdated: [Are there any ideas that’s potentially more useful than implementing sharding?](https://ethresear.ch/t/are-there-any-ideas-thats-potentially-more-useful-than-implementing-sharding/334/3).

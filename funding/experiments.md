@@ -6,13 +6,13 @@ date: 2019-07-31T15:15:54.268Z
 tags: 
 ---
 
-See the top level [Funding](/funding) page for sources of funding and related info.
+See the top level [Funding](/funding/funding.md) page for sources of funding and related info.
 
-Please use this [EthMagicians thread for discussion »](https://ethereum-magicians.org/t/funding-and-eth1x/3496)
+Please use this [EthMagicians thread for discussion »](https://ethereum-magicians.org/t/funding/funding.md-and-eth1x/3496)
 
 # Resources
 
-* Related to this page, @bmann wrote up a Funding Taxonomy & Issues https://ethereum-magicians.org/t/funding-taxonomy-issues-for-ethereum-ecosystem/2014
+* Related to this page, @bmann wrote up a Funding Taxonomy & Issues https://ethereum-magicians.org/t/funding/funding.md-taxonomy-issues-for-ethereum-ecosystem/2014
 * Long term cashflow & budgets for projects, with templates by @bmann https://ethereum-magicians.org/t/discussing-long-term-cashflow-and-budgets-for-ethereum-projects-teams-and-individuals/1849
 
 # Funding Required
@@ -70,15 +70,15 @@ And, should go without saying: if per project or R&D work isn't longer term, and
 
 # What needs funding in ETH1x?
 
-The [ETH1 page](/eth1) lists Working Groups, which came out of [CoreDevsBerlin](/eth1/coredevsberlin). Alexey's State Rent group is sort of "perma funded" by the EF for now, and Alexey negotiated 3 months of funding for some of the other Working Groups.
+The [ETH1 page](/eth1/eth1.md) lists Working Groups, which came out of [CoreDevsBerlin](/eth1/coredevsberlin.md). Alexey's State Rent group is sort of "perma funded" by the EF for now, and Alexey negotiated 3 months of funding for some of the other Working Groups.
 
 Infrastructure, using Testing as an example, is largely leaderless. There are a couple of people paid by the EF that work on it. Hasn't been an effort to coordinate testnets, consensus tests, network tests, etc. White Block / Zak Cole have said they could lead some of this.
 
 Coordination (eg. release management) doesn't have a solid process and no one dedicated to it other than Hudson (who also is the only community person, travels a ton, AND does devops work for the foundation). Danno & Tim Beiko who work for Pegasys / ConsenSys deserve a shout out for leaning into the hard fork process and EIP / All Core Devs process. Alex (axic) is also doing a ton of work around this, but is also juggling EVM work and eWASM work and a ton of other development projects.
 
-Infrastructure for ETH1x broadly is kind of run by various people who work with the EF, but is also largely undocumented and not currently able to be run by anyone outside the EF. There is an attempt at documenting what infrastructure is needed / who has keys to what on the [Infrastructure](/infrastructure) page.
+Infrastructure for ETH1x broadly is kind of run by various people who work with the EF, but is also largely undocumented and not currently able to be run by anyone outside the EF. There is an attempt at documenting what infrastructure is needed / who has keys to what on the [Infrastructure](/governance/infrastructure.md) page.
 
-I think it would be a very interesting process to see how many people are working on ETH1x across the EF, Parity, and Pegasys (just listing those that have active mainnet clients -- see [ETH1 clients](/eth1/clients)).
+I think it would be a very interesting process to see how many people are working on ETH1x across the EF, Parity, and Pegasys (just listing those that have active mainnet clients -- see [ETH1 clients](/eth1/clients.md)).
 
 Infrastructure is this special case which is most effective when done "centrally" or at least collaborated on closely.
 
