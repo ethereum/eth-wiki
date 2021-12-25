@@ -6,7 +6,7 @@ date: 2019-12-08T12:08:56.664Z
 tags: 
 ---
 
-The [Etherum 1.x](/eth1) page is a good starting point for an overview of Working Groups and areas of focus.
+The [Etherum 1.x](/eth1/eth1.md) page is a good starting point for an overview of Working Groups and areas of focus.
 
 # Philosophy
 
@@ -200,7 +200,7 @@ Below are some themes that were among the discussed potential changes.
 |[EIP-1380](https://eips.ethereum.org/EIPS/eip-1380)|Reduced gas cost for call to self|Tentatively accepted (Berlin)|Tentatively accepted in decision [67.1](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md)|Independent|
 |[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)|Fee market change for ETH 1.0 chain|Withdrawn| Not completed in time. Concerns about effect on [transaction propagation](https://youtu.be/lF_XxqxgVuA?t=4506). Withdrawn in decision [67.4](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md) due to lack of champion.|Independent|
 |[EIP-1702](https://eips.ethereum.org/EIPS/eip-1702)| Generalized Account Versioning Scheme|Tentatively accepted (Berlin)|Design-1 variant was been accepted in decision [63.2](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2063.md). Concerns about what specifically this is needed for.|Account versioning|
-|[EIP-1706](https**://eips.ethereum.org/EIPS/eip-1706)|Disable SSTORE with gasleft lower than call stipend|Rejected/Withdrawn|Replaced by EIP-2200 (Accepted)|Storage writing|
+|[EIP-1706](https://eips.ethereum.org/EIPS/eip-1706)|Disable SSTORE with gasleft lower than call stipend|Rejected/Withdrawn|Replaced by EIP-2200 (Accepted)|Storage writing|
 |[EIP-1707](https://github.com/ethereum/EIPs/pull/1707)|Use Version Byte Prefix for Contract Account Versioning|Rejected/Withdrawn (not proposed)|Superceded by 1702 (which is tentatively accepted (Berlin))|Account versioning|
 |[EIP-1712](https://github.com/ethereum/EIPs/pull/1712)|Disallow Deployment of Unused Opcodes|Rejected/Withdrawn (not proposed)|Superceded by 1702 (which is tentatively accepted (Berlin))|Account versioning|
 |[EIP-1803](https://eips.ethereum.org/EIPS/eip-1803)|Rename opcodes for clarity|Rejected/Withdrawn|Rejected in decision [67.2](https://github.com/ethereum/pm/blob/master/All%20Core%20Devs%20Meetings/Meeting%2067.md) due to lack of champion.|Independent|
@@ -354,7 +354,7 @@ There was a [discussion](https://ethereum-magicians.org/t/eip-1109-remove-call-c
 - It can be [beneficial](https://gitter.im/ethereum/AllCoreDevs?at=5cfa2e6a702b7e5e76439672) to implement net gas metering without account versioning, because existing contracts can also receive gas reduction.
 
 #### Key decisions:
-- Are there any opposed to implementing 1706 even if not explicitly required by 1283 (that is, if account versioning goes ahead)? If no, people need to review the 1706 [implementation](paritytech/parity-ethereum#10191) (the original fix for 1283).
+- Are there any opposed to implementing 1706 even if not explicitly required by 1283 (that is, if account versioning goes ahead)? If no, people need to review the 1706 [implementation](https://github.com/paritytech/parity-ethereum#10191) (the original fix for 1283).
 
 
 #### Storage Writing Cluster Outcome
@@ -496,4 +496,4 @@ Planned prototyping and implementation, in order of decreasing priority:
 
 # Post-Istanbul
 
-The next fork will be called [Muir Glacier](eth.wiki/roadmap/muir_glacier) and will address the difficulty bomb.
+The next fork will be called [Muir Glacier](/roadmap/muir_glacier.md) and will address the difficulty bomb.

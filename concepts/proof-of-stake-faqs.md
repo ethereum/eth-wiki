@@ -243,4 +243,4 @@ Generally, yes; any proof of stake algorithm can be used as a consensus algorith
 
 ## Further reading
 
-- [Casper proof of stake compedium](./casper-proof-of-stake-compendium.md)
+- [Casper proof of stake compedium](/concepts/casper-proof-of-stake-compendium.md)

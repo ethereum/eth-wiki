@@ -6,7 +6,7 @@
 
 See:
 
--   [FAQs](./proof-of-stake-faqs.md)
+-   [FAQs](/concepts/proof-of-stake-faqs.md)
 
 ## Casper FFG
 

@@ -6,7 +6,7 @@
 
 ## What is Ethereum?
 
-There are several ways to answer this question, such as [here](./fundamentals/ethereum-introduction.md), as well as the dedicated [What is Ethereum](./fundamentals/what-is-ethereum.md) wiki page, which was made at the time of the Frontier release, so it is outdated.
+There are several ways to answer this question, such as [here](/fundamentals/ethereum-introduction.md), as well as the dedicated [What is Ethereum](/fundamentals/what-is-ethereum.md) wiki page, which was made at the time of the Frontier release, so it is outdated.
 
 If you prefer to learn by watching videos, see:
 
@@ -17,7 +17,7 @@ If you prefer to learn by watching videos, see:
 
 ## How do I buy Ether or ETH?
 
-Read [this](../fundamentals/ethereum-introduction.md#how-do-you-buy-and-sell-ether-the-currency-of-ethereum).
+Read [this](/fundamentals/ethereum-introduction.md#how-do-you-buy-and-sell-ether-the-currency-of-ethereum).
 
 ## Where can I learn more about Ethereum?
 
@@ -48,8 +48,8 @@ Read [this](../fundamentals/ethereum-introduction.md#how-do-you-buy-and-sell-eth
 
 ## Where can I learn about the Ether sale and mining?
 
--   [The Ether Sale FAQ](https://forum.ethereum.org/discussion/196/the-ether-sale-faq/p1)
--   [The Mining FAQ](https://forum.ethereum.org/discussion/197/mining-faq-live-updates/p1)
+-   [The Ether Sale FAQ](https://forum.ethereum.org/discussion/196/the-ether-sale-faq/p1)(dead link)
+-   [The Mining FAQ](https://forum.ethereum.org/discussion/197/mining-faq-live-updates/p1)(dead link)
 
 ## Wallets
 
@@ -84,8 +84,8 @@ Other:
     -   [Homebrew Ethereum](https://github.com/caktux/homebrew-ethereum) ([@caktux](https://github.com/caktux))
 -   Guides
     -   [eth/AlethZero super easy install guide for OSX](https://forum.ethereum.org/discussion/1388/alethzero-super-easy-install-guide-for-osx) ([@stephantual](https://github.com/stephantual))
-    -   [Go-Ethereum simple build guide for OSX](http://forum.ethereum.org/discussion/905/go-ethereum-cli-ethereal-simple-build-guide-for-osx-now-with-one-line-install) ([@stephantual](https://github.com/stephantual))
-    -   [Building on Ubuntu](https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Ubuntu#user-content-trusty-1404)
+    -   [Go-Ethereum simple build guide for OSX](http://forum.ethereum.org/discussion/905/go-ethereum-cli-ethereal-simple-build-guide-for-osx-now-with-one-line-install) ([@stephantual](https://github.com/stephantual))(dead link)
+    -   [Building on Ubuntu](https://github.com/ethereum/cpp-ethereum/wiki/Building-on-Ubuntu#user-content-trusty-1404)(dead link)
 -   Builds
     -   [Ethdev Buildbot](http://build.ethdev.com/waterfall)
 
@@ -120,7 +120,7 @@ With the eth client
 ### Where can I learn about contract development?
 
 -   Articles
-    -   [Ethereum Development Tutorial](../howto/ethereum-development-tutorial.md)
+    -   [Ethereum Development Tutorial](/howto/ethereum-development-tutorial.md)
 -   Videos
     -   [Ethereum](https://www.youtube.com/user/ethereumproject/videos)
     -   [EtherCasts](https://www.youtube.com/user/EtherCasts/videos)
@@ -128,7 +128,7 @@ With the eth client
 ### Where can I learn Serpent, the Python-like language?
 
 -   Specifications
-    -   [The Serpent Language](Serpent)
+    -   [The Serpent Language](/archive/serpent.md)
 -   Examples
     -   [Vitalik's Serpent examples](https://github.com/ethereum/serpent/tree/master/examples)
 -   Tutorials
@@ -177,7 +177,7 @@ With the eth client
 -   [The PoC 6 API for C++](https://github.com/ethereum/cpp-ethereum/wiki/Client-Development-with-PoC-6)
 -   [The PoC 5 API for Go](https://github.com/ethereum/go-ethereum/wiki/PoC-5-Public-Go-API)
 -   [The PoC 6 API for QML](https://github.com/ethereum/go-ethereum/wiki/QML-PoC6-API)
--   [The PoC 7 API for JavaScript](https://github.com/ethereum/wiki/wiki/JavaScript-API)
+-   [The PoC 7 API for JavaScript](/archive/javascript-api.md)
 
 ### Where can I learn about ÐApp development?
 
@@ -193,7 +193,7 @@ Official
 -   [Ethereum command-line client (Go)](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)
 -   [Mist Browser (Go)](https://github.com/ethereum/go-ethereum)
 -   [Pyeth command-line client (Python)](https://github.com/ethereum/pyethereum#interacting-with-the-network)
--   [Serpent Compiler (Python)](Serpent)
+-   [Serpent Compiler (Python)](/archive/serpent.md)
 
 Community
 

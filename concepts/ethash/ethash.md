@@ -10,7 +10,7 @@ tags:
 
 **This spec is REVISION 23. Whenever you substantively (ie. not clarifications) update the algorithm, please update the revision number in this sentence. Also, in all implementations please include a spec revision number**
 
-Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. [Read the original version](/concepts/dagger-hashimoto).
+Ethash is the planned PoW algorithm for Ethereum 1.0. It is the latest version of Dagger-Hashimoto, although it can no longer appropriately be called that since many of the original features of both algorithms have been drastically changed in the last month of research and development. [Read the original version](/concepts/dagger-hashimoto.md).
 
 The general route that the algorithm takes is as follows:
 
@@ -21,7 +21,7 @@ The general route that the algorithm takes is as follows:
 
 The large dataset is updated once every 30000 blocks, so the vast majority of a miner's effort will be reading the dataset, not making changes to it.
 
-See [Ethhash design rationale](/concepts/ethash/design-rationale) for design rationale considerations for this algorithm.
+See [Ethhash design rationale](/concepts/ethash/design-rationale.md) for design rationale considerations for this algorithm.
 
 ## Definitions
 
@@ -140,7 +140,7 @@ def calc_dataset(full_size, cache):
 
 ## Main Loop
 
-Now, we specify the main "hashimoto"-like loop, where we aggregate data from the full dataset in order to produce our final value for a particular header and nonce. In the code below, `header` represents the SHA3-256 _hash_ of the [RLP](RLP) representation of a _truncated_ block header, that is, of a header excluding the fields **mixHash** and **nonce**. `nonce` is the eight bytes of a 64 bit unsigned integer in big-endian order. So `nonce[::-1]` is the eight-byte little-endian representation of that value:
+Now, we specify the main "hashimoto"-like loop, where we aggregate data from the full dataset in order to produce our final value for a particular header and nonce. In the code below, `header` represents the SHA3-256 _hash_ of the [RLP](/fundamentals/rlp.md) representation of a _truncated_ block header, that is, of a header excluding the fields **mixHash** and **nonce**. `nonce` is the eight bytes of a 64 bit unsigned integer in big-endian order. So `nonce[::-1]` is the eight-byte little-endian representation of that value:
 
 ```python
 def hashimoto(header, nonce, full_size, dataset_lookup):

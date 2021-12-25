@@ -1,5 +1,5 @@
 ---
-title: Proposal: Transaction Proxy Hooks
+title: Proposal:Transaction Proxy Hooks
 description: 
 published: true
 date: 2020-06-16T09:59:45.204Z

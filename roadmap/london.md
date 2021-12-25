@@ -6,7 +6,7 @@ date: 2019-08-31T06:09:10.582Z
 tags: 
 ---
 
-The [Etherum 1.x](/eth1) page is a good starting point for an overview of Working Groups and areas of focus.
+The [Etherum 1.x](/eth1/eth1.md) page is a good starting point for an overview of Working Groups and areas of focus.
 
 # Philosophy
 

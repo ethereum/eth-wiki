@@ -891,7 +891,7 @@ Here are some of them.  Feel free to add more.
 
 ##### By Community
 
--   <http://forum.ethereum.org/discussion/1317/reentrant-contracts>
+-   <http://forum.ethereum.org/discussion/1317/reentrant-contracts> (dead link)
 -   <http://hackingdistributed.com/2016/06/16/scanning-live-ethereum-contracts-for-bugs/>
 -   <http://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/>
 -   <http://hackingdistributed.com/2016/06/22/smart-contract-escape-hatches/>

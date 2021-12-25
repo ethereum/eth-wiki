@@ -15,14 +15,14 @@
 
 ## Miscellaneous resources and info
 
--   [Safety](../howto/smart-contract-safety.md)
--   [ÐApp Developer Resources](../fundamentals/dapp-developer-resources.md)
+-   [Safety](/howto/smart-contract-safety.md)
+-   [ÐApp Developer Resources](/fundamentals/dapp-developer-resources.md)
 -   [JavaScript API](https://web3js.readthedocs.io/en/v1.2.9/index.html)
--   [JSON RPC API](../json-rpc/api.md)
--   [Useful Ðapp Patterns](https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns)
--   [Standardized Contract APIs](../concepts/standardized-contract-apis.md)
--   [Ethereum development tutorial](../howto/ethereum-development-tutorial.md)
--   [ÐApp using Meteor](../howto/dapp-using-meteor.md)
+-   [JSON RPC API](/json-rpc/api.md)
+-   [Useful Ðapp Patterns](/concepts/useful-dapp-patterns.md)
+-   [Standardized Contract APIs](/concepts/standardized-contract-apis.md)
+-   [Ethereum development tutorial](/howto/ethereum-development-tutorial.md)
+-   [ÐApp using Meteor](/howto/dapp-using-meteor.md)
 -   [Dapp Insight: dapp statistics](https://dappinsight.com)
 
 

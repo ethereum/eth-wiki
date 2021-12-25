@@ -1,5 +1,5 @@
 ---
-title: Proposal: Reversion Notification
+title: Proposal:Reversion Notification
 description: 
 published: true
 date: 2020-06-16T10:03:36.567Z

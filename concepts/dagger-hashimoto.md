@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Dagger Hashimoto was a precursor research implementation and specification for the mining algorithm for Ethereum 1.0, while it has been superceded by [Ethash](http://github.com/ethereum/wiki/wiki/Ethash). 
+Dagger Hashimoto was a precursor research implementation and specification for the mining algorithm for Ethereum 1.0, while it has been superceded by [Ethash](/concepts/ethash/ethash.md). 
 
 The information in this article shall be kept for historical purposes.
 

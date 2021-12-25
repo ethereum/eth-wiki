@@ -1,10 +1,10 @@
 # Roadmap
 
-Prior information is available on the [releases](/releases) page.
+Prior information is available on the [releases](/roadmap/releases.md) page.
 
 The formal process of hardforks is documented in [EIP 233](https://eips.ethereum.org/EIPS/eip-233), along with some recent discussion on [EthMagicians](https://ethereum-magicians.org/t/eep-5-ethereum-hardfork-process-request-for-collaboration/2305).
 
-The [ETH1](/eth1) page lists Working Groups and areas of focus.
+The [ETH1](/eth1/eth1.md) page lists Working Groups and areas of focus.
 
 ## Philosophy
 
@@ -32,10 +32,10 @@ Steps for EIPs:
 | 5           | 2675000      | 2016-11-22             | Spurious Dragon                       |
 | 6           | 4370000      | 2017-10-16             | Byzantium                             |
 | 7           | 7280000      | 2019-02-28             | Constantinople                        |
-| 8           | 9069000      | 2019-12-08             | [Istanbul](/roadmap/istanbul)         |
-| 9           | 9200000      | 2019-12-31 (tentative) | [Muir Glacier](/roadmap/muir_glacier) |
-| 10          | TBD          | 2020-06 (tentative)    | [Berlin](/roadmap/berlin)             |
-| 11          | TBD          | TBD                    | [London](/roadmap/london)             |
+| 8           | 9069000      | 2019-12-08             | [Istanbul](/roadmap/istanbul.md)         |
+| 9           | 9200000      | 2019-12-31 (tentative) | [Muir Glacier](/roadmap/muir_glacier.md) |
+| 10          | TBD          | 2020-06 (tentative)    | [Berlin](/roadmap/berlin.md)             |
+| 11          | TBD          | TBD                    | [London](/roadmap/london.md)             |
 | 12          | TBC          | TBC                    | Shanghai                              |
 | 13          | TBC          | TBC                    | Devcon names thereafter               |
 
@@ -81,7 +81,7 @@ meta-EIP [here](https://eips.ethereum.org/EIPS/eip-609)
 
 ## Constantinople
 
-Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburg fork. More [here](/roadmap/petersburg).
+Initially planned for Q1 of 2019, this fork was delayed to allow for evaluation of one of the EIPs. The fork went ahead without that EIP (EIP-1283) and was referred to by some as the Petersburg fork. More [here](/roadmap/petersburg.md).
 
 Noteable in this upgrade were changes to allow layer 2 solutions to pre-define the addresses of future contracts. This allows state channels to deploy contracts that could be deployed on-chain, but may not be required to.
 
@@ -98,7 +98,7 @@ More details can be found in:
 
 ## Istanbul
 
-See the wiki page [here](/roadmap/istanbul) and the hard fork meta [here](https://eips.ethereum.org/EIPS/eip-1679)
+See the wiki page [here](/roadmap/istanbul.md) and the hard fork meta [here](https://eips.ethereum.org/EIPS/eip-1679)
 
 EIP-152: Add Blake2 compression function F precompile
 EIP-1108: Reduce alt_bn128 precompile gas costs
@@ -113,15 +113,15 @@ The Cat Herders blog [here](https://medium.com/ethereum-cat-herders/istanbul-tes
 
 ## Muir Glacier
 
-An update to delay the difficulty bomb, see the wiki page [here](/roadmap/muir_glacier).
+An update to delay the difficulty bomb, see the wiki page [here](/roadmap/muir_glacier.md).
 
 ## Berlin
 
-See the wiki page [here](/roadmap/berlin).
+See the wiki page [here](/roadmap/berlin.md).
 
 ## London
 
-See the wiki page [here](/roadmap/london).
+See the wiki page [here](/roadmap/london.md).
 
 ## Subsequent forks
 

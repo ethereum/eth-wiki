@@ -32,7 +32,7 @@ tags:
 >
 > By making it possible for everyone in the world to organize, we are enabling a borderless, permissionless and more efficient creation of value
 
- - [EthSignals.org](https://www.ethsignals.org) – Working group on improving Ethereum Governance with better signalling. Support the [tennagraph.com](tennagraph.com) – dapp for stances collection around EIPs.
+ - [EthSignals.org](https://www.ethsignals.org) – Working group on improving Ethereum Governance with better signalling. Support the [tennagraph.com](http://tennagraph.com) – dapp for stances collection around EIPs.
 
 
 While the following projects do not have blockchain governance as a mission, they do relate to governance or deliberately use or plan to use governance mechanisms:

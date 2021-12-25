@@ -162,7 +162,7 @@ Now, we build such a trie with the following key/value pairs in the underlying D
     hashD:    [ <>, <>, <>, <>, <>, <>, hashE, <>, <>, <>, <>, <>, <>, <>, <>, <>, 'verb' ]
     hashE:    [ <17>, [ <>, <>, <>, <>, <>, <>, [ <35>, 'coin' ], <>, <>, <>, <>, <>, <>, <>, <>, <>, 'puppy' ] ]
 
-When one node is referenced inside another node, what is included is `H(rlp.encode(x))`, where `H(x) = sha3(x) if len(x) >= 32 else x` and `rlp.encode` is the [RLP](/fundamentals/rlp) encoding function.
+When one node is referenced inside another node, what is included is `H(rlp.encode(x))`, where `H(x) = sha3(x) if len(x) >= 32 else x` and `rlp.encode` is the [RLP](/fundamentals/rlp.md) encoding function.
 
 Note that when updating a trie, one needs to store the key/value pair `(sha3(x), x)` in a persistent lookup table _if_ the newly-created node has length >= 32. However, if the node is shorter than that, one does not need to store anything, since the function f(x) = x is reversible.
 
@@ -181,7 +181,7 @@ From a block header there are 3 roots from 3 of these tries.
 There is one global state trie, and it updates over time. In it, a `path` is always: `sha3(ethereumAddress)` and a `value` is always: `rlp(ethereumAccount)`. More specifically an ethereum `account` is a 4 item array of `[nonce,balance,storageRoot,codeHash]`. At this point it's worth noting that this `storageRoot` is the root of another patricia trie:
 
 ### Storage Trie
-Storage trie is where *all* contract data lives. There is a separate storage trie for each account. To calculate a 'path' in this trie first understand how solidity organizes a [variable's position](/json-rpc/API#eth_getstorageat). To get the `path` there is one extra hashing (the link does not describe this). For instance the `path` for the zeroith variable is `sha3(<0000000000000000000000000000000000000000000000000000000000000000>)` which is always `290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563`. The value at the leaf is the rlp encoding of the storage value `1234` (`0x04d2`), which is `<82 04 d2>`. 
+Storage trie is where *all* contract data lives. There is a separate storage trie for each account. To calculate a 'path' in this trie first understand how solidity organizes a [variable's position](https://openethereum.github.io/JSONRPC-eth-module#eth_getstorageat). To get the `path` there is one extra hashing (the link does not describe this). For instance the `path` for the zeroith variable is `sha3(<0000000000000000000000000000000000000000000000000000000000000000>)` which is always `290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563`. The value at the leaf is the rlp encoding of the storage value `1234` (`0x04d2`), which is `<82 04 d2>`. 
 For the mapping example, the `path` is `sha3(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)` 
 
 #### Transactions Trie

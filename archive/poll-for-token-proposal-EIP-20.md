@@ -1,6 +1,6 @@
 ---
-title: Untitled Page
-description: 
+title: Poll for token proposal EIP 20
+description: It's here for historical record
 published: true
 date: 2020-06-16T10:13:47.004Z
 tags: 

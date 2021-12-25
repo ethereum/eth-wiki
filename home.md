@@ -16,12 +16,12 @@ tags:
 This is the community [wiki](https://en.wikipedia.org/wiki/Wiki) covering all sorts of information on the next-generation peer-to-peer technology platform built by the Ethereum community, including **Ethereum**, _the generalized blockchain for smart contract development_, as well as related protocols like:
 
 -   **[IPFS](https://ipfs.io)**, a distributed storage platform.
--   **[Whisper](Whisper-pages)**, _the private low-level datagram communication platform_
+-   **[Whisper](/concepts/whisper/whisper.md)**, _the private low-level datagram communication platform_
 -   **[Swarm](http://swarm-gateways.net/bzz:/theswarm.eth/)**, a distributed storage platform and content distribution service.
 
 ## Issues and pull requests
 
-If you have a technical issue with a specific client, application or tool, e.g. those listed [here](Clients-tools-dapp-browsers-wallets-and-other-projects), please ask in the Gitter room of that project, and if your issue is still not resolved, post an issue in the repo for that project.
+If you have a technical issue with a specific client, application or tool, e.g. those listed [here](/clients/clients-tools-dapp-browsers-wallets-and-other-projects.md), please ask in the Gitter room of that project, and if your issue is still not resolved, post an issue in the repo for that project.
 
 You can make suggestions to all pages using the "Edit on GitHub" link in the top right of each page. When suggesting a change, please add a comment as to why you're making the change.
 
@@ -35,7 +35,7 @@ Eth.wiki adopts Wikipedia's [five pillars](https://en.wikipedia.org/wiki/Wikiped
 
 ### License and contributor license agreement
 
-All contributions are accepted under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner. To state that you accept your contributions to be under a CC0 license, please add yourself to the list of external contributors [here](CC0-license#list-of-contributors).
+All contributions are accepted under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/legalcode) [1](https://creativecommons.org/share-your-work/public-domain/cc0/),  which makes your contributions have no rights reserved, putting them in the public domain. This will help to allow for the dissemination of information about Ethereum, the Ethereum ecosystem and Web 3 to the public, in a completely permissive manner.
 
 ## Other Ethereum Wikis
 
@@ -45,3 +45,4 @@ All contributions are accepted under the [CC0 license](https://creativecommons.o
 -   [Giveth](https://wiki.giveth.io/)
 -   [The Homestead Guide](http://ethdocs.org/en/latest/) (a historical reference, some parts may be outdated).
 -   [Old github wiki](https://github.com/ethereum/wiki/wiki)
+

@@ -4,7 +4,7 @@ A broad introduction to and overview of Ethereum research is available at [Ether
 
 ## Sharding
 
-Sharding introductory information is available [here](Sharding-introduction-R&D-compendium).
+Sharding introductory information is available [here](/sharding/sharding-introduction-r-d-compendium.md).
 
 ## Ethereum research communication channels
 

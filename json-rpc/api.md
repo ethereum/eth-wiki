@@ -24,7 +24,7 @@ Nethermind has pub/sub support. See [this](https://docs.nethermind.io/nethermind
 
 To talk to an ethereum node from inside a JavaScript application use the [web3.js](https://github.com/ethereum/web3.js) library, which gives a convenient interface for the RPC methods.
 
-See the [JavaScript API](/clients/javascript-api) for more details.
+See the [JavaScript API](/archive/javascript-api.md) for more details.
 
 ## JSON-RPC Endpoint
 
@@ -124,11 +124,11 @@ Currently [cpp-ethereum](https://github.com/ethereum/cpp-ethereum),[go-ethereum]
 
 The following methods have an extra default block parameter:
 
-- [eth_getBalance](#eth_getbalance)
-- [eth_getCode](#eth_getcode)
-- [eth_getTransactionCount](#eth_gettransactioncount)
-- [eth_getStorageAt](#eth_getstorageat)
-- [eth_call](#eth_call)
+- [eth_getBalance](https://openethereum.github.io/JSONRPC-eth-module#eth_getbalance)
+- [eth_getCode](https://openethereum.github.io/JSONRPC-eth-module#eth_getcode)
+- [eth_getTransactionCount](https://openethereum.github.io/JSONRPC-eth-module#eth_gettransactioncount)
+- [eth_getStorageAt](https://openethereum.github.io/JSONRPC-eth-module#eth_getstorageat)
+- [eth_call](https://openethereum.github.io/JSONRPC-eth-module#eth_call)
 
 When requests are made that act on the state of ethereum, the last default block parameter determines the height of the block.
 
