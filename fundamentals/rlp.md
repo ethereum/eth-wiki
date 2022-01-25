@@ -47,8 +47,8 @@ def encode_length(L,offset):
 def to_binary(x):
     if x == 0:
         return ''
-    else: 
-        return to_binary(int(x / 256)) + chr(x % 256)
+    else:
+        return to_binary(x // 256) + chr(x % 256)
 ```
 
 ## Examples
@@ -101,14 +101,23 @@ In code, this is:
 def rlp_decode(input):
     if len(input) == 0:
         return
-    output = ''
     (offset, dataLen, type) = decode_length(input)
     if type is str:
-        output = instantiate_str(substr(input, offset, dataLen))
+        output = str(input[offset:offset+dataLen])
     elif type is list:
-        output = instantiate_list(substr(input, offset, dataLen))
-    output + rlp_decode(substr(input, offset + dataLen))
+        output = rlp_decode_list(input[offset:offset+dataLen], [])
     return output
+
+def rlp_decode_list(input, items_list):
+    if len(input) > 0:
+        (offset, dataLen, type) = decode_length(input)
+        if type is str:
+            item = str(input[offset:offset+dataLen])
+        elif type is list:
+            item = rlp_decode_list(input[offset:offset+dataLen], [])
+        return rlp_decode_list(input[offset+dataLen:], items_list + [item])
+    else:
+        return items_list
 
 def decode_length(input):
     length = len(input)
@@ -120,16 +129,16 @@ def decode_length(input):
     elif prefix <= 0xb7 and length > prefix - 0x80:
         strLen = prefix - 0x80
         return (1, strLen, str)
-    elif prefix <= 0xbf and length > prefix - 0xb7 and length > prefix - 0xb7 + to_integer(substr(input, 1, prefix - 0xb7)):
+    elif prefix <= 0xbf and length > prefix - 0xb7 and length > prefix - 0xb7 + to_integer(input[1:1+(prefix - 0xb7)]):
         lenOfStrLen = prefix - 0xb7
-        strLen = to_integer(substr(input, 1, lenOfStrLen))
+        strLen = to_integer(input[1:1+lenOfStrLen])
         return (1 + lenOfStrLen, strLen, str)
     elif prefix <= 0xf7 and length > prefix - 0xc0:
         listLen = prefix - 0xc0;
         return (1, listLen, list)
-    elif prefix <= 0xff and length > prefix - 0xf7 and length > prefix - 0xf7 + to_integer(substr(input, 1, prefix - 0xf7)):
+    elif prefix <= 0xff and length > prefix - 0xf7 and length > prefix - 0xf7 + to_integer(input[1:1+(prefix - 0xf7)]):
         lenOfListLen = prefix - 0xf7
-        listLen = to_integer(substr(input, 1, lenOfListLen))
+        listLen = to_integer(input[1:1+lenOfListLen])
         return (1 + lenOfListLen, listLen, list)
     else:
         raise Exception("input don't conform RLP encoding form")
@@ -141,5 +150,5 @@ def to_integer(b):
     elif length == 1:
         return ord(b[0])
     else:
-        return ord(substr(b, -1)) + to_integer(substr(b, 0, -1)) * 256
+        return ord(b[-1:]) + to_integer(b[0:-1]) * 256
 ```
